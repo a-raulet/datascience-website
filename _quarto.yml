@@ -1,0 +1,66 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Arnaud RAULET, Marketing Data Analyst"
+  navbar:
+    background: primary
+    search: true
+    left:
+      - text: "Home"
+        file: index.qmd
+      - text: "Services"
+        file: services/index.qmd
+      - text: "Portfolio"
+        file: portfolio/index.qmd
+      - text: "Blog"
+        file: blog/index.qmd
+      - text: "About"
+        file: about.qmd
+    right:
+      - icon: github
+        href: https://github.com/a-raulet
+      - icon: linkedin
+        href: https://linkedin.com/in/arnaud-raulet-13308310/
+      - text: "🌐 Langue"
+        menu:
+          - text: "🇫🇷 Français"
+            href: /
+          - text: "🇺🇸 English"
+            href: /en/
+          - text: "🇯🇵 日本語"
+            href: /ja/
+
+format:
+  html:
+    theme: 
+      - cosmo
+      - custom.scss
+    css: styles.css
+    toc: true
+    code-fold: true
+    code-tools: true
+    html-math-method: katex
+    include-in-header:
+      - text: |
+          <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+
+babelquarto:
+  languagecodes:
+  - name: en
+    text: "English"
+  - name: ja
+    text: "日本語"
+  - name: fr
+    text: "Français"
+  mainlanguage: 'fr'
+  languages: ['en', 'ja']
+title-en: "Data Science Portfolio"
+title-ja: "データサイエンス ポートフォリオ"
+description-en: "Professional data science services and portfolio"
+description-ja: "プロフェッショナルなデータサイエンスサービスとポートフォリオ"
+author-en: "Arnaud RAULET"
+author-ja: "ローレ・アルノ"
+lang: fr

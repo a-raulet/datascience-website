@@ -1,0 +1,108 @@
+---
+title: "Bienvenue sur mon Portfolio Data Science"
+description: "Expert en analyse de données, machine learning et visualisation"
+lang: fr
+format:
+  html:
+    page-layout: custom
+    toc: false
+---
+
+::: hero-banner
+# Data Scientist Passionné
+
+## Transformez vos données en décisions stratégiques
+
+Spécialisé en analyse de données, machine learning et visualisation interactive, je vous accompagne dans vos projets de data science de A à Z.
+
+[Découvrir mes services](/services/){.btn .btn-primary .btn-lg} [Voir mon portfolio](/portfolio/){.btn .btn-outline-secondary .btn-lg}
+:::
+
+## Mes Expertises
+
+:::::: grid
+::: g-col-md-4
+### 📊 Analyse de Données
+
+Exploration, nettoyage et analyse statistique de vos données pour révéler des patterns cachés et générer des insights actionnables.
+:::
+
+::: g-col-md-4
+### 🤖 Machine Learning
+
+Développement de modèles prédictifs et d'algorithmes d'apprentissage automatique adaptés à vos besoins métier.
+:::
+
+::: g-col-md-4
+### 📈 Visualisation
+
+Création de tableaux de bord interactifs et de visualisations engageantes pour communiquer efficacement vos résultats.
+:::
+::::::
+
+## Projets Récents
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+# Exemple de visualisation interactive avec plotly
+library(plotly)
+library(dplyr)
+
+# Données d'exemple pour un projet
+project_data <- data.frame(
+  Projet = c("Analyse RH", "Prédiction Ventes", "Segmentation Client", "Optimisation Prix"),
+  Secteur = c("RH", "Ventes", "Marketing", "Finance"),
+  Impact = c(85, 92, 78, 88),
+  Complexité = c(6, 8, 7, 9),
+  Durée_semaines = c(4, 12, 8, 16)
+)
+
+# Graphique interactif avec hovertemplate corrigé
+p <- plot_ly(project_data, 
+             x = ~Complexité, 
+             y = ~Impact, 
+             size = ~Durée_semaines,
+             color = ~Secteur,
+             text = ~Projet,
+             hovertemplate = paste0(
+               "<b>%{text}</b><br>",
+               "Complexité: %{x}<br>",
+               "Impact: %{y}%<br>",
+               "Durée: %{marker.size} semaines<br>",
+               "<extra></extra>"
+             )) %>%
+  add_markers() %>%
+  layout(title = "Vue d'ensemble de mes projets récents",
+         xaxis = list(title = "Complexité (1-10)"),
+         yaxis = list(title = "Impact (%)"),
+         showlegend = TRUE)
+
+p
+```
+
+[Voir tous mes projets →](/portfolio/)
+
+## Derniers Articles
+
+<!-- Les derniers articles du blog seront automatiquement listés ici -->
+
+------------------------------------------------------------------------
+
+::: contact-section
+## Prêt à collaborer ?
+
+Je serais ravi de discuter de votre projet et de voir comment mes compétences en data science peuvent vous aider à atteindre vos objectifs.
+
+[Me contacter](mailto:contact-quarto-site.le77r@simplelogin.com){.btn .btn-primary} [LinkedIn](https://linkedin.com/in/arnaud-raulet-13308310/){.btn .btn-outline-secondary}
+:::
+
+<!-- Configuration pour babelquarto -->
+
+```{=html}
+<script>
+// Ajout de fonctionnalités interactives si nécessaire
+</script>
+```

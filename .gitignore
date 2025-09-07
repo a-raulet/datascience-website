@@ -1,0 +1,65 @@
+# === Quarto outputs ===
+/_site/
+/.quarto/
+/site_libs/
+/.quarto-cache/
+
+# === R ===
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+.Rproj.user
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+env/
+venv/
+.env
+.venv
+*.egg-info/
+.pytest_cache/
+
+# === Jupyter ===
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# === Données et caches ===
+*.csv.gz
+*.parquet
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+/data/raw/               # Données brutes volumineuses
+/models/                 # Modèles entraînés
+/.cache/
+/cache/
+
+# === OS et éditeurs ===
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# === Secrets ===
+.env
+.env.local
+config.json
+secrets/
+api_keys/
+*.key
+*.pem
+
+# === Builds et logs ===
+*.log
+dist/
+build/
+node_modules/
