@@ -25,11 +25,11 @@ website:
         href: https://linkedin.com/in/arnaud-raulet-13308310/
       - text: "🌐 Langue"
         menu:
-          - text: "🇫🇷 Français"
+          - text: "Français"
             href: /
-          - text: "🇺🇸 English"
+          - text: "English"
             href: /en/
-          - text: "🇯🇵 日本語"
+          - text: "日本語"
             href: /ja/
 
 format:
@@ -40,7 +40,6 @@ format:
     css: styles.css
     toc: true
     code-fold: true
-    code-tools: true
     html-math-method: katex
     include-in-header:
       - text: |

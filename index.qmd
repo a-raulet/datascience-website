@@ -9,9 +9,9 @@ format:
 ---
 
 ::: hero-banner
-# Data Scientist Passionné
+# Transformez vos données en décisions stratégiques
 
-## Transformez vos données en décisions stratégiques
+## Et avancez plus vite que vos concurrents.
 
 Spécialisé en analyse de données, machine learning et visualisation interactive, je vous accompagne dans vos projets de data science de A à Z.
 
