@@ -1,0 +1,108 @@
+---
+title: "データサイエンス・ポートフォリオへようこそ"
+description: "Expert en analyse de données, machine learning et visualisation"
+lang: fr
+format:
+  html:
+    page-layout: custom
+    toc: false
+---
+
+ヒーローバナー
+# データを戦略的意思決定に変える
+
+## そして、競合他社よりも早く前進する。
+
+データ分析、機械学習、インタラクティブな視覚化を専門とし、データサイエンス・プロジェクトのAからZまでお手伝いします。
+
+[私のサービスをご覧ください](/services/){.btn .btn-primary .btn-lg} [私のポートフォリオをご覧ください](/portfolio/){.btn .btn-outline-secondary .btn-lg}.
+:::
+
+## 専門分野
+
+グリッド
+::: g-col-md-4
+### データ分析
+
+データの探索、クレンジング、統計分析により、隠れたパターンを明らかにし、実用的な洞察を生み出します。
+:::
+
+::: g-col-md-4
+### 🤖 機械学習
+
+お客様のビジネスニーズに合わせた予測モデルと機械学習アルゴリズムの開発。
+:::
+
+::: g-col-md-4
+### ビジュアライゼーション
+
+インタラクティブなダッシュボードや魅力的なビジュアライゼーションを作成し、結果を効果的に伝えます。
+:::
+::::::
+
+## 最近のプロジェクト
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+# Exemple de visualisation interactive avec plotly
+library(plotly)
+library(dplyr)
+
+# Données d'exemple pour un projet
+project_data <- data.frame(
+  Projet = c("Analyse RH", "Prédiction Ventes", "Segmentation Client", "Optimisation Prix"),
+  Secteur = c("RH", "Ventes", "Marketing", "Finance"),
+  Impact = c(85, 92, 78, 88),
+  Complexité = c(6, 8, 7, 9),
+  Durée_semaines = c(4, 12, 8, 16)
+)
+
+# Graphique interactif avec hovertemplate corrigé
+p <- plot_ly(project_data, 
+             x = ~Complexité, 
+             y = ~Impact, 
+             size = ~Durée_semaines,
+             color = ~Secteur,
+             text = ~Projet,
+             hovertemplate = paste0(
+               "<b>%{text}</b><br>",
+               "Complexité: %{x}<br>",
+               "Impact: %{y}%<br>",
+               "Durée: %{marker.size} semaines<br>",
+               "<extra></extra>"
+             )) %>%
+  add_markers() %>%
+  layout(title = "Vue d'ensemble de mes projets récents",
+         xaxis = list(title = "Complexité (1-10)"),
+         yaxis = list(title = "Impact (%)"),
+         showlegend = TRUE)
+
+p
+```
+
+[私のすべてのプロジェクトを見る→](/portfolio/)
+
+## 最新記事
+
+<！--最新のブログ記事は自動的にここに表示されます -->。
+
+------------------------------------------------------------------------
+
+コンタクトセクション
+## 一緒に仕事をする準備はできているか？
+
+私のデータ・サイエンス・スキルがお客様の目標達成にどのように貢献できるか、ぜひご相談ください。
+
+[お問い合わせ](mailto:contact-quarto-site.le77r@simplelogin.com){.btn .btn-primary} [LinkedIn](https://linkedin.com/in/arnaud-raulet-13308310/){.btn .btn-outline-secondary}
+:::
+
+<!-- babelquartoの設定 -->。
+
+```{=html}
+<script>
+// Ajout de fonctionnalités interactives si nécessaire
+</script>
+```

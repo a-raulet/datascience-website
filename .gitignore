@@ -2,14 +2,19 @@
 /.quarto/
 /site_libs/
 /.quarto-cache/
+test.qmd
+test.en.qmd
+test.ja.qmd
 
 # === R ===
+.Renviron
 .Rproj.user/
 .Rhistory
 .RData
 .Ruserdata
 *.Rproj
 .Rproj.user
+/scripts/
 
 # === Python ===
 __pycache__/
@@ -38,6 +43,8 @@ venv/
 /models/                 # Modèles entraînés
 /.cache/
 /cache/
+translation_cache/
+translation_log.txt
 
 # === OS et éditeurs ===
 .DS_Store
