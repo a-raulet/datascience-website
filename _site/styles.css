@@ -251,3 +251,10 @@ html[lang="ja"] h3 {
   font-size: 0.8rem;
   z-index: 1000;
 }
+
+
+/* Meilleure typo japonaise */
+html[lang="ja"] {
+  font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+  line-height: 1.8;
+}

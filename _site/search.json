@@ -1,5 +1,68 @@
 [
   {
+    "objectID": "test.html",
+    "href": "test.html",
+    "title": "Test",
+    "section": "",
+    "text": "Ceci est un test de traduction."
+  },
+  {
+    "objectID": "portfolio/analysis/index.html",
+    "href": "portfolio/analysis/index.html",
+    "title": "Portfolio/Analysis",
+    "section": "",
+    "text": "Portfolio/Analysis\nContenu à venir…"
+  },
+  {
+    "objectID": "portfolio/ml/index.html",
+    "href": "portfolio/ml/index.html",
+    "title": "Portfolio/Ml",
+    "section": "",
+    "text": "Portfolio/Ml\nContenu à venir…"
+  },
+  {
+    "objectID": "services/index.html",
+    "href": "services/index.html",
+    "title": "Services",
+    "section": "",
+    "text": "Services\nContenu à venir…"
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Blog\nContenu à venir…"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "À propos",
+    "section": "",
+    "text": "À propos de ce site"
+  },
+  {
+    "objectID": "blog/posts/index.html",
+    "href": "blog/posts/index.html",
+    "title": "Blog/Posts",
+    "section": "",
+    "text": "Blog/Posts\nContenu à venir…"
+  },
+  {
+    "objectID": "portfolio/viz/index.html",
+    "href": "portfolio/viz/index.html",
+    "title": "Portfolio/Viz",
+    "section": "",
+    "text": "Portfolio/Viz\nContenu à venir…"
+  },
+  {
+    "objectID": "portfolio/index.html",
+    "href": "portfolio/index.html",
+    "title": "Portfolio",
+    "section": "",
+    "text": "Portfolio\nContenu à venir…"
+  },
+  {
     "objectID": "index.html#et-avancez-plus-vite-que-vos-concurrents.",
     "href": "index.html#et-avancez-plus-vite-que-vos-concurrents.",
     "title": "Bienvenue sur mon Portfolio Data Science",
@@ -33,61 +96,5 @@
     "title": "Bienvenue sur mon Portfolio Data Science",
     "section": "Prêt à collaborer ?",
     "text": "Prêt à collaborer ?\nJe serais ravi de discuter de votre projet et de voir comment mes compétences en data science peuvent vous aider à atteindre vos objectifs.\nMe contacter LinkedIn"
-  },
-  {
-    "objectID": "portfolio/index.html",
-    "href": "portfolio/index.html",
-    "title": "Portfolio",
-    "section": "",
-    "text": "Portfolio\nContenu à venir…"
-  },
-  {
-    "objectID": "portfolio/viz/index.html",
-    "href": "portfolio/viz/index.html",
-    "title": "Portfolio/Viz",
-    "section": "",
-    "text": "Portfolio/Viz\nContenu à venir…"
-  },
-  {
-    "objectID": "blog/posts/index.html",
-    "href": "blog/posts/index.html",
-    "title": "Blog/Posts",
-    "section": "",
-    "text": "Blog/Posts\nContenu à venir…"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Blog\nContenu à venir…"
-  },
-  {
-    "objectID": "services/index.html",
-    "href": "services/index.html",
-    "title": "Services",
-    "section": "",
-    "text": "Services\nContenu à venir…"
-  },
-  {
-    "objectID": "portfolio/ml/index.html",
-    "href": "portfolio/ml/index.html",
-    "title": "Portfolio/Ml",
-    "section": "",
-    "text": "Portfolio/Ml\nContenu à venir…"
-  },
-  {
-    "objectID": "portfolio/analysis/index.html",
-    "href": "portfolio/analysis/index.html",
-    "title": "Portfolio/Analysis",
-    "section": "",
-    "text": "Portfolio/Analysis\nContenu à venir…"
   }
 ]

@@ -1,0 +1,100 @@
+[
+  {
+    "objectID": "test.html",
+    "href": "test.html",
+    "title": "テスト",
+    "section": "",
+    "text": "これは翻訳テストだ。"
+  },
+  {
+    "objectID": "portfolio/analysis/index.html",
+    "href": "portfolio/analysis/index.html",
+    "title": "ポートフォリオ/分析",
+    "section": "",
+    "text": "ポートフォリオ/分析\nコンテンツはこれから…"
+  },
+  {
+    "objectID": "portfolio/ml/index.html",
+    "href": "portfolio/ml/index.html",
+    "title": "ポートフォリオ/Ml",
+    "section": "",
+    "text": "ポートフォリオ/ml\nコンテンツはこれから…"
+  },
+  {
+    "objectID": "services/index.html",
+    "href": "services/index.html",
+    "title": "サービス",
+    "section": "",
+    "text": "サービス\nコンテンツはこれから…"
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "ブログ",
+    "section": "",
+    "text": "ブログ\nコンテンツはこれから…"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "について",
+    "section": "",
+    "text": "このサイトについて"
+  },
+  {
+    "objectID": "blog/posts/index.html",
+    "href": "blog/posts/index.html",
+    "title": "ブログ/投稿",
+    "section": "",
+    "text": "ブログ/投稿\nコンテンツはこれから…"
+  },
+  {
+    "objectID": "portfolio/viz/index.html",
+    "href": "portfolio/viz/index.html",
+    "title": "ポートフォリオ/ヴィズ",
+    "section": "",
+    "text": "ポートフォリオ／ヴィズ\nコンテンツはこれから…"
+  },
+  {
+    "objectID": "portfolio/index.html",
+    "href": "portfolio/index.html",
+    "title": "ポートフォリオ",
+    "section": "",
+    "text": "ポートフォリオ\nコンテンツはこれから…"
+  },
+  {
+    "objectID": "index.html#そして競合他社よりも早く前進する",
+    "href": "index.html#そして競合他社よりも早く前進する",
+    "title": "データサイエンス・ポートフォリオへようこそ",
+    "section": "そして、競合他社よりも早く前進する。",
+    "text": "そして、競合他社よりも早く前進する。\nデータ分析、機械学習、インタラクティブな視覚化を専門とし、データサイエンス・プロジェクトのAからZまでお手伝いします。\nサービス ポートフォリオ."
+  },
+  {
+    "objectID": "index.html#専門分野",
+    "href": "index.html#専門分野",
+    "title": "データサイエンス・ポートフォリオへようこそ",
+    "section": "専門分野",
+    "text": "専門分野\n\n\nデータ分析\nデータの探索、クレンジング、統計分析により、隠れたパターンを明らかにし、実用的な洞察を生み出します。\n\n\n🤖 機械学習\nお客様のビジネスニーズに合わせた予測モデルと機械学習アルゴリズムの開発。\n\n\nビジュアライゼーション\nインタラクティブなダッシュボードや魅力的なビジュアライゼーションを作成し、結果を効果的に伝えます。"
+  },
+  {
+    "objectID": "index.html#最近のプロジェクト",
+    "href": "index.html#最近のプロジェクト",
+    "title": "データサイエンス・ポートフォリオへようこそ",
+    "section": "最近のプロジェクト",
+    "text": "最近のプロジェクト\n\n\n\n\n\n\nすべてのプロジェクトを見る→"
+  },
+  {
+    "objectID": "index.html#最新記事",
+    "href": "index.html#最新記事",
+    "title": "データサイエンス・ポートフォリオへようこそ",
+    "section": "最新記事",
+    "text": "最新記事"
+  },
+  {
+    "objectID": "index.html#一緒に仕事をしませんか",
+    "href": "index.html#一緒に仕事をしませんか",
+    "title": "データサイエンス・ポートフォリオへようこそ",
+    "section": "一緒に仕事をしませんか？",
+    "text": "一緒に仕事をしませんか？\n私のデータ・サイエンス・スキルがお客様の目標達成にどのように貢献できるか、ぜひご相談ください。\nお問い合わせ LinkedIn"
+  }
+]

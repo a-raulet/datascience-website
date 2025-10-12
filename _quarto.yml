@@ -23,14 +23,7 @@ website:
         href: https://github.com/a-raulet
       - icon: linkedin
         href: https://linkedin.com/in/arnaud-raulet-13308310/
-      - text: "🌐 Langue"
-        menu:
-          - text: "Français"
-            href: /
-          - text: "English"
-            href: /en/
-          - text: "日本語"
-            href: /ja/
+
 
 format:
   html:
@@ -45,21 +38,24 @@ format:
       - text: |
           <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
-
 babelquarto:
-  languagecodes:
-  - name: en
-    text: "English"
-  - name: ja
-    text: "日本語"
-  - name: fr
-    text: "Français"
   mainlanguage: 'fr'
   languages: ['en', 'ja']
+  languagecodes:
+    - name: fr
+      text: "🇫🇷 Français"
+    - name: en
+      text: "🇬🇧 English"
+    - name: ja
+      text: "🇯🇵 日本語"
+  languagelinks: navbar
+  language-path: "prefix"
+
 title-en: "Data Science Portfolio"
 title-ja: "データサイエンス ポートフォリオ"
 description-en: "Professional data science services and portfolio"
 description-ja: "プロフェッショナルなデータサイエンスサービスとポートフォリオ"
 author-en: "Arnaud RAULET"
 author-ja: "ローレ・アルノ"
+
 lang: fr

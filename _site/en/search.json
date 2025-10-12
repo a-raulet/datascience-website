@@ -1,0 +1,100 @@
+[
+  {
+    "objectID": "test.html",
+    "href": "test.html",
+    "title": "Test",
+    "section": "",
+    "text": "This is a translation test."
+  },
+  {
+    "objectID": "portfolio/analysis/index.html",
+    "href": "portfolio/analysis/index.html",
+    "title": "Portfolio/Analysis",
+    "section": "",
+    "text": "Portfolio/Analysis\nContents to come…"
+  },
+  {
+    "objectID": "portfolio/ml/index.html",
+    "href": "portfolio/ml/index.html",
+    "title": "Portfolio/Ml",
+    "section": "",
+    "text": "Portfolio/Ml\nContents to come…"
+  },
+  {
+    "objectID": "services/index.html",
+    "href": "services/index.html",
+    "title": "Services",
+    "section": "",
+    "text": "Services\nContents to come…"
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Blog\nContents to come…"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "blog/posts/index.html",
+    "href": "blog/posts/index.html",
+    "title": "Blog/Posts",
+    "section": "",
+    "text": "Blog/Posts\nContents to come…"
+  },
+  {
+    "objectID": "portfolio/viz/index.html",
+    "href": "portfolio/viz/index.html",
+    "title": "Portfolio/Viz",
+    "section": "",
+    "text": "Portfolio/Viz\nContents to come…"
+  },
+  {
+    "objectID": "portfolio/index.html",
+    "href": "portfolio/index.html",
+    "title": "Portfolio",
+    "section": "",
+    "text": "Portfolio\nContents to come…"
+  },
+  {
+    "objectID": "index.html#and-move-faster-than-your-competitors.",
+    "href": "index.html#and-move-faster-than-your-competitors.",
+    "title": "Welcome to my Data Science Portfolio",
+    "section": "And move faster than your competitors.",
+    "text": "And move faster than your competitors.\nSpecialized in data analysis, machine learning and interactive visualization, I can help you with your data science projects from A to Z.\nDiscover my services View my portfolio"
+  },
+  {
+    "objectID": "index.html#my-expertise",
+    "href": "index.html#my-expertise",
+    "title": "Welcome to my Data Science Portfolio",
+    "section": "My Expertise",
+    "text": "My Expertise\n\n\n📊 Data Analysis\nExploration, cleansing and statistical analysis of your data to reveal hidden patterns and generate actionable insights.\n\n\n🤖 Machine Learning\nDevelopment of predictive models and machine learning algorithms tailored to your business needs.\n\n\n📈 Visualization\nCreate interactive dashboards and engaging visualizations to effectively communicate your results."
+  },
+  {
+    "objectID": "index.html#recent-projects",
+    "href": "index.html#recent-projects",
+    "title": "Welcome to my Data Science Portfolio",
+    "section": "Recent Projects",
+    "text": "Recent Projects\n\n\n\n\n\n\nView all my projects →"
+  },
+  {
+    "objectID": "index.html#latest-articles",
+    "href": "index.html#latest-articles",
+    "title": "Welcome to my Data Science Portfolio",
+    "section": "Latest Articles",
+    "text": "Latest Articles"
+  },
+  {
+    "objectID": "index.html#ready-to-collaborate",
+    "href": "index.html#ready-to-collaborate",
+    "title": "Welcome to my Data Science Portfolio",
+    "section": "Ready to collaborate?",
+    "text": "Ready to collaborate?\nI’d be delighted to discuss your project and see how my data science skills can help you achieve your goals.\nContact me LinkedIn"
+  }
+]

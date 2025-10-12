@@ -1,26 +1,26 @@
 ---
 title: "データサイエンス・ポートフォリオへようこそ"
-description: "Expert en analyse de données, machine learning et visualisation"
-lang: fr
+description: "データ分析・機械学習・可視化の専門家"
+lang: ja
 format:
   html:
     page-layout: custom
     toc: false
 ---
 
-ヒーローバナー
+::: hero-banner
 # データを戦略的意思決定に変える
 
 ## そして、競合他社よりも早く前進する。
 
 データ分析、機械学習、インタラクティブな視覚化を専門とし、データサイエンス・プロジェクトのAからZまでお手伝いします。
 
-[私のサービスをご覧ください](/services/){.btn .btn-primary .btn-lg} [私のポートフォリオをご覧ください](/portfolio/){.btn .btn-outline-secondary .btn-lg}.
+[サービス](/services/){.btn .btn-primary .btn-lg} [ポートフォリオ](/portfolio/){.btn .btn-outline-secondary .btn-lg}.
 :::
 
 ## 専門分野
 
-グリッド
+:::::: grid
 ::: g-col-md-4
 ### データ分析
 
@@ -83,23 +83,23 @@ p <- plot_ly(project_data,
 p
 ```
 
-[私のすべてのプロジェクトを見る→](/portfolio/)
+[すべてのプロジェクトを見る→](/portfolio/)
 
 ## 最新記事
 
-<！--最新のブログ記事は自動的にここに表示されます -->。
+<!--最新のブログ記事は自動的にここに表示されます -->
 
 ------------------------------------------------------------------------
 
-コンタクトセクション
-## 一緒に仕事をする準備はできているか？
+::: contact-session
+## 一緒に仕事をしませんか？
 
 私のデータ・サイエンス・スキルがお客様の目標達成にどのように貢献できるか、ぜひご相談ください。
 
-[お問い合わせ](mailto:contact-quarto-site.le77r@simplelogin.com){.btn .btn-primary} [LinkedIn](https://linkedin.com/in/arnaud-raulet-13308310/){.btn .btn-outline-secondary}
+[お問い合わせ](mailto:contact-quarto-site.le77r@simplelogin.com){.btn .btn-primary} [LinkedIn](https://linkedin.com/in/arnaud-raulet-13308310/){.btn .btn-outline-secondary} 
 :::
 
-<!-- babelquartoの設定 -->。
+<!-- babelquartoの設定 -->
 
 ```{=html}
 <script>
