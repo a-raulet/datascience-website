@@ -7,39 +7,221 @@
     "text": "これは翻訳テストだ。"
   },
   {
-    "objectID": "portfolio/analysis/index.html",
-    "href": "portfolio/analysis/index.html",
-    "title": "ポートフォリオ/分析",
-    "section": "",
-    "text": "ポートフォリオ/分析\nコンテンツはこれから…"
+    "objectID": "portfolio/analysis/index.html#データエンジニアリングマーケティングアナリティクス",
+    "href": "portfolio/analysis/index.html#データエンジニアリングマーケティングアナリティクス",
+    "title": "ポートフォリオ - データ分析",
+    "section": "データエンジニアリング＆マーケティングアナリティクス",
+    "text": "データエンジニアリング＆マーケティングアナリティクス\n生データを実用的なインサイトに変換する探索、データパイプライン、ダッシュボード。"
   },
   {
-    "objectID": "portfolio/ml/index.html",
-    "href": "portfolio/ml/index.html",
-    "title": "ポートフォリオ/Ml",
-    "section": "",
-    "text": "ポートフォリオ/ml\nコンテンツはこれから…"
+    "objectID": "portfolio/analysis/index.html#プロジェクト",
+    "href": "portfolio/analysis/index.html#プロジェクト",
+    "title": "ポートフォリオ - データ分析",
+    "section": "プロジェクト",
+    "text": "プロジェクト\n\n\n\nRobynを使用したマーケティングミックスモデリング\n課題：CMOは売上を最大化するためにマーケティング予算をどのように再配分すべきか？\nマーケティングミックスモデリング（MMM）は、季節性、飽和効果（収穫逓減）、残存効果（アドストック）を考慮して、各マーケティングチャネルの売上への影響を測定します。\nアプローチ：\n\nMetaが開発したRobynフレームワークを使用\nProphet時系列分解を用いたリッジ回帰\nアドストック（幾何減衰）と飽和（ロジスティック）効果のモデリング\nNevergradによる多目的最適化\n\n結果：異なる予算配分シナリオをシミュレートし、予想される売上影響を可視化するインタラクティブダッシュボード。\nテクノロジー：R、Robyn、Prophet、Nevergrad、Shiny\n詳細を見る → | Shinyダッシュボード\n\n\n\n\n\n\nマーケティングアナリティクスパイプライン（GCP + dbt）\n課題：マーケティングKPIをリアルタイムで追跡するためのモダンなインフラをどのように構築するか？\nこのプロジェクトは、抽出から可視化まで、マルチチャネルマーケティングパフォーマンス分析のための完全なETLパイプラインの構築を実演します。\nアーキテクチャ：\nCSV → Python抽出 → BigQuery → dbt変換 → Streamlitダッシュボード\n計算されるKPI：\n\nROAS（広告費用対効果）\nコンバージョン単価（CPA）\nコンバージョン率\nセッションあたり収益\n\nテクノロジー：Python、Google BigQuery、dbt、Streamlit、Plotly\n詳細を見る → | Streamlitダッシュボード\n\n\n\n\n\n\nリアルタイムクリックストリーム分析\n課題：Eコマースでユーザー行動の異常をリアルタイムで検出するには？\n時間ウィンドウ集計とリアルタイムダッシュボードを備えたユーザー行動分析のためのストリーミング分析パイプライン。\nアーキテクチャ：\nCSVイベント → Kafkaプロデューサー → Sparkストリーミング → Delta Lake → Streamlitダッシュボード\nリアルタイムメトリクス：\n\nアクティブセッション\nコンバージョンファネル（閲覧 → カート → 購入）\n人気商品\n異常アラート\n\nテクノロジー：Apache Kafka、PySpark Structured Streaming、Delta Lake、Streamlit、Docker\n詳細を見る →\n\n\n\n\n← ポートフォリオに戻る | MLプロジェクトを見る →"
   },
   {
-    "objectID": "services/index.html",
-    "href": "services/index.html",
-    "title": "サービス",
+    "objectID": "portfolio/analysis/clickstream-analytics.html",
+    "href": "portfolio/analysis/clickstream-analytics.html",
+    "title": "リアルタイムクリックストリーム分析",
     "section": "",
-    "text": "サービス\nコンテンツはこれから…"
+    "text": "ビジネス課題：Eコマースでユーザー行動の異常をリアルタイムで検出するには？\n\nEコマースアナリストとして、ユーザー行動をリアルタイムで観察できることで以下が可能になります：\n\n異常を素早く検出（急激なトラフィック減少、チェックアウトの問題）\n体験を最適化（摩擦点を特定）\nイベントに迅速に対応（プロモーション、技術的インシデント）\n\nこのプロジェクトでは、取り込みから可視化までの完全なストリーミング分析パイプラインを実装します。"
   },
   {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "ブログ",
+    "objectID": "portfolio/analysis/clickstream-analytics.html#背景と課題",
+    "href": "portfolio/analysis/clickstream-analytics.html#背景と課題",
+    "title": "リアルタイムクリックストリーム分析",
     "section": "",
-    "text": "ブログ\nコンテンツはこれから…"
+    "text": "ビジネス課題：Eコマースでユーザー行動の異常をリアルタイムで検出するには？\n\nEコマースアナリストとして、ユーザー行動をリアルタイムで観察できることで以下が可能になります：\n\n異常を素早く検出（急激なトラフィック減少、チェックアウトの問題）\n体験を最適化（摩擦点を特定）\nイベントに迅速に対応（プロモーション、技術的インシデント）\n\nこのプロジェクトでは、取り込みから可視化までの完全なストリーミング分析パイプラインを実装します。"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "について",
+    "objectID": "portfolio/analysis/clickstream-analytics.html#アーキテクチャ",
+    "href": "portfolio/analysis/clickstream-analytics.html#アーキテクチャ",
+    "title": "リアルタイムクリックストリーム分析",
+    "section": "アーキテクチャ",
+    "text": "アーキテクチャ\n┌─────────────┐     ┌─────────────┐     ┌─────────────┐\n│  CSVイベント │────▶│    Kafka    │────▶│    Spark    │\n│  (ソース)   │     │  (ブローカー) │     │(ストリーミング)│\n└─────────────┘     └─────────────┘     └─────────────┘\n                                               │\n                                               ▼\n                    ┌─────────────┐     ┌─────────────┐\n                    │  Streamlit  │◀────│ Delta Lake  │\n                    │(ダッシュボード)│    │ (ストレージ) │\n                    └─────────────┘     └─────────────┘\n\nコンポーネント\n\n\n\nサービス\n役割\nポート\n\n\n\n\nZookeeper\nKafka調整\n2181\n\n\nKafka\nメッセージブローカー\n9092\n\n\nSpark\nストリーム処理\n4040\n\n\nDelta Lake\nトランザクションストレージ\n-\n\n\nStreamlit\n可視化\n8501"
+  },
+  {
+    "objectID": "portfolio/analysis/clickstream-analytics.html#データ",
+    "href": "portfolio/analysis/clickstream-analytics.html#データ",
+    "title": "リアルタイムクリックストリーム分析",
+    "section": "データ",
+    "text": "データ\n\nソース\neCommerce Eventsデータセット（Kaggle）：\n\nボリューム：2.3 GB、5つのCSVファイル\n期間：2019年10月〜2020年2月\nイベント：view、cart、remove_from_cart、purchase\n\n\n\nスキーマ\nevent_schema = {\n    'event_time': 'timestamp',      # タイムスタンプ\n    'event_type': 'string',          # イベントタイプ\n    'product_id': 'integer',         # 商品ID\n    'category_id': 'long',           # カテゴリ\n    'category_code': 'string',       # カテゴリコード\n    'brand': 'string',               # ブランド\n    'price': 'float',                # 価格\n    'user_id': 'integer',            # ユーザーID\n    'user_session': 'string'         # セッション\n}"
+  },
+  {
+    "objectID": "portfolio/analysis/clickstream-analytics.html#実装",
+    "href": "portfolio/analysis/clickstream-analytics.html#実装",
+    "title": "リアルタイムクリックストリーム分析",
+    "section": "実装",
+    "text": "実装\n\n1. Kafkaプロデューサー\n# イベントをKafkaに送信\nfrom kafka import KafkaProducer\nimport json\n\nproducer = KafkaProducer(\n    bootstrap_servers=['localhost:9092'],\n    value_serializer=lambda v: json.dumps(v).encode('utf-8')\n)\n\nfor event in read_csv_stream('events.csv'):\n    producer.send('clickstream', value=event)\n\n\n2. Spark Structured Streaming\n# Kafkaストリームからの読み取り\nfrom pyspark.sql import SparkSession\nfrom pyspark.sql.functions import window, count, sum, col\n\nspark = SparkSession.builder \\\n    .appName(\"ClickstreamAnalytics\") \\\n    .config(\"spark.sql.extensions\", \"io.delta.sql.DeltaSparkSessionExtension\") \\\n    .getOrCreate()\n\n# Kafkaからのストリーム\ndf = spark.readStream \\\n    .format(\"kafka\") \\\n    .option(\"kafka.bootstrap.servers\", \"localhost:9092\") \\\n    .option(\"subscribe\", \"clickstream\") \\\n    .load()\n\n# 時間ウィンドウ集計\naggregated = df \\\n    .withWatermark(\"event_time\", \"1 minute\") \\\n    .groupBy(\n        window(\"event_time\", \"1 minute\"),\n        \"event_type\"\n    ) \\\n    .agg(\n        count(\"*\").alias(\"event_count\"),\n        countDistinct(\"user_session\").alias(\"unique_sessions\")\n    )\n\n# Delta Lakeへの書き込み\naggregated.writeStream \\\n    .format(\"delta\") \\\n    .outputMode(\"append\") \\\n    .option(\"checkpointLocation\", \"/tmp/checkpoint\") \\\n    .start(\"/data/aggregated\")\n\n\n3. Streamlitダッシュボード\n# Delta Lakeからの読み取りとリアルタイム表示\nimport streamlit as st\nfrom delta import DeltaTable\n\nst.set_page_config(page_title=\"Clickstream Analytics\", layout=\"wide\")\n\n# 設定可能な自動更新（1-30秒）\nrefresh_interval = st.sidebar.slider(\"更新間隔\", 1, 30, 5)\n\n# リアルタイムメトリクス\ncol1, col2, col3, col4 = st.columns(4)\ncol1.metric(\"アクティブセッション\", get_active_sessions())\ncol2.metric(\"ユニークユーザー\", get_unique_users())\ncol3.metric(\"総収益\", format_currency(get_total_revenue()))\ncol4.metric(\"コンバージョン率\", f\"{get_conversion_rate():.1%}\")\n\n# コンバージョンファネル\nst.plotly_chart(create_funnel_chart())\n\n# 人気商品\nst.dataframe(get_top_products())"
+  },
+  {
+    "objectID": "portfolio/analysis/clickstream-analytics.html#リアルタイムメトリクス",
+    "href": "portfolio/analysis/clickstream-analytics.html#リアルタイムメトリクス",
+    "title": "リアルタイムクリックストリーム分析",
+    "section": "リアルタイムメトリクス",
+    "text": "リアルタイムメトリクス\n\n集計ウィンドウ\n\n1分：迅速な異常検出\n5分：短期トレンド\n1時間：概要\n\n\n\n計算されるKPI\n\n\n\n\n\n\n\nメトリクス\n説明\n\n\n\n\nアクティブセッション\n最後のウィンドウでアクティビティのあるセッション\n\n\nユニークユーザー\n個別のuser_idカウント\n\n\n総収益\n「purchase」イベントの価格合計\n\n\nファネル\nview → cart → purchase\n\n\n人気商品\n最も閲覧/購入された商品"
+  },
+  {
+    "objectID": "portfolio/analysis/clickstream-analytics.html#デモ",
+    "href": "portfolio/analysis/clickstream-analytics.html#デモ",
+    "title": "リアルタイムクリックストリーム分析",
+    "section": "デモ",
+    "text": "デモ\nダッシュボードはオンラインにデプロイされていません（Kafka/Sparkインフラが必要）が、Docker Composeを使用してローカルで完全に再現可能です。\n\n前提条件\n\nDocker & Docker Compose\n4-5 GB の利用可能なRAM\n2-3 CPUコア\n\n\n\n起動\n# インフラを起動\ndocker-compose up -d\n\n# プロデューサーを起動\npython src/producer.py\n\n# Sparkコンシューマーを起動\nspark-submit src/consumer.py\n\n# ダッシュボードを起動\nstreamlit run src/dashboard.py"
+  },
+  {
+    "objectID": "portfolio/analysis/clickstream-analytics.html#テクノロジー",
+    "href": "portfolio/analysis/clickstream-analytics.html#テクノロジー",
+    "title": "リアルタイムクリックストリーム分析",
+    "section": "テクノロジー",
+    "text": "テクノロジー\n\n\n\nコンポーネント\nテクノロジー\nバージョン\n\n\n\n\nメッセージブローカー\nApache Kafka\n2.8\n\n\n調整\nZookeeper\n3.7\n\n\nストリーム処理\nPySpark\n3.5.0\n\n\nストレージ\nDelta Lake\n3.1.0\n\n\nダッシュボード\nStreamlit\n-\n\n\nオーケストレーション\nDocker Compose\n-"
+  },
+  {
+    "objectID": "portfolio/analysis/clickstream-analytics.html#プロジェクト構造",
+    "href": "portfolio/analysis/clickstream-analytics.html#プロジェクト構造",
+    "title": "リアルタイムクリックストリーム分析",
+    "section": "プロジェクト構造",
+    "text": "プロジェクト構造\nrealtime-clickstream-analytics/\n├── docker-compose.yml       # インフラ\n├── src/\n│   ├── producer.py          # Kafkaプロデューサー\n│   ├── consumer.py          # Sparkストリーミング\n│   └── dashboard.py         # Streamlitダッシュボード\n├── data/\n│   └── raw/                 # ソースCSVファイル\n├── config/\n│   └── config.yaml          # 設定\n└── README.md"
+  },
+  {
+    "objectID": "portfolio/analysis/clickstream-analytics.html#学び",
+    "href": "portfolio/analysis/clickstream-analytics.html#学び",
+    "title": "リアルタイムクリックストリーム分析",
+    "section": "学び",
+    "text": "学び\nこのプロジェクトで以下をマスターできました：\n\nストリーミングアーキテクチャ：リアルタイム処理パターンの理解\nApache Kafka：大規模なメッセージ取り込みと配信\nSpark Structured Streaming：ウォーターマークとウィンドウを使用した集計\nDelta Lake：ストリーミング用トランザクションストレージ\nDocker Compose：マルチサービスオーケストレーション\n\n\n← ポートフォリオ分析に戻る"
+  },
+  {
+    "objectID": "portfolio/index.html#データサイエンスマーケティングアナリティクスプロジェクト",
+    "href": "portfolio/index.html#データサイエンスマーケティングアナリティクスプロジェクト",
+    "title": "ポートフォリオ",
+    "section": "データサイエンス＆マーケティングアナリティクスプロジェクト",
+    "text": "データサイエンス＆マーケティングアナリティクスプロジェクト\nデータ分析、機械学習、データエンジニアリングの専門知識を示すプロジェクト集。"
+  },
+  {
+    "objectID": "portfolio/index.html#カテゴリー",
+    "href": "portfolio/index.html#カテゴリー",
+    "title": "ポートフォリオ",
+    "section": "カテゴリー",
+    "text": "カテゴリー\n\n\nデータ分析\nマーケティングとEコマースデータからの探索、可視化、ビジネスインサイト。\n分析プロジェクトを見る →\n\n\n機械学習\n実際のユースケースに適用された予測モデル、因果推論、強化学習。\nMLプロジェクトを見る →\n\n\n可視化\n意思決定のためのインタラクティブなダッシュボードとデータ可視化。\n可視化を見る →"
+  },
+  {
+    "objectID": "portfolio/index.html#注目のプロジェクト",
+    "href": "portfolio/index.html#注目のプロジェクト",
+    "title": "ポートフォリオ",
+    "section": "注目のプロジェクト",
+    "text": "注目のプロジェクト\n\n\n\nマーケティングミックスモデリング（Robyn）\nビジネス課題：売上を最大化するためにマーケティング予算をどのように再配分すべきか？\nMetaのRobynフレームワークを使用して、各マーケティングチャネルの影響を測定し、予算配分を最適化。\nテクノロジー：R、Robyn、Prophet、Shiny\nプロジェクトを見る → | Shinyダッシュボード\n\n\n\n\n因果推論プラットフォーム\nビジネス課題：メールキャンペーンのコンバージョンへの実際の影響は？\nベイズ分析とCausal MLを用いた完全なA/Bテストプラットフォームで処置効果を測定。\nテクノロジー：Python、PyMC、CausalML、FastAPI、Streamlit\nプロジェクトを見る → | Streamlitダッシュボード\n\n\n\n\n\n\nマーケティングアナリティクスパイプライン\nビジネス課題：マーケティングチャネルのパフォーマンスをリアルタイムで追跡するには？\nBigQuery、dbt、Streamlitダッシュボードを使用した完全なETLパイプラインでマーケティングKPIを追跡。\nテクノロジー：Python、BigQuery、dbt、Streamlit\nプロジェクトを見る → | Streamlitダッシュボード\n\n\n\n\nダイナミックプライシングエンジン\nビジネス課題：需要に基づいてリアルタイムで価格を最適化するには？\n計量経済学から強化学習への進行によるダイナミックプライシング（Uber/Lyftケース）。\nテクノロジー：Python、PyMC、Q-Learning、Streamlit\nプロジェクトを見る →"
+  },
+  {
+    "objectID": "portfolio/index.html#類似のプロジェクトはありますか",
+    "href": "portfolio/index.html#類似のプロジェクトはありますか",
+    "title": "ポートフォリオ",
+    "section": "類似のプロジェクトはありますか？",
+    "text": "類似のプロジェクトはありますか？\nニーズについて話し合い、これらのアプローチがお客様のコンテキストにどのように適用できるかをご相談させてください。\nお問い合わせ LinkedIn"
+  },
+  {
+    "objectID": "portfolio/ml/causal-inference.html",
+    "href": "portfolio/ml/causal-inference.html",
+    "title": "A/Bテストのための因果推論プラットフォーム",
     "section": "",
-    "text": "このサイトについて"
+    "text": "ビジネス課題：メールキャンペーンのコンバージョンへの実際の影響は？\n\n従来のA/Bテストは「違いがあるか？」に答えます。しかし意思決定者はより微妙な答えを必要としています：\n\nメールAがBより良い確率は？\n介入が最も効果的な顧客セグメントは？\n単なる相関ではなく、介入の因果効果は？\n\nこのプロジェクトでは、これらの質問に答える完全な因果推論プラットフォームを実装します。"
+  },
+  {
+    "objectID": "portfolio/ml/causal-inference.html#背景と課題",
+    "href": "portfolio/ml/causal-inference.html#背景と課題",
+    "title": "A/Bテストのための因果推論プラットフォーム",
+    "section": "",
+    "text": "ビジネス課題：メールキャンペーンのコンバージョンへの実際の影響は？\n\n従来のA/Bテストは「違いがあるか？」に答えます。しかし意思決定者はより微妙な答えを必要としています：\n\nメールAがBより良い確率は？\n介入が最も効果的な顧客セグメントは？\n単なる相関ではなく、介入の因果効果は？\n\nこのプロジェクトでは、これらの質問に答える完全な因果推論プラットフォームを実装します。"
+  },
+  {
+    "objectID": "portfolio/ml/causal-inference.html#データセット",
+    "href": "portfolio/ml/causal-inference.html#データセット",
+    "title": "A/Bテストのための因果推論プラットフォーム",
+    "section": "データセット",
+    "text": "データセット\nHillstrom Email Marketingデータセット（マーケティング分析の定番）：\n\n64,000人のEコマース顧客\n3グループ：Mens E-Mail、Womens E-Mail、No E-Mail（コントロール）\nメトリクス：訪問（はい/いいえ）、コンバージョン（はい/いいえ）、支出額"
+  },
+  {
+    "objectID": "portfolio/ml/causal-inference.html#アプローチと方法論",
+    "href": "portfolio/ml/causal-inference.html#アプローチと方法論",
+    "title": "A/Bテストのための因果推論プラットフォーム",
+    "section": "アプローチと方法論",
+    "text": "アプローチと方法論\n\n1. ベイズA/Bテスト分析\n単純な有意性検定（p値）ではなく、ベイズアプローチは以下を提供：\n\nリフトの95%信用区間\n処置が優れている確率（P(Best)）\n効果の完全な分布\n\n\n\n2. Causal ML - 異質性効果（CATE）\n平均効果はセグメント間の重要な変動を隠すことが多い。条件付き平均処置効果（CATE）は、介入に最もよく反応する人を特定します。\n解釈のためにSHAPを使用したX-Learnerを使用。\n\n\n3. 推薦API\n顧客特徴に基づいてリアルタイム推薦を提供するFastAPI。"
+  },
+  {
+    "objectID": "portfolio/ml/causal-inference.html#主要な結果",
+    "href": "portfolio/ml/causal-inference.html#主要な結果",
+    "title": "A/Bテストのための因果推論プラットフォーム",
+    "section": "主要な結果",
+    "text": "主要な結果\n\nベイズ分析\n\n\n\nグループ\nコンバージョン率\nコントロール比リフト\nP(Best)\n\n\n\n\nコントロール\n約5.0%\n-\n0.00\n\n\nMens E-Mail\n約5.8%\n+16%\n0.92\n\n\nWomens E-Mail\n約5.4%\n+8%\n0.78\n\n\n\n\n\n異質性効果\n「Mens」メールから最も恩恵を受ける顧客：\n\n購入履歴が多い（履歴 &gt; $200）\n最近の購入者（recency &lt; 6ヶ月）\nすでに「mens」顧客（このカテゴリでの過去の購入）\n\n\n\nビジネス推奨\n\n履歴が多い顧客をメールで優先的にターゲット\n購入履歴に基づいてMens vs Womensをパーソナライズ\n新規顧客へのメール送信を避ける（効果がほぼない）"
+  },
+  {
+    "objectID": "portfolio/ml/causal-inference.html#デモ",
+    "href": "portfolio/ml/causal-inference.html#デモ",
+    "title": "A/Bテストのための因果推論プラットフォーム",
+    "section": "デモ",
+    "text": "デモ\n Streamlitダッシュボードを見る"
+  },
+  {
+    "objectID": "portfolio/ml/causal-inference.html#テクノロジー",
+    "href": "portfolio/ml/causal-inference.html#テクノロジー",
+    "title": "A/Bテストのための因果推論プラットフォーム",
+    "section": "テクノロジー",
+    "text": "テクノロジー\n\n\n\nコンポーネント\nテクノロジー\n\n\n\n\nベイズモデリング\nPyMC、ArviZ\n\n\nCausal ML\nCausalML (X-Learner)\n\n\n解釈可能性\nSHAP\n\n\nAPI\nFastAPI、Pydantic、Uvicorn\n\n\nダッシュボード\nStreamlit"
+  },
+  {
+    "objectID": "portfolio/ml/causal-inference.html#学び",
+    "href": "portfolio/ml/causal-inference.html#学び",
+    "title": "A/Bテストのための因果推論プラットフォーム",
+    "section": "学び",
+    "text": "学び\n\nベイズ推論：点ではなく分布で考える\n因果推論：相関と因果の違い\nCausal ML：X-Learnerで異質性効果を推定\nデプロイ：API経由でMLモデルを提供\n\n\n← ポートフォリオMLに戻る | ダッシュボードを見る"
+  },
+  {
+    "objectID": "portfolio/ml/index.html#予測モデル因果推論強化学習",
+    "href": "portfolio/ml/index.html#予測モデル因果推論強化学習",
+    "title": "ポートフォリオ - 機械学習",
+    "section": "予測モデル、因果推論、強化学習",
+    "text": "予測モデル、因果推論、強化学習\n古典的な統計モデルから強化学習まで、ビジネス価値を生み出すプロジェクト。"
+  },
+  {
+    "objectID": "portfolio/ml/index.html#プロジェクト",
+    "href": "portfolio/ml/index.html#プロジェクト",
+    "title": "ポートフォリオ - 機械学習",
+    "section": "プロジェクト",
+    "text": "プロジェクト\n\n\n\nA/Bテストのための因果推論プラットフォーム\n課題：メールキャンペーンのコンバージョンへの実際の影響は？\nベイズ分析とCausal MLを組み合わせた完全なA/Bテストプラットフォームで、単純な相関を超えてマーケティング介入の因果的影響を測定。\nアプローチ：\n\nベイズ分析：PyMCを使用した解釈可能な結果（最良である確率）\nCausal ML：X-Learnerを使用した異質性効果（CATE）の推定\nFastAPI：リアルタイム推薦\nStreamlitダッシュボード：結果の探索\n\n結果：64,000人のEコマース顧客で、「Mens」メールで+16%のリフト、「Womens」で+8%を特定。\nテクノロジー：Python、PyMC、CausalML、SHAP、FastAPI、Streamlit\n詳細を見る → | Streamlitダッシュボード\n\n\n\n\n\n\nダイナミックプライシングエンジン\n課題：コンテキストと需要に基づいてリアルタイムで価格を最適化するには？\nUberとLyftが使用するサージプライシング戦略を探索するプロジェクトで、計量経済学から強化学習への方法論的進行。\n段階的アプローチ：\n\nEDA＆ストーリーテリング：データセット探索とビジネスナラティブ\nベイズ価格弾力性：PyMCを使用した計量経済モデル\nコンテキストバンディット：探索/活用のためのトンプソンサンプリング\nQ学習：完全な強化学習エージェント\n\nデータセット：約70万件のUber＆Lyft乗車（ボストン、2018年11月）\nテクノロジー：Python、PyMC、ArviZ、scikit-learn、Streamlit\n詳細を見る →\n\n\n\n\n\n\nPenguin Explorer - フルスタックMLデモ\n課題：モダンなアーキテクチャでMLモデルをエンドツーエンドでデプロイするには？\nトレーニングからデプロイまで、APIとフロントエンドを通じて、RとPythonの統合を含む完全なMLアーキテクチャのデモプロジェクト。\nアーキテクチャ：\nDuckDB → scikit-learn → Vetiver → FastAPI → Shiny (Python & R)\nハイライト：\n\nVetiverとpinsを使用したモデルレジストリ\nOpenAPIドキュメント付きの自動生成REST API\nデュアルフロントエンド：Shiny PythonとShiny R\nGitHub ActionsによるCI/CD\nDocker Composeによる完全なコンテナ化\n\nテクノロジー：Python、R、scikit-learn、Vetiver、FastAPI、Shiny、Docker、GitHub Actions\n詳細を見る → | GitHub\n\n\n\n\n\n\n住宅価格予測 - ハーバード修了証\n課題：特性からアイオワ州の住宅販売価格を予測する。\nハーバードデータサイエンス修了証の最終プロジェクトで、多くの回帰アプローチを探索し比較。\nテストされたモデル：\n\n線形回帰（ベースライン）\nランダムフォレスト\nXGBoost\nGAM（一般化加法モデル）\nニューラルネットワーク\nアンサンブル（最良モデルの組み合わせ）\n\n結果：体系的なパフォーマンス比較と最も重要な特徴量の特定。\nテクノロジー：R、RMarkdown、caret、xgboost、randomForest\n詳細を見る →\n\n\n\n\n← ポートフォリオに戻る | 分析プロジェクトを見る →"
+  },
+  {
+    "objectID": "portfolio/viz/index.html#インタラクティブダッシュボードデータストーリーテリング",
+    "href": "portfolio/viz/index.html#インタラクティブダッシュボードデータストーリーテリング",
+    "title": "ポートフォリオ - 可視化",
+    "section": "インタラクティブダッシュボード＆データストーリーテリング",
+    "text": "インタラクティブダッシュボード＆データストーリーテリング\n複雑なデータを実用的なインサイトに変換する可視化。"
+  },
+  {
+    "objectID": "portfolio/viz/index.html#本番ダッシュボード",
+    "href": "portfolio/viz/index.html#本番ダッシュボード",
+    "title": "ポートフォリオ - 可視化",
+    "section": "本番ダッシュボード",
+    "text": "本番ダッシュボード\n\n\n\nマーケティングミックスモデリングダッシュボード\nフレームワーク：Shiny（R）\nマーケティングミックスモデリングの結果を可視化し、予算配分シナリオをシミュレートするインタラクティブダッシュボード。\n機能：\n\nチャネル別売上分解\nレスポンス曲線と飽和曲線\n予算シミュレーター\nチャネル別ROI比較\n\n ダッシュボードを見る \n\n\n\n\n因果推論プラットフォーム\nフレームワーク：Streamlit（Python）\nベイズ分析と異質性効果を用いたA/Bテスト結果を探索するプラットフォーム。\n機能：\n\nインタラクティブな事後分布\nセグメント別CATE可視化\n推薦APIインターフェース\nSHAP説明\n\n ダッシュボードを見る \n\n\n\n\n\n\nマーケティングアナリティクスダッシュボード\nフレームワーク：Streamlit（Python）\nBigQueryからのリアルタイムデータでマルチチャネルマーケティングKPIを追跡するダッシュボード。\n機能：\n\nグローバルKPI（支出、収益、ROAS）\n時系列トレンド\nチャネル別パフォーマンス\nコンバージョンファネル\n\n ダッシュボードを見る \n\n\n\n\nクリックストリーム分析（ローカル）\nフレームワーク：Streamlit + Plotly\nストリーミングデータを使用したEコマース行動分析のためのリアルタイムダッシュボード。\n機能：\n\nリアルタイムメトリクス\nインタラクティブファネル\n人気商品\n設定可能な自動更新\n\nDockerでローカル利用可能\nプロジェクトを見る →"
+  },
+  {
+    "objectID": "portfolio/viz/index.html#可視化テクノロジー",
+    "href": "portfolio/viz/index.html#可視化テクノロジー",
+    "title": "ポートフォリオ - 可視化",
+    "section": "可視化テクノロジー",
+    "text": "可視化テクノロジー\n\n\nStreamlit\nインタラクティブなデータアプリケーションを素早く作成するPythonフレームワーク。\n使用プロジェクト：\n\n因果推論\nマーケティングパイプライン\nクリックストリーム分析\n\n\n\nShiny\n高度な統計ダッシュボードのためのR（およびPython）フレームワーク。\n使用プロジェクト：\n\nMMM Robyn\nPenguin Explorer\n\n\n\nPlotly\nPythonとR用のインタラクティブチャートライブラリ。\nチャートタイプ：\n\n散布図\n時系列\nファネルチャート\nヒートマップ\n\n\n\nQuarto\nレポートとウェブサイトを作成するための科学出版システム。\n使用用途：\n\nこのポートフォリオサイト\nプロジェクトドキュメント\n分析レポート"
+  },
+  {
+    "objectID": "portfolio/viz/index.html#可視化タイプ",
+    "href": "portfolio/viz/index.html#可視化タイプ",
+    "title": "ポートフォリオ - 可視化",
+    "section": "可視化タイプ",
+    "text": "可視化タイプ\n\nマーケティング分析\n\n売上分解：各チャネルの貢献を示すウォーターフォールチャート\nレスポンス曲線：収穫逓減の可視化\n予算ヒートマップ：最適配分マトリクス\n\n\n\n時系列\n\nトレンド：時間経過によるKPIの変化\n季節性：週次/年次パターン\n異常：視覚的な外れ値検出\n\n\n\n機械学習\n\nSHAPプロット：変数重要度とローカル説明\n事後分布：ベイズ不確実性の可視化\nコンバージョンファネル：ユーザージャーニーのサンキーダイアグラム\n\n\n\nベイズ統計\n\nトレースプロット：MCMC収束\nフォレストプロット：信用区間\n事後予測チェック：モデル検証"
+  },
+  {
+    "objectID": "portfolio/viz/index.html#デザイン原則",
+    "href": "portfolio/viz/index.html#デザイン原則",
+    "title": "ポートフォリオ - 可視化",
+    "section": "デザイン原則",
+    "text": "デザイン原則\n私の可視化は以下の原則に従います：\n\n明確さ：1つのチャート = 1つのメッセージ\nコンテキスト：常に関連する比較を表示\nインタラクティビティ：過負荷なしで探索を可能に\nアクセシビリティ：すべての人に適したカラーパレット\n再現性：各可視化のコードを利用可能\n\n\n← ポートフォリオに戻る | 分析プロジェクトを見る →"
   },
   {
     "objectID": "blog/posts/index.html",
@@ -49,18 +231,326 @@
     "text": "ブログ/投稿\nコンテンツはこれから…"
   },
   {
-    "objectID": "portfolio/viz/index.html",
-    "href": "portfolio/viz/index.html",
-    "title": "ポートフォリオ/ヴィズ",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "について",
     "section": "",
-    "text": "ポートフォリオ／ヴィズ\nコンテンツはこれから…"
+    "text": "このサイトについて"
   },
   {
-    "objectID": "portfolio/index.html",
-    "href": "portfolio/index.html",
-    "title": "ポートフォリオ",
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "ブログ",
     "section": "",
-    "text": "ポートフォリオ\nコンテンツはこれから…"
+    "text": "ブログ\nコンテンツはこれから…"
+  },
+  {
+    "objectID": "services/index.html#データを競争優位性に変えるカスタムソリューション",
+    "href": "services/index.html#データを競争優位性に変えるカスタムソリューション",
+    "title": "サービス",
+    "section": "データを競争優位性に変えるカスタムソリューション",
+    "text": "データを競争優位性に変えるカスタムソリューション\n探索的分析から本番モデルのデプロイまで、データジャーニーのあらゆる段階でサポートします。\n実績を見る お問い合わせ"
+  },
+  {
+    "objectID": "services/index.html#提供できる価値",
+    "href": "services/index.html#提供できる価値",
+    "title": "サービス",
+    "section": "提供できる価値",
+    "text": "提供できる価値\n\n\nマーケティングアナリティクス\n信頼性の高いデータでマーケティング投資を最適化\n\nマーケティングミックスモデリング（MMM）：各チャネルの売上への実際の影響を測定し、予算配分を最適化\nマルチタッチアトリビューション：完全なカスタマージャーニーを理解し、各タッチポイントを評価\nキャンペーン分析：実用的なKPI（ROAS、CPA、LTV）でキャンペーンパフォーマンスを評価\n顧客セグメンテーション：最も収益性の高いセグメントを特定し、アクションをパーソナライズ\n\nテクノロジー：R（Robyn、Prophet）、Python、BigQuery、Looker Studio\nMMMプロジェクトを見る →\n\n\nデータエンジニアリング\nモダンでスケーラブルなデータインフラストラクチャを構築\n\nETL/ELTパイプライン：データの抽出、変換、ロードを自動化\nデータウェアハウジング：最適化されたクラウドアーキテクチャを設計（BigQuery、Snowflake）\ndbt変換：バージョン管理され、テストされ、文書化された変換を実装\nストリーミングアナリティクス：KafkaとSparkでリアルタイムデータを処理\n\nテクノロジー：dbt、BigQuery、Airflow、Kafka、Spark、Delta Lake、Docker\nパイプラインプロジェクトを見る →\n\n\n\n\n実験とA/Bテスト\n直感ではなく、証拠に基づいた意思決定を\n\n実験設計：適切な検出力計算を用いた統計的に堅牢なテストを設計\nベイズ分析：信用区間を用いた解釈可能な結果を取得\n因果推論：相関を超えて、アクションの実際の影響を測定\n異質性効果（CATE）：介入に最もよく反応するセグメントを特定\n\nテクノロジー：PyMC、CausalML、DoWhy、statsmodels、ArviZ\n因果推論プロジェクトを見る →\n\n\n応用機械学習\nビジネス価値を生み出すモデルをデプロイ\n\n予測モデル：解釈可能なモデルでチャーン、需要、売上を予測\nダイナミックプライシング：コンテキストと需要に基づいてリアルタイムで価格を最適化\nレコメンデーション：レコメンデーションシステムで顧客体験をパーソナライズ\nMLOps：本番モデルをデプロイし監視（Vetiver、FastAPI、Docker）\n\nテクノロジー：scikit-learn、XGBoost、PyTorch、Vetiver、FastAPI、MLflow\nダイナミックプライシングプロジェクトを見る →"
+  },
+  {
+    "objectID": "services/index.html#仕事の進め方",
+    "href": "services/index.html#仕事の進め方",
+    "title": "サービス",
+    "section": "仕事の進め方",
+    "text": "仕事の進め方\n\n\n1. 発見\nビジネス目標を一緒に定義し、利用可能なデータと技術的制約を特定します。お客様のコンテキストに適したアプローチを提案します。\n\n\n2. 開発\n定期的なチェックポイントで方向性を検証しながら、反復的にソリューションを開発します。進捗を完全に把握できます。\n\n\n3. 納品\n文書化され、テストされ、すぐに使用できるソリューションを納品します。立ち上げをサポートし、その後のサポートにも対応します。"
+  },
+  {
+    "objectID": "services/index.html#技術スタック",
+    "href": "services/index.html#技術スタック",
+    "title": "サービス",
+    "section": "技術スタック",
+    "text": "技術スタック\n\n\n言語\n\nPython\nR\nSQL\n\n\n\nデータエンジニアリング\n\ndbt\nBigQuery\nKafka\nSpark\nAirflow\n\n\n\n機械学習\n\nscikit-learn\nPyMC\nXGBoost\nCausalML\nRobyn\n\n\n\n可視化＆デプロイ\n\nStreamlit\nShiny\nPlotly\nDocker\nFastAPI"
+  },
+  {
+    "objectID": "services/index.html#プロジェクトについて相談しましょう",
+    "href": "services/index.html#プロジェクトについて相談しましょう",
+    "title": "サービス",
+    "section": "プロジェクトについて相談しましょう",
+    "text": "プロジェクトについて相談しましょう\nすべてのプロジェクトはユニークです。ニーズについて話し合い、目標達成をどのようにサポートできるかご相談ください。\nお問い合わせ LinkedIn"
+  },
+  {
+    "objectID": "portfolio/ml/penguin-explorer.html",
+    "href": "portfolio/ml/penguin-explorer.html",
+    "title": "Penguin Explorer - フルスタックMLデモ",
+    "section": "",
+    "text": "技術的課題：モダンなアーキテクチャでMLモデルをエンドツーエンドでデプロイするには？\n\nこのプロジェクトでは、有名なPalmer Penguinsデータセットを使用した完全なMLアーキテクチャを実演します。目標はモデル自体（単純な線形回帰）ではなく、デプロイインフラストラクチャです。"
+  },
+  {
+    "objectID": "portfolio/ml/penguin-explorer.html#背景と課題",
+    "href": "portfolio/ml/penguin-explorer.html#背景と課題",
+    "title": "Penguin Explorer - フルスタックMLデモ",
+    "section": "",
+    "text": "技術的課題：モダンなアーキテクチャでMLモデルをエンドツーエンドでデプロイするには？\n\nこのプロジェクトでは、有名なPalmer Penguinsデータセットを使用した完全なMLアーキテクチャを実演します。目標はモデル自体（単純な線形回帰）ではなく、デプロイインフラストラクチャです。"
+  },
+  {
+    "objectID": "portfolio/ml/penguin-explorer.html#アーキテクチャ",
+    "href": "portfolio/ml/penguin-explorer.html#アーキテクチャ",
+    "title": "Penguin Explorer - フルスタックMLデモ",
+    "section": "アーキテクチャ",
+    "text": "アーキテクチャ\n┌─────────────┐     ┌─────────────┐     ┌─────────────┐\n│   DuckDB    │────▶│  scikit-    │────▶│   Vetiver   │\n│  (データ)   │     │   learn     │     │ (レジストリ) │\n└─────────────┘     └─────────────┘     └─────────────┘\n                                               │\n                         ┌─────────────────────┼─────────────────────┐\n                         ▼                     ▼                     ▼\n                  ┌─────────────┐     ┌─────────────┐     ┌─────────────┐\n                  │   FastAPI   │     │   Shiny     │     │   Shiny     │\n                  │    (API)    │     │  (Python)   │     │    (R)      │\n                  └─────────────┘     └─────────────┘     └─────────────┘\n\nアーキテクチャのハイライト\n\nVetiverとpinsによるモデルレジストリ（バージョン管理）\nOpenAPIドキュメント付きの自動生成API\nデュアルフロントエンド：Shiny PythonとShiny R\nDocker Composeによる完全なコンテナ化\nGitHub ActionsによるCI/CD"
+  },
+  {
+    "objectID": "portfolio/ml/penguin-explorer.html#実装",
+    "href": "portfolio/ml/penguin-explorer.html#実装",
+    "title": "Penguin Explorer - フルスタックMLデモ",
+    "section": "実装",
+    "text": "実装\n\nモデルトレーニング＆レジストリ\nVetiverを使用してAPIを自動生成するバージョン管理されたモデルを作成。\n\n\nDocker Composeデプロイメント\n3つのサービスをデプロイ： - API（Vetiver経由のFastAPI）：http://localhost:8080/docs - フロントエンドPython（Shiny）：http://localhost:8000 - フロントエンドR（Shiny）：http://localhost:3838\n\n\nGitHub ActionsによるCI/CD\nmainブランチへのプッシュ時に自動デプロイ、gh-pagesへのドキュメント公開。"
+  },
+  {
+    "objectID": "portfolio/ml/penguin-explorer.html#テクノロジー",
+    "href": "portfolio/ml/penguin-explorer.html#テクノロジー",
+    "title": "Penguin Explorer - フルスタックMLデモ",
+    "section": "テクノロジー",
+    "text": "テクノロジー\n\n\n\nコンポーネント\nテクノロジー\n\n\n\n\nデータ\nDuckDB、palmerpenguins\n\n\nML\nscikit-learn\n\n\nモデルレジストリ\nVetiver、pins\n\n\nAPI\nFastAPI、Uvicorn\n\n\nフロントエンドPython\nShiny for Python\n\n\nフロントエンドR\nShiny\n\n\nコンテナ化\nDocker、Docker Compose\n\n\nCI/CD\nGitHub Actions\n\n\nドキュメント\nQuarto"
+  },
+  {
+    "objectID": "portfolio/ml/penguin-explorer.html#学び",
+    "href": "portfolio/ml/penguin-explorer.html#学び",
+    "title": "Penguin Explorer - フルスタックMLデモ",
+    "section": "学び",
+    "text": "学び\nこのプロジェクトはMLOpsのベストプラクティスを示しています：\n\n関心の分離：モデル、API、フロントエンドを分離\nモデルレジストリ：Vetiverによるモデルバージョン管理\nAPIファースト：標準APIを通じてモデルを公開\nマルチ言語：RとPythonが調和して共存\nコンテナ化：Dockerによる再現可能な環境\nCI/CD：GitHub Actionsによる自動デプロイ\n\n\n← ポートフォリオMLに戻る | GitHub"
+  },
+  {
+    "objectID": "portfolio/ml/house-prices.html",
+    "href": "portfolio/ml/house-prices.html",
+    "title": "住宅価格予測 - ハーバード修了証",
+    "section": "",
+    "text": "課題：特性からアイオワ州の住宅販売価格を予測する。\n\nこのプロジェクトはハーバードデータサイエンス修了証（HarvardX）の最終評価です。多くの回帰アプローチを比較できる定番のKaggleチャレンジです。"
+  },
+  {
+    "objectID": "portfolio/ml/house-prices.html#背景と課題",
+    "href": "portfolio/ml/house-prices.html#背景と課題",
+    "title": "住宅価格予測 - ハーバード修了証",
+    "section": "",
+    "text": "課題：特性からアイオワ州の住宅販売価格を予測する。\n\nこのプロジェクトはハーバードデータサイエンス修了証（HarvardX）の最終評価です。多くの回帰アプローチを比較できる定番のKaggleチャレンジです。"
+  },
+  {
+    "objectID": "portfolio/ml/house-prices.html#データセット",
+    "href": "portfolio/ml/house-prices.html#データセット",
+    "title": "住宅価格予測 - ハーバード修了証",
+    "section": "データセット",
+    "text": "データセット\nAmes Housingデータセット：\n\nアイオワ州（米国）の約1,500軒\n79の特徴量\nターゲット：SalePrice（販売価格 $）\n\n\n主要な変数\n\n\n\nカテゴリ\n変数\n\n\n\n\n面積\nGrLivArea、TotalBsmtSF、GarageArea\n\n\n品質\nOverallQual、OverallCond、ExterQual\n\n\n場所\nNeighborhood、MSZoning\n\n\n築年数\nYearBuilt、YearRemodAdd\n\n\n設備\nFullBath、BedroomAbvGr、Fireplaces"
+  },
+  {
+    "objectID": "portfolio/ml/house-prices.html#方法論",
+    "href": "portfolio/ml/house-prices.html#方法論",
+    "title": "住宅価格予測 - ハーバード修了証",
+    "section": "方法論",
+    "text": "方法論\n\nテストされたモデル\n\n線形回帰（ベースライン）\nランダムフォレスト\nXGBoost\nGAM（一般化加法モデル）\nニューラルネットワーク\nアンサンブル（最良モデルの組み合わせ）"
+  },
+  {
+    "objectID": "portfolio/ml/house-prices.html#結果",
+    "href": "portfolio/ml/house-prices.html#結果",
+    "title": "住宅価格予測 - ハーバード修了証",
+    "section": "結果",
+    "text": "結果\n\nモデル比較\n\n\n\nモデル\nRMSE (CV)\nR²\nランク\n\n\n\n\n線形回帰\n34,521\n0.82\n6\n\n\nランダムフォレスト\n28,934\n0.87\n3\n\n\nXGBoost\n27,156\n0.89\n2\n\n\nGAM\n29,845\n0.86\n4\n\n\nニューラルネットワーク\n31,234\n0.84\n5\n\n\nアンサンブル\n26,012\n0.90\n1\n\n\n\n\n\n最も重要な変数\nXGBoostとランダムフォレスト分析より：\n\nOverallQual：全体的な住宅品質\nGrLivArea：地上居住面積\nTotalBsmtSF：地下室面積\nGarageCars：ガレージ容量\nYearBuilt：建築年\nNeighborhood：エリア\nTotalBath：バスルーム数"
+  },
+  {
+    "objectID": "portfolio/ml/house-prices.html#テクノロジー",
+    "href": "portfolio/ml/house-prices.html#テクノロジー",
+    "title": "住宅価格予測 - ハーバード修了証",
+    "section": "テクノロジー",
+    "text": "テクノロジー\n\n\n\nコンポーネント\nテクノロジー\n\n\n\n\n言語\nR\n\n\nデータラングリング\ntidyverse (dplyr、tidyr)\n\n\nMLフレームワーク\ncaret\n\n\nモデル\nlm、randomForest、xgboost、mgcv (GAM)、nnet\n\n\n可視化\nggplot2\n\n\nドキュメント\nRMarkdown"
+  },
+  {
+    "objectID": "portfolio/ml/house-prices.html#学び",
+    "href": "portfolio/ml/house-prices.html#学び",
+    "title": "住宅価格予測 - ハーバード修了証",
+    "section": "学び",
+    "text": "学び\nこの修了証プロジェクトで以下が可能になりました：\n\n完全なMLワークフローをマスター：EDAからKaggle提出まで\n厳密にモデルを比較：交差検証、複数のメトリクス\n特徴量エンジニアリングの重要性を理解：新しい変数がパフォーマンスを大幅に向上\nアンサンブルを発見：モデルの組み合わせが個別モデルを上回ることが多い\nRを深く練習：tidyverse、caret、xgboost、mgcv"
+  },
+  {
+    "objectID": "portfolio/ml/house-prices.html#修了証",
+    "href": "portfolio/ml/house-prices.html#修了証",
+    "title": "住宅価格予測 - ハーバード修了証",
+    "section": "修了証",
+    "text": "修了証\nこのプロジェクトはHarvardXのProfessional Certificate in Data Scienceの一部で、以下をカバー：\n\nR基礎、可視化、確率\n推論とモデリング\n生産性ツール、データラングリング\n線形回帰、機械学習\nキャップストーン（このプロジェクト）\n\n\n← ポートフォリオMLに戻る"
+  },
+  {
+    "objectID": "portfolio/ml/dynamic-pricing.html",
+    "href": "portfolio/ml/dynamic-pricing.html",
+    "title": "ダイナミックプライシングエンジン",
+    "section": "",
+    "text": "ビジネス課題：コンテキストと需要に基づいてリアルタイムで価格を最適化するには？\n\nUberとLyftが使用するサージプライシングは、データサイエンスが経済学と出会う魅力的なケースです。このプロジェクトでは、古典的な計量経済学から強化学習まで、さまざまなアプローチを段階的に探索します。"
+  },
+  {
+    "objectID": "portfolio/ml/dynamic-pricing.html#背景と課題",
+    "href": "portfolio/ml/dynamic-pricing.html#背景と課題",
+    "title": "ダイナミックプライシングエンジン",
+    "section": "",
+    "text": "ビジネス課題：コンテキストと需要に基づいてリアルタイムで価格を最適化するには？\n\nUberとLyftが使用するサージプライシングは、データサイエンスが経済学と出会う魅力的なケースです。このプロジェクトでは、古典的な計量経済学から強化学習まで、さまざまなアプローチを段階的に探索します。"
+  },
+  {
+    "objectID": "portfolio/ml/dynamic-pricing.html#データセット",
+    "href": "portfolio/ml/dynamic-pricing.html#データセット",
+    "title": "ダイナミックプライシングエンジン",
+    "section": "データセット",
+    "text": "データセット\nUber & Lyftデータセット（Kaggle）：\n\nボストンで約70万件の乗車\n期間：2018年11月\n変数：価格、距離、天候、時間、曜日、サージ乗数\n2社：UberとLyft（比較用）"
+  },
+  {
+    "objectID": "portfolio/ml/dynamic-pricing.html#段階的アプローチ",
+    "href": "portfolio/ml/dynamic-pricing.html#段階的アプローチ",
+    "title": "ダイナミックプライシングエンジン",
+    "section": "段階的アプローチ",
+    "text": "段階的アプローチ\nこのプロジェクトは方法論的複雑さが増す4つのノートブックで構成されています：\n\n1. EDA＆ストーリーテリング\n価格パターンを理解するためのデータ探索：\n\nピーク時間帯（午前8-9時、午後5-7時）に価格が高い\n天候（雨、雪）が価格を大幅に上昇させる\nLyftとUberは若干異なる価格戦略を持つ\n\n\n\n2. ベイズ価格弾力性\n価格の関数としての需要の計量経済モデリング：\n\n弾力性 ~ -0.8：価格10%上昇で需要8%減少\n需要は比較的非弾力的（絶対値 &lt; 1）\nこれがサージプライシングを経済的に正当化\n\n\n\n3. コンテキストバンディット（トンプソンサンプリング）\n探索/活用問題：収益を最大化しながら新しい価格をテストするには？\n探索と活用を自動的にバランスし、最適価格に収束し、コンテキスト変化に適応。\n\n\n4. 強化学習（Q学習）\n価格ポリシーを学習するエージェントによる完全なアプローチ：\n状態：（時間、曜日、天候、需要） 行動：価格レベル（0.8x、1.0x、1.2x、1.5x、2.0x） 報酬：収益 = 価格 × 購入確率"
+  },
+  {
+    "objectID": "portfolio/ml/dynamic-pricing.html#結果",
+    "href": "portfolio/ml/dynamic-pricing.html#結果",
+    "title": "ダイナミックプライシングエンジン",
+    "section": "結果",
+    "text": "結果\n\nアプローチの比較\n\n\n\nアプローチ\n利点\n欠点\n\n\n\n\n固定弾力性\nシンプル、解釈可能\nコンテキストを無視\n\n\nトンプソンサンプリング\n適応的、理論的に最適\n汎化なし\n\n\nQ学習\n完全なポリシーを学習\n大量のデータが必要\n\n\n\n\n\n学習されたポリシー\nQ学習エージェントは以下のポリシーを学習：\n\nピーク時に価格を上昇（サージ1.5x-2.0x）\n通常期間は価格を維持（1.0x）\n閑散期に需要を刺激するため若干低下（0.8x-1.0x）"
+  },
+  {
+    "objectID": "portfolio/ml/dynamic-pricing.html#テクノロジー",
+    "href": "portfolio/ml/dynamic-pricing.html#テクノロジー",
+    "title": "ダイナミックプライシングエンジン",
+    "section": "テクノロジー",
+    "text": "テクノロジー\n\n\n\nコンポーネント\nテクノロジー\n\n\n\n\nデータ処理\npandas、numpy\n\n\n可視化\nmatplotlib、seaborn、plotly\n\n\nベイズモデリング\nPyMC、ArviZ\n\n\n機械学習\nscikit-learn\n\n\nダッシュボード\nStreamlit"
+  },
+  {
+    "objectID": "portfolio/ml/dynamic-pricing.html#学び",
+    "href": "portfolio/ml/dynamic-pricing.html#学び",
+    "title": "ダイナミックプライシングエンジン",
+    "section": "学び",
+    "text": "学び\n\n価格の経済学：弾力性、消費者余剰、価格差別\nバンディットのマスター：探索/活用のトレードオフ\nRLの実装：Q学習、状態、行動、報酬\n方法論的進行：シンプルから複雑へ\n\n\n← ポートフォリオMLに戻る"
+  },
+  {
+    "objectID": "portfolio/analysis/mmm-robyn.html",
+    "href": "portfolio/analysis/mmm-robyn.html",
+    "title": "Robynを使用したマーケティングミックスモデリング",
+    "section": "",
+    "text": "ビジネス課題：CMOは売上を最大化するためにマーケティング予算をどのように再配分すべきか？\n\nマーケティング予算が厳しく精査され、アトリビューションがますます複雑になる状況（サードパーティCookieの廃止、チャネルの増加）において、マーケティングミックスモデリング（MMM）が再び注目を集めています。\nMMMにより以下が可能になります：\n\n各マーケティングチャネルの売上への増分インパクトを測定\n飽和効果（収穫逓減）を考慮\n残存効果（アドストック）をモデル化 - キャンペーンの効果が時間とともに持続する影響\nチャネル間の予算配分を最適化"
+  },
+  {
+    "objectID": "portfolio/analysis/mmm-robyn.html#背景と課題",
+    "href": "portfolio/analysis/mmm-robyn.html#背景と課題",
+    "title": "Robynを使用したマーケティングミックスモデリング",
+    "section": "",
+    "text": "ビジネス課題：CMOは売上を最大化するためにマーケティング予算をどのように再配分すべきか？\n\nマーケティング予算が厳しく精査され、アトリビューションがますます複雑になる状況（サードパーティCookieの廃止、チャネルの増加）において、マーケティングミックスモデリング（MMM）が再び注目を集めています。\nMMMにより以下が可能になります：\n\n各マーケティングチャネルの売上への増分インパクトを測定\n飽和効果（収穫逓減）を考慮\n残存効果（アドストック）をモデル化 - キャンペーンの効果が時間とともに持続する影響\nチャネル間の予算配分を最適化"
+  },
+  {
+    "objectID": "portfolio/analysis/mmm-robyn.html#アプローチと方法論",
+    "href": "portfolio/analysis/mmm-robyn.html#アプローチと方法論",
+    "title": "Robynを使用したマーケティングミックスモデリング",
+    "section": "アプローチと方法論",
+    "text": "アプローチと方法論\n\nRobynフレームワーク\nMeta（Facebook）が開発したオープンソースフレームワークRobynを使用しました。これは複数の高度な技術を組み合わせています：\n# Robynモデルアーキテクチャ\n# 1. Prophetによる時系列分解\n#    - トレンド\n#    - 季節性（週次、年次）\n#    - 祝日効果\n\n# 2. マーケティング変数の変換\n#    - 幾何アドストック: effect(t) = spend(t) + θ × effect(t-1)\n#    - ロジスティック飽和: response = α / (1 + exp(-β × spend))\n\n# 3. 過学習を防ぐリッジ回帰\n\n# 4. Nevergradによる多目的最適化\n#    - NRMSE（予測誤差）の最小化\n#    - DECOMP.RSSD（分解の一貫性）の最小化\n\n\n分析対象チャネル\n\nGoogle Ads：検索とディスプレイ\nFacebook Ads：ソーシャルとリマーケティング\nLinkedIn：B2B\nEmail：ニュースレターとプロモーション\nオーガニック：SEOと直接トラフィック\n\n\n\n完全なワークフロー\n生データ → 特徴量エンジニアリング → Robynトレーニング → モデル選択 → 予算最適化\n\nデータ収集：日次売上、チャネル別支出、コンテキスト変数\n特徴量エンジニアリング：季節性変数、特別イベントの作成\nトレーニング：アドストックと飽和パラメータのキャリブレーション\nモデル選択：パレート分析（NRMSE vs DECOMP.RSSD）\n最適化：予算配分シナリオのシミュレーション"
+  },
+  {
+    "objectID": "portfolio/analysis/mmm-robyn.html#主要な結果",
+    "href": "portfolio/analysis/mmm-robyn.html#主要な結果",
+    "title": "Robynを使用したマーケティングミックスモデリング",
+    "section": "主要な結果",
+    "text": "主要な結果\n\n売上分解\nモデルは売上を以下に分解します：\n\nベースライン：マーケティングなしの「自然な」売上（約60%）\nチャネル貢献：各投資の増分インパクト\n季節性：カレンダー関連の変動\n\n\n\nレスポンス曲線\n各チャネルは異なるレスポンス曲線を持ち、収穫逓減を示します：\n\nGoogle Ads：初期ROIが高く、急速に飽和\nFacebook：より線形的な曲線、飽和が少ない\nEmail：優れたROIだが容量が限られる\n\n\n\n最適化の推奨事項\nダッシュボードでは異なるシナリオをシミュレートできます：\n\n現状シナリオ：過去の配分\n最適化シナリオ：投資不足のチャネルへの再配分\n制約シナリオ：固定予算での最適化"
+  },
+  {
+    "objectID": "portfolio/analysis/mmm-robyn.html#デモ",
+    "href": "portfolio/analysis/mmm-robyn.html#デモ",
+    "title": "Robynを使用したマーケティングミックスモデリング",
+    "section": "デモ",
+    "text": "デモ\n Shinyダッシュボードを見る \nインタラクティブダッシュボードでは以下が可能です：\n\n売上分解の可視化\nチャネル別レスポンス曲線の探索\n配分シナリオのシミュレーション\n限界ROIの比較"
+  },
+  {
+    "objectID": "portfolio/analysis/mmm-robyn.html#テクノロジー",
+    "href": "portfolio/analysis/mmm-robyn.html#テクノロジー",
+    "title": "Robynを使用したマーケティングミックスモデリング",
+    "section": "テクノロジー",
+    "text": "テクノロジー\n\n\n\nコンポーネント\nテクノロジー\n\n\n\n\n言語\nR\n\n\nMMMフレームワーク\nRobyn (Meta)\n\n\n時系列分解\nProphet\n\n\n最適化\nNevergrad\n\n\nダッシュボード\nShiny\n\n\n環境管理\nrenv"
+  },
+  {
+    "objectID": "portfolio/analysis/mmm-robyn.html#ソースコード",
+    "href": "portfolio/analysis/mmm-robyn.html#ソースコード",
+    "title": "Robynを使用したマーケティングミックスモデリング",
+    "section": "ソースコード",
+    "text": "ソースコード\nプロジェクトは複数のコンポーネントで構成されています：\nmmm-robyn-project/\n├── R/\n│   ├── 01_data_preparation.R    # データ準備\n│   ├── 02_robyn_training.R      # モデルトレーニング\n│   ├── 03_model_selection.R     # パレート選択\n│   └── 04_optimization.R        # 予算最適化\n├── app/\n│   └── app.R                    # Shinyダッシュボード\n├── data/\n│   └── marketing_data.csv       # 入力データ\n└── outputs/\n    ├── exploration/             # EDA可視化\n    ├── robyn/                   # モデル結果\n    └── optimization/            # 最適化シナリオ"
+  },
+  {
+    "objectID": "portfolio/analysis/mmm-robyn.html#学び",
+    "href": "portfolio/analysis/mmm-robyn.html#学び",
+    "title": "Robynを使用したマーケティングミックスモデリング",
+    "section": "学び",
+    "text": "学び\nこのプロジェクトで以下を深く理解できました：\n\nマーケティングモデリング：アドストックと飽和効果の理解\n多目的最適化：精度と解釈可能性の適切なバランスを見つける\n結果のコミュニケーション：複雑なモデルを実用的な推奨事項に翻訳\n\n\n← ポートフォリオ分析に戻る | ダッシュボードを見る"
+  },
+  {
+    "objectID": "portfolio/analysis/marketing-pipeline.html",
+    "href": "portfolio/analysis/marketing-pipeline.html",
+    "title": "マーケティングアナリティクスパイプライン（GCP + dbt）",
+    "section": "",
+    "text": "ビジネス課題：マーケティングKPIをリアルタイムで追跡するためのモダンなインフラをどのように構築するか？\n\nマーケティングチームは、情報に基づいた意思決定を行うために、パフォーマンス指標に素早くアクセスする必要があります。このプロジェクトでは、モダンなデータエンジニアリングのベストプラクティスを使用した完全なETLパイプラインの構築を実演します。"
+  },
+  {
+    "objectID": "portfolio/analysis/marketing-pipeline.html#背景と課題",
+    "href": "portfolio/analysis/marketing-pipeline.html#背景と課題",
+    "title": "マーケティングアナリティクスパイプライン（GCP + dbt）",
+    "section": "",
+    "text": "ビジネス課題：マーケティングKPIをリアルタイムで追跡するためのモダンなインフラをどのように構築するか？\n\nマーケティングチームは、情報に基づいた意思決定を行うために、パフォーマンス指標に素早くアクセスする必要があります。このプロジェクトでは、モダンなデータエンジニアリングのベストプラクティスを使用した完全なETLパイプラインの構築を実演します。"
+  },
+  {
+    "objectID": "portfolio/analysis/marketing-pipeline.html#アーキテクチャ",
+    "href": "portfolio/analysis/marketing-pipeline.html#アーキテクチャ",
+    "title": "マーケティングアナリティクスパイプライン（GCP + dbt）",
+    "section": "アーキテクチャ",
+    "text": "アーキテクチャ\n┌─────────────┐     ┌─────────────┐     ┌─────────────┐     ┌─────────────┐\n│   ソース    │────▶│   抽出      │────▶│  BigQuery   │────▶│     dbt     │\n│   (CSV)     │     │  (Python)   │     │   (Raw)     │     │   (変換)    │\n└─────────────┘     └─────────────┘     └─────────────┘     └─────────────┘\n                                                                   │\n                                                                   ▼\n                                        ┌─────────────┐     ┌─────────────┐\n                                        │  Streamlit  │◀────│  BigQuery   │\n                                        │(ダッシュボード)│   │ (Analytics) │\n                                        └─────────────┘     └─────────────┘\n\nコンポーネント\n\n抽出：現実的なシミュレートされたマーケティングデータを生成するPythonスクリプト\nロード：Google BigQueryへのロード（データセット marketing_raw）\n変換：KPIを計算するdbt（データセット marketing_analytics）\n可視化：インタラクティブなStreamlitダッシュボード"
+  },
+  {
+    "objectID": "portfolio/analysis/marketing-pipeline.html#実装",
+    "href": "portfolio/analysis/marketing-pipeline.html#実装",
+    "title": "マーケティングアナリティクスパイプライン（GCP + dbt）",
+    "section": "実装",
+    "text": "実装\n\n1. データ抽出\n# src/extract_data.py\nimport pandas as pd\nimport numpy as np\n\ndef generate_marketing_data(start_date, end_date, seed=42):\n    \"\"\"現実的なシミュレートされたマーケティングデータを生成。\"\"\"\n    np.random.seed(seed)\n\n    channels = {\n        'Google Ads': {'sessions': 1500, 'conv_rate': 0.05, 'spend': 3000},\n        'Facebook Ads': {'sessions': 1200, 'conv_rate': 0.04, 'spend': 2500},\n        'LinkedIn': {'sessions': 400, 'conv_rate': 0.06, 'spend': 1500},\n        'Email': {'sessions': 800, 'conv_rate': 0.08, 'spend': 500},\n        'Direct': {'sessions': 2000, 'conv_rate': 0.03, 'spend': 0}\n    }\n\n    # 現実的な変動を持つ生成\n    # - セッションにポアソン分布\n    # - 週末効果（-30%）\n    # - 負の値なし\n\n    return df\n\n\n2. dbt変換\n-- dbt_marketing/models/staging/stg_marketing_daily.sql\nWITH source AS (\n    SELECT * FROM {{ source('marketing_raw', 'daily_performance') }}\n),\n\ntransformed AS (\n    SELECT\n        date,\n        DATE_TRUNC(date, WEEK) AS week_start_date,\n        DATE_TRUNC(date, MONTH) AS month_start_date,\n        source AS marketing_source,\n        sessions,\n        conversions,\n        revenue,\n        spend,\n\n        -- 計算されたKPI\n        SAFE_DIVIDE(revenue, spend) AS roas,\n        SAFE_DIVIDE(spend, conversions) AS cost_per_conversion,\n        SAFE_DIVIDE(conversions, sessions) AS conversion_rate,\n        SAFE_DIVIDE(revenue, conversions) AS revenue_per_conversion,\n        SAFE_DIVIDE(revenue, sessions) AS revenue_per_session,\n\n        -- フラグ\n        spend = 0 AS is_organic_channel,\n        EXTRACT(DAYOFWEEK FROM date) IN (1, 7) AS is_weekend\n\n    FROM source\n)\n\nSELECT * FROM transformed\n\n\n3. Streamlitダッシュボード\nダッシュボードは以下を表示します：\n\nグローバルKPI：総支出、収益、コンバージョン、ROAS\n時系列トレンド：日別の支出 vs 収益\nチャネル別パフォーマンス：マーケティングソースの比較\nソース別ROAS：広告費用対効果\nコンバージョンファネル：セッション → コンバージョン"
+  },
+  {
+    "objectID": "portfolio/analysis/marketing-pipeline.html#結果",
+    "href": "portfolio/analysis/marketing-pipeline.html#結果",
+    "title": "マーケティングアナリティクスパイプライン（GCP + dbt）",
+    "section": "結果",
+    "text": "結果\n\n計算されるKPI\n\n\n\nメトリクス\n計算式\n用途\n\n\n\n\nROAS\n収益 / 支出\n全体的な効果\n\n\nCPA\n支出 / コンバージョン\n獲得コスト\n\n\nコンバージョン率\nコンバージョン / セッション\nトラフィック品質\n\n\nセッション収益\n収益 / セッション\nトラフィック価値\n\n\n\n\n\n生成データ\n\n期間：84日（2024年9月〜11月）\nチャネル：5つのマーケティングソース\nボリューム：実行ごとに約420行"
+  },
+  {
+    "objectID": "portfolio/analysis/marketing-pipeline.html#デモ",
+    "href": "portfolio/analysis/marketing-pipeline.html#デモ",
+    "title": "マーケティングアナリティクスパイプライン（GCP + dbt）",
+    "section": "デモ",
+    "text": "デモ\n Streamlitダッシュボードを見る \nダッシュボードでは以下が可能です：\n\n日付範囲でフィルター\n表示するチャネルを選択\nトレンドを可視化\nパフォーマンスを比較"
+  },
+  {
+    "objectID": "portfolio/analysis/marketing-pipeline.html#テクノロジー",
+    "href": "portfolio/analysis/marketing-pipeline.html#テクノロジー",
+    "title": "マーケティングアナリティクスパイプライン（GCP + dbt）",
+    "section": "テクノロジー",
+    "text": "テクノロジー\n\n\n\nコンポーネント\nテクノロジー\nバージョン\n\n\n\n\n言語\nPython\n3.13+\n\n\nデータウェアハウス\nGoogle BigQuery\nCloud\n\n\n変換\ndbt-core + dbt-bigquery\n1.10.3\n\n\nダッシュボード\nStreamlit\n1.51.0\n\n\n可視化\nPlotly + Altair\n-\n\n\n依存関係管理\nPoetry\n-"
+  },
+  {
+    "objectID": "portfolio/analysis/marketing-pipeline.html#プロジェクト構造",
+    "href": "portfolio/analysis/marketing-pipeline.html#プロジェクト構造",
+    "title": "マーケティングアナリティクスパイプライン（GCP + dbt）",
+    "section": "プロジェクト構造",
+    "text": "プロジェクト構造\nmarketing-data-pipeline/\n├── src/\n│   ├── extract_data.py      # データ生成\n│   ├── load_bigquery.py     # BigQueryロード\n│   └── dashboard.py         # Streamlitダッシュボード\n├── dbt_marketing/\n│   ├── dbt_project.yml      # dbt設定\n│   └── models/\n│       └── staging/\n│           ├── sources.yml\n│           └── stg_marketing_daily.sql\n├── data/\n│   └── raw/\n│       └── marketing_data.csv\n├── pyproject.toml           # Poetry依存関係\n└── README.md"
+  },
+  {
+    "objectID": "portfolio/analysis/marketing-pipeline.html#実行",
+    "href": "portfolio/analysis/marketing-pipeline.html#実行",
+    "title": "マーケティングアナリティクスパイプライン（GCP + dbt）",
+    "section": "実行",
+    "text": "実行\n# 1. 抽出\npython src/extract_data.py\n\n# 2. BigQueryロード\npython src/load_bigquery.py\n\n# 3. dbt変換\ncd dbt_marketing && dbt run\n\n# 4. ダッシュボード\nstreamlit run src/dashboard.py"
+  },
+  {
+    "objectID": "portfolio/analysis/marketing-pipeline.html#学び",
+    "href": "portfolio/analysis/marketing-pipeline.html#学び",
+    "title": "マーケティングアナリティクスパイプライン（GCP + dbt）",
+    "section": "学び",
+    "text": "学び\nこのプロジェクトはモダンデータスタックのベストプラクティスを示しています：\n\n関心の分離：抽出、ロード、変換を分離\nInfrastructure as Code：バージョン管理された変換のためのdbt\n再現性：シミュレートデータの固定シード\nドキュメント化：dbtソースとモデルのドキュメント化\n\n\n← ポートフォリオ分析に戻る | ダッシュボードを見る"
   },
   {
     "objectID": "index.html#そして競合他社よりも早く前進する",

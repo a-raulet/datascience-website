@@ -8,7 +8,8 @@
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.5.57">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>Portfolio/Viz – Data Science Portfolio</title>
+<meta name="description" content="Interactive dashboards and data visualizations">
+<title>Portfolio - Visualization – Data Science Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -55,7 +56,7 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script><script src="https://cdn.plot.ly/plotly-latest.min.js"></script><link rel="stylesheet" href="../../styles.css">
 </head>
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
@@ -113,21 +114,20 @@ ul.task-list li input[type="checkbox"] {
             <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
-    </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+    </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-layout-custom page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
-   
-  <ul>
-<li><a href="#portfolioviz" id="toc-portfolioviz" class="nav-link active" data-scroll-target="#portfolioviz">Portfolio/Viz</a></li>
-  </ul></nav>
-</div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<h1 class="title">Portfolio/Viz</h1>
+
+<header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<h1 class="title">Portfolio - Visualization</h1>
 </div>
 
+<div>
+  <div class="description">
+    Interactive dashboards and data visualizations
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -139,11 +139,156 @@ ul.task-list li input[type="checkbox"] {
   
 
 
-</header><section id="portfolioviz" class="level1"><h1>Portfolio/Viz</h1>
-<p>Contents to come…</p>
+</header><section id="visualization" class="level1 hero-banner"><h1>Visualization</h1>
+<section id="interactive-dashboards-data-storytelling" class="level2"><h2 data-anchor-id="interactive-dashboards-data-storytelling">Interactive Dashboards &amp; Data Storytelling</h2>
+<p>Visualizations that transform complex data into actionable insights.</p>
+</section></section><section id="production-dashboards" class="level2"><h2 data-anchor-id="production-dashboards">Production Dashboards</h2>
+<div class="grid">
+<div class="g-col-md-6">
+<section id="marketing-mix-modeling-dashboard" class="level3 portfolio-item"><h3 data-anchor-id="marketing-mix-modeling-dashboard">Marketing Mix Modeling Dashboard</h3>
+<p><strong>Framework</strong>: Shiny (R)</p>
+<p>Interactive dashboard to visualize Marketing Mix Modeling results and simulate budget allocation scenarios.</p>
+<p><strong>Features</strong>:</p>
+<ul>
+<li>Sales decomposition by channel</li>
+<li>Response and saturation curves</li>
+<li>Budget simulator</li>
+<li>ROI comparison by channel</li>
+</ul>
+<p><a href="https://arnaudraulet.shinyapps.io/mmm-robyn/" target="_blank" class="btn btn-primary"> View Dashboard </a></p>
+</section>
+</div>
+<div class="g-col-md-6">
+<section id="causal-inference-platform" class="level3 portfolio-item"><h3 data-anchor-id="causal-inference-platform">Causal Inference Platform</h3>
+<p><strong>Framework</strong>: Streamlit (Python)</p>
+<p>Platform for exploring A/B testing results with Bayesian analysis and heterogeneous effects.</p>
+<p><strong>Features</strong>:</p>
+<ul>
+<li>Interactive posterior distributions</li>
+<li>CATE visualization by segment</li>
+<li>Recommendation API interface</li>
+<li>SHAP explanations</li>
+</ul>
+<p><a href="https://causal-inference-platform.streamlit.app/" target="_blank" class="btn btn-primary"> View Dashboard </a></p>
+</section>
+</div>
+</div>
+<div class="grid">
+<div class="g-col-md-6">
+<section id="marketing-analytics-dashboard" class="level3 portfolio-item"><h3 data-anchor-id="marketing-analytics-dashboard">Marketing Analytics Dashboard</h3>
+<p><strong>Framework</strong>: Streamlit (Python)</p>
+<p>Dashboard for tracking multi-channel marketing KPIs with real-time data from BigQuery.</p>
+<p><strong>Features</strong>:</p>
+<ul>
+<li>Global KPIs (Spend, Revenue, ROAS)</li>
+<li>Temporal trends</li>
+<li>Performance by channel</li>
+<li>Conversion funnel</li>
+</ul>
+<p><a href="https://marketing-data-pipeline-demo.streamlit.app" target="_blank" class="btn btn-primary"> View Dashboard </a></p>
+</section>
+</div>
+<div class="g-col-md-6">
+<section id="clickstream-analytics-local" class="level3 portfolio-item"><h3 data-anchor-id="clickstream-analytics-local">Clickstream Analytics (Local)</h3>
+<p><strong>Framework</strong>: Streamlit + Plotly</p>
+<p>Real-time dashboard for e-commerce behavioral analysis with streaming data.</p>
+<p><strong>Features</strong>:</p>
+<ul>
+<li>Real-time metrics</li>
+<li>Interactive funnel</li>
+<li>Top products</li>
+<li>Configurable auto-refresh</li>
+</ul>
+<p><em>Available locally with Docker</em></p>
+<p><a href="../../portfolio/analysis/clickstream-analytics.html">See project →</a></p>
+</section>
+</div>
+</div>
+<hr></section><section id="visualization-technologies" class="level2"><h2 data-anchor-id="visualization-technologies">Visualization Technologies</h2>
+<div class="grid">
+<section id="streamlit" class="level3 g-col-md-3"><h3 data-anchor-id="streamlit">Streamlit</h3>
+<p>Python framework to quickly create interactive data applications.</p>
+<p><strong>Used in</strong>:</p>
+<ul>
+<li>Causal Inference</li>
+<li>Marketing Pipeline</li>
+<li>Clickstream Analytics</li>
+</ul></section><section id="shiny" class="level3 g-col-md-3"><h3 data-anchor-id="shiny">Shiny</h3>
+<p>R (and Python) framework for advanced statistical dashboards.</p>
+<p><strong>Used in</strong>:</p>
+<ul>
+<li>MMM Robyn</li>
+<li>Penguin Explorer</li>
+</ul></section><section id="plotly" class="level3 g-col-md-3"><h3 data-anchor-id="plotly">Plotly</h3>
+<p>Interactive charting library for Python and R.</p>
+<p><strong>Chart types</strong>:</p>
+<ul>
+<li>Scatter plots</li>
+<li>Time series</li>
+<li>Funnel charts</li>
+<li>Heatmaps</li>
+</ul></section><section id="quarto" class="level3 g-col-md-3"><h3 data-anchor-id="quarto">Quarto</h3>
+<p>Scientific publishing system for creating reports and websites.</p>
+<p><strong>Used for</strong>:</p>
+<ul>
+<li>This portfolio site</li>
+<li>Project documentation</li>
+<li>Analysis reports</li>
+</ul></section>
+</div>
+<hr></section><section id="visualization-types" class="level2"><h2 data-anchor-id="visualization-types">Visualization Types</h2>
+<section id="marketing-analysis" class="level3"><h3 data-anchor-id="marketing-analysis">Marketing Analysis</h3>
+<ul>
+<li>
+<strong>Sales decomposition</strong>: Waterfall charts showing each channel’s contribution</li>
+<li>
+<strong>Response curves</strong>: Diminishing returns visualization</li>
+<li>
+<strong>Budget heatmaps</strong>: Optimal allocation matrix</li>
+</ul></section><section id="time-series" class="level3"><h3 data-anchor-id="time-series">Time Series</h3>
+<ul>
+<li>
+<strong>Trends</strong>: KPI evolution over time</li>
+<li>
+<strong>Seasonality</strong>: Weekly/annual patterns</li>
+<li>
+<strong>Anomalies</strong>: Visual outlier detection</li>
+</ul></section><section id="machine-learning" class="level3"><h3 data-anchor-id="machine-learning">Machine Learning</h3>
+<ul>
+<li>
+<strong>SHAP plots</strong>: Variable importance and local explanations</li>
+<li>
+<strong>Posterior distributions</strong>: Bayesian uncertainty visualization</li>
+<li>
+<strong>Conversion funnel</strong>: Sankey diagrams for user journeys</li>
+</ul></section><section id="bayesian-statistics" class="level3"><h3 data-anchor-id="bayesian-statistics">Bayesian Statistics</h3>
+<ul>
+<li>
+<strong>Trace plots</strong>: MCMC convergence</li>
+<li>
+<strong>Forest plots</strong>: Credible intervals</li>
+<li>
+<strong>Posterior predictive checks</strong>: Model validation</li>
+</ul>
+<hr></section></section><section id="design-principles" class="level2"><h2 data-anchor-id="design-principles">Design Principles</h2>
+<p>My visualizations follow these principles:</p>
+<ol type="1">
+<li>
+<strong>Clarity</strong>: One chart = one message</li>
+<li>
+<strong>Context</strong>: Always show relevant comparisons</li>
+<li>
+<strong>Interactivity</strong>: Enable exploration without overload</li>
+<li>
+<strong>Accessibility</strong>: Color palettes adapted for all</li>
+<li>
+<strong>Reproducibility</strong>: Code available for each visualization</li>
+</ol>
+<hr>
+<p><a href="../../portfolio/">← Back to Portfolio</a> | <a href="../../portfolio/analysis/">See Analysis projects →</a></p>
 
 
-</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</section><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");

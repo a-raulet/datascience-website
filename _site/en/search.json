@@ -7,39 +7,221 @@
     "text": "This is a translation test."
   },
   {
-    "objectID": "portfolio/analysis/index.html",
-    "href": "portfolio/analysis/index.html",
-    "title": "Portfolio/Analysis",
-    "section": "",
-    "text": "Portfolio/Analysis\nContents to come…"
+    "objectID": "portfolio/analysis/index.html#data-engineering-marketing-analytics",
+    "href": "portfolio/analysis/index.html#data-engineering-marketing-analytics",
+    "title": "Portfolio - Data Analysis",
+    "section": "Data Engineering & Marketing Analytics",
+    "text": "Data Engineering & Marketing Analytics\nExploration, data pipelines, and dashboards to transform raw data into actionable insights."
   },
   {
-    "objectID": "portfolio/ml/index.html",
-    "href": "portfolio/ml/index.html",
-    "title": "Portfolio/Ml",
-    "section": "",
-    "text": "Portfolio/Ml\nContents to come…"
+    "objectID": "portfolio/analysis/index.html#projects",
+    "href": "portfolio/analysis/index.html#projects",
+    "title": "Portfolio - Data Analysis",
+    "section": "Projects",
+    "text": "Projects\n\n\n\nMarketing Mix Modeling with Robyn\nProblem: How should a CMO reallocate marketing budget to maximize sales?\nMarketing Mix Modeling (MMM) measures the impact of each marketing channel on sales, accounting for seasonality, saturation effects (diminishing returns), and carryover effects (adstock).\nApproach:\n\nUsing Robyn framework developed by Meta\nRidge regression with Prophet time decomposition\nModeling adstock (geometric decay) and saturation (logistic) effects\nMulti-objective optimization with Nevergrad\n\nResults: Interactive dashboard to simulate different budget allocation scenarios and visualize expected sales impact.\nTechnologies: R, Robyn, Prophet, Nevergrad, Shiny\nSee details → | Shiny Dashboard\n\n\n\n\n\n\nMarketing Analytics Pipeline (GCP + dbt)\nProblem: How to build a modern infrastructure to track marketing KPIs in real-time?\nThis project demonstrates setting up a complete ETL pipeline for multi-channel marketing performance analysis, from extraction to visualization.\nArchitecture:\nCSV → Python Extract → BigQuery → dbt Transform → Streamlit Dashboard\nCalculated KPIs:\n\nROAS (Return on Ad Spend)\nCost per conversion (CPA)\nConversion rate\nRevenue per session\n\nTechnologies: Python, Google BigQuery, dbt, Streamlit, Plotly\nSee details → | Streamlit Dashboard\n\n\n\n\n\n\nReal-time Clickstream Analytics\nProblem: How to detect user behavior anomalies in e-commerce in real-time?\nStreaming analytics pipeline for user behavior analysis with time-windowed aggregations and real-time dashboard.\nArchitecture:\nCSV Events → Kafka Producer → Spark Streaming → Delta Lake → Streamlit Dashboard\nReal-time metrics:\n\nActive sessions\nConversion funnel (view → cart → purchase)\nTop products\nAnomaly alerts\n\nTechnologies: Apache Kafka, PySpark Structured Streaming, Delta Lake, Streamlit, Docker\nSee details →\n\n\n\n\n← Back to Portfolio | See ML projects →"
   },
   {
-    "objectID": "services/index.html",
-    "href": "services/index.html",
-    "title": "Services",
+    "objectID": "portfolio/analysis/clickstream-analytics.html",
+    "href": "portfolio/analysis/clickstream-analytics.html",
+    "title": "Real-time Clickstream Analytics",
     "section": "",
-    "text": "Services\nContents to come…"
+    "text": "Business question: How to detect user behavior anomalies in e-commerce in real-time?\n\nAs an e-commerce analyst, being able to observe user behavior in real-time allows you to:\n\nQuickly detect anomalies (sudden traffic drop, checkout issues)\nOptimize experience by identifying friction points\nReact fast to events (promotions, technical incidents)\n\nThis project implements a complete streaming analytics pipeline, from ingestion to visualization."
   },
   {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "Blog",
+    "objectID": "portfolio/analysis/clickstream-analytics.html#context-problem",
+    "href": "portfolio/analysis/clickstream-analytics.html#context-problem",
+    "title": "Real-time Clickstream Analytics",
     "section": "",
-    "text": "Blog\nContents to come…"
+    "text": "Business question: How to detect user behavior anomalies in e-commerce in real-time?\n\nAs an e-commerce analyst, being able to observe user behavior in real-time allows you to:\n\nQuickly detect anomalies (sudden traffic drop, checkout issues)\nOptimize experience by identifying friction points\nReact fast to events (promotions, technical incidents)\n\nThis project implements a complete streaming analytics pipeline, from ingestion to visualization."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "portfolio/analysis/clickstream-analytics.html#architecture",
+    "href": "portfolio/analysis/clickstream-analytics.html#architecture",
+    "title": "Real-time Clickstream Analytics",
+    "section": "Architecture",
+    "text": "Architecture\n┌─────────────┐     ┌─────────────┐     ┌─────────────┐\n│  CSV Events │────▶│    Kafka    │────▶│    Spark    │\n│  (Source)   │     │  (Broker)   │     │ (Streaming) │\n└─────────────┘     └─────────────┘     └─────────────┘\n                                               │\n                                               ▼\n                    ┌─────────────┐     ┌─────────────┐\n                    │  Streamlit  │◀────│ Delta Lake  │\n                    │ (Dashboard) │     │  (Storage)  │\n                    └─────────────┘     └─────────────┘\n\nComponents\n\n\n\nService\nRole\nPort\n\n\n\n\nZookeeper\nKafka coordination\n2181\n\n\nKafka\nMessage broker\n9092\n\n\nSpark\nStream processing\n4040\n\n\nDelta Lake\nTransactional storage\n-\n\n\nStreamlit\nVisualization\n8501"
+  },
+  {
+    "objectID": "portfolio/analysis/clickstream-analytics.html#data",
+    "href": "portfolio/analysis/clickstream-analytics.html#data",
+    "title": "Real-time Clickstream Analytics",
+    "section": "Data",
+    "text": "Data\n\nSource\neCommerce Events dataset (Kaggle):\n\nVolume: 2.3 GB, 5 CSV files\nPeriod: October 2019 - February 2020\nEvents: view, cart, remove_from_cart, purchase\n\n\n\nSchema\nevent_schema = {\n    'event_time': 'timestamp',      # Timestamp\n    'event_type': 'string',          # Event type\n    'product_id': 'integer',         # Product ID\n    'category_id': 'long',           # Category\n    'category_code': 'string',       # Category code\n    'brand': 'string',               # Brand\n    'price': 'float',                # Price\n    'user_id': 'integer',            # User ID\n    'user_session': 'string'         # Session\n}"
+  },
+  {
+    "objectID": "portfolio/analysis/clickstream-analytics.html#implementation",
+    "href": "portfolio/analysis/clickstream-analytics.html#implementation",
+    "title": "Real-time Clickstream Analytics",
+    "section": "Implementation",
+    "text": "Implementation\n\n1. Kafka Producer\n# Sending events to Kafka\nfrom kafka import KafkaProducer\nimport json\n\nproducer = KafkaProducer(\n    bootstrap_servers=['localhost:9092'],\n    value_serializer=lambda v: json.dumps(v).encode('utf-8')\n)\n\nfor event in read_csv_stream('events.csv'):\n    producer.send('clickstream', value=event)\n\n\n2. Spark Structured Streaming\n# Reading from Kafka stream\nfrom pyspark.sql import SparkSession\nfrom pyspark.sql.functions import window, count, sum, col\n\nspark = SparkSession.builder \\\n    .appName(\"ClickstreamAnalytics\") \\\n    .config(\"spark.sql.extensions\", \"io.delta.sql.DeltaSparkSessionExtension\") \\\n    .getOrCreate()\n\n# Stream from Kafka\ndf = spark.readStream \\\n    .format(\"kafka\") \\\n    .option(\"kafka.bootstrap.servers\", \"localhost:9092\") \\\n    .option(\"subscribe\", \"clickstream\") \\\n    .load()\n\n# Time-windowed aggregations\naggregated = df \\\n    .withWatermark(\"event_time\", \"1 minute\") \\\n    .groupBy(\n        window(\"event_time\", \"1 minute\"),\n        \"event_type\"\n    ) \\\n    .agg(\n        count(\"*\").alias(\"event_count\"),\n        countDistinct(\"user_session\").alias(\"unique_sessions\")\n    )\n\n# Writing to Delta Lake\naggregated.writeStream \\\n    .format(\"delta\") \\\n    .outputMode(\"append\") \\\n    .option(\"checkpointLocation\", \"/tmp/checkpoint\") \\\n    .start(\"/data/aggregated\")\n\n\n3. Streamlit Dashboard\n# Reading from Delta Lake and real-time display\nimport streamlit as st\nfrom delta import DeltaTable\n\nst.set_page_config(page_title=\"Clickstream Analytics\", layout=\"wide\")\n\n# Configurable auto-refresh (1-30 seconds)\nrefresh_interval = st.sidebar.slider(\"Refresh interval\", 1, 30, 5)\n\n# Real-time metrics\ncol1, col2, col3, col4 = st.columns(4)\ncol1.metric(\"Active sessions\", get_active_sessions())\ncol2.metric(\"Unique users\", get_unique_users())\ncol3.metric(\"Total revenue\", format_currency(get_total_revenue()))\ncol4.metric(\"Conversion rate\", f\"{get_conversion_rate():.1%}\")\n\n# Conversion funnel\nst.plotly_chart(create_funnel_chart())\n\n# Top products\nst.dataframe(get_top_products())"
+  },
+  {
+    "objectID": "portfolio/analysis/clickstream-analytics.html#real-time-metrics",
+    "href": "portfolio/analysis/clickstream-analytics.html#real-time-metrics",
+    "title": "Real-time Clickstream Analytics",
+    "section": "Real-time Metrics",
+    "text": "Real-time Metrics\n\nAggregation Windows\n\n1 minute: Quick anomaly detection\n5 minutes: Short-term trends\n1 hour: Overview\n\n\n\nCalculated KPIs\n\n\n\nMetric\nDescription\n\n\n\n\nActive sessions\nSessions with activity in last window\n\n\nUnique users\nDistinct user_id count\n\n\nTotal revenue\nSum of prices for “purchase” events\n\n\nFunnel\nview → cart → purchase\n\n\nTop products\nMost viewed/purchased products"
+  },
+  {
+    "objectID": "portfolio/analysis/clickstream-analytics.html#demo",
+    "href": "portfolio/analysis/clickstream-analytics.html#demo",
+    "title": "Real-time Clickstream Analytics",
+    "section": "Demo",
+    "text": "Demo\nThe dashboard is not deployed online (requires Kafka/Spark infrastructure), but the project is fully reproducible locally with Docker Compose.\n\nPrerequisites\n\nDocker & Docker Compose\n4-5 GB RAM available\n2-3 CPU cores\n\n\n\nLaunch\n# Start infrastructure\ndocker-compose up -d\n\n# Launch producer\npython src/producer.py\n\n# Launch Spark consumer\nspark-submit src/consumer.py\n\n# Launch dashboard\nstreamlit run src/dashboard.py"
+  },
+  {
+    "objectID": "portfolio/analysis/clickstream-analytics.html#technologies",
+    "href": "portfolio/analysis/clickstream-analytics.html#technologies",
+    "title": "Real-time Clickstream Analytics",
+    "section": "Technologies",
+    "text": "Technologies\n\n\n\nComponent\nTechnology\nVersion\n\n\n\n\nMessage Broker\nApache Kafka\n2.8\n\n\nCoordination\nZookeeper\n3.7\n\n\nStream Processing\nPySpark\n3.5.0\n\n\nStorage\nDelta Lake\n3.1.0\n\n\nDashboard\nStreamlit\n-\n\n\nOrchestration\nDocker Compose\n-"
+  },
+  {
+    "objectID": "portfolio/analysis/clickstream-analytics.html#project-structure",
+    "href": "portfolio/analysis/clickstream-analytics.html#project-structure",
+    "title": "Real-time Clickstream Analytics",
+    "section": "Project Structure",
+    "text": "Project Structure\nrealtime-clickstream-analytics/\n├── docker-compose.yml       # Infrastructure\n├── src/\n│   ├── producer.py          # Kafka producer\n│   ├── consumer.py          # Spark streaming\n│   └── dashboard.py         # Streamlit dashboard\n├── data/\n│   └── raw/                 # Source CSV files\n├── config/\n│   └── config.yaml          # Configuration\n└── README.md"
+  },
+  {
+    "objectID": "portfolio/analysis/clickstream-analytics.html#learnings",
+    "href": "portfolio/analysis/clickstream-analytics.html#learnings",
+    "title": "Real-time Clickstream Analytics",
+    "section": "Learnings",
+    "text": "Learnings\nThis project allowed me to master:\n\nStreaming architecture: Understanding real-time processing patterns\nApache Kafka: Large-scale message ingestion and distribution\nSpark Structured Streaming: Aggregations with watermarks and windows\nDelta Lake: Transactional storage for streaming\nDocker Compose: Multi-service orchestration\n\n\n← Back to Portfolio Analysis"
+  },
+  {
+    "objectID": "portfolio/index.html#data-science-marketing-analytics-projects",
+    "href": "portfolio/index.html#data-science-marketing-analytics-projects",
+    "title": "Portfolio",
+    "section": "Data Science & Marketing Analytics Projects",
+    "text": "Data Science & Marketing Analytics Projects\nA selection of projects demonstrating my expertise in data analysis, machine learning, and data engineering."
+  },
+  {
+    "objectID": "portfolio/index.html#categories",
+    "href": "portfolio/index.html#categories",
+    "title": "Portfolio",
+    "section": "Categories",
+    "text": "Categories\n\n\nData Analysis\nExploration, visualization, and business insights from marketing and e-commerce data.\nSee Analysis projects →\n\n\nMachine Learning\nPredictive models, causal inference, and reinforcement learning applied to real-world use cases.\nSee ML projects →\n\n\nVisualization\nInteractive dashboards and data visualizations for decision-making.\nSee visualizations →"
+  },
+  {
+    "objectID": "portfolio/index.html#featured-projects",
+    "href": "portfolio/index.html#featured-projects",
+    "title": "Portfolio",
+    "section": "Featured Projects",
+    "text": "Featured Projects\n\n\n\nMarketing Mix Modeling (Robyn)\nBusiness question: How to reallocate marketing budget to maximize sales?\nUsing Meta’s Robyn framework to measure the impact of each marketing channel and optimize budget allocation.\nTechnologies: R, Robyn, Prophet, Shiny\nSee project → | Shiny Dashboard\n\n\n\n\nCausal Inference Platform\nBusiness question: What is the real impact of our email campaigns on conversions?\nComplete A/B testing platform with Bayesian analysis and Causal ML to measure treatment effects.\nTechnologies: Python, PyMC, CausalML, FastAPI, Streamlit\nSee project → | Streamlit Dashboard\n\n\n\n\n\n\nMarketing Analytics Pipeline\nBusiness question: How to track marketing channel performance in real-time?\nComplete ETL pipeline with BigQuery, dbt, and Streamlit dashboard for marketing KPI tracking.\nTechnologies: Python, BigQuery, dbt, Streamlit\nSee project → | Streamlit Dashboard\n\n\n\n\nDynamic Pricing Engine\nBusiness question: How to optimize prices in real-time based on demand?\nProgression from econometrics to Reinforcement Learning for dynamic pricing (Uber/Lyft case).\nTechnologies: Python, PyMC, Q-Learning, Streamlit\nSee project →"
+  },
+  {
+    "objectID": "portfolio/index.html#have-a-similar-project",
+    "href": "portfolio/index.html#have-a-similar-project",
+    "title": "Portfolio",
+    "section": "Have a Similar Project?",
+    "text": "Have a Similar Project?\nI’d be happy to discuss your needs and see how these approaches can apply to your context.\nContact me LinkedIn"
+  },
+  {
+    "objectID": "portfolio/ml/causal-inference.html",
+    "href": "portfolio/ml/causal-inference.html",
+    "title": "Causal Inference Platform for A/B Testing",
     "section": "",
-    "text": "About this site"
+    "text": "Business question: What is the real impact of our email campaigns on conversions?\n\nTraditional A/B testing answers “Is there a difference?”. But decision-makers need more nuanced answers:\n\nWhat is the probability that email A is better than B?\nFor which customer segments is the intervention most effective?\nWhat is the causal effect of the intervention, not just correlation?\n\nThis project implements a complete causal inference platform that answers these questions."
+  },
+  {
+    "objectID": "portfolio/ml/causal-inference.html#context-problem",
+    "href": "portfolio/ml/causal-inference.html#context-problem",
+    "title": "Causal Inference Platform for A/B Testing",
+    "section": "",
+    "text": "Business question: What is the real impact of our email campaigns on conversions?\n\nTraditional A/B testing answers “Is there a difference?”. But decision-makers need more nuanced answers:\n\nWhat is the probability that email A is better than B?\nFor which customer segments is the intervention most effective?\nWhat is the causal effect of the intervention, not just correlation?\n\nThis project implements a complete causal inference platform that answers these questions."
+  },
+  {
+    "objectID": "portfolio/ml/causal-inference.html#dataset",
+    "href": "portfolio/ml/causal-inference.html#dataset",
+    "title": "Causal Inference Platform for A/B Testing",
+    "section": "Dataset",
+    "text": "Dataset\nHillstrom Email Marketing Dataset (classic in marketing analytics):\n\n64,000 customers e-commerce\n3 groups: Mens E-Mail, Womens E-Mail, No E-Mail (control)\nMetrics: Visit (yes/no), Conversion (yes/no), Amount spent"
+  },
+  {
+    "objectID": "portfolio/ml/causal-inference.html#approach-methodology",
+    "href": "portfolio/ml/causal-inference.html#approach-methodology",
+    "title": "Causal Inference Platform for A/B Testing",
+    "section": "Approach & Methodology",
+    "text": "Approach & Methodology\n\n1. Bayesian A/B Test Analysis\nRather than a simple significance test (p-value), the Bayesian approach provides:\n\n95% credible interval for the lift\nProbability that treatment is better (P(Best))\nComplete distribution of the effect\n\n\n\n2. Causal ML - Heterogeneous Effects (CATE)\nThe average effect often hides significant variations between segments. Conditional Average Treatment Effect (CATE) identifies who responds best to the intervention.\nUsing X-Learner with SHAP for interpretation.\n\n\n3. Recommendation API\nFastAPI to serve real-time recommendations based on customer features."
+  },
+  {
+    "objectID": "portfolio/ml/causal-inference.html#key-results",
+    "href": "portfolio/ml/causal-inference.html#key-results",
+    "title": "Causal Inference Platform for A/B Testing",
+    "section": "Key Results",
+    "text": "Key Results\n\nBayesian Analysis\n\n\n\nGroup\nConversion Rate\nLift vs Control\nP(Best)\n\n\n\n\nControl\n~5.0%\n-\n0.00\n\n\nMens E-Mail\n~5.8%\n+16%\n0.92\n\n\nWomens E-Mail\n~5.4%\n+8%\n0.78\n\n\n\n\n\nHeterogeneous Effects\nCustomers who benefit most from “Mens” emails:\n\nHigh purchase history (history &gt; $200)\nRecent buyers (recency &lt; 6 months)\nAlready “mens” customers (previous purchases in this category)\n\n\n\nBusiness Recommendations\n\nPrioritize targeting customers with high history for emails\nPersonalize: Mens vs Womens based on purchase history\nAvoid sending emails to newbies (almost no effect)"
+  },
+  {
+    "objectID": "portfolio/ml/causal-inference.html#demo",
+    "href": "portfolio/ml/causal-inference.html#demo",
+    "title": "Causal Inference Platform for A/B Testing",
+    "section": "Demo",
+    "text": "Demo\n View Streamlit Dashboard"
+  },
+  {
+    "objectID": "portfolio/ml/causal-inference.html#technologies",
+    "href": "portfolio/ml/causal-inference.html#technologies",
+    "title": "Causal Inference Platform for A/B Testing",
+    "section": "Technologies",
+    "text": "Technologies\n\n\n\nComponent\nTechnology\n\n\n\n\nBayesian Modeling\nPyMC, ArviZ\n\n\nCausal ML\nCausalML (X-Learner)\n\n\nInterpretability\nSHAP\n\n\nAPI\nFastAPI, Pydantic, Uvicorn\n\n\nDashboard\nStreamlit"
+  },
+  {
+    "objectID": "portfolio/ml/causal-inference.html#learnings",
+    "href": "portfolio/ml/causal-inference.html#learnings",
+    "title": "Causal Inference Platform for A/B Testing",
+    "section": "Learnings",
+    "text": "Learnings\n\nBayesian inference: Thinking in distributions, not points\nCausal inference: The difference between correlation and causation\nCausal ML: Estimating heterogeneous effects with X-Learner\nDeployment: Serving ML models via API\n\n\n← Back to Portfolio ML | View Dashboard"
+  },
+  {
+    "objectID": "portfolio/ml/index.html#predictive-models-causal-inference-reinforcement-learning",
+    "href": "portfolio/ml/index.html#predictive-models-causal-inference-reinforcement-learning",
+    "title": "Portfolio - Machine Learning",
+    "section": "Predictive models, causal inference & reinforcement learning",
+    "text": "Predictive models, causal inference & reinforcement learning\nFrom classical statistical models to reinforcement learning, projects that create business value."
+  },
+  {
+    "objectID": "portfolio/ml/index.html#projects",
+    "href": "portfolio/ml/index.html#projects",
+    "title": "Portfolio - Machine Learning",
+    "section": "Projects",
+    "text": "Projects\n\n\n\nCausal Inference Platform for A/B Testing\nProblem: What is the real impact of our email campaigns on conversions?\nComplete A/B testing platform combining Bayesian analysis and Causal ML to go beyond simple correlation and measure causal impact of marketing interventions.\nApproach:\n\nBayesian Analysis with PyMC for interpretable results (probability of being best)\nCausal ML with X-Learner to estimate heterogeneous effects (CATE)\nFastAPI for real-time recommendation\nStreamlit Dashboard for results exploration\n\nResults: On 64,000 e-commerce customers, identified +16% lift for “Mens” emails vs +8% for “Womens”.\nTechnologies: Python, PyMC, CausalML, SHAP, FastAPI, Streamlit\nSee details → | Streamlit Dashboard\n\n\n\n\n\n\nDynamic Pricing Engine\nProblem: How to optimize prices in real-time based on context and demand?\nProject exploring surge pricing strategies used by Uber and Lyft, with methodological progression from econometrics to reinforcement learning.\nProgressive approach:\n\nEDA & Storytelling: Dataset exploration and business narrative\nBayesian Price Elasticity: Econometric model with PyMC\nContextual Bandits: Thompson Sampling for exploration/exploitation\nQ-Learning: Complete reinforcement learning agent\n\nDataset: ~700K Uber & Lyft rides (Boston, Nov 2018)\nTechnologies: Python, PyMC, ArviZ, scikit-learn, Streamlit\nSee details →\n\n\n\n\n\n\nPenguin Explorer - Full-stack ML Demo\nProblem: How to deploy an ML model end-to-end with modern architecture?\nDemonstrative project of a complete ML architecture: from training to deployment, through API and frontend, with R and Python integration.\nArchitecture:\nDuckDB → scikit-learn → Vetiver → FastAPI → Shiny (Python & R)\nHighlights:\n\nModel Registry with Vetiver and pins\nREST API auto-generated with OpenAPI documentation\nDual frontends: Shiny Python and Shiny R\nCI/CD with GitHub Actions\nComplete containerization with Docker Compose\n\nTechnologies: Python, R, scikit-learn, Vetiver, FastAPI, Shiny, Docker, GitHub Actions\nSee details → | GitHub\n\n\n\n\n\n\nHouse Prices Prediction - Harvard Certificate\nProblem: Predict house sale prices in Iowa from their characteristics.\nFinal project for Harvard Data Science certificate, exploring and comparing many regression approaches.\nModels tested:\n\nLinear regression (baseline)\nRandom Forest\nXGBoost\nGAM (Generalized Additive Models)\nNeural Networks\nEnsemble (combination of best models)\n\nResults: Systematic performance comparison and identification of most important features.\nTechnologies: R, RMarkdown, caret, xgboost, randomForest\nSee details →\n\n\n\n\n← Back to Portfolio | See Analysis projects →"
+  },
+  {
+    "objectID": "portfolio/viz/index.html#interactive-dashboards-data-storytelling",
+    "href": "portfolio/viz/index.html#interactive-dashboards-data-storytelling",
+    "title": "Portfolio - Visualization",
+    "section": "Interactive Dashboards & Data Storytelling",
+    "text": "Interactive Dashboards & Data Storytelling\nVisualizations that transform complex data into actionable insights."
+  },
+  {
+    "objectID": "portfolio/viz/index.html#production-dashboards",
+    "href": "portfolio/viz/index.html#production-dashboards",
+    "title": "Portfolio - Visualization",
+    "section": "Production Dashboards",
+    "text": "Production Dashboards\n\n\n\nMarketing Mix Modeling Dashboard\nFramework: Shiny (R)\nInteractive dashboard to visualize Marketing Mix Modeling results and simulate budget allocation scenarios.\nFeatures:\n\nSales decomposition by channel\nResponse and saturation curves\nBudget simulator\nROI comparison by channel\n\n View Dashboard \n\n\n\n\nCausal Inference Platform\nFramework: Streamlit (Python)\nPlatform for exploring A/B testing results with Bayesian analysis and heterogeneous effects.\nFeatures:\n\nInteractive posterior distributions\nCATE visualization by segment\nRecommendation API interface\nSHAP explanations\n\n View Dashboard \n\n\n\n\n\n\nMarketing Analytics Dashboard\nFramework: Streamlit (Python)\nDashboard for tracking multi-channel marketing KPIs with real-time data from BigQuery.\nFeatures:\n\nGlobal KPIs (Spend, Revenue, ROAS)\nTemporal trends\nPerformance by channel\nConversion funnel\n\n View Dashboard \n\n\n\n\nClickstream Analytics (Local)\nFramework: Streamlit + Plotly\nReal-time dashboard for e-commerce behavioral analysis with streaming data.\nFeatures:\n\nReal-time metrics\nInteractive funnel\nTop products\nConfigurable auto-refresh\n\nAvailable locally with Docker\nSee project →"
+  },
+  {
+    "objectID": "portfolio/viz/index.html#visualization-technologies",
+    "href": "portfolio/viz/index.html#visualization-technologies",
+    "title": "Portfolio - Visualization",
+    "section": "Visualization Technologies",
+    "text": "Visualization Technologies\n\n\nStreamlit\nPython framework to quickly create interactive data applications.\nUsed in:\n\nCausal Inference\nMarketing Pipeline\nClickstream Analytics\n\n\n\nShiny\nR (and Python) framework for advanced statistical dashboards.\nUsed in:\n\nMMM Robyn\nPenguin Explorer\n\n\n\nPlotly\nInteractive charting library for Python and R.\nChart types:\n\nScatter plots\nTime series\nFunnel charts\nHeatmaps\n\n\n\nQuarto\nScientific publishing system for creating reports and websites.\nUsed for:\n\nThis portfolio site\nProject documentation\nAnalysis reports"
+  },
+  {
+    "objectID": "portfolio/viz/index.html#visualization-types",
+    "href": "portfolio/viz/index.html#visualization-types",
+    "title": "Portfolio - Visualization",
+    "section": "Visualization Types",
+    "text": "Visualization Types\n\nMarketing Analysis\n\nSales decomposition: Waterfall charts showing each channel’s contribution\nResponse curves: Diminishing returns visualization\nBudget heatmaps: Optimal allocation matrix\n\n\n\nTime Series\n\nTrends: KPI evolution over time\nSeasonality: Weekly/annual patterns\nAnomalies: Visual outlier detection\n\n\n\nMachine Learning\n\nSHAP plots: Variable importance and local explanations\nPosterior distributions: Bayesian uncertainty visualization\nConversion funnel: Sankey diagrams for user journeys\n\n\n\nBayesian Statistics\n\nTrace plots: MCMC convergence\nForest plots: Credible intervals\nPosterior predictive checks: Model validation"
+  },
+  {
+    "objectID": "portfolio/viz/index.html#design-principles",
+    "href": "portfolio/viz/index.html#design-principles",
+    "title": "Portfolio - Visualization",
+    "section": "Design Principles",
+    "text": "Design Principles\nMy visualizations follow these principles:\n\nClarity: One chart = one message\nContext: Always show relevant comparisons\nInteractivity: Enable exploration without overload\nAccessibility: Color palettes adapted for all\nReproducibility: Code available for each visualization\n\n\n← Back to Portfolio | See Analysis projects →"
   },
   {
     "objectID": "blog/posts/index.html",
@@ -49,18 +231,326 @@
     "text": "Blog/Posts\nContents to come…"
   },
   {
-    "objectID": "portfolio/viz/index.html",
-    "href": "portfolio/viz/index.html",
-    "title": "Portfolio/Viz",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "Portfolio/Viz\nContents to come…"
+    "text": "About this site"
   },
   {
-    "objectID": "portfolio/index.html",
-    "href": "portfolio/index.html",
-    "title": "Portfolio",
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
     "section": "",
-    "text": "Portfolio\nContents to come…"
+    "text": "Blog\nContents to come…"
+  },
+  {
+    "objectID": "services/index.html#tailored-solutions-to-turn-your-data-into-competitive-advantage",
+    "href": "services/index.html#tailored-solutions-to-turn-your-data-into-competitive-advantage",
+    "title": "Services",
+    "section": "Tailored solutions to turn your data into competitive advantage",
+    "text": "Tailored solutions to turn your data into competitive advantage\nFrom exploratory analysis to production model deployment, I support you at every step of your data journey.\nView my work Contact me"
+  },
+  {
+    "objectID": "services/index.html#what-i-can-bring-you",
+    "href": "services/index.html#what-i-can-bring-you",
+    "title": "Services",
+    "section": "What I Can Bring You",
+    "text": "What I Can Bring You\n\n\nMarketing Analytics\nOptimize your marketing investments with reliable data\n\nMarketing Mix Modeling (MMM): Measure the real impact of each channel on sales and optimize budget allocation\nMulti-touch Attribution: Understand the complete customer journey and value each touchpoint\nCampaign Analysis: Evaluate campaign performance with actionable KPIs (ROAS, CPA, LTV)\nCustomer Segmentation: Identify your most profitable segments to personalize actions\n\nTechnologies: R (Robyn, Prophet), Python, BigQuery, Looker Studio\nSee MMM project →\n\n\nData Engineering\nBuild a modern and scalable data infrastructure\n\nETL/ELT Pipelines: Automate data extraction, transformation, and loading\nData Warehousing: Design optimized cloud architectures (BigQuery, Snowflake)\ndbt Transformation: Implement versioned, tested, and documented transformations\nStreaming Analytics: Process real-time data with Kafka and Spark\n\nTechnologies: dbt, BigQuery, Airflow, Kafka, Spark, Delta Lake, Docker\nSee Pipeline project →\n\n\n\n\nExperimentation & A/B Testing\nMake decisions based on evidence, not intuition\n\nExperiment Design: Create statistically robust tests with appropriate power calculations\nBayesian Analysis: Get interpretable results with credible intervals\nCausal Inference: Go beyond correlation to measure real impact of your actions\nHeterogeneous Effects (CATE): Identify segments that respond best to your interventions\n\nTechnologies: PyMC, CausalML, DoWhy, statsmodels, ArviZ\nSee Causal Inference project →\n\n\nApplied Machine Learning\nDeploy models that create business value\n\nPredictive Models: Anticipate churn, demand, sales with interpretable models\nDynamic Pricing: Optimize prices in real-time based on context and demand\nRecommendation: Personalize customer experience with recommendation systems\nMLOps: Deploy and monitor production models (Vetiver, FastAPI, Docker)\n\nTechnologies: scikit-learn, XGBoost, PyTorch, Vetiver, FastAPI, MLflow\nSee Dynamic Pricing project →"
+  },
+  {
+    "objectID": "services/index.html#how-i-work",
+    "href": "services/index.html#how-i-work",
+    "title": "Services",
+    "section": "How I Work",
+    "text": "How I Work\n\n\n1. Discovery\nTogether we define your business objectives, identify available data and technical constraints. I propose an approach adapted to your context.\n\n\n2. Development\nI develop the solution iteratively, with regular checkpoints to validate direction. You have complete visibility on progress.\n\n\n3. Delivery\nI deliver a documented, tested, and ready-to-use solution. I support you in getting started and remain available for support."
+  },
+  {
+    "objectID": "services/index.html#technical-stack",
+    "href": "services/index.html#technical-stack",
+    "title": "Services",
+    "section": "Technical Stack",
+    "text": "Technical Stack\n\n\nLanguages\n\nPython\nR\nSQL\n\n\n\nData Engineering\n\ndbt\nBigQuery\nKafka\nSpark\nAirflow\n\n\n\nMachine Learning\n\nscikit-learn\nPyMC\nXGBoost\nCausalML\nRobyn\n\n\n\nVisualization & Deploy\n\nStreamlit\nShiny\nPlotly\nDocker\nFastAPI"
+  },
+  {
+    "objectID": "services/index.html#lets-discuss-your-project",
+    "href": "services/index.html#lets-discuss-your-project",
+    "title": "Services",
+    "section": "Let’s Discuss Your Project",
+    "text": "Let’s Discuss Your Project\nEvery project is unique. Contact me to discuss your needs and see how I can help you achieve your goals.\nContact me LinkedIn"
+  },
+  {
+    "objectID": "portfolio/ml/penguin-explorer.html",
+    "href": "portfolio/ml/penguin-explorer.html",
+    "title": "Penguin Explorer - Full-stack ML Demo",
+    "section": "",
+    "text": "Technical question: How to deploy an ML model end-to-end with modern architecture?\n\nThis project demonstrates a complete ML architecture using the famous Palmer Penguins dataset. The goal is not the model itself (simple linear regression), but the deployment infrastructure."
+  },
+  {
+    "objectID": "portfolio/ml/penguin-explorer.html#context-problem",
+    "href": "portfolio/ml/penguin-explorer.html#context-problem",
+    "title": "Penguin Explorer - Full-stack ML Demo",
+    "section": "",
+    "text": "Technical question: How to deploy an ML model end-to-end with modern architecture?\n\nThis project demonstrates a complete ML architecture using the famous Palmer Penguins dataset. The goal is not the model itself (simple linear regression), but the deployment infrastructure."
+  },
+  {
+    "objectID": "portfolio/ml/penguin-explorer.html#architecture",
+    "href": "portfolio/ml/penguin-explorer.html#architecture",
+    "title": "Penguin Explorer - Full-stack ML Demo",
+    "section": "Architecture",
+    "text": "Architecture\n┌─────────────┐     ┌─────────────┐     ┌─────────────┐\n│   DuckDB    │────▶│  scikit-    │────▶│   Vetiver   │\n│   (Data)    │     │   learn     │     │  (Registry) │\n└─────────────┘     └─────────────┘     └─────────────┘\n                                               │\n                         ┌─────────────────────┼─────────────────────┐\n                         ▼                     ▼                     ▼\n                  ┌─────────────┐     ┌─────────────┐     ┌─────────────┐\n                  │   FastAPI   │     │   Shiny     │     │   Shiny     │\n                  │    (API)    │     │  (Python)   │     │    (R)      │\n                  └─────────────┘     └─────────────┘     └─────────────┘\n\nArchitecture Highlights\n\nModel Registry with Vetiver and pins (version management)\nAuto-generated API with OpenAPI documentation\nDual frontends: Shiny Python AND Shiny R\nComplete containerization with Docker Compose\nCI/CD with GitHub Actions"
+  },
+  {
+    "objectID": "portfolio/ml/penguin-explorer.html#implementation",
+    "href": "portfolio/ml/penguin-explorer.html#implementation",
+    "title": "Penguin Explorer - Full-stack ML Demo",
+    "section": "Implementation",
+    "text": "Implementation\n\nModel Training & Registry\nUsing Vetiver to create a versioned model that auto-generates an API.\n\n\nDocker Compose Deployment\nThree services deployed: - API (FastAPI via Vetiver): http://localhost:8080/docs - Frontend Python (Shiny): http://localhost:8000 - Frontend R (Shiny): http://localhost:3838\n\n\nCI/CD with GitHub Actions\nAutomated deployment on push to main branch, publishing documentation to gh-pages."
+  },
+  {
+    "objectID": "portfolio/ml/penguin-explorer.html#technologies",
+    "href": "portfolio/ml/penguin-explorer.html#technologies",
+    "title": "Penguin Explorer - Full-stack ML Demo",
+    "section": "Technologies",
+    "text": "Technologies\n\n\n\nComponent\nTechnology\n\n\n\n\nData\nDuckDB, palmerpenguins\n\n\nML\nscikit-learn\n\n\nModel Registry\nVetiver, pins\n\n\nAPI\nFastAPI, Uvicorn\n\n\nFrontend Python\nShiny for Python\n\n\nFrontend R\nShiny\n\n\nContainerization\nDocker, Docker Compose\n\n\nCI/CD\nGitHub Actions\n\n\nDocumentation\nQuarto"
+  },
+  {
+    "objectID": "portfolio/ml/penguin-explorer.html#learnings",
+    "href": "portfolio/ml/penguin-explorer.html#learnings",
+    "title": "Penguin Explorer - Full-stack ML Demo",
+    "section": "Learnings",
+    "text": "Learnings\nThis project illustrates MLOps best practices:\n\nSeparation of concerns: Model, API, Frontend distinct\nModel Registry: Model versioning with Vetiver\nAPI-first: Model exposed via standard API\nMulti-language: R and Python coexist harmoniously\nContainerization: Reproducible environments with Docker\nCI/CD: Automated deployment with GitHub Actions\n\n\n← Back to Portfolio ML | GitHub"
+  },
+  {
+    "objectID": "portfolio/ml/house-prices.html",
+    "href": "portfolio/ml/house-prices.html",
+    "title": "House Prices Prediction - Harvard Certificate",
+    "section": "",
+    "text": "Question: Predict house sale prices in Iowa from their characteristics.\n\nThis project is the final assessment for the Harvard Data Science Certificate (HarvardX). It’s a classic Kaggle challenge that allows comparing many regression approaches."
+  },
+  {
+    "objectID": "portfolio/ml/house-prices.html#context-problem",
+    "href": "portfolio/ml/house-prices.html#context-problem",
+    "title": "House Prices Prediction - Harvard Certificate",
+    "section": "",
+    "text": "Question: Predict house sale prices in Iowa from their characteristics.\n\nThis project is the final assessment for the Harvard Data Science Certificate (HarvardX). It’s a classic Kaggle challenge that allows comparing many regression approaches."
+  },
+  {
+    "objectID": "portfolio/ml/house-prices.html#dataset",
+    "href": "portfolio/ml/house-prices.html#dataset",
+    "title": "House Prices Prediction - Harvard Certificate",
+    "section": "Dataset",
+    "text": "Dataset\nAmes Housing Dataset:\n\n~1,500 houses in Iowa (USA)\n79 features\nTarget: SalePrice (sale price in $)\n\n\nKey Variables\n\n\n\nCategory\nVariables\n\n\n\n\nArea\nGrLivArea, TotalBsmtSF, GarageArea\n\n\nQuality\nOverallQual, OverallCond, ExterQual\n\n\nLocation\nNeighborhood, MSZoning\n\n\nAge\nYearBuilt, YearRemodAdd\n\n\nAmenities\nFullBath, BedroomAbvGr, Fireplaces"
+  },
+  {
+    "objectID": "portfolio/ml/house-prices.html#methodology",
+    "href": "portfolio/ml/house-prices.html#methodology",
+    "title": "House Prices Prediction - Harvard Certificate",
+    "section": "Methodology",
+    "text": "Methodology\n\nModels Tested\n\nLinear Regression (baseline)\nRandom Forest\nXGBoost\nGAM (Generalized Additive Models)\nNeural Networks\nEnsemble (combination of best models)"
+  },
+  {
+    "objectID": "portfolio/ml/house-prices.html#results",
+    "href": "portfolio/ml/house-prices.html#results",
+    "title": "House Prices Prediction - Harvard Certificate",
+    "section": "Results",
+    "text": "Results\n\nModel Comparison\n\n\n\nModel\nRMSE (CV)\nR²\nRank\n\n\n\n\nLinear Regression\n34,521\n0.82\n6\n\n\nRandom Forest\n28,934\n0.87\n3\n\n\nXGBoost\n27,156\n0.89\n2\n\n\nGAM\n29,845\n0.86\n4\n\n\nNeural Network\n31,234\n0.84\n5\n\n\nEnsemble\n26,012\n0.90\n1\n\n\n\n\n\nMost Important Variables\nFrom XGBoost and Random Forest analysis:\n\nOverallQual: Overall house quality\nGrLivArea: Above ground living area\nTotalBsmtSF: Basement area\nGarageCars: Garage capacity\nYearBuilt: Construction year\nNeighborhood: Area\nTotalBath: Number of bathrooms"
+  },
+  {
+    "objectID": "portfolio/ml/house-prices.html#technologies",
+    "href": "portfolio/ml/house-prices.html#technologies",
+    "title": "House Prices Prediction - Harvard Certificate",
+    "section": "Technologies",
+    "text": "Technologies\n\n\n\nComponent\nTechnology\n\n\n\n\nLanguage\nR\n\n\nData Wrangling\ntidyverse (dplyr, tidyr)\n\n\nML Framework\ncaret\n\n\nModels\nlm, randomForest, xgboost, mgcv (GAM), nnet\n\n\nVisualization\nggplot2\n\n\nDocumentation\nRMarkdown"
+  },
+  {
+    "objectID": "portfolio/ml/house-prices.html#learnings",
+    "href": "portfolio/ml/house-prices.html#learnings",
+    "title": "House Prices Prediction - Harvard Certificate",
+    "section": "Learnings",
+    "text": "Learnings\nThis certification project allowed me to:\n\nMaster complete ML workflow: From EDA to Kaggle submission\nRigorously compare models: Cross-validation, multiple metrics\nUnderstand feature engineering importance: New variables significantly improve performance\nDiscover ensembles: Model combination often outperforms individual models\nPractice R in depth: tidyverse, caret, xgboost, mgcv"
+  },
+  {
+    "objectID": "portfolio/ml/house-prices.html#certification",
+    "href": "portfolio/ml/house-prices.html#certification",
+    "title": "House Prices Prediction - Harvard Certificate",
+    "section": "Certification",
+    "text": "Certification\nThis project is part of the Professional Certificate in Data Science from HarvardX, covering:\n\nR Basics, Visualization, Probability\nInference and Modeling\nProductivity Tools, Wrangling\nLinear Regression, Machine Learning\nCapstone (this project)\n\n\n← Back to Portfolio ML"
+  },
+  {
+    "objectID": "portfolio/ml/dynamic-pricing.html",
+    "href": "portfolio/ml/dynamic-pricing.html",
+    "title": "Dynamic Pricing Engine",
+    "section": "",
+    "text": "Business question: How to optimize prices in real-time based on context and demand?\n\nSurge pricing used by Uber and Lyft is a fascinating case where data science meets economics. This project progressively explores different approaches, from classical econometrics to reinforcement learning."
+  },
+  {
+    "objectID": "portfolio/ml/dynamic-pricing.html#context-problem",
+    "href": "portfolio/ml/dynamic-pricing.html#context-problem",
+    "title": "Dynamic Pricing Engine",
+    "section": "",
+    "text": "Business question: How to optimize prices in real-time based on context and demand?\n\nSurge pricing used by Uber and Lyft is a fascinating case where data science meets economics. This project progressively explores different approaches, from classical econometrics to reinforcement learning."
+  },
+  {
+    "objectID": "portfolio/ml/dynamic-pricing.html#dataset",
+    "href": "portfolio/ml/dynamic-pricing.html#dataset",
+    "title": "Dynamic Pricing Engine",
+    "section": "Dataset",
+    "text": "Dataset\nUber & Lyft Dataset (Kaggle):\n\n~700,000 rides in Boston\nPeriod: November 2018\nVariables: Price, distance, weather, hour, day, surge multiplier\nTwo companies: Uber and Lyft (for comparison)"
+  },
+  {
+    "objectID": "portfolio/ml/dynamic-pricing.html#progressive-approach",
+    "href": "portfolio/ml/dynamic-pricing.html#progressive-approach",
+    "title": "Dynamic Pricing Engine",
+    "section": "Progressive Approach",
+    "text": "Progressive Approach\nThis project is structured in 4 notebooks progressing in methodological complexity:\n\n1. EDA & Storytelling\nData exploration to understand pricing patterns:\n\nPrices are higher during peak hours (8-9am, 5-7pm)\nWeather (rain, snow) significantly increases prices\nLyft and Uber have slightly different pricing strategies\n\n\n\n2. Bayesian Price Elasticity\nEconometric demand modeling as a function of price:\n\nElasticity ~ -0.8: A 10% price increase reduces demand by 8%\nDemand is relatively inelastic (&lt; 1 in absolute value)\nThis economically justifies surge pricing\n\n\n\n3. Contextual Bandits (Thompson Sampling)\nThe explore/exploit problem: how to test new prices while maximizing revenue?\nAutomatically balances exploration and exploitation, converges to optimal price, adapts to context changes.\n\n\n4. Reinforcement Learning (Q-Learning)\nComplete approach with an agent learning a pricing policy:\nState: (hour, day, weather, demand) Actions: Price levels (0.8x, 1.0x, 1.2x, 1.5x, 2.0x) Reward: Revenue = price × purchase_probability"
+  },
+  {
+    "objectID": "portfolio/ml/dynamic-pricing.html#results",
+    "href": "portfolio/ml/dynamic-pricing.html#results",
+    "title": "Dynamic Pricing Engine",
+    "section": "Results",
+    "text": "Results\n\nApproach Comparison\n\n\n\n\n\n\n\n\nApproach\nAdvantages\nDisadvantages\n\n\n\n\nFixed elasticity\nSimple, interpretable\nIgnores context\n\n\nThompson Sampling\nAdaptive, theoretically optimal\nNo generalization\n\n\nQ-Learning\nLearns complete policy\nRequires lots of data\n\n\n\n\n\nLearned Policy\nThe Q-Learning agent learns a policy that:\n\nIncreases prices during peak hours (surge 1.5x-2.0x)\nMaintains prices during normal periods (1.0x)\nSlightly lowers during slow periods to stimulate demand (0.8x-1.0x)"
+  },
+  {
+    "objectID": "portfolio/ml/dynamic-pricing.html#technologies",
+    "href": "portfolio/ml/dynamic-pricing.html#technologies",
+    "title": "Dynamic Pricing Engine",
+    "section": "Technologies",
+    "text": "Technologies\n\n\n\nComponent\nTechnology\n\n\n\n\nData Processing\npandas, numpy\n\n\nVisualization\nmatplotlib, seaborn, plotly\n\n\nBayesian Modeling\nPyMC, ArviZ\n\n\nMachine Learning\nscikit-learn\n\n\nDashboard\nStreamlit"
+  },
+  {
+    "objectID": "portfolio/ml/dynamic-pricing.html#learnings",
+    "href": "portfolio/ml/dynamic-pricing.html#learnings",
+    "title": "Dynamic Pricing Engine",
+    "section": "Learnings",
+    "text": "Learnings\n\nPricing economics: Elasticity, consumer surplus, price discrimination\nBandits mastery: The exploration/exploitation trade-off\nRL implementation: Q-Learning, states, actions, rewards\nMethodological progression: From simple to complex\n\n\n← Back to Portfolio ML"
+  },
+  {
+    "objectID": "portfolio/analysis/mmm-robyn.html",
+    "href": "portfolio/analysis/mmm-robyn.html",
+    "title": "Marketing Mix Modeling with Robyn",
+    "section": "",
+    "text": "Business question: How should a CMO reallocate marketing budget to maximize sales?\n\nIn a context where marketing budgets are scrutinized and attribution becomes increasingly complex (end of third-party cookies, multiplication of channels), Marketing Mix Modeling (MMM) is experiencing renewed interest.\nMMM allows you to:\n\nMeasure the incremental impact of each marketing channel on sales\nAccount for saturation effects (diminishing returns)\nModel carryover effects (adstock) - the impact of a campaign that persists over time\nOptimize budget allocation across channels"
+  },
+  {
+    "objectID": "portfolio/analysis/mmm-robyn.html#context-problem",
+    "href": "portfolio/analysis/mmm-robyn.html#context-problem",
+    "title": "Marketing Mix Modeling with Robyn",
+    "section": "",
+    "text": "Business question: How should a CMO reallocate marketing budget to maximize sales?\n\nIn a context where marketing budgets are scrutinized and attribution becomes increasingly complex (end of third-party cookies, multiplication of channels), Marketing Mix Modeling (MMM) is experiencing renewed interest.\nMMM allows you to:\n\nMeasure the incremental impact of each marketing channel on sales\nAccount for saturation effects (diminishing returns)\nModel carryover effects (adstock) - the impact of a campaign that persists over time\nOptimize budget allocation across channels"
+  },
+  {
+    "objectID": "portfolio/analysis/mmm-robyn.html#approach-methodology",
+    "href": "portfolio/analysis/mmm-robyn.html#approach-methodology",
+    "title": "Marketing Mix Modeling with Robyn",
+    "section": "Approach & Methodology",
+    "text": "Approach & Methodology\n\nRobyn Framework\nI used Robyn, the open-source framework developed by Meta (Facebook), which combines several advanced techniques:\n# Robyn model architecture\n# 1. Time decomposition with Prophet\n#    - Trend\n#    - Seasonality (weekly, annual)\n#    - Holiday effects\n\n# 2. Marketing variable transformations\n#    - Geometric adstock: effect(t) = spend(t) + θ × effect(t-1)\n#    - Logistic saturation: response = α / (1 + exp(-β × spend))\n\n# 3. Ridge regression to avoid overfitting\n\n# 4. Multi-objective optimization with Nevergrad\n#    - Minimize NRMSE (prediction error)\n#    - Minimize DECOMP.RSSD (decomposition consistency)\n\n\nChannels Analyzed\n\nGoogle Ads: Search and Display\nFacebook Ads: Social and remarketing\nLinkedIn: B2B\nEmail: Newsletters and promotions\nOrganic: SEO and direct traffic\n\n\n\nComplete Workflow\nRaw data → Feature Engineering → Robyn Training → Model Selection → Budget Optimization\n\nData collection: Daily sales, spend by channel, contextual variables\nFeature engineering: Creating seasonality variables, special events\nTraining: Calibrating adstock and saturation parameters\nModel selection: Pareto analysis (NRMSE vs DECOMP.RSSD)\nOptimization: Budget allocation scenario simulation"
+  },
+  {
+    "objectID": "portfolio/analysis/mmm-robyn.html#key-results",
+    "href": "portfolio/analysis/mmm-robyn.html#key-results",
+    "title": "Marketing Mix Modeling with Robyn",
+    "section": "Key Results",
+    "text": "Key Results\n\nSales Decomposition\nThe model decomposes sales into:\n\nBaseline: “Natural” sales without marketing (~60%)\nChannel contribution: Incremental impact of each investment\nSeasonality: Calendar-related variations\n\n\n\nResponse Curves\nEach channel has a different response curve, showing diminishing returns:\n\nGoogle Ads: High initial ROI, rapid saturation\nFacebook: More linear curve, less saturation\nEmail: Excellent ROI but limited capacity\n\n\n\nOptimization Recommendations\nThe dashboard allows simulating different scenarios:\n\nCurrent scenario: Historical allocation\nOptimized scenario: Rebalancing toward under-invested channels\nConstrained scenario: Optimization with fixed budget"
+  },
+  {
+    "objectID": "portfolio/analysis/mmm-robyn.html#demo",
+    "href": "portfolio/analysis/mmm-robyn.html#demo",
+    "title": "Marketing Mix Modeling with Robyn",
+    "section": "Demo",
+    "text": "Demo\n View Shiny Dashboard \nThe interactive dashboard allows you to:\n\nVisualize sales decomposition\nExplore response curves by channel\nSimulate allocation scenarios\nCompare marginal ROIs"
+  },
+  {
+    "objectID": "portfolio/analysis/mmm-robyn.html#technologies",
+    "href": "portfolio/analysis/mmm-robyn.html#technologies",
+    "title": "Marketing Mix Modeling with Robyn",
+    "section": "Technologies",
+    "text": "Technologies\n\n\n\nComponent\nTechnology\n\n\n\n\nLanguage\nR\n\n\nMMM Framework\nRobyn (Meta)\n\n\nTime Decomposition\nProphet\n\n\nOptimization\nNevergrad\n\n\nDashboard\nShiny\n\n\nEnvironment Management\nrenv"
+  },
+  {
+    "objectID": "portfolio/analysis/mmm-robyn.html#source-code",
+    "href": "portfolio/analysis/mmm-robyn.html#source-code",
+    "title": "Marketing Mix Modeling with Robyn",
+    "section": "Source Code",
+    "text": "Source Code\nThe project is organized into several components:\nmmm-robyn-project/\n├── R/\n│   ├── 01_data_preparation.R    # Data preparation\n│   ├── 02_robyn_training.R      # Model training\n│   ├── 03_model_selection.R     # Pareto selection\n│   └── 04_optimization.R        # Budget optimization\n├── app/\n│   └── app.R                    # Shiny dashboard\n├── data/\n│   └── marketing_data.csv       # Input data\n└── outputs/\n    ├── exploration/             # EDA visualizations\n    ├── robyn/                   # Model results\n    └── optimization/            # Optimized scenarios"
+  },
+  {
+    "objectID": "portfolio/analysis/mmm-robyn.html#learnings",
+    "href": "portfolio/analysis/mmm-robyn.html#learnings",
+    "title": "Marketing Mix Modeling with Robyn",
+    "section": "Learnings",
+    "text": "Learnings\nThis project allowed me to deepen:\n\nMarketing modeling: Understanding adstock and saturation effects\nMulti-objective optimization: Finding the right balance between accuracy and interpretability\nResults communication: Translating complex models into actionable recommendations\n\n\n← Back to Portfolio Analysis | View Dashboard"
+  },
+  {
+    "objectID": "portfolio/analysis/marketing-pipeline.html",
+    "href": "portfolio/analysis/marketing-pipeline.html",
+    "title": "Marketing Analytics Pipeline (GCP + dbt)",
+    "section": "",
+    "text": "Business question: How to build a modern infrastructure to track marketing KPIs in real-time?\n\nMarketing teams need quick access to their performance metrics to make informed decisions. This project demonstrates setting up a complete ETL pipeline using modern data engineering best practices."
+  },
+  {
+    "objectID": "portfolio/analysis/marketing-pipeline.html#context-problem",
+    "href": "portfolio/analysis/marketing-pipeline.html#context-problem",
+    "title": "Marketing Analytics Pipeline (GCP + dbt)",
+    "section": "",
+    "text": "Business question: How to build a modern infrastructure to track marketing KPIs in real-time?\n\nMarketing teams need quick access to their performance metrics to make informed decisions. This project demonstrates setting up a complete ETL pipeline using modern data engineering best practices."
+  },
+  {
+    "objectID": "portfolio/analysis/marketing-pipeline.html#architecture",
+    "href": "portfolio/analysis/marketing-pipeline.html#architecture",
+    "title": "Marketing Analytics Pipeline (GCP + dbt)",
+    "section": "Architecture",
+    "text": "Architecture\n┌─────────────┐     ┌─────────────┐     ┌─────────────┐     ┌─────────────┐\n│   Sources   │────▶│   Extract   │────▶│  BigQuery   │────▶│     dbt     │\n│   (CSV)     │     │  (Python)   │     │   (Raw)     │     │ (Transform) │\n└─────────────┘     └─────────────┘     └─────────────┘     └─────────────┘\n                                                                   │\n                                                                   ▼\n                                        ┌─────────────┐     ┌─────────────┐\n                                        │  Streamlit  │◀────│  BigQuery   │\n                                        │ (Dashboard) │     │ (Analytics) │\n                                        └─────────────┘     └─────────────┘\n\nComponents\n\nExtract: Python script generating realistic simulated marketing data\nLoad: Loading to Google BigQuery (dataset marketing_raw)\nTransform: dbt to calculate KPIs (dataset marketing_analytics)\nVisualize: Interactive Streamlit dashboard"
+  },
+  {
+    "objectID": "portfolio/analysis/marketing-pipeline.html#implementation",
+    "href": "portfolio/analysis/marketing-pipeline.html#implementation",
+    "title": "Marketing Analytics Pipeline (GCP + dbt)",
+    "section": "Implementation",
+    "text": "Implementation\n\n1. Data Extraction\n# src/extract_data.py\nimport pandas as pd\nimport numpy as np\n\ndef generate_marketing_data(start_date, end_date, seed=42):\n    \"\"\"Generate realistic simulated marketing data.\"\"\"\n    np.random.seed(seed)\n\n    channels = {\n        'Google Ads': {'sessions': 1500, 'conv_rate': 0.05, 'spend': 3000},\n        'Facebook Ads': {'sessions': 1200, 'conv_rate': 0.04, 'spend': 2500},\n        'LinkedIn': {'sessions': 400, 'conv_rate': 0.06, 'spend': 1500},\n        'Email': {'sessions': 800, 'conv_rate': 0.08, 'spend': 500},\n        'Direct': {'sessions': 2000, 'conv_rate': 0.03, 'spend': 0}\n    }\n\n    # Generation with realistic variability\n    # - Poisson distribution for sessions\n    # - Weekend effect (-30%)\n    # - No negative values\n\n    return df\n\n\n2. dbt Transformation\n-- dbt_marketing/models/staging/stg_marketing_daily.sql\nWITH source AS (\n    SELECT * FROM {{ source('marketing_raw', 'daily_performance') }}\n),\n\ntransformed AS (\n    SELECT\n        date,\n        DATE_TRUNC(date, WEEK) AS week_start_date,\n        DATE_TRUNC(date, MONTH) AS month_start_date,\n        source AS marketing_source,\n        sessions,\n        conversions,\n        revenue,\n        spend,\n\n        -- Calculated KPIs\n        SAFE_DIVIDE(revenue, spend) AS roas,\n        SAFE_DIVIDE(spend, conversions) AS cost_per_conversion,\n        SAFE_DIVIDE(conversions, sessions) AS conversion_rate,\n        SAFE_DIVIDE(revenue, conversions) AS revenue_per_conversion,\n        SAFE_DIVIDE(revenue, sessions) AS revenue_per_session,\n\n        -- Flags\n        spend = 0 AS is_organic_channel,\n        EXTRACT(DAYOFWEEK FROM date) IN (1, 7) AS is_weekend\n\n    FROM source\n)\n\nSELECT * FROM transformed\n\n\n3. Streamlit Dashboard\nThe dashboard presents:\n\nGlobal KPIs: Total Spend, Revenue, Conversions, ROAS\nTime trend: Spend vs Revenue by day\nPerformance by channel: Marketing source comparison\nROAS by source: Return on ad spend\nConversion funnel: Sessions → Conversions"
+  },
+  {
+    "objectID": "portfolio/analysis/marketing-pipeline.html#results",
+    "href": "portfolio/analysis/marketing-pipeline.html#results",
+    "title": "Marketing Analytics Pipeline (GCP + dbt)",
+    "section": "Results",
+    "text": "Results\n\nCalculated KPIs\n\n\n\nMetric\nFormula\nUsage\n\n\n\n\nROAS\nRevenue / Spend\nOverall effectiveness\n\n\nCPA\nSpend / Conversions\nAcquisition cost\n\n\nConversion Rate\nConversions / Sessions\nTraffic quality\n\n\nRevenue/Session\nRevenue / Sessions\nTraffic value\n\n\n\n\n\nGenerated Data\n\nPeriod: 84 days (Sept-Nov 2024)\nChannels: 5 marketing sources\nVolume: ~420 rows per execution"
+  },
+  {
+    "objectID": "portfolio/analysis/marketing-pipeline.html#demo",
+    "href": "portfolio/analysis/marketing-pipeline.html#demo",
+    "title": "Marketing Analytics Pipeline (GCP + dbt)",
+    "section": "Demo",
+    "text": "Demo\n View Streamlit Dashboard \nThe dashboard allows you to:\n\nFilter by date range\nSelect channels to display\nVisualize trends\nCompare performance"
+  },
+  {
+    "objectID": "portfolio/analysis/marketing-pipeline.html#technologies",
+    "href": "portfolio/analysis/marketing-pipeline.html#technologies",
+    "title": "Marketing Analytics Pipeline (GCP + dbt)",
+    "section": "Technologies",
+    "text": "Technologies\n\n\n\nComponent\nTechnology\nVersion\n\n\n\n\nLanguage\nPython\n3.13+\n\n\nData Warehouse\nGoogle BigQuery\nCloud\n\n\nTransformation\ndbt-core + dbt-bigquery\n1.10.3\n\n\nDashboard\nStreamlit\n1.51.0\n\n\nVisualization\nPlotly + Altair\n-\n\n\nDependency Management\nPoetry\n-"
+  },
+  {
+    "objectID": "portfolio/analysis/marketing-pipeline.html#project-structure",
+    "href": "portfolio/analysis/marketing-pipeline.html#project-structure",
+    "title": "Marketing Analytics Pipeline (GCP + dbt)",
+    "section": "Project Structure",
+    "text": "Project Structure\nmarketing-data-pipeline/\n├── src/\n│   ├── extract_data.py      # Data generation\n│   ├── load_bigquery.py     # BigQuery loading\n│   └── dashboard.py         # Streamlit dashboard\n├── dbt_marketing/\n│   ├── dbt_project.yml      # dbt config\n│   └── models/\n│       └── staging/\n│           ├── sources.yml\n│           └── stg_marketing_daily.sql\n├── data/\n│   └── raw/\n│       └── marketing_data.csv\n├── pyproject.toml           # Poetry dependencies\n└── README.md"
+  },
+  {
+    "objectID": "portfolio/analysis/marketing-pipeline.html#execution",
+    "href": "portfolio/analysis/marketing-pipeline.html#execution",
+    "title": "Marketing Analytics Pipeline (GCP + dbt)",
+    "section": "Execution",
+    "text": "Execution\n# 1. Extraction\npython src/extract_data.py\n\n# 2. BigQuery loading\npython src/load_bigquery.py\n\n# 3. dbt transformation\ncd dbt_marketing && dbt run\n\n# 4. Dashboard\nstreamlit run src/dashboard.py"
+  },
+  {
+    "objectID": "portfolio/analysis/marketing-pipeline.html#learnings",
+    "href": "portfolio/analysis/marketing-pipeline.html#learnings",
+    "title": "Marketing Analytics Pipeline (GCP + dbt)",
+    "section": "Learnings",
+    "text": "Learnings\nThis project illustrates Modern Data Stack best practices:\n\nSeparation of concerns: Distinct Extract, Load, Transform\nInfrastructure as Code: dbt for versioned transformations\nReproducibility: Fixed seed for simulated data\nDocumentation: Documented dbt sources and models\n\n\n← Back to Portfolio Analysis | View Dashboard"
   },
   {
     "objectID": "index.html#and-move-faster-than-your-competitors.",

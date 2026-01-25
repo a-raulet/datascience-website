@@ -42,17 +42,17 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "一致なし",
-    "search-matching-documents-text": "一致した文書",
-    "search-copy-link-title": "検索へのリンクをコピー",
-    "search-hide-matches-text": "追加の検索結果を非表示",
-    "search-more-match-text": "追加の検索結果",
-    "search-more-matches-text": "追加の検索結果",
-    "search-clear-button-title": "消去",
-    "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "取消",
-    "search-submit-button-title": "検索",
-    "search-label": "サーチ"
+    "search-no-results-text": "結果がありません",
+    "search-matching-documents-text": "件のドキュメントが一致",
+    "search-copy-link-title": "検索リンクをコピー",
+    "search-hide-matches-text": "追加の一致を非表示",
+    "search-more-match-text": "このドキュメントにさらに1件の一致",
+    "search-more-matches-text": "このドキュメントにさらに複数の一致",
+    "search-clear-button-title": "クリア",
+    "search-text-placeholder": "検索",
+    "search-detached-cancel-button-title": "キャンセル",
+    "search-submit-button-title": "送信",
+    "search-label": "検索"
   }
 }</script><script src="https://cdn.plot.ly/plotly-latest.min.js"></script><link rel="stylesheet" href="../styles.css">
 </head>
@@ -65,7 +65,7 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">データサイエンス ポートフォリオ</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="サーチ"></div>
+            <div id="quarto-search" class="" title="検索"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="ナビゲーションを切り替える" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
@@ -118,7 +118,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">目次</h2>
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">このページでは</h2>
    
   <ul>
 <li><a href="#%E3%83%96%E3%83%AD%E3%82%B0" id="toc-ブログ" class="nav-link active" data-scroll-target="#ブログ">ブログ</a></li>
@@ -193,12 +193,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "コピーしました");
+    button.setAttribute("title", "コピーしました！");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "コピーしました");
+      button.setAttribute("data-bs-title", "コピーしました！");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",

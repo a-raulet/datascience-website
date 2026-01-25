@@ -2,42 +2,70 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>/ja/test.html</loc>
-    <lastmod>2025-10-12T08:55:06.137Z</lastmod>
+    <lastmod>2026-01-12T13:19:48.973Z</lastmod>
   </url>
   <url>
     <loc>/ja/portfolio/analysis/index.html</loc>
-    <lastmod>2025-10-12T08:55:06.132Z</lastmod>
+    <lastmod>2026-01-12T13:19:48.973Z</lastmod>
   </url>
   <url>
-    <loc>/ja/portfolio/ml/index.html</loc>
-    <lastmod>2025-10-12T08:55:06.132Z</lastmod>
-  </url>
-  <url>
-    <loc>/ja/services/index.html</loc>
-    <lastmod>2025-10-12T08:55:06.137Z</lastmod>
-  </url>
-  <url>
-    <loc>/ja/blog/index.html</loc>
-    <lastmod>2025-10-12T08:55:06.132Z</lastmod>
-  </url>
-  <url>
-    <loc>/ja/about.html</loc>
-    <lastmod>2025-10-12T08:55:06.132Z</lastmod>
-  </url>
-  <url>
-    <loc>/ja/blog/posts/index.html</loc>
-    <lastmod>2025-10-12T08:55:06.132Z</lastmod>
-  </url>
-  <url>
-    <loc>/ja/portfolio/viz/index.html</loc>
-    <lastmod>2025-10-12T08:55:06.132Z</lastmod>
+    <loc>/ja/portfolio/analysis/clickstream-analytics.html</loc>
+    <lastmod>2026-01-12T13:19:48.973Z</lastmod>
   </url>
   <url>
     <loc>/ja/portfolio/index.html</loc>
-    <lastmod>2025-10-12T08:55:06.132Z</lastmod>
+    <lastmod>2026-01-12T13:19:48.973Z</lastmod>
+  </url>
+  <url>
+    <loc>/ja/portfolio/ml/causal-inference.html</loc>
+    <lastmod>2026-01-12T13:19:48.973Z</lastmod>
+  </url>
+  <url>
+    <loc>/ja/portfolio/ml/index.html</loc>
+    <lastmod>2026-01-12T13:19:48.973Z</lastmod>
+  </url>
+  <url>
+    <loc>/ja/portfolio/viz/index.html</loc>
+    <lastmod>2026-01-12T13:19:48.973Z</lastmod>
+  </url>
+  <url>
+    <loc>/ja/blog/posts/index.html</loc>
+    <lastmod>2026-01-12T13:19:48.973Z</lastmod>
+  </url>
+  <url>
+    <loc>/ja/about.html</loc>
+    <lastmod>2026-01-12T13:19:48.973Z</lastmod>
+  </url>
+  <url>
+    <loc>/ja/blog/index.html</loc>
+    <lastmod>2026-01-12T13:19:48.973Z</lastmod>
+  </url>
+  <url>
+    <loc>/ja/services/index.html</loc>
+    <lastmod>2026-01-12T13:19:48.973Z</lastmod>
+  </url>
+  <url>
+    <loc>/ja/portfolio/ml/penguin-explorer.html</loc>
+    <lastmod>2026-01-12T13:19:48.973Z</lastmod>
+  </url>
+  <url>
+    <loc>/ja/portfolio/ml/house-prices.html</loc>
+    <lastmod>2026-01-12T13:19:48.973Z</lastmod>
+  </url>
+  <url>
+    <loc>/ja/portfolio/ml/dynamic-pricing.html</loc>
+    <lastmod>2026-01-12T13:19:48.973Z</lastmod>
+  </url>
+  <url>
+    <loc>/ja/portfolio/analysis/mmm-robyn.html</loc>
+    <lastmod>2026-01-12T13:19:48.973Z</lastmod>
+  </url>
+  <url>
+    <loc>/ja/portfolio/analysis/marketing-pipeline.html</loc>
+    <lastmod>2026-01-12T13:19:48.973Z</lastmod>
   </url>
   <url>
     <loc>/ja/index.html</loc>
-    <lastmod>2025-10-12T08:55:06.132Z</lastmod>
+    <lastmod>2026-01-12T13:19:48.973Z</lastmod>
   </url>
 </urlset>

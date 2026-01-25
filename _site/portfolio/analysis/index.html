@@ -8,7 +8,8 @@
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.5.57">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>Portfolio/Analysis – Arnaud RAULET, Marketing Data Analyst</title>
+<meta name="description" content="Projets d’analyse de données et data engineering">
+<title>Portfolio - Analyse de Données – Arnaud RAULET, Marketing Data Analyst</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -55,7 +56,7 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script><script src="https://cdn.plot.ly/plotly-latest.min.js"></script><link rel="stylesheet" href="../../styles.css">
 </head>
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
@@ -113,21 +114,20 @@ ul.task-list li input[type="checkbox"] {
             <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
-    </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+    </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-layout-custom page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Sur cette page</h2>
-   
-  <ul>
-<li><a href="#portfolioanalysis" id="toc-portfolioanalysis" class="nav-link active" data-scroll-target="#portfolioanalysis">Portfolio/Analysis</a></li>
-  </ul></nav>
-</div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<h1 class="title">Portfolio/Analysis</h1>
+
+<header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<h1 class="title">Portfolio - Analyse de Données</h1>
 </div>
 
+<div>
+  <div class="description">
+    Projets d’analyse de données et data engineering
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -139,11 +139,71 @@ ul.task-list li input[type="checkbox"] {
   
 
 
-</header><section id="portfolioanalysis" class="level1"><h1>Portfolio/Analysis</h1>
-<p>Contenu à venir…</p>
+</header><section id="analyse-de-données" class="level1 hero-banner"><h1>Analyse de Données</h1>
+<section id="data-engineering-marketing-analytics" class="level2"><h2 data-anchor-id="data-engineering-marketing-analytics">Data Engineering &amp; Marketing Analytics</h2>
+<p>Exploration, pipelines de données et dashboards pour transformer les données brutes en insights actionnables.</p>
+</section></section><section id="projets" class="level2"><h2 data-anchor-id="projets">Projets</h2>
+<div class="grid">
+<div class="g-col-md-12">
+<section id="marketing-mix-modeling-avec-robyn" class="level3 portfolio-item"><h3 data-anchor-id="marketing-mix-modeling-avec-robyn">Marketing Mix Modeling avec Robyn</h3>
+<p><strong>Problématique</strong> : Comment un CMO devrait-il réallouer son budget marketing pour maximiser les ventes ?</p>
+<p>Le Marketing Mix Modeling (MMM) permet de mesurer l’impact de chaque canal marketing sur les ventes, en tenant compte de la saisonnalité, des effets de saturation (rendements décroissants) et des effets de rémanence (adstock).</p>
+<p><strong>Approche</strong> :</p>
+<ul>
+<li>Utilisation du framework <strong>Robyn</strong> développé par Meta</li>
+<li>Régression Ridge avec décomposition temporelle Prophet</li>
+<li>Modélisation des effets adstock (geometric decay) et saturation (logistique)</li>
+<li>Optimisation multi-objectifs avec Nevergrad</li>
+</ul>
+<p><strong>Résultats</strong> : Dashboard interactif permettant de simuler différents scénarios d’allocation budgétaire et de visualiser l’impact attendu sur les ventes.</p>
+<p><strong>Technologies</strong> : R, Robyn, Prophet, Nevergrad, Shiny</p>
+<p><a href="../../portfolio/analysis/mmm-robyn.html">Voir le détail →</a> | <a href="https://arnaudraulet.shinyapps.io/mmm-robyn/" target="_blank">Dashboard Shiny</a></p>
+</section>
+</div>
+</div>
+<div class="grid">
+<div class="g-col-md-12">
+<section id="pipeline-marketing-analytics-gcp-dbt" class="level3 portfolio-item"><h3 data-anchor-id="pipeline-marketing-analytics-gcp-dbt">Pipeline Marketing Analytics (GCP + dbt)</h3>
+<p><strong>Problématique</strong> : Comment construire une infrastructure moderne pour suivre les KPIs marketing en temps réel ?</p>
+<p>Ce projet démontre la mise en place d’un pipeline ETL complet pour l’analyse des performances marketing multi-canaux, de l’extraction à la visualisation.</p>
+<p><strong>Architecture</strong> :</p>
+<pre><code>CSV → Python Extract → BigQuery → dbt Transform → Streamlit Dashboard</code></pre>
+<p><strong>KPIs calculés</strong> :</p>
+<ul>
+<li>ROAS (Return on Ad Spend)</li>
+<li>Coût par conversion (CPA)</li>
+<li>Taux de conversion</li>
+<li>Revenue par session</li>
+</ul>
+<p><strong>Technologies</strong> : Python, Google BigQuery, dbt, Streamlit, Plotly</p>
+<p><a href="../../portfolio/analysis/marketing-pipeline.html">Voir le détail →</a> | <a href="https://marketing-data-pipeline-demo.streamlit.app" target="_blank">Dashboard Streamlit</a></p>
+</section>
+</div>
+</div>
+<div class="grid">
+<div class="g-col-md-12">
+<section id="real-time-clickstream-analytics" class="level3 portfolio-item"><h3 data-anchor-id="real-time-clickstream-analytics">Real-time Clickstream Analytics</h3>
+<p><strong>Problématique</strong> : Comment détecter en temps réel les anomalies dans le comportement utilisateur e-commerce ?</p>
+<p>Pipeline de streaming analytics pour l’analyse du comportement utilisateur avec agrégations par fenêtres temporelles et dashboard temps réel.</p>
+<p><strong>Architecture</strong> :</p>
+<pre><code>CSV Events → Kafka Producer → Spark Streaming → Delta Lake → Streamlit Dashboard</code></pre>
+<p><strong>Métriques temps réel</strong> :</p>
+<ul>
+<li>Sessions actives</li>
+<li>Funnel de conversion (view → cart → purchase)</li>
+<li>Top produits</li>
+<li>Alertes anomalies</li>
+</ul>
+<p><strong>Technologies</strong> : Apache Kafka, PySpark Structured Streaming, Delta Lake, Streamlit, Docker</p>
+<p><a href="../../portfolio/analysis/clickstream-analytics.html">Voir le détail →</a></p>
+</section>
+</div>
+</div>
+<hr>
+<p><a href="../../portfolio/">← Retour au Portfolio</a> | <a href="../../portfolio/ml/">Voir les projets ML →</a></p>
 
 
-</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</section><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");

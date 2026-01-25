@@ -8,7 +8,8 @@
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.5.57">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>Portfolio/Ml – Data Science Portfolio</title>
+<meta name="description" content="Machine learning, causal inference, and reinforcement learning projects">
+<title>Portfolio - Machine Learning – Data Science Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -55,7 +56,7 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script><script src="https://cdn.plot.ly/plotly-latest.min.js"></script><link rel="stylesheet" href="../../styles.css">
 </head>
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
@@ -113,21 +114,20 @@ ul.task-list li input[type="checkbox"] {
             <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
-    </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+    </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-layout-custom page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
-   
-  <ul>
-<li><a href="#portfolioml" id="toc-portfolioml" class="nav-link active" data-scroll-target="#portfolioml">Portfolio/Ml</a></li>
-  </ul></nav>
-</div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<h1 class="title">Portfolio/Ml</h1>
+
+<header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<h1 class="title">Portfolio - Machine Learning</h1>
 </div>
 
+<div>
+  <div class="description">
+    Machine learning, causal inference, and reinforcement learning projects
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -139,11 +139,105 @@ ul.task-list li input[type="checkbox"] {
   
 
 
-</header><section id="portfolioml" class="level1"><h1>Portfolio/Ml</h1>
-<p>Contents to come…</p>
+</header><section id="machine-learning" class="level1 hero-banner"><h1>Machine Learning</h1>
+<section id="predictive-models-causal-inference-reinforcement-learning" class="level2"><h2 data-anchor-id="predictive-models-causal-inference-reinforcement-learning">Predictive models, causal inference &amp; reinforcement learning</h2>
+<p>From classical statistical models to reinforcement learning, projects that create business value.</p>
+</section></section><section id="projects" class="level2"><h2 data-anchor-id="projects">Projects</h2>
+<div class="grid">
+<div class="g-col-md-12">
+<section id="causal-inference-platform-for-ab-testing" class="level3 portfolio-item"><h3 data-anchor-id="causal-inference-platform-for-ab-testing">Causal Inference Platform for A/B Testing</h3>
+<p><strong>Problem</strong>: What is the real impact of our email campaigns on conversions?</p>
+<p>Complete A/B testing platform combining Bayesian analysis and Causal ML to go beyond simple correlation and measure causal impact of marketing interventions.</p>
+<p><strong>Approach</strong>:</p>
+<ul>
+<li>
+<strong>Bayesian Analysis</strong> with PyMC for interpretable results (probability of being best)</li>
+<li>
+<strong>Causal ML</strong> with X-Learner to estimate heterogeneous effects (CATE)</li>
+<li>
+<strong>FastAPI</strong> for real-time recommendation</li>
+<li>
+<strong>Streamlit Dashboard</strong> for results exploration</li>
+</ul>
+<p><strong>Results</strong>: On 64,000 e-commerce customers, identified +16% lift for “Mens” emails vs +8% for “Womens”.</p>
+<p><strong>Technologies</strong>: Python, PyMC, CausalML, SHAP, FastAPI, Streamlit</p>
+<p><a href="../../portfolio/ml/causal-inference.html">See details →</a> | <a href="https://causal-inference-platform.streamlit.app/" target="_blank">Streamlit Dashboard</a></p>
+</section>
+</div>
+</div>
+<div class="grid">
+<div class="g-col-md-12">
+<section id="dynamic-pricing-engine" class="level3 portfolio-item"><h3 data-anchor-id="dynamic-pricing-engine">Dynamic Pricing Engine</h3>
+<p><strong>Problem</strong>: How to optimize prices in real-time based on context and demand?</p>
+<p>Project exploring surge pricing strategies used by Uber and Lyft, with methodological progression from econometrics to reinforcement learning.</p>
+<p><strong>Progressive approach</strong>:</p>
+<ol type="1">
+<li>
+<strong>EDA &amp; Storytelling</strong>: Dataset exploration and business narrative</li>
+<li>
+<strong>Bayesian Price Elasticity</strong>: Econometric model with PyMC</li>
+<li>
+<strong>Contextual Bandits</strong>: Thompson Sampling for exploration/exploitation</li>
+<li>
+<strong>Q-Learning</strong>: Complete reinforcement learning agent</li>
+</ol>
+<p><strong>Dataset</strong>: ~700K Uber &amp; Lyft rides (Boston, Nov 2018)</p>
+<p><strong>Technologies</strong>: Python, PyMC, ArviZ, scikit-learn, Streamlit</p>
+<p><a href="../../portfolio/ml/dynamic-pricing.html">See details →</a></p>
+</section>
+</div>
+</div>
+<div class="grid">
+<div class="g-col-md-12">
+<section id="penguin-explorer---full-stack-ml-demo" class="level3 portfolio-item"><h3 data-anchor-id="penguin-explorer---full-stack-ml-demo">Penguin Explorer - Full-stack ML Demo</h3>
+<p><strong>Problem</strong>: How to deploy an ML model end-to-end with modern architecture?</p>
+<p>Demonstrative project of a complete ML architecture: from training to deployment, through API and frontend, with R and Python integration.</p>
+<p><strong>Architecture</strong>:</p>
+<pre><code>DuckDB → scikit-learn → Vetiver → FastAPI → Shiny (Python &amp; R)</code></pre>
+<p><strong>Highlights</strong>:</p>
+<ul>
+<li>
+<strong>Model Registry</strong> with Vetiver and pins</li>
+<li>
+<strong>REST API</strong> auto-generated with OpenAPI documentation</li>
+<li>
+<strong>Dual frontends</strong>: Shiny Python and Shiny R</li>
+<li>
+<strong>CI/CD</strong> with GitHub Actions</li>
+<li>
+<strong>Complete containerization</strong> with Docker Compose</li>
+</ul>
+<p><strong>Technologies</strong>: Python, R, scikit-learn, Vetiver, FastAPI, Shiny, Docker, GitHub Actions</p>
+<p><a href="../../portfolio/ml/penguin-explorer.html">See details →</a> | <a href="https://github.com/a-raulet" target="_blank">GitHub</a></p>
+</section>
+</div>
+</div>
+<div class="grid">
+<div class="g-col-md-12">
+<section id="house-prices-prediction---harvard-certificate" class="level3 portfolio-item"><h3 data-anchor-id="house-prices-prediction---harvard-certificate">House Prices Prediction - Harvard Certificate</h3>
+<p><strong>Problem</strong>: Predict house sale prices in Iowa from their characteristics.</p>
+<p>Final project for Harvard Data Science certificate, exploring and comparing many regression approaches.</p>
+<p><strong>Models tested</strong>:</p>
+<ul>
+<li>Linear regression (baseline)</li>
+<li>Random Forest</li>
+<li>XGBoost</li>
+<li>GAM (Generalized Additive Models)</li>
+<li>Neural Networks</li>
+<li>
+<strong>Ensemble</strong> (combination of best models)</li>
+</ul>
+<p><strong>Results</strong>: Systematic performance comparison and identification of most important features.</p>
+<p><strong>Technologies</strong>: R, RMarkdown, caret, xgboost, randomForest</p>
+<p><a href="../../portfolio/ml/house-prices.html">See details →</a></p>
+</section>
+</div>
+</div>
+<hr>
+<p><a href="../../portfolio/">← Back to Portfolio</a> | <a href="../../portfolio/analysis/">See Analysis projects →</a></p>
 
 
-</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</section><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
