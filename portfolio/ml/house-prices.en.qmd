@@ -1,0 +1,105 @@
+---
+title: "House Prices Prediction - Harvard Certificate"
+description: "Harvard Data Science Certificate final project - Regression model comparison"
+lang: en
+categories: [Regression, Ensemble Learning, R, Harvard]
+format:
+  html:
+    toc: true
+    code-fold: true
+---
+
+## Context & Problem
+
+> **Question**: Predict house sale prices in Iowa from their characteristics.
+
+This project is the **final assessment** for the Harvard Data Science Certificate (HarvardX). It's a classic Kaggle challenge that allows comparing many regression approaches.
+
+## Dataset
+
+**Ames Housing Dataset**:
+
+- **~1,500 houses** in Iowa (USA)
+- **79 features**
+- **Target**: SalePrice (sale price in $)
+
+### Key Variables
+
+| Category | Variables |
+|----------|-----------|
+| Area | GrLivArea, TotalBsmtSF, GarageArea |
+| Quality | OverallQual, OverallCond, ExterQual |
+| Location | Neighborhood, MSZoning |
+| Age | YearBuilt, YearRemodAdd |
+| Amenities | FullBath, BedroomAbvGr, Fireplaces |
+
+## Methodology
+
+### Models Tested
+
+- **Linear Regression** (baseline)
+- **Random Forest**
+- **XGBoost**
+- **GAM** (Generalized Additive Models)
+- **Neural Networks**
+- **Ensemble** (combination of best models)
+
+## Results
+
+### Model Comparison
+
+| Model | RMSE (CV) | R² | Rank |
+|-------|-----------|-----|------|
+| Linear Regression | 34,521 | 0.82 | 6 |
+| Random Forest | 28,934 | 0.87 | 3 |
+| XGBoost | 27,156 | 0.89 | 2 |
+| GAM | 29,845 | 0.86 | 4 |
+| Neural Network | 31,234 | 0.84 | 5 |
+| **Ensemble** | **26,012** | **0.90** | **1** |
+
+### Most Important Variables
+
+From XGBoost and Random Forest analysis:
+
+1. **OverallQual**: Overall house quality
+2. **GrLivArea**: Above ground living area
+3. **TotalBsmtSF**: Basement area
+4. **GarageCars**: Garage capacity
+5. **YearBuilt**: Construction year
+6. **Neighborhood**: Area
+7. **TotalBath**: Number of bathrooms
+
+## Technologies
+
+| Component | Technology |
+|-----------|------------|
+| Language | R |
+| Data Wrangling | tidyverse (dplyr, tidyr) |
+| ML Framework | caret |
+| Models | lm, randomForest, xgboost, mgcv (GAM), nnet |
+| Visualization | ggplot2 |
+| Documentation | RMarkdown |
+
+## Learnings
+
+This certification project allowed me to:
+
+1. **Master complete ML workflow**: From EDA to Kaggle submission
+2. **Rigorously compare models**: Cross-validation, multiple metrics
+3. **Understand feature engineering importance**: New variables significantly improve performance
+4. **Discover ensembles**: Model combination often outperforms individual models
+5. **Practice R in depth**: tidyverse, caret, xgboost, mgcv
+
+## Certification
+
+This project is part of the **Professional Certificate in Data Science** from HarvardX, covering:
+
+- R Basics, Visualization, Probability
+- Inference and Modeling
+- Productivity Tools, Wrangling
+- Linear Regression, Machine Learning
+- **Capstone** (this project)
+
+---
+
+[← Back to Portfolio ML](/portfolio/ml/)

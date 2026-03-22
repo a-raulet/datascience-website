@@ -1,7 +1,133 @@
 ---
 title: "ポートフォリオ"
+description: "データサイエンス＆マーケティングアナリティクスプロジェクト"
+lang: ja
+format:
+  html:
+    page-layout: custom
+    toc: false
 ---
 
+::: hero-banner
 # ポートフォリオ
 
-コンテンツはこれから...
+## データサイエンス＆マーケティングアナリティクスプロジェクト
+
+データ分析、機械学習、データエンジニアリングの専門知識を示すプロジェクト集。
+:::
+
+## カテゴリー
+
+:::::: grid
+::: g-col-md-4
+
+### データ分析
+
+マーケティングとEコマースデータからの探索、可視化、ビジネスインサイト。
+
+[分析プロジェクトを見る →](/portfolio/analysis/)
+
+:::
+
+::: g-col-md-4
+
+### 機械学習
+
+実際のユースケースに適用された予測モデル、因果推論、強化学習。
+
+[MLプロジェクトを見る →](/portfolio/ml/)
+
+:::
+
+::: g-col-md-4
+
+### 可視化
+
+意思決定のためのインタラクティブなダッシュボードとデータ可視化。
+
+[可視化を見る →](/portfolio/viz/)
+
+:::
+::::::
+
+---
+
+## 注目のプロジェクト
+
+:::::: grid
+::: g-col-md-6
+
+::: portfolio-item
+### マーケティングミックスモデリング（Robyn）
+
+**ビジネス課題**：売上を最大化するためにマーケティング予算をどのように再配分すべきか？
+
+MetaのRobynフレームワークを使用して、各マーケティングチャネルの影響を測定し、予算配分を最適化。
+
+**テクノロジー**：R、Robyn、Prophet、Shiny
+
+[プロジェクトを見る →](/portfolio/analysis/mmm-robyn.qmd) | [Shinyダッシュボード](https://arnaudraulet.shinyapps.io/mmm-robyn/){target="_blank"}
+:::
+
+:::
+
+::: g-col-md-6
+
+::: portfolio-item
+### 因果推論プラットフォーム
+
+**ビジネス課題**：メールキャンペーンのコンバージョンへの実際の影響は？
+
+ベイズ分析とCausal MLを用いた完全なA/Bテストプラットフォームで処置効果を測定。
+
+**テクノロジー**：Python、PyMC、CausalML、FastAPI、Streamlit
+
+[プロジェクトを見る →](/portfolio/ml/causal-inference.qmd) | [Streamlitダッシュボード](https://causal-inference-platform.streamlit.app/){target="_blank"}
+:::
+
+:::
+::::::
+
+:::::: grid
+::: g-col-md-6
+
+::: portfolio-item
+### マーケティングアナリティクスパイプライン
+
+**ビジネス課題**：マーケティングチャネルのパフォーマンスをリアルタイムで追跡するには？
+
+BigQuery、dbt、Streamlitダッシュボードを使用した完全なETLパイプラインでマーケティングKPIを追跡。
+
+**テクノロジー**：Python、BigQuery、dbt、Streamlit
+
+[プロジェクトを見る →](/portfolio/analysis/marketing-pipeline.qmd) | [Streamlitダッシュボード](https://marketing-data-pipeline-demo.streamlit.app){target="_blank"}
+:::
+
+:::
+
+::: g-col-md-6
+
+::: portfolio-item
+### ダイナミックプライシングエンジン
+
+**ビジネス課題**：需要に基づいてリアルタイムで価格を最適化するには？
+
+計量経済学から強化学習への進行によるダイナミックプライシング（Uber/Lyftケース）。
+
+**テクノロジー**：Python、PyMC、Q-Learning、Streamlit
+
+[プロジェクトを見る →](/portfolio/ml/dynamic-pricing.qmd)
+:::
+
+:::
+::::::
+
+---
+
+::: contact-section
+## 類似のプロジェクトはありますか？
+
+ニーズについて話し合い、これらのアプローチがお客様のコンテキストにどのように適用できるかをご相談させてください。
+
+[お問い合わせ](mailto:contact-quarto-site.le77r@simplelogin.com){.btn .btn-primary} [LinkedIn](https://linkedin.com/in/arnaud-raulet-13308310/){.btn .btn-outline-secondary}
+:::

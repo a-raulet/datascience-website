@@ -1,7 +1,221 @@
 ---
-title: "Portfolio/Viz"
+title: "Portfolio - Visualisation"
+description: "Dashboards interactifs et visualisations de données"
+lang: fr
+format:
+  html:
+    page-layout: custom
+    toc: false
 ---
 
-# Portfolio/Viz
+::: hero-banner
+# Visualisation
 
-Contenu à venir...
+## Dashboards interactifs & Data Storytelling
+
+Des visualisations qui transforment les données complexes en insights actionnables.
+:::
+
+## Dashboards en Production
+
+:::::: grid
+::: g-col-md-6
+
+::: portfolio-item
+### Marketing Mix Modeling Dashboard
+
+**Framework** : Shiny (R)
+
+Dashboard interactif pour visualiser les résultats du Marketing Mix Modeling et simuler des scénarios d'allocation budgétaire.
+
+**Fonctionnalités** :
+
+- Décomposition des ventes par canal
+- Courbes de réponse et saturation
+- Simulateur de budget
+- Comparaison ROI par canal
+
+<a href="https://arnaudraulet.shinyapps.io/mmm-robyn/" target="_blank" class="btn btn-primary">
+Voir le Dashboard
+</a>
+:::
+
+:::
+
+::: g-col-md-6
+
+::: portfolio-item
+### Causal Inference Platform
+
+**Framework** : Streamlit (Python)
+
+Plateforme d'exploration des résultats d'A/B testing avec analyse Bayésienne et effets hétérogènes.
+
+**Fonctionnalités** :
+
+- Distributions postérieures interactives
+- Visualisation CATE par segment
+- Interface API de recommandation
+- Explications SHAP
+
+<a href="https://causal-inference-platform.streamlit.app/" target="_blank" class="btn btn-primary">
+Voir le Dashboard
+</a>
+:::
+
+:::
+::::::
+
+:::::: grid
+::: g-col-md-6
+
+::: portfolio-item
+### Marketing Analytics Dashboard
+
+**Framework** : Streamlit (Python)
+
+Dashboard de suivi des KPIs marketing multi-canaux avec données temps réel depuis BigQuery.
+
+**Fonctionnalités** :
+
+- KPIs globaux (Spend, Revenue, ROAS)
+- Tendances temporelles
+- Performance par canal
+- Funnel de conversion
+
+<a href="https://marketing-data-pipeline-demo.streamlit.app" target="_blank" class="btn btn-primary">
+Voir le Dashboard
+</a>
+:::
+
+:::
+
+::: g-col-md-6
+
+::: portfolio-item
+### Clickstream Analytics (Local)
+
+**Framework** : Streamlit + Plotly
+
+Dashboard temps réel pour l'analyse comportementale e-commerce avec données streaming.
+
+**Fonctionnalités** :
+
+- Métriques temps réel
+- Funnel interactif
+- Top produits
+- Auto-refresh configurable
+
+*Disponible en local avec Docker*
+
+[Voir le projet →](/portfolio/analysis/clickstream-analytics.qmd)
+:::
+
+:::
+::::::
+
+---
+
+## Technologies de Visualisation
+
+:::::: grid
+::: g-col-md-3
+
+### Streamlit
+
+Framework Python pour créer rapidement des applications data interactives.
+
+**Utilisé dans** :
+
+- Causal Inference
+- Marketing Pipeline
+- Clickstream Analytics
+
+:::
+
+::: g-col-md-3
+
+### Shiny
+
+Framework R (et Python) pour des dashboards statistiques avancés.
+
+**Utilisé dans** :
+
+- MMM Robyn
+- Penguin Explorer
+
+:::
+
+::: g-col-md-3
+
+### Plotly
+
+Bibliothèque de graphiques interactifs pour Python et R.
+
+**Types de graphiques** :
+
+- Scatter plots
+- Time series
+- Funnel charts
+- Heatmaps
+
+:::
+
+::: g-col-md-3
+
+### Quarto
+
+Système de publication scientifique pour créer des rapports et sites web.
+
+**Utilisé pour** :
+
+- Ce site portfolio
+- Documentation projets
+- Rapports d'analyse
+
+:::
+::::::
+
+---
+
+## Types de Visualisations
+
+### Analyse Marketing
+
+- **Décomposition des ventes** : Waterfall charts montrant la contribution de chaque canal
+- **Courbes de réponse** : Visualisation des rendements décroissants
+- **Heatmaps budget** : Matrice d'allocation optimale
+
+### Time Series
+
+- **Tendances** : Évolution des KPIs dans le temps
+- **Saisonnalité** : Patterns hebdomadaires/annuels
+- **Anomalies** : Détection visuelle des outliers
+
+### Machine Learning
+
+- **SHAP plots** : Importance des variables et explications locales
+- **Distributions postérieures** : Visualisation de l'incertitude Bayésienne
+- **Funnel de conversion** : Sankey diagrams pour les parcours utilisateurs
+
+### Statistiques Bayésiennes
+
+- **Trace plots** : Convergence MCMC
+- **Forest plots** : Intervalles de crédibilité
+- **Posterior predictive checks** : Validation du modèle
+
+---
+
+## Principes de Design
+
+Mes visualisations suivent ces principes :
+
+1. **Clarté** : Un graphique = un message
+2. **Contexte** : Toujours montrer les comparaisons pertinentes
+3. **Interactivité** : Permettre l'exploration sans surcharger
+4. **Accessibilité** : Palettes de couleurs adaptées
+5. **Reproductibilité** : Code disponible pour chaque visualisation
+
+---
+
+[← Retour au Portfolio](/portfolio/) | [Voir les projets Analysis →](/portfolio/analysis/)

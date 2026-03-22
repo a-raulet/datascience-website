@@ -1,0 +1,219 @@
+---
+title: "Dynamic Pricing Engine"
+description: "De l'économétrie au Reinforcement Learning pour la tarification dynamique"
+lang: fr
+categories: [Reinforcement Learning, Pricing, Economics, Python]
+format:
+  html:
+    toc: true
+    code-fold: true
+---
+
+## Contexte & Problématique
+
+> **Question business** : Comment optimiser les prix en temps réel selon le contexte et la demande ?
+
+Le **surge pricing** (tarification dynamique) utilisé par Uber et Lyft est un cas d'école fascinant où la data science rencontre l'économie. Ce projet explore progressivement les différentes approches, de l'économétrie classique au reinforcement learning.
+
+## Dataset
+
+**Uber & Lyft Dataset** (Kaggle) :
+
+- **~700,000 trajets** à Boston
+- **Période** : Novembre 2018
+- **Variables** : Prix, distance, météo, heure, jour, surge multiplier
+- **Deux compagnies** : Uber et Lyft (pour comparaison)
+
+## Approche Progressive
+
+Ce projet est structuré en **4 notebooks** qui progressent en complexité méthodologique :
+
+### 1. EDA & Storytelling
+
+Exploration des données pour comprendre les patterns de pricing :
+
+```python
+import plotly.express as px
+
+# Distribution des prix par heure
+fig = px.box(df, x='hour', y='price', color='cab_type',
+             title='Distribution des prix par heure de la journée')
+fig.show()
+```
+
+**Insights clés** :
+
+- Les prix sont plus élevés aux heures de pointe (8-9h, 17-19h)
+- La météo (pluie, neige) augmente significativement les prix
+- Lyft et Uber ont des stratégies de pricing légèrement différentes
+
+### 2. Élasticité-prix Bayésienne
+
+Modélisation économétrique de la demande en fonction du prix :
+
+```python
+import pymc as pm
+
+with pm.Model() as elasticity_model:
+    # Priors
+    alpha = pm.Normal('alpha', mu=0, sigma=10)  # Intercept
+    beta = pm.Normal('beta', mu=-1, sigma=1)     # Élasticité (attendue négative)
+    sigma = pm.HalfNormal('sigma', sigma=1)
+
+    # Modèle log-log
+    # log(Q) = alpha + beta * log(P) + epsilon
+    # beta = élasticité-prix (% changement demande / % changement prix)
+    mu = alpha + beta * np.log(df['price'])
+
+    # Likelihood
+    demand = pm.Normal('demand', mu=mu, sigma=sigma,
+                       observed=np.log(df['rides']))
+
+    trace = pm.sample(2000, tune=1000)
+
+# Résultat : beta ≈ -0.8 → élasticité inélastique
+```
+
+**Interprétation** :
+
+- Élasticité ~ -0.8 : Une hausse de 10% du prix réduit la demande de 8%
+- La demande est **relativement inélastique** (< 1 en valeur absolue)
+- Cela justifie économiquement le surge pricing
+
+### 3. Contextual Bandits (Thompson Sampling)
+
+Le problème explore/exploit : comment tester de nouveaux prix tout en maximisant le revenu ?
+
+```python
+import numpy as np
+
+class ThompsonSamplingPricing:
+    def __init__(self, price_levels, prior_alpha=1, prior_beta=1):
+        self.price_levels = price_levels
+        self.alphas = {p: prior_alpha for p in price_levels}
+        self.betas = {p: prior_beta for p in price_levels}
+
+    def select_price(self, context):
+        """Sélectionne un prix via Thompson Sampling."""
+        # Échantillonner depuis les posteriors Beta
+        samples = {
+            p: np.random.beta(self.alphas[p], self.betas[p])
+            for p in self.price_levels
+        }
+        # Choisir le prix avec le meilleur échantillon
+        return max(samples, key=samples.get)
+
+    def update(self, price, conversion):
+        """Met à jour les posteriors après observation."""
+        if conversion:
+            self.alphas[price] += 1
+        else:
+            self.betas[price] += 1
+```
+
+**Avantages** :
+
+- Balance automatiquement exploration et exploitation
+- Converge vers le prix optimal
+- S'adapte aux changements de contexte
+
+### 4. Reinforcement Learning (Q-Learning)
+
+Approche complète avec un agent qui apprend une politique de pricing :
+
+```python
+import numpy as np
+
+class PricingAgent:
+    def __init__(self, state_size, action_size, learning_rate=0.1,
+                 discount_factor=0.95, epsilon=0.1):
+        self.q_table = np.zeros((state_size, action_size))
+        self.lr = learning_rate
+        self.gamma = discount_factor
+        self.epsilon = epsilon
+
+    def get_state(self, context):
+        """Encode le contexte en état discret."""
+        # Discrétiser : heure, jour, météo, demande estimée
+        hour_bucket = context['hour'] // 4  # 6 buckets
+        day_type = 1 if context['is_weekend'] else 0
+        weather = context['weather_code']
+        return hour_bucket * 12 + day_type * 6 + weather
+
+    def select_action(self, state):
+        """Epsilon-greedy action selection."""
+        if np.random.random() < self.epsilon:
+            return np.random.randint(len(self.q_table[state]))
+        return np.argmax(self.q_table[state])
+
+    def update(self, state, action, reward, next_state):
+        """Q-learning update."""
+        best_next = np.max(self.q_table[next_state])
+        td_target = reward + self.gamma * best_next
+        td_error = td_target - self.q_table[state, action]
+        self.q_table[state, action] += self.lr * td_error
+```
+
+**État** : (heure, jour, météo, demande)
+**Actions** : Niveaux de prix (0.8x, 1.0x, 1.2x, 1.5x, 2.0x)
+**Récompense** : Revenue = prix × probabilité_achat
+
+## Résultats
+
+### Comparaison des approches
+
+| Approche | Avantages | Inconvénients |
+|----------|-----------|---------------|
+| Élasticité fixe | Simple, interprétable | Ignore le contexte |
+| Thompson Sampling | Adaptatif, théoriquement optimal | Pas de généralisation |
+| Q-Learning | Apprend une politique complète | Nécessite beaucoup de données |
+
+### Politique apprise
+
+L'agent Q-Learning apprend une politique qui :
+
+- **Augmente les prix** aux heures de pointe (surge 1.5x-2.0x)
+- **Maintient les prix** en période normale (1.0x)
+- **Baisse légèrement** en période creuse pour stimuler la demande (0.8x-1.0x)
+
+## Technologies
+
+| Composant | Technologie |
+|-----------|-------------|
+| Data Processing | pandas, numpy |
+| Visualization | matplotlib, seaborn, plotly |
+| Bayesian Modeling | PyMC, ArviZ |
+| Machine Learning | scikit-learn |
+| Dashboard | Streamlit |
+
+## Structure du Projet
+
+```
+dynamic-pricing-engine/
+├── notebooks/
+│   ├── 01_eda_and_story.ipynb           # Exploration
+│   ├── 02_price_elasticity_bayesian.ipynb  # Économétrie
+│   ├── 03_contextual_bandits.ipynb      # Thompson Sampling
+│   └── 04_reinforcement_learning.ipynb  # Q-Learning
+├── src/
+│   ├── agents/                          # Agents RL
+│   ├── environment/                     # Environnement simulation
+│   └── dashboard/                       # Streamlit app
+├── data/
+│   └── rideshare.csv                    # Dataset
+└── outputs/
+    └── figures/                         # Visualisations
+```
+
+## Enseignements
+
+Ce projet m'a permis de :
+
+1. **Comprendre l'économie du pricing** : Élasticité, surplus consommateur, discrimination par les prix
+2. **Maîtriser les bandits** : Le trade-off exploration/exploitation
+3. **Implémenter du RL** : Q-Learning, états, actions, récompenses
+4. **Progresser méthodologiquement** : Partir du simple vers le complexe
+
+---
+
+[← Retour au Portfolio ML](/portfolio/ml/)

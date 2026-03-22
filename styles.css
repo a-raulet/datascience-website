@@ -14,6 +14,15 @@
   --transition: all 0.3s ease;
 }
 
+body.home #quarto-content {
+  padding-top: 0 !important;
+}
+
+body.home main {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
 /* Hero Banner */
 .hero-banner {
   background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
@@ -177,7 +186,7 @@
 }
 
 .blog-meta {
-  color: #666;
+  color: #668;
   font-size: 0.9rem;
   margin-bottom: 1rem;
 }

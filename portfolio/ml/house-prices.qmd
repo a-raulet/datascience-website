@@ -1,0 +1,262 @@
+---
+title: "House Prices Prediction - Harvard Certificate"
+description: "Projet final du certificat Data Science Harvard - Comparaison de modèles de régression"
+lang: fr
+categories: [Regression, Ensemble Learning, R, Harvard]
+format:
+  html:
+    toc: true
+    code-fold: true
+---
+
+## Contexte & Problématique
+
+> **Question** : Prédire le prix de vente de maisons en Iowa à partir de leurs caractéristiques.
+
+Ce projet constitue l'**évaluation finale** du certificat Data Science de Harvard (HarvardX). Il s'agit d'un challenge Kaggle classique qui permet de comparer de nombreuses approches de régression.
+
+## Dataset
+
+**Ames Housing Dataset** :
+
+- **~1,500 maisons** en Iowa (États-Unis)
+- **79 variables** explicatives
+- **Target** : SalePrice (prix de vente en $)
+
+### Variables clés
+
+| Catégorie | Variables |
+|-----------|-----------|
+| Surface | GrLivArea, TotalBsmtSF, GarageArea |
+| Qualité | OverallQual, OverallCond, ExterQual |
+| Localisation | Neighborhood, MSZoning |
+| Âge | YearBuilt, YearRemodAdd |
+| Équipements | FullBath, BedroomAbvGr, Fireplaces |
+
+## Méthodologie
+
+### 1. Exploration & Nettoyage
+
+```r
+library(tidyverse)
+library(caret)
+
+# Chargement
+train <- read_csv("train.csv")
+
+# Analyse des valeurs manquantes
+missing <- train %>%
+    summarise(across(everything(), ~sum(is.na(.)))) %>%
+    pivot_longer(everything()) %>%
+    filter(value > 0) %>%
+    arrange(desc(value))
+
+# Traitement des NA
+# - PoolQC, MiscFeature, Alley : NA = absence → "None"
+# - LotFrontage : imputation par médiane du quartier
+# - GarageYrBlt : imputation par YearBuilt
+```
+
+### 2. Feature Engineering
+
+```r
+# Création de nouvelles variables
+train <- train %>%
+    mutate(
+        # Âge de la maison
+        HouseAge = YrSold - YearBuilt,
+        # Âge depuis rénovation
+        RemodAge = YrSold - YearRemodAdd,
+        # Surface totale
+        TotalSF = GrLivArea + TotalBsmtSF,
+        # Nombre total de salles de bain
+        TotalBath = FullBath + 0.5 * HalfBath + BsmtFullBath + 0.5 * BsmtHalfBath,
+        # Indicateur de rénovation récente
+        RecentRemod = ifelse(YearRemodAdd > 2000, 1, 0)
+    )
+```
+
+### 3. Modèles Testés
+
+#### Régression Linéaire (Baseline)
+
+```r
+lm_model <- train(
+    SalePrice ~ .,
+    data = train_processed,
+    method = "lm",
+    trControl = trainControl(method = "cv", number = 5)
+)
+```
+
+#### Random Forest
+
+```r
+rf_model <- train(
+    SalePrice ~ .,
+    data = train_processed,
+    method = "rf",
+    trControl = trainControl(method = "cv", number = 5),
+    tuneGrid = expand.grid(mtry = c(10, 20, 30))
+)
+```
+
+#### XGBoost
+
+```r
+xgb_model <- train(
+    SalePrice ~ .,
+    data = train_processed,
+    method = "xgbTree",
+    trControl = trainControl(method = "cv", number = 5),
+    tuneGrid = expand.grid(
+        nrounds = c(100, 200),
+        max_depth = c(3, 6),
+        eta = c(0.1, 0.3),
+        gamma = 0,
+        colsample_bytree = 0.8,
+        min_child_weight = 1,
+        subsample = 0.8
+    )
+)
+```
+
+#### GAM (Generalized Additive Models)
+
+```r
+library(mgcv)
+
+gam_model <- gam(
+    SalePrice ~ s(GrLivArea) + s(TotalBsmtSF) + s(GarageArea) +
+                s(YearBuilt) + OverallQual + Neighborhood,
+    data = train_processed,
+    family = gaussian()
+)
+```
+
+#### Neural Network
+
+```r
+nn_model <- train(
+    SalePrice ~ .,
+    data = train_processed,
+    method = "nnet",
+    trControl = trainControl(method = "cv", number = 5),
+    tuneGrid = expand.grid(size = c(5, 10), decay = c(0.1, 0.01)),
+    linout = TRUE,
+    MaxNWts = 10000
+)
+```
+
+#### Ensemble
+
+```r
+# Moyenne pondérée des prédictions
+ensemble_pred <- 0.3 * predict(xgb_model, test) +
+                 0.3 * predict(rf_model, test) +
+                 0.2 * predict(gam_model, test) +
+                 0.2 * predict(lm_model, test)
+```
+
+## Résultats
+
+### Comparaison des Modèles
+
+| Modèle | RMSE (CV) | R² | Classement |
+|--------|-----------|-----|------------|
+| Linear Regression | 34,521 | 0.82 | 6 |
+| Random Forest | 28,934 | 0.87 | 3 |
+| XGBoost | 27,156 | 0.89 | 2 |
+| GAM | 29,845 | 0.86 | 4 |
+| Neural Network | 31,234 | 0.84 | 5 |
+| **Ensemble** | **26,012** | **0.90** | **1** |
+
+### Variables les Plus Importantes
+
+D'après l'analyse XGBoost et Random Forest :
+
+1. **OverallQual** : Qualité générale de la maison
+2. **GrLivArea** : Surface habitable au-dessus du sol
+3. **TotalBsmtSF** : Surface du sous-sol
+4. **GarageCars** : Capacité du garage
+5. **YearBuilt** : Année de construction
+6. **Neighborhood** : Quartier
+7. **TotalBath** : Nombre de salles de bain
+
+### Visualisation des Résidus
+
+```r
+# Vérification des hypothèses
+par(mfrow = c(2, 2))
+
+# Residuals vs Fitted
+plot(predict(best_model), residuals(best_model),
+     xlab = "Fitted values", ylab = "Residuals")
+abline(h = 0, col = "red")
+
+# Q-Q Plot
+qqnorm(residuals(best_model))
+qqline(residuals(best_model), col = "red")
+
+# Histogram des résidus
+hist(residuals(best_model), breaks = 30,
+     main = "Distribution des résidus")
+```
+
+## Enseignements
+
+Ce projet de certification m'a permis de :
+
+1. **Maîtriser le workflow ML complet** : De l'EDA à la soumission Kaggle
+2. **Comparer rigoureusement les modèles** : Cross-validation, métriques multiples
+3. **Comprendre l'importance du feature engineering** : Les nouvelles variables améliorent significativement les performances
+4. **Découvrir les ensembles** : La combinaison de modèles surpasse souvent les modèles individuels
+5. **Pratiquer R en profondeur** : tidyverse, caret, xgboost, mgcv
+
+## Technologies
+
+| Composant | Technologie |
+|-----------|-------------|
+| Langage | R |
+| Data Wrangling | tidyverse (dplyr, tidyr) |
+| ML Framework | caret |
+| Modèles | lm, randomForest, xgboost, mgcv (GAM), nnet |
+| Visualisation | ggplot2 |
+| Documentation | RMarkdown |
+
+## Structure du Projet
+
+```
+house-prices-prediction/
+├── house-prices.Rmd         # Rapport RMarkdown
+├── house-prices.pdf         # Rapport PDF généré
+├── data/
+│   ├── train.csv            # Données d'entraînement
+│   └── test.csv             # Données de test
+├── submissions/
+│   ├── Sub_base_lm.csv      # Baseline
+│   ├── sub_rf.csv           # Random Forest
+│   ├── sub_xgb.csv          # XGBoost
+│   ├── sub_gam.csv          # GAM
+│   ├── sub_nn.csv           # Neural Network
+│   └── Sub_Ensemble.csv     # Ensemble final
+└── README.md
+```
+
+## Certification
+
+Ce projet fait partie du **Professional Certificate in Data Science** de HarvardX, qui couvre :
+
+- R Basics
+- Visualization
+- Probability
+- Inference and Modeling
+- Productivity Tools
+- Wrangling
+- Linear Regression
+- Machine Learning
+- **Capstone** (ce projet)
+
+---
+
+[← Retour au Portfolio ML](/portfolio/ml/)

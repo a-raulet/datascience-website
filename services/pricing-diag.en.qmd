@@ -1,0 +1,118 @@
+---
+title: "PricingDiag — Pricing Audit in 2 Weeks"
+description: "An operational pricing audit with actionable recommendations. Clear scope, fixed price, concrete deliverable."
+lang: en
+format:
+  html:
+    toc: true
+    toc-depth: 2
+---
+
+::: hero-banner
+# Are Your Prices Leaving Money on the Table?
+
+## An operational pricing audit in 2 weeks. Recommendations you can act on the following week.
+
+[Book a discovery call](/contact/){.btn .btn-primary .btn-lg}
+:::
+
+## The Problem
+
+Most business leaders know their pricing isn't optimal. But there's a wide gap between "I think product X is underpriced" and "here's exactly by how much, and here's what to do about it."
+
+That gap is the distance between intuition and decision.
+
+The consequences are real:
+
+- Underpriced products that subsidize your customers' margins instead of your own
+- Overpriced products quietly dragging down volume without a clear signal
+- Promotions whose net value — positive or negative — you've never actually measured
+- A pricing policy built on history and habit, never properly reviewed
+
+The problem isn't a lack of intuition. It's a lack of method and structured data.
+
+---
+
+## The Solution: PricingDiag
+
+**PricingDiag is an operational pricing audit.** In two weeks, using your existing sales data, I identify where your pricing underperforms and deliver concrete, quantified recommendations.
+
+This is not generalist consulting. This is not a dashboard to maintain. It's a diagnostic with a defined scope, a fixed price, and a deliverable you can use the next day.
+
+---
+
+## How It Works
+
+### 1. Briefing and Data Ingestion
+
+A one-hour call to understand your context — markets, channels, seasonality, specific challenges. You send me your sales data in CSV or Excel format. No technical infrastructure required on your end.
+
+### 2. Automated Diagnostic
+
+I analyse the full structure of your pricing: distribution by segment, estimated price elasticity, detection of under- and over-priced products, seasonality effects, impact of past promotions.
+
+### 3. Interpretation and Recommendations
+
+This is where the manual work begins. I translate the findings into actionable, prioritised recommendations, contextualised to your specific situation. Each recommendation comes with an estimated impact range and alternative scenarios.
+
+### 4. Delivery
+
+You receive the final report, and we hold a 45-minute debrief session to walk through the findings and answer your questions.
+
+---
+
+## What You Receive
+
+- **PDF report, 8 to 12 pages**: structured diagnostic, clear visualisations, prioritised recommendations
+- **Excel simulation file**: test the margin impact of a price change before committing
+- **45-minute debrief session**: to review the conclusions and answer your questions
+
+Everything is designed to be usable by a sales director or COO, with no data background required.
+
+---
+
+## A Concrete Example
+
+::: {.callout-note appearance="simple"}
+**Representative fictitious case:**
+
+An e-commerce company with €5M in revenue and 20 flagship products believes its prices are "roughly in line with the market." The audit reveals that 3 of those 20 products are systematically underpriced by 12 to 18% — and they happen to be the ones with the highest conversion rates. They're the best-sellers, sold too cheaply for two years.
+
+Recommended scenario: a gradual 10% price increase on those 3 products, monitored over 6 weeks. Estimated potential impact: €180k–€220k in additional annual margin, with no effect on volume.
+
+The audit cost €8,500. It paid for itself in under three weeks of implementation.
+:::
+
+---
+
+## Who It's For
+
+PricingDiag is designed for **CEOs, COOs, and sales directors at SMEs and scale-ups** who:
+
+- Have between €500k and €20M in annual revenue
+- Sell multiple products or offerings with different margins
+- Have at least 12 months of historical sales data
+- Know their pricing policy needs a review, but lack the time or method to do it internally
+
+It is **not** a fit if you have less than 6 months of sales history, or if you operate in a market with a single non-negotiable price point.
+
+---
+
+## Pricing and Timeline
+
+| Format | Scope | Indicative fee | Timeline |
+|---|---|---|---|
+| Standard | Up to 3 channels, homogeneous catalogue | €7,000 – €9,000 | 2 weeks |
+| Complex | Multi-channel, strong seasonality, extended catalogue | €12,000 – €15,000 | 3 weeks |
+
+Fees exclusive of tax. A precise quote is provided after the discovery call, with no commitment required.
+
+---
+
+::: contact-section
+### Think your pricing could be doing more?
+
+A 30-minute call is enough to find out whether PricingDiag is right for your situation. No pitch. No commitment. A direct conversation.
+
+[Book a discovery call](/contact/){.btn .btn-primary .btn-lg}
+:::

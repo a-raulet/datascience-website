@@ -1,0 +1,93 @@
+---
+title: "JapanTechRadar — Intelligence Technologique Japon"
+description: "Ce que les brevets japonais révèlent sur vos concurrents et partenaires. Analyse quantitative, contextualisée, livrée en français."
+lang: fr
+format:
+  html:
+    toc: true
+    toc-depth: 2
+---
+
+::: hero-banner
+# Ce que les brevets japonais révèlent sur vos concurrents
+
+## Des données publiques japonaises, invisibles derrière la barrière linguistique — rendues lisibles et actionnables.
+
+[Réserver un appel découverte](/contact/){.btn .btn-primary .btn-lg}
+:::
+
+## Le problème
+
+Les entreprises japonaises déposent chaque année des dizaines de milliers de brevets. Ces dépôts sont publics, accessibles gratuitement sur J-PlatPat — et totalement invisibles pour les entreprises européennes qui ne lisent pas le japonais technique.
+
+Résultat : vous naviguez sans carte dans un secteur où des acteurs japonais innovent, se repositionnent, ou érodent vos avantages compétitifs — sans que vous le sachiez.
+
+---
+
+## La solution : JapanTechRadar
+
+JapanTechRadar transforme ces données brutes en intelligence stratégique. En 3 à 4 semaines, j'analyse les dépôts de brevets des acteurs japonais de votre secteur et je vous livre un rapport clair, en français, avec des recommandations actionnables.
+
+Ce n'est pas un rapport de veille généraliste. C'est une analyse ciblée sur votre secteur, vos concurrents, vos questions.
+
+---
+
+## Ce que vous recevez
+
+Un rapport de 10 à 20 pages couvrant :
+
+- **Cartographie des acteurs** — Qui sont les leaders et les émergents de votre secteur au Japon, mesurés par leurs dépôts brevets
+- **Tendances technologiques** — Quelles technologies montent, lesquelles déclinent, où sont les ruptures potentielles
+- **Analyse comparative** — Comment vos concurrents japonais se positionnent les uns par rapport aux autres — et par rapport à vous
+- **Signaux faibles** — Nouveaux entrants, changements de stratégie, collaborations inhabituelles détectées dans les dépôts
+- **Recommandations** — Ce que ces données signifient concrètement pour vos décisions (partenariat, investissement, positionnement, R&D)
+
+---
+
+## Exemple concret
+
+::: {.callout-note appearance="simple"}
+**Cas fictif représentatif :**
+
+Un équipementier automobile français veut comprendre l'avance technologique de ses concurrents japonais sur les batteries solides. L'analyse couvre 36 entreprises et leurs dépôts brevets sur 5 ans. Elle révèle les leaders réels (différents des leaders médiatiques), les technologies émergentes à surveiller, et deux fenêtres d'opportunité partenariat avant une probable consolidation du secteur.
+
+Tout livré en français. Contextualisé. Actionnable.
+:::
+
+---
+
+## Méthodologie
+
+Chaque rapport combine :
+
+- Extraction et analyse quantitative des bases brevets japonaises (J-PlatPat, Espacenet)
+- Comptage corrigé (R-corrected patent counts) pour une comparaison équitable entre acteurs de tailles différentes
+- Interprétation contextuelle par un analyste trilingue basé au Japon depuis près de 10 ans
+
+---
+
+## Secteurs couverts
+
+Automobile et mobilité · Aérospatial et défense · Énergie · Matériaux avancés · Cybersécurité · Autres secteurs sur demande
+
+---
+
+## Tarifs et délais
+
+| Format | Périmètre | Tarif indicatif | Délai |
+|---|---|---|---|
+| Rapport sectoriel | Analyse complète d'un secteur, 20–50 acteurs | 5 000 – 8 000 € | 3-4 semaines |
+| Rapport pilote | Premier rapport à tarif découverte | Me contacter | 2 semaines |
+| Abonnement trimestriel | Rapport mis à jour + alertes | à partir de 2 000 €/mois | — |
+
+Prix HT. Un devis précis est établi après l'appel découverte, sans engagement.
+
+---
+
+::: contact-section
+### Qui innove dans votre secteur au Japon ?
+
+Un appel de 30 minutes pour définir le périmètre de votre analyse et voir ce que JapanTechRadar peut vous apporter.
+
+[Réserver un appel découverte](/contact/){.btn .btn-primary .btn-lg}
+:::

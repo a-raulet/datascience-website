@@ -1,0 +1,101 @@
+---
+title: "Causal Inference Platform for A/B Testing"
+description: "Bayesian analysis and Causal ML to measure real marketing campaign impact"
+lang: en
+categories: [Causal Inference, Bayesian Statistics, A/B Testing, Python]
+format:
+  html:
+    toc: true
+    code-fold: true
+---
+
+## Context & Problem
+
+> **Business question**: What is the real impact of our email campaigns on conversions?
+
+Traditional A/B testing answers "Is there a difference?". But decision-makers need more nuanced answers:
+
+- **What is the probability** that email A is better than B?
+- **For which customer segments** is the intervention most effective?
+- **What is the causal effect** of the intervention, not just correlation?
+
+This project implements a **complete causal inference platform** that answers these questions.
+
+## Dataset
+
+**Hillstrom Email Marketing Dataset** (classic in marketing analytics):
+
+- **64,000 customers** e-commerce
+- **3 groups**: Mens E-Mail, Womens E-Mail, No E-Mail (control)
+- **Metrics**: Visit (yes/no), Conversion (yes/no), Amount spent
+
+## Approach & Methodology
+
+### 1. Bayesian A/B Test Analysis
+
+Rather than a simple significance test (p-value), the Bayesian approach provides:
+
+- **95% credible interval** for the lift
+- **Probability that treatment is better** (P(Best))
+- **Complete distribution** of the effect
+
+### 2. Causal ML - Heterogeneous Effects (CATE)
+
+The average effect often hides significant variations between segments. **Conditional Average Treatment Effect (CATE)** identifies who responds best to the intervention.
+
+Using **X-Learner** with SHAP for interpretation.
+
+### 3. Recommendation API
+
+FastAPI to serve real-time recommendations based on customer features.
+
+## Key Results
+
+### Bayesian Analysis
+
+| Group | Conversion Rate | Lift vs Control | P(Best) |
+|-------|----------------|-----------------|---------|
+| Control | ~5.0% | - | 0.00 |
+| Mens E-Mail | ~5.8% | +16% | **0.92** |
+| Womens E-Mail | ~5.4% | +8% | 0.78 |
+
+### Heterogeneous Effects
+
+Customers who benefit most from "Mens" emails:
+
+- **High purchase history** (history > $200)
+- **Recent buyers** (recency < 6 months)
+- **Already "mens" customers** (previous purchases in this category)
+
+### Business Recommendations
+
+1. **Prioritize targeting** customers with high history for emails
+2. **Personalize**: Mens vs Womens based on purchase history
+3. **Avoid** sending emails to newbies (almost no effect)
+
+## Demo
+
+<a href="https://causal-inference-platform.streamlit.app/" target="_blank" class="btn btn-primary">
+View Streamlit Dashboard
+</a>
+
+## Technologies
+
+| Component | Technology |
+|-----------|------------|
+| Bayesian Modeling | PyMC, ArviZ |
+| Causal ML | CausalML (X-Learner) |
+| Interpretability | SHAP |
+| API | FastAPI, Pydantic, Uvicorn |
+| Dashboard | Streamlit |
+
+## Learnings
+
+1. **Bayesian inference**: Thinking in distributions, not points
+2. **Causal inference**: The difference between correlation and causation
+3. **Causal ML**: Estimating heterogeneous effects with X-Learner
+4. **Deployment**: Serving ML models via API
+
+---
+
+[← Back to Portfolio ML](/portfolio/ml/) | [View Dashboard](https://causal-inference-platform.streamlit.app/){target="_blank"}

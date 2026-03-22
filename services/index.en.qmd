@@ -1,7 +1,185 @@
 ---
 title: "Services"
+description: "Expertise in Marketing Analytics, Data Engineering, A/B Testing and Machine Learning"
+lang: en
+format:
+  html:
+    page-layout: custom
+    toc: false
 ---
 
-# Services
+::: hero-banner
+# Data Science & Marketing Analytics Services
 
-Contents to come...
+## Tailored solutions to turn your data into competitive advantage
+
+From exploratory analysis to production model deployment, I support you at every step of your data journey.
+
+[View my work](/portfolio/){.btn .btn-primary .btn-lg} [Contact me](mailto:contact-quarto-site.le77r@simplelogin.com){.btn .btn-outline-secondary .btn-lg}
+:::
+
+## What I Can Bring You
+
+:::::: grid
+::: g-col-md-6
+
+### Marketing Analytics
+
+**Optimize your marketing investments with reliable data**
+
+- **Marketing Mix Modeling (MMM)**: Measure the real impact of each channel on sales and optimize budget allocation
+- **Multi-touch Attribution**: Understand the complete customer journey and value each touchpoint
+- **Campaign Analysis**: Evaluate campaign performance with actionable KPIs (ROAS, CPA, LTV)
+- **Customer Segmentation**: Identify your most profitable segments to personalize actions
+
+**Technologies**: R (Robyn, Prophet), Python, BigQuery, Looker Studio
+
+[See MMM project →](/portfolio/analysis/mmm-robyn.qmd)
+
+:::
+
+::: g-col-md-6
+
+### Data Engineering
+
+**Build a modern and scalable data infrastructure**
+
+- **ETL/ELT Pipelines**: Automate data extraction, transformation, and loading
+- **Data Warehousing**: Design optimized cloud architectures (BigQuery, Snowflake)
+- **dbt Transformation**: Implement versioned, tested, and documented transformations
+- **Streaming Analytics**: Process real-time data with Kafka and Spark
+
+**Technologies**: dbt, BigQuery, Airflow, Kafka, Spark, Delta Lake, Docker
+
+[See Pipeline project →](/portfolio/analysis/marketing-pipeline.qmd)
+
+:::
+::::::
+
+:::::: grid
+::: g-col-md-6
+
+### Experimentation & A/B Testing
+
+**Make decisions based on evidence, not intuition**
+
+- **Experiment Design**: Create statistically robust tests with appropriate power calculations
+- **Bayesian Analysis**: Get interpretable results with credible intervals
+- **Causal Inference**: Go beyond correlation to measure real impact of your actions
+- **Heterogeneous Effects (CATE)**: Identify segments that respond best to your interventions
+
+**Technologies**: PyMC, CausalML, DoWhy, statsmodels, ArviZ
+
+[See Causal Inference project →](/portfolio/ml/causal-inference.qmd)
+
+:::
+
+::: g-col-md-6
+
+### Applied Machine Learning
+
+**Deploy models that create business value**
+
+- **Predictive Models**: Anticipate churn, demand, sales with interpretable models
+- **Dynamic Pricing**: Optimize prices in real-time based on context and demand
+- **Recommendation**: Personalize customer experience with recommendation systems
+- **MLOps**: Deploy and monitor production models (Vetiver, FastAPI, Docker)
+
+**Technologies**: scikit-learn, XGBoost, PyTorch, Vetiver, FastAPI, MLflow
+
+[See Dynamic Pricing project →](/portfolio/ml/dynamic-pricing.qmd)
+
+:::
+::::::
+
+---
+
+## How I Work
+
+:::::: grid
+::: g-col-md-4
+
+### 1. Discovery
+
+Together we define your business objectives, identify available data and technical constraints. I propose an approach adapted to your context.
+
+:::
+
+::: g-col-md-4
+
+### 2. Development
+
+I develop the solution iteratively, with regular checkpoints to validate direction. You have complete visibility on progress.
+
+:::
+
+::: g-col-md-4
+
+### 3. Delivery
+
+I deliver a documented, tested, and ready-to-use solution. I support you in getting started and remain available for support.
+
+:::
+::::::
+
+---
+
+## Technical Stack
+
+:::::: grid
+::: g-col-md-3
+
+**Languages**
+
+- Python
+- R
+- SQL
+
+:::
+
+::: g-col-md-3
+
+**Data Engineering**
+
+- dbt
+- BigQuery
+- Kafka
+- Spark
+- Airflow
+
+:::
+
+::: g-col-md-3
+
+**Machine Learning**
+
+- scikit-learn
+- PyMC
+- XGBoost
+- CausalML
+- Robyn
+
+:::
+
+::: g-col-md-3
+
+**Visualization & Deploy**
+
+- Streamlit
+- Shiny
+- Plotly
+- Docker
+- FastAPI
+
+:::
+::::::
+
+---
+
+::: contact-section
+## Let's Discuss Your Project
+
+Every project is unique. Contact me to discuss your needs and see how I can help you achieve your goals.
+
+[Contact me](mailto:contact-quarto-site.le77r@simplelogin.com){.btn .btn-primary} [LinkedIn](https://linkedin.com/in/arnaud-raulet-13308310/){.btn .btn-outline-secondary}
+:::

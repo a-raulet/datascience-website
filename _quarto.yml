@@ -3,7 +3,8 @@ project:
   output-dir: _site
 
 website:
-  title: "Arnaud RAULET, Marketing Data Analyst"
+  title: "Arnaud RAULET | Decision Science"
+  description: "Decision Science, Marketing Analytics et Intelligence Japon"
   navbar:
     background: primary
     search: true
@@ -11,7 +12,13 @@ website:
       - text: "Home"
         file: index.qmd
       - text: "Services"
-        file: services/index.qmd
+        menu:
+          - text: "Vue d'ensemble"
+            file: services/index.qmd
+          - text: "PricingDiag"
+            file: services/pricing-diag.qmd
+          - text: "JapanTechRadar"
+            file: services/japan-tech-radar.qmd
       - text: "Portfolio"
         file: portfolio/index.qmd
       - text: "Blog"
@@ -27,7 +34,7 @@ website:
 
 format:
   html:
-    theme: 
+    theme:
       - cosmo
       - custom.scss
     css: styles.css
@@ -53,8 +60,8 @@ babelquarto:
 
 title-en: "Data Science Portfolio"
 title-ja: "データサイエンス ポートフォリオ"
-description-en: "Professional data science services and portfolio"
-description-ja: "プロフェッショナルなデータサイエンスサービスとポートフォリオ"
+description-en: "Decision Science, Marketing Analytics and Japan Intelligence"
+description-ja: "デシジョンサイエンス、マーケティングアナリティクス、ジャパンインテリジェンス"
 author-en: "Arnaud RAULET"
 author-ja: "ローレ・アルノ"
 

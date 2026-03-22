@@ -1,0 +1,283 @@
+---
+title: "Penguin Explorer - Full-stack ML Demo"
+description: "Architecture ML complète : du modèle à l'API, avec R et Python"
+lang: fr
+categories: [MLOps, Full-stack, R, Python, Docker]
+format:
+  html:
+    toc: true
+    code-fold: true
+---
+
+## Contexte & Problématique
+
+> **Question technique** : Comment déployer un modèle ML de bout en bout avec une architecture moderne ?
+
+Ce projet démontre une **architecture ML complète** en utilisant le célèbre dataset Palmer Penguins. L'objectif n'est pas le modèle lui-même (régression linéaire simple), mais l'infrastructure de déploiement.
+
+## Architecture
+
+```
+┌─────────────┐     ┌─────────────┐     ┌─────────────┐
+│   DuckDB    │────▶│  scikit-    │────▶│   Vetiver   │
+│   (Data)    │     │   learn     │     │  (Registry) │
+└─────────────┘     └─────────────┘     └─────────────┘
+                                               │
+                         ┌─────────────────────┼─────────────────────┐
+                         ▼                     ▼                     ▼
+                  ┌─────────────┐     ┌─────────────┐     ┌─────────────┐
+                  │   FastAPI   │     │   Shiny     │     │   Shiny     │
+                  │    (API)    │     │  (Python)   │     │    (R)      │
+                  └─────────────┘     └─────────────┘     └─────────────┘
+```
+
+### Points forts de l'architecture
+
+1. **Model Registry** avec Vetiver et pins (gestion des versions)
+2. **API auto-générée** avec documentation OpenAPI
+3. **Dual frontends** : Shiny Python ET Shiny R
+4. **Containerisation** complète avec Docker Compose
+5. **CI/CD** avec GitHub Actions
+
+## Implémentation
+
+### 1. Entraînement du modèle
+
+```python
+from sklearn.linear_model import LinearRegression
+from palmerpenguins import load_penguins
+import vetiver
+
+# Chargement des données
+penguins = load_penguins()
+penguins = penguins.dropna()
+
+# Features et target
+X = penguins[['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm']]
+y = penguins['body_mass_g']
+
+# Entraînement
+model = LinearRegression()
+model.fit(X, y)
+
+# Création du modèle Vetiver
+v = vetiver.VetiverModel(
+    model=model,
+    model_name="penguin_mass_predictor",
+    prototype_data=X
+)
+
+# Sauvegarde dans le registry (pins board)
+import pins
+board = pins.board_folder("model_registry")
+vetiver.vetiver_pin_write(board, v)
+```
+
+### 2. Déploiement de l'API
+
+Vetiver génère automatiquement une API FastAPI :
+
+```python
+from vetiver import VetiverAPI
+import pins
+
+# Charger le modèle depuis le registry
+board = pins.board_folder("model_registry")
+v = vetiver.VetiverModel.from_pin(board, "penguin_mass_predictor")
+
+# Créer et lancer l'API
+api = VetiverAPI(v, check_prototype=True)
+api.run(port=8080)
+```
+
+L'API expose automatiquement :
+
+- `POST /predict` : Endpoint de prédiction
+- `GET /docs` : Documentation Swagger
+- `GET /ping` : Health check
+
+### 3. Frontend Shiny Python
+
+```python
+from shiny import App, ui, render, reactive
+import requests
+
+app_ui = ui.page_fluid(
+    ui.h2("Penguin Mass Predictor"),
+    ui.input_slider("bill_length", "Bill Length (mm)", 30, 60, 45),
+    ui.input_slider("bill_depth", "Bill Depth (mm)", 13, 22, 17),
+    ui.input_slider("flipper_length", "Flipper Length (mm)", 170, 230, 200),
+    ui.output_text("prediction")
+)
+
+def server(input, output, session):
+    @output
+    @render.text
+    def prediction():
+        response = requests.post(
+            "http://api:8080/predict",
+            json=[{
+                "bill_length_mm": input.bill_length(),
+                "bill_depth_mm": input.bill_depth(),
+                "flipper_length_mm": input.flipper_length()
+            }]
+        )
+        mass = response.json()["predict"][0]
+        return f"Predicted body mass: {mass:.0f} g"
+
+app = App(app_ui, server)
+```
+
+### 4. Frontend Shiny R
+
+```r
+library(shiny)
+library(httr)
+library(jsonlite)
+
+ui <- fluidPage(
+    titlePanel("Penguin Mass Predictor"),
+    sliderInput("bill_length", "Bill Length (mm)", 30, 60, 45),
+    sliderInput("bill_depth", "Bill Depth (mm)", 13, 22, 17),
+    sliderInput("flipper_length", "Flipper Length (mm)", 170, 230, 200),
+    textOutput("prediction")
+)
+
+server <- function(input, output, session) {
+    output$prediction <- renderText({
+        body <- toJSON(list(list(
+            bill_length_mm = input$bill_length,
+            bill_depth_mm = input$bill_depth,
+            flipper_length_mm = input$flipper_length
+        )), auto_unbox = TRUE)
+
+        response <- POST(
+            "http://api:8080/predict",
+            body = body,
+            content_type_json()
+        )
+
+        result <- content(response)
+        paste("Predicted body mass:", round(result$predict[[1]]), "g")
+    })
+}
+
+shinyApp(ui, server)
+```
+
+### 5. Docker Compose
+
+```yaml
+version: '3.8'
+
+services:
+  api:
+    build: ./api
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./model_registry:/app/model_registry
+
+  frontend-python:
+    build: ./frontend-python
+    ports:
+      - "8000:8000"
+    depends_on:
+      - api
+
+  frontend-r:
+    build: ./frontend-r
+    ports:
+      - "3838:3838"
+    depends_on:
+      - api
+```
+
+## CI/CD avec GitHub Actions
+
+```yaml
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Train model
+        run: python train.py
+
+      - name: Build and push
+        run: docker-compose build
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./website/_site
+```
+
+## Services Déployés
+
+| Service | URL | Port |
+|---------|-----|------|
+| API (FastAPI) | http://localhost:8080/docs | 8080 |
+| Frontend Python | http://localhost:8000 | 8000 |
+| Frontend R | http://localhost:3838 | 3838 |
+
+## Technologies
+
+| Composant | Technologie |
+|-----------|-------------|
+| Data | DuckDB, palmerpenguins |
+| ML | scikit-learn |
+| Model Registry | Vetiver, pins |
+| API | FastAPI, Uvicorn |
+| Frontend Python | Shiny for Python |
+| Frontend R | Shiny |
+| Containerisation | Docker, Docker Compose |
+| CI/CD | GitHub Actions |
+| Documentation | Quarto |
+
+## Structure du Projet
+
+```
+penguin-explorer/
+├── train.py                  # Script d'entraînement
+├── model_registry/           # Registry pins
+├── api/
+│   ├── Dockerfile
+│   └── app.py               # API Vetiver
+├── frontend-python/
+│   ├── Dockerfile
+│   └── app.py               # Shiny Python
+├── frontend-r/
+│   ├── Dockerfile
+│   └── app.R                # Shiny R
+├── website/
+│   └── _quarto.yml          # Documentation Quarto
+├── docker-compose.yml
+├── .github/
+│   └── workflows/
+│       └── deploy.yml       # CI/CD
+└── README.md
+```
+
+## Enseignements
+
+Ce projet illustre les bonnes pratiques MLOps :
+
+1. **Séparation des responsabilités** : Model, API, Frontend distincts
+2. **Model Registry** : Versionnement des modèles avec Vetiver
+3. **API-first** : Le modèle est exposé via une API standard
+4. **Multi-langage** : R et Python cohabitent harmonieusement
+5. **Containerisation** : Environnements reproductibles avec Docker
+6. **CI/CD** : Déploiement automatisé avec GitHub Actions
+
+---
+
+[← Retour au Portfolio ML](/portfolio/ml/) | [GitHub](https://github.com/a-raulet){target="_blank"}

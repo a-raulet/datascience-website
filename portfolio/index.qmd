@@ -1,7 +1,122 @@
 ---
-title: "Portfolio"
+pagetitle: "Portfolio"
+description: "Projets Data Science & Marketing Analytics"
+title-block-style: none
+lang: fr
+format:
+  html:
+    page-layout: article
+    toc: false
+body-classes: home
 ---
-
+::: column-screen
+::: hero-banner
 # Portfolio
 
-Contenu à venir...
+## Projets Data Science & Marketing Analytics
+
+Une sélection de projets sur l'analyse de données, le machine learning et l'ingénierie de données.
+:::
+:::
+
+## Catégories
+::: column-page
+:::::: grid
+::: g-col-md-4
+### Analyse de Données
+
+Exploration, visualisation et insights business à partir de données marketing et e-commerce.
+
+[Voir les projets Analysis →](/portfolio/analysis/)
+:::
+
+::: g-col-md-4
+### Machine Learning
+
+Modèles prédictifs, inférence causale et reinforcement learning appliqués à des cas d'usage concrets.
+
+[Voir les projets ML →](/portfolio/ml/)
+:::
+
+::: g-col-md-4
+### Visualisation
+
+Dashboards interactifs et visualisations de données pour la prise de décision.
+
+[Voir les visualisations →](/portfolio/viz/)
+:::
+::::::
+:::
+------------------------------------------------------------------------
+
+## Projets Phares
+::: column-screen
+::::::: grid
+:::: g-col-md-6
+::: portfolio-item
+### Marketing Mix Modeling (Robyn)
+
+**Question business** : Comment réallouer le budget marketing pour maximiser les ventes ?
+
+Utilisation du framework Robyn (Meta) pour mesurer l'impact de chaque canal marketing et optimiser l'allocation budgétaire.
+
+**Technologies** : R, Robyn, Prophet, Shiny
+
+[Voir le projet →](/portfolio/analysis/mmm-robyn.qmd) \| [Dashboard Shiny](https://arnaudraulet.shinyapps.io/mmm-robyn/){target="_blank"}
+:::
+::::
+
+:::: g-col-md-6
+::: portfolio-item
+### Plateforme d'Inférence Causale
+
+**Question business** : Quel est l'impact réel de nos campagnes email sur les conversions ?
+
+Plateforme complète d'A/B testing avec analyse Bayésienne et Causal ML pour mesurer les effets de traitement.
+
+**Technologies** : Python, PyMC, CausalML, FastAPI, Streamlit
+
+[Voir le projet →](/portfolio/ml/causal-inference.qmd) \| [Dashboard Streamlit](https://causal-inference-platform.streamlit.app/){target="_blank"}
+:::
+::::
+:::::::
+
+::::::: grid
+:::: g-col-md-6
+::: portfolio-item
+### Pipeline Marketing Analytics
+
+**Question business** : Comment suivre en temps réel la performance de nos canaux marketing ?
+
+Pipeline ETL complet avec BigQuery, dbt et dashboard Streamlit pour le suivi des KPIs marketing.
+
+**Technologies** : Python, BigQuery, dbt, Streamlit
+
+[Voir le projet →](/portfolio/analysis/marketing-pipeline.qmd) \| [Dashboard Streamlit](https://marketing-data-pipeline-demo.streamlit.app){target="_blank"}
+:::
+::::
+
+:::: g-col-md-6
+::: portfolio-item
+### Dynamic Pricing Engine
+
+**Question business** : Comment optimiser les prix en temps réel selon la demande ?
+
+Progression de l'économétrie au Reinforcement Learning pour la tarification dynamique (cas Uber/Lyft).
+
+**Technologies** : Python, PyMC, Q-Learning, Streamlit
+
+[Voir le projet →](/portfolio/ml/dynamic-pricing.qmd)
+:::
+::::
+:::::::
+:::
+------------------------------------------------------------------------
+
+::: contact-section
+## Un projet similaire ?
+
+Je serais ravi de discuter de vos besoins et de voir comment ces approches peuvent s'appliquer à votre contexte.
+
+[Me contacter](mailto:contact-quarto-site.le77r@simplelogin.com){.btn .btn-primary} [LinkedIn](https://linkedin.com/in/arnaud-raulet-13308310/){.btn .btn-outline-secondary}
+:::

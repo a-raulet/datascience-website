@@ -1,0 +1,86 @@
+---
+title: "Penguin Explorer - フルスタックMLデモ"
+description: "完全なMLアーキテクチャ：モデルからAPIまで、RとPythonで"
+lang: ja
+categories: [MLOps, Full-stack, R, Python, Docker]
+format:
+  html:
+    toc: true
+    code-fold: true
+---
+
+## 背景と課題
+
+> **技術的課題**：モダンなアーキテクチャでMLモデルをエンドツーエンドでデプロイするには？
+
+このプロジェクトでは、有名なPalmer Penguinsデータセットを使用した**完全なMLアーキテクチャ**を実演します。目標はモデル自体（単純な線形回帰）ではなく、デプロイインフラストラクチャです。
+
+## アーキテクチャ
+
+```
+┌─────────────┐     ┌─────────────┐     ┌─────────────┐
+│   DuckDB    │────▶│  scikit-    │────▶│   Vetiver   │
+│  (データ)   │     │   learn     │     │ (レジストリ) │
+└─────────────┘     └─────────────┘     └─────────────┘
+                                               │
+                         ┌─────────────────────┼─────────────────────┐
+                         ▼                     ▼                     ▼
+                  ┌─────────────┐     ┌─────────────┐     ┌─────────────┐
+                  │   FastAPI   │     │   Shiny     │     │   Shiny     │
+                  │    (API)    │     │  (Python)   │     │    (R)      │
+                  └─────────────┘     └─────────────┘     └─────────────┘
+```
+
+### アーキテクチャのハイライト
+
+1. Vetiverとpinsによる**モデルレジストリ**（バージョン管理）
+2. OpenAPIドキュメント付きの**自動生成API**
+3. **デュアルフロントエンド**：Shiny PythonとShiny R
+4. Docker Composeによる**完全なコンテナ化**
+5. GitHub Actionsによる**CI/CD**
+
+## 実装
+
+### モデルトレーニング＆レジストリ
+
+Vetiverを使用してAPIを自動生成するバージョン管理されたモデルを作成。
+
+### Docker Composeデプロイメント
+
+3つのサービスをデプロイ：
+- **API**（Vetiver経由のFastAPI）：http://localhost:8080/docs
+- **フロントエンドPython**（Shiny）：http://localhost:8000
+- **フロントエンドR**（Shiny）：http://localhost:3838
+
+### GitHub ActionsによるCI/CD
+
+mainブランチへのプッシュ時に自動デプロイ、gh-pagesへのドキュメント公開。
+
+## テクノロジー
+
+| コンポーネント | テクノロジー |
+|--------------|-------------|
+| データ | DuckDB、palmerpenguins |
+| ML | scikit-learn |
+| モデルレジストリ | Vetiver、pins |
+| API | FastAPI、Uvicorn |
+| フロントエンドPython | Shiny for Python |
+| フロントエンドR | Shiny |
+| コンテナ化 | Docker、Docker Compose |
+| CI/CD | GitHub Actions |
+| ドキュメント | Quarto |
+
+## 学び
+
+このプロジェクトはMLOpsのベストプラクティスを示しています：
+
+1. **関心の分離**：モデル、API、フロントエンドを分離
+2. **モデルレジストリ**：Vetiverによるモデルバージョン管理
+3. **APIファースト**：標準APIを通じてモデルを公開
+4. **マルチ言語**：RとPythonが調和して共存
+5. **コンテナ化**：Dockerによる再現可能な環境
+6. **CI/CD**：GitHub Actionsによる自動デプロイ
+
+---
+
+[← ポートフォリオMLに戻る](/portfolio/ml/) | [GitHub](https://github.com/a-raulet){target="_blank"}

@@ -1,7 +1,138 @@
 ---
-title: "Portfolio/Ml"
+title: "Portfolio - Machine Learning"
+description: "Projets de machine learning, inférence causale et reinforcement learning"
+lang: fr
+format:
+  html:
+    page-layout: custom
+    toc: false
 ---
 
-# Portfolio/Ml
+::: hero-banner
+# Machine Learning
 
-Contenu à venir...
+## Modèles prédictifs, inférence causale & reinforcement learning
+
+Du modèle statistique classique au reinforcement learning, des projets qui créent de la valeur business.
+:::
+
+## Projets
+
+:::::: grid
+::: g-col-md-12
+
+::: portfolio-item
+### Plateforme d'Inférence Causale pour A/B Testing
+
+**Problématique** : Quel est l'impact réel de nos campagnes email sur les conversions ?
+
+Plateforme complète d'A/B testing combinant analyse Bayésienne et Causal ML pour aller au-delà de la simple corrélation et mesurer l'impact causal des interventions marketing.
+
+**Approche** :
+
+- **Analyse Bayésienne** avec PyMC pour des résultats interprétables (probabilité d'être le meilleur)
+- **Causal ML** avec X-Learner pour estimer les effets hétérogènes (CATE)
+- **API FastAPI** pour la recommandation en temps réel
+- **Dashboard Streamlit** pour l'exploration des résultats
+
+**Résultats** : Sur 64,000 clients e-commerce, identification d'un lift de +16% pour les emails "Mens" vs +8% pour "Womens".
+
+**Technologies** : Python, PyMC, CausalML, SHAP, FastAPI, Streamlit
+
+[Voir le détail →](causal-inference.qmd) | [Dashboard Streamlit](https://causal-inference-platform.streamlit.app/){target="_blank"}
+:::
+
+:::
+::::::
+
+:::::: grid
+::: g-col-md-12
+
+::: portfolio-item
+### Dynamic Pricing Engine
+
+**Problématique** : Comment optimiser les prix en temps réel selon le contexte et la demande ?
+
+Projet explorant les stratégies de surge pricing utilisées par Uber et Lyft, avec une progression méthodologique de l'économétrie au reinforcement learning.
+
+**Approche progressive** :
+
+1. **EDA & Storytelling** : Exploration du dataset et narrative business
+2. **Élasticité-prix Bayésienne** : Modèle économétrique avec PyMC
+3. **Contextual Bandits** : Thompson Sampling pour l'exploration/exploitation
+4. **Q-Learning** : Agent de reinforcement learning complet
+
+**Dataset** : ~700K trajets Uber & Lyft (Boston, Nov 2018)
+
+**Technologies** : Python, PyMC, ArviZ, scikit-learn, Streamlit
+
+[Voir le détail →](dynamic-pricing.qmd)
+:::
+
+:::
+::::::
+
+:::::: grid
+::: g-col-md-12
+
+::: portfolio-item
+### Penguin Explorer - Full-stack ML Demo
+
+**Problématique** : Comment déployer un modèle ML de bout en bout avec une architecture moderne ?
+
+Projet démonstratif d'une architecture ML complète : de l'entraînement au déploiement, en passant par l'API et le frontend, avec intégration R et Python.
+
+**Architecture** :
+
+```
+DuckDB → scikit-learn → Vetiver → FastAPI → Shiny (Python & R)
+```
+
+**Points forts** :
+
+- **Model Registry** avec Vetiver et pins
+- **API REST** auto-générée avec documentation OpenAPI
+- **Frontends dual** : Shiny Python et Shiny R
+- **CI/CD** avec GitHub Actions
+- **Containerisation** complète avec Docker Compose
+
+**Technologies** : Python, R, scikit-learn, Vetiver, FastAPI, Shiny, Docker, GitHub Actions
+
+[Voir le détail →](penguin-explorer.qmd) | [GitHub](https://github.com/a-raulet){target="_blank"}
+:::
+
+:::
+::::::
+
+:::::: grid
+::: g-col-md-12
+
+::: portfolio-item
+### House Prices Prediction - Harvard Certificate
+
+**Problématique** : Prédire le prix de vente de maisons en Iowa à partir de leurs caractéristiques.
+
+Projet final du certificat Data Science de Harvard, explorant et comparant de nombreuses approches de régression.
+
+**Modèles testés** :
+
+- Régression linéaire (baseline)
+- Random Forest
+- XGBoost
+- GAM (Generalized Additive Models)
+- Neural Networks
+- **Ensemble** (combinaison des meilleurs modèles)
+
+**Résultats** : Comparaison systématique des performances et identification des features les plus importantes.
+
+**Technologies** : R, RMarkdown, caret, xgboost, randomForest
+
+[Voir le détail →](house-prices.qmd)
+:::
+
+:::
+::::::
+
+---
+
+[← Retour au Portfolio](/portfolio/) | [Voir les projets Analysis →](/portfolio/analysis/)

@@ -1,0 +1,204 @@
+---
+title: "Pipeline Marketing Analytics (GCP + dbt)"
+description: "Architecture moderne de data engineering pour le suivi des KPIs marketing"
+lang: fr
+categories: [Data Engineering, Marketing Analytics, GCP]
+format:
+  html:
+    toc: true
+    code-fold: true
+---
+
+## Contexte & Problématique
+
+> **Question business** : Comment construire une infrastructure moderne pour suivre les KPIs marketing en temps réel ?
+
+Les équipes marketing ont besoin d'accéder rapidement à leurs métriques de performance pour prendre des décisions éclairées. Ce projet démontre la mise en place d'un **pipeline ETL complet** utilisant les meilleures pratiques du data engineering moderne.
+
+## Architecture
+
+```
+┌─────────────┐     ┌─────────────┐     ┌─────────────┐     ┌─────────────┐
+│   Sources   │────▶│   Extract   │────▶│  BigQuery   │────▶│     dbt     │
+│   (CSV)     │     │  (Python)   │     │   (Raw)     │     │ (Transform) │
+└─────────────┘     └─────────────┘     └─────────────┘     └─────────────┘
+                                                                   │
+                                                                   ▼
+                                        ┌─────────────┐     ┌─────────────┐
+                                        │  Streamlit  │◀────│  BigQuery   │
+                                        │ (Dashboard) │     │ (Analytics) │
+                                        └─────────────┘     └─────────────┘
+```
+
+### Composants
+
+1. **Extract** : Script Python générant des données marketing réalistes simulées
+2. **Load** : Chargement vers Google BigQuery (dataset `marketing_raw`)
+3. **Transform** : dbt pour calculer les KPIs (dataset `marketing_analytics`)
+4. **Visualize** : Dashboard Streamlit interactif
+
+## Implémentation
+
+### 1. Extraction des données
+
+```python
+# src/extract_data.py
+import pandas as pd
+import numpy as np
+
+def generate_marketing_data(start_date, end_date, seed=42):
+    """Génère des données marketing réalistes simulées."""
+    np.random.seed(seed)
+
+    channels = {
+        'Google Ads': {'sessions': 1500, 'conv_rate': 0.05, 'spend': 3000},
+        'Facebook Ads': {'sessions': 1200, 'conv_rate': 0.04, 'spend': 2500},
+        'LinkedIn': {'sessions': 400, 'conv_rate': 0.06, 'spend': 1500},
+        'Email': {'sessions': 800, 'conv_rate': 0.08, 'spend': 500},
+        'Direct': {'sessions': 2000, 'conv_rate': 0.03, 'spend': 0}
+    }
+
+    # Génération avec variabilité réaliste
+    # - Distribution Poisson pour les sessions
+    # - Effet weekend (-30%)
+    # - Pas de valeurs négatives
+
+    return df
+```
+
+### 2. Transformation dbt
+
+```sql
+-- dbt_marketing/models/staging/stg_marketing_daily.sql
+WITH source AS (
+    SELECT * FROM {{ source('marketing_raw', 'daily_performance') }}
+),
+
+transformed AS (
+    SELECT
+        date,
+        DATE_TRUNC(date, WEEK) AS week_start_date,
+        DATE_TRUNC(date, MONTH) AS month_start_date,
+        source AS marketing_source,
+        sessions,
+        conversions,
+        revenue,
+        spend,
+
+        -- KPIs calculés
+        SAFE_DIVIDE(revenue, spend) AS roas,
+        SAFE_DIVIDE(spend, conversions) AS cost_per_conversion,
+        SAFE_DIVIDE(conversions, sessions) AS conversion_rate,
+        SAFE_DIVIDE(revenue, conversions) AS revenue_per_conversion,
+        SAFE_DIVIDE(revenue, sessions) AS revenue_per_session,
+
+        -- Flags
+        spend = 0 AS is_organic_channel,
+        EXTRACT(DAYOFWEEK FROM date) IN (1, 7) AS is_weekend
+
+    FROM source
+)
+
+SELECT * FROM transformed
+```
+
+### 3. Dashboard Streamlit
+
+Le dashboard présente :
+
+- **KPIs globaux** : Spend total, Revenue, Conversions, ROAS
+- **Tendance temporelle** : Dépenses vs Revenus par jour
+- **Performance par canal** : Comparaison des sources marketing
+- **ROAS par source** : Retour sur investissement publicitaire
+- **Funnel de conversion** : Sessions → Conversions
+
+## Résultats
+
+### KPIs calculés
+
+| Métrique | Formule | Usage |
+|----------|---------|-------|
+| ROAS | Revenue / Spend | Efficacité globale |
+| CPA | Spend / Conversions | Coût d'acquisition |
+| Conversion Rate | Conversions / Sessions | Qualité du trafic |
+| Revenue/Session | Revenue / Sessions | Valeur du trafic |
+
+### Données générées
+
+- **Période** : 84 jours (Sept-Nov 2024)
+- **Canaux** : 5 sources marketing
+- **Volume** : ~420 lignes par exécution
+
+## Démonstration
+
+<a href="https://marketing-data-pipeline-demo.streamlit.app" target="_blank" class="btn btn-primary">
+Voir le Dashboard Streamlit
+</a>
+
+Le dashboard permet de :
+
+- Filtrer par plage de dates
+- Sélectionner les canaux à afficher
+- Visualiser les tendances
+- Comparer les performances
+
+## Technologies
+
+| Composant | Technologie | Version |
+|-----------|-------------|---------|
+| Langage | Python | 3.13+ |
+| Data Warehouse | Google BigQuery | Cloud |
+| Transformation | dbt-core + dbt-bigquery | 1.10.3 |
+| Dashboard | Streamlit | 1.51.0 |
+| Visualisation | Plotly + Altair | - |
+| Gestion deps | Poetry | - |
+
+## Structure du Projet
+
+```
+marketing-data-pipeline/
+├── src/
+│   ├── extract_data.py      # Génération des données
+│   ├── load_bigquery.py     # Chargement BigQuery
+│   └── dashboard.py         # Dashboard Streamlit
+├── dbt_marketing/
+│   ├── dbt_project.yml      # Config dbt
+│   └── models/
+│       └── staging/
+│           ├── sources.yml
+│           └── stg_marketing_daily.sql
+├── data/
+│   └── raw/
+│       └── marketing_data.csv
+├── pyproject.toml           # Dépendances Poetry
+└── README.md
+```
+
+## Exécution
+
+```bash
+# 1. Extraction
+python src/extract_data.py
+
+# 2. Chargement BigQuery
+python src/load_bigquery.py
+
+# 3. Transformation dbt
+cd dbt_marketing && dbt run
+
+# 4. Dashboard
+streamlit run src/dashboard.py
+```
+
+## Enseignements
+
+Ce projet illustre les bonnes pratiques du **Modern Data Stack** :
+
+1. **Séparation des responsabilités** : Extract, Load, Transform distincts
+2. **Infrastructure as Code** : dbt pour des transformations versionnées
+3. **Reproductibilité** : Seed fixe pour les données simulées
+4. **Documentation** : Sources et modèles dbt documentés
+
+---
+
+[← Retour au Portfolio Analysis](/portfolio/analysis/) | [Voir le Dashboard](https://marketing-data-pipeline-demo.streamlit.app){target="_blank"}

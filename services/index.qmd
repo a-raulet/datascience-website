@@ -1,7 +1,150 @@
 ---
 title: "Services"
+description: "Decision Science, Marketing Analytics et Intelligence Japon"
+lang: fr
+format:
+  html:
+    toc: true
+    toc-depth: 2
 ---
 
-# Services
+::: hero-banner
+# Des données aux décisions
 
-Contenu à venir...
+## Trois domaines d'expertise. Un seul objectif : la clarté.
+
+Je ne produis pas des rapports qu'on archive, mais des réponses qu'on utilise.
+
+[Réserver un appel découverte](/contact/){.btn .btn-primary .btn-lg}
+:::
+
+## Decision Science
+
+**Aller au-delà des corrélations. Comprendre ce qui cause vraiment vos résultats.**
+
+La plupart des analyses répondent à "que s'est-il passé ?". Les miennes répondent à "pourquoi ?" et "que faire ?".
+
+J'utilise l'analyse causale et l'approche bayésienne pour :
+
+- **Identifier les vrais leviers** — Séparer les corrélations des relations de cause à effet
+- **Quantifier l'incertitude** — Savoir ce qu'on sait, et avec quelle confiance
+- **Simuler des scénarios** — Tester des décisions avant de les prendre
+- **Structurer la décision** — Transformer l'analyse en action concrète
+
+::: {.callout-note appearance="simple"}
+**Exemple concret :** Une entreprise voit ses ventes augmenter après une campagne. Corrélation ou causalité ? Mon travail : isoler l'effet réel de la campagne, quantifier l'incertitude, et recommander le budget optimal pour la prochaine.
+:::
+
+---
+
+## Marketing Analytics
+
+**Comprendre ce qui fonctionne vraiment dans votre mix marketing.**
+
+Trop d'équipes marketing naviguent à l'intuition, puis justifient a posteriori. Je vous aide à inverser la logique.
+
+- **Attribution rigoureuse** — Quel canal génère vraiment vos conversions ? Avec quelle certitude ?
+- **Segmentation actionnable** — Des segments qu'on peut cibler, pas juste décrire
+- **Optimisation pricing** — Fixer vos prix sur la valeur perçue, pas sur le coût + marge
+- **Mesure d'impact** — Vos actions marketing fonctionnent-elles ? Prouvons-le (ou invalidons-le)
+
+::: {.callout-note appearance="simple"}
+**Exemple concret :** Votre CAC augmente mais vous ne savez pas pourquoi. Mon travail : décomposer le parcours d'acquisition, identifier les fuites, quantifier le potentiel de chaque optimisation.
+:::
+
+---
+
+## Intelligence Japon
+
+**Comprendre le marché japonais par les données.**
+
+Le Japon produit une quantité massive de données publiques — brevets, publications techniques, appels d'offres, rapports sectoriels — que la barrière linguistique rend invisibles aux entreprises européennes. Je les rends lisibles et actionnables.
+
+- **Veille technologique japonaise (JapanTechRadar)** — Analyse de brevets et signaux R&D des acteurs japonais de votre secteur. Qui innove, sur quoi, à quel rythme, et ce que ça signifie pour vous.
+- **Due diligence technologique** — Vous évaluez un partenaire, un concurrent ou une cible d'acquisition au Japon ? Rapport d'analyse combinant données brevets, positionnement marché et contexte culturel.
+- **Benchmark concurrentiel Japon** — Où en sont les acteurs japonais de votre secteur par rapport à vous ? Analyse quantitative contextualisée par une compréhension terrain.
+
+::: {.callout-note appearance="simple"}
+**Exemple concret :** Un équipementier automobile français veut comprendre l'avance technologique de ses concurrents japonais sur les batteries solides. Mon analyse de 36 entreprises et de leurs dépôts brevets sur 5 ans révèle les leaders réels, les technologies émergentes, et les fenêtres d'opportunité — le tout livré en français, contextualisé, actionnable.
+:::
+
+---
+
+## Diagnostics packagés
+
+Deux offres à périmètre fixe et prix transparent, pour aller vite :
+
+:::::: grid
+::: g-col-md-6
+### 💰 PricingDiag
+
+Vos prix sont-ils vraiment optimaux ? Diagnostic opérationnel en 2 semaines, rapport actionnable, fichier de simulation Excel.
+
+**7 000 – 15 000 €** · 2-3 semaines
+
+[Découvrir PricingDiag →](/services/pricing-diag/)
+:::
+
+::: g-col-md-6
+### 🔬 JapanTechRadar
+
+Ce que les brevets japonais révèlent sur vos concurrents. Analyse quantitative, cartographie des acteurs, recommandations contextualisées.
+
+**5 000 – 8 000 €** · 3-4 semaines
+
+[Découvrir JapanTechRadar →](/services/japan-tech-radar/)
+:::
+::::::
+
+---
+
+## Formats d'intervention
+
+Je structure mes interventions selon vos besoins :
+
+### Diagnostic
+
+Un état des lieux ciblé avec recommandations priorisées. Idéal pour démarrer ou débloquer une situation.
+
+- Audit de votre stack analytics
+- [Diagnostic pricing (PricingDiag)](/services/pricing-diag/)
+- [Veille technologique japonaise (JapanTechRadar)](/services/japan-tech-radar/)
+
+### Mission projet
+
+Une mission complète avec livrable actionnable. Périmètre défini, objectif clair.
+
+- Modèle d'attribution marketing
+- Étude de segmentation
+- Analyse causale d'une problématique business
+- Analyse concurrentielle Japon (JapanTechRadar)
+
+### Workflow intégré
+
+Un système complet intégré à vos opérations. Pour les entreprises qui veulent institutionnaliser une capacité.
+
+- Système de pricing dynamique
+- Infrastructure d'expérimentation (A/B testing)
+- Processus de décision data-driven
+
+### Retainer
+
+Un accès continu à mon expertise. Pour les entreprises qui ont besoin d'un sparring partner régulier.
+
+- Revue mensuelle de vos KPIs
+- Support ad hoc sur vos décisions
+- Intelligence Japon trimestrielle
+
+---
+
+## Prochaine étape
+
+::: contact-section
+### Parlons de votre situation
+
+Un appel de 30 minutes pour comprendre votre contexte et voir si je peux vous aider.
+
+Pas de pitch. Pas d'engagement. Juste une conversation.
+
+[Réserver un appel découverte](/contact/){.btn .btn-primary .btn-lg}
+:::

@@ -1,108 +1,173 @@
 ---
-title: "Bienvenue sur mon Portfolio Data Science"
-description: "Expert en analyse de données, machine learning et visualisation"
+pagetitle: "Arnaud Raulet"
+description: "Decision Science, Marketing Analytics et Intelligence Japon"
+title-block-style: none
 lang: fr
 format:
   html:
-    page-layout: custom
+    page-layout: article
     toc: false
+body-classes: home
 ---
 
+:::: column-screen
 ::: hero-banner
-# Transformez vos données en décisions stratégiques
+# Transformez vos données en décisions.
 
-## Et avancez plus vite que vos concurrents.
+## Data scientist basé au Japon, j'aide les entreprises à séparer ce qu'elles savent vraiment de ce qu'elles croient savoir.
 
-Spécialisé en analyse de données, machine learning et visualisation interactive, je vous accompagne dans vos projets de data science de A à Z.
+Analyse causale, marketing analytics, intelligence technologique Japon.
 
-[Découvrir mes services](/services/){.btn .btn-primary .btn-lg} [Voir mon portfolio](/portfolio/){.btn .btn-outline-secondary .btn-lg}
+[Réserver un appel découverte](/contact/){.btn .btn-primary .btn-lg} [Voir mes services](/services/){.btn .btn-outline-secondary .btn-lg}
 :::
+::::
 
-## Mes Expertises
+## Le problème
 
+Vous avez des données. Mais avez-vous des réponses ?
+
+La plupart des entreprises croient que plus de données = meilleures décisions. En réalité, elles se noient dans les corrélations sans jamais toucher la causalité.
+
+> *"Notre campagne a généré +15% de ventes"* — Vraiment ? Ou le marché montait déjà ?
+>
+> *"Ce segment est plus rentable"* — Mais pourquoi ? Et que faire concrètement ?
+
+Je ne construis pas des dashboards. J'offre de la clarté.
+
+------------------------------------------------------------------------
+
+## Ce que j'apporte
+::: {.column-page}
 :::::: grid
 ::: g-col-md-4
-### 📊 Analyse de Données
+### 🎯 Decision Science
 
-Exploration, nettoyage et analyse statistique de vos données pour révéler des patterns cachés et générer des insights actionnables.
+Aller au-delà des corrélations. Identifier ce qui **cause** vraiment vos résultats, quantifier l'incertitude, prendre des décisions robustes même avec des données imparfaites.
 :::
 
 ::: g-col-md-4
-### 🤖 Machine Learning
+### 📊 Marketing Analytics
 
-Développement de modèles prédictifs et d'algorithmes d'apprentissage automatique adaptés à vos besoins métier.
+Comprendre ce qui fonctionne **vraiment** : attribution rigoureuse, segmentation actionnable, pricing basé sur la valeur perçue — pas sur l'intuition.
 :::
 
 ::: g-col-md-4
-### 📈 Visualisation
+### 🇯🇵 Intelligence Japon
 
-Création de tableaux de bord interactifs et de visualisations engageantes pour communiquer efficacement vos résultats.
+10+ ans au Japon. Je rends lisibles les données japonaises que la barrière linguistique vous cache : brevets, signaux R&D, positionnement technologique de vos concurrents et partenaires japonais.
 :::
 ::::::
+:::
+[Découvrir mes services en détail →](/services/)
 
-## Projets Récents
+------------------------------------------------------------------------
+
+## Pour qui ?
+
+Je travaille avec :
+
+-   **Des PME et ETI** qui veulent des réponses, pas des rapports
+-   **Des équipes marketing** qui cherchent à prouver (ou invalider) leurs intuitions\
+-   **Des entreprises européennes** qui ont besoin de comprendre ce que font les acteurs japonais de leur secteur — avant de décider.
+
+------------------------------------------------------------------------
+
+## Mon approche
+
+**Rigueur. Clarté. Action.**
+
+Mon approche combine analyse causale et raisonnement bayésien. Concrètement : chaque analyse aboutit à une recommandation actionnable et une quantification claire de l'incertitude.
+
+Vous saurez ce que vous pouvez affirmer — et ce qui reste à vérifier.
 
 ```{r}
 #| echo: false
 #| message: false
 #| warning: false
+#| fig-width: 10
+#| fig-height: 6
+#| fig-align: center
 
-# Exemple de visualisation interactive avec plotly
-library(plotly)
-library(dplyr)
+# Visualisation "Corrélation vs Causalité"
+# Exemple léger : parapluies et cafés
 
-# Données d'exemple pour un projet
-project_data <- data.frame(
-  Projet = c("Analyse RH", "Prédiction Ventes", "Segmentation Client", "Optimisation Prix"),
-  Secteur = c("RH", "Ventes", "Marketing", "Finance"),
-  Impact = c(85, 92, 78, 88),
-  Complexité = c(6, 8, 7, 9),
-  Durée_semaines = c(4, 12, 8, 16)
+library(ggplot2)
+
+set.seed(69)
+
+# Simuler des données où corrélation ≠ causalité
+# Variable cachée : la météo (pluie)
+n <- 60
+pluie <- rbeta(n, 2, 5) * 100  # % de jours de pluie dans le mois
+
+# Quand il pleut : plus de parapluies vendus, plus de cafés bus (on se réchauffe)
+parapluies <- 200 + 8 * pluie + rnorm(n, sd = 50)
+cafes <- 1000 + 15 * pluie + rnorm(n, sd = 100)
+
+data <- data.frame(
+  parapluies = parapluies,
+  cafes = cafes,
+  pluie = pluie
 )
 
-# Graphique interactif avec hovertemplate corrigé
-p <- plot_ly(project_data, 
-             x = ~Complexité, 
-             y = ~Impact, 
-             size = ~Durée_semaines,
-             color = ~Secteur,
-             text = ~Projet,
-             hovertemplate = paste0(
-               "<b>%{text}</b><br>",
-               "Complexité: %{x}<br>",
-               "Impact: %{y}%<br>",
-               "Durée: %{marker.size} semaines<br>",
-               "<extra></extra>"
-             )) %>%
-  add_markers() %>%
-  layout(title = "Vue d'ensemble de mes projets récents",
-         xaxis = list(title = "Complexité (1-10)"),
-         yaxis = list(title = "Impact (%)"),
-         showlegend = TRUE)
-
-p
+# Graphique montrant la fausse corrélation
+ggplot(data, aes(x = parapluies, y = cafes)) +
+  geom_point(aes(color = pluie), size = 4, alpha = 0.8) +
+  geom_smooth(method = "lm", se = TRUE, color = "#e63946", linetype = "dashed", alpha = 0.2) +
+  scale_color_gradient(low = "#f4a261", high = "#457b9d", name = "Jours de pluie (%)") +
+  labs(
+    title = "Corrélation ≠ Causalité",
+    subtitle = "Les ventes de parapluies sont corrélées à la consommation de café.\nFaut-il distribuer des parapluies pour vendre plus de café ?",
+    x = "Ventes de parapluies",
+    y = "Cafés consommés",
+    caption = "La vraie cause : la météo. Mon travail : identifier ces variables cachées dans vos données."
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(
+    plot.title = element_text(face = "bold", size = 20, hjust = 0.5),
+    plot.subtitle = element_text(color = "gray40", size = 13, hjust = 0.5, lineheight = 1.2),
+    plot.caption = element_text(color = "gray50", face = "italic", size = 11),
+    legend.position = "right",
+    panel.grid.minor = element_blank()
+  )
 ```
 
-[Voir tous mes projets →](/portfolio/)
+------------------------------------------------------------------------
 
-## Derniers Articles
+## Parcours
+
+::::: grid
+::: g-col-md-6
+**Près de 10 ans** d'expérience au Japon
+
+**Trilingue** français, japonais, anglais
+
+**Data Scientist** spécialisé en analyse causale et approche bayésienne
+:::
+
+::: g-col-md-6
+**Terrain + Technique** : Je comprends les réalités business autant que les méthodes statistiques
+
+**Basé à Tokyo**, je travaille avec des clients en France, au Japon et à l'international
+:::
+:::::
+
+------------------------------------------------------------------------
+
+## Derniers articles
 
 <!-- Les derniers articles du blog seront automatiquement listés ici -->
+
+[Voir tous les articles →](/blog/)
 
 ------------------------------------------------------------------------
 
 ::: contact-section
-## Prêt à collaborer ?
+## Prêt à y voir clair dans vos données ?
 
-Je serais ravi de discuter de votre projet et de voir comment mes compétences en data science peuvent vous aider à atteindre vos objectifs.
+Réservez un appel découverte de 30 minutes. On identifie ensemble si je peux vous aider, et comment.
 
-[Me contacter](mailto:contact-quarto-site.le77r@simplelogin.com){.btn .btn-primary} [LinkedIn](https://linkedin.com/in/arnaud-raulet-13308310/){.btn .btn-outline-secondary}
+Pas de pitch. Pas d'engagement. Juste une conversation.
+
+[Réserver un appel découverte](/contact/){.btn .btn-primary .btn-lg} [Me contacter par email](mailto:contact-quarto-site.le77r@simplelogin.com){.btn .btn-outline-secondary .btn-lg}
 :::
-
-<!-- Configuration pour babelquarto -->
-
-```{=html}
-<script>
-// Ajout de fonctionnalités interactives si nécessaire
-</script>
-```

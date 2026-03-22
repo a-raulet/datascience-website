@@ -1,5 +1,50 @@
 ---
 title: "À propos"
+lang: fr
+format:
+  html:
+    toc: true
+    toc-depth: 2
 ---
 
-À propos de ce site
+## Le Traducteur de Données
+
+Je m'appelle Arnaud Raulet. Je suis data scientist, ancien traducteur de brevets, et consultant basé à Tokyo depuis près de 10 ans.
+
+Mon parcours n'est pas linéaire — et c'est précisément ce qui fait ma valeur.
+
+---
+
+## De la traduction à la donnée
+
+J'ai commencé par traduire des brevets japonais pour l'industrie automobile. Ce travail m'a appris quelque chose que la plupart des data scientists n'apprennent jamais : la donnée brute ne vaut rien sans contexte. Un brevet japonais, c'est du texte technique. Mais savoir *pourquoi* IHI dépose 15 brevets sur la propulsion spatiale en 2024, ce que ça signifie dans le contexte des budgets METI, et comment ça affecte un concurrent européen — ça, c'est de l'intelligence.
+
+J'ai appliqué la même logique aux données marketing et business. La plupart des entreprises ont des données. Peu ont des réponses. Mon travail est de faire le pont entre les deux.
+
+---
+
+## Ce que j'apporte
+
+**Trilingue français, japonais, anglais** — Je lis les brevets japonais en VO, je comprends les nuances culturelles du business japonais, et je livre en français ou en anglais.
+
+**Rigueur analytique** — Analyse causale, approche bayésienne, inférence — je ne confonds pas corrélation et causalité. Chaque recommandation est accompagnée de son degré d'incertitude.
+
+**Compréhension terrain** — Près de 10 ans au Japon, dans des secteurs industriels (automobile, aérospatial, défense, énergie). Je comprends les réalités business autant que les méthodes statistiques.
+
+---
+
+## Formation et certifications
+
+- UC Berkeley — Marketing Analytics
+- Harvard — Data Science
+- Spécialisations : analyse causale, méthodes bayésiennes (Statistical Rethinking), Marketing Mix Modeling (Robyn)
+
+---
+
+::: contact-section
+## Me contacter
+
+Je suis basé à Tokyo et je travaille avec des clients en France, au Japon et à l'international.
+
+[Réserver un appel découverte](/contact/){.btn .btn-primary .btn-lg}
+:::

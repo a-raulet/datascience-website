@@ -1,0 +1,150 @@
+---
+title: "Marketing Mix Modeling avec Robyn"
+description: "Optimisation du budget marketing multi-canal avec le framework Robyn de Meta"
+lang: fr
+categories: [Marketing Analytics, Optimisation, R]
+format:
+  html:
+    toc: true
+    code-fold: true
+---
+
+## Contexte & Problématique
+
+> **Question business** : Comment un CMO devrait-il réallouer son budget marketing pour maximiser les ventes ?
+
+Dans un contexte où les budgets marketing sont scrutés et où l'attribution devient de plus en plus complexe (fin des cookies tiers, multiplication des canaux), le **Marketing Mix Modeling (MMM)** connaît un regain d'intérêt.
+
+Le MMM permet de :
+
+- Mesurer l'**impact incrémental** de chaque canal marketing sur les ventes
+- Tenir compte des **effets de saturation** (rendements décroissants)
+- Modéliser les **effets de rémanence** (adstock) - l'impact d'une campagne qui perdure dans le temps
+- **Optimiser l'allocation budgétaire** entre les canaux
+
+## Approche & Méthodologie
+
+### Framework Robyn
+
+J'ai utilisé **Robyn**, le framework open-source développé par Meta (Facebook), qui combine plusieurs techniques avancées :
+
+```r
+# Architecture du modèle Robyn
+# 1. Décomposition temporelle avec Prophet
+#    - Tendance
+#    - Saisonnalité (hebdomadaire, annuelle)
+#    - Effets jours fériés
+
+# 2. Transformation des variables marketing
+#    - Adstock géométrique : effet(t) = spend(t) + θ × effet(t-1)
+#    - Saturation logistique : response = α / (1 + exp(-β × spend))
+
+# 3. Régression Ridge pour éviter le surajustement
+
+# 4. Optimisation multi-objectifs avec Nevergrad
+#    - Minimiser NRMSE (erreur de prédiction)
+#    - Minimiser DECOMP.RSSD (cohérence de la décomposition)
+```
+
+### Canaux analysés
+
+- **Google Ads** : Search et Display
+- **Facebook Ads** : Social et remarketing
+- **LinkedIn** : B2B
+- **Email** : Newsletters et promotions
+- **Organique** : SEO et trafic direct
+
+### Workflow complet
+
+```
+Données brutes → Feature Engineering → Robyn Training → Model Selection → Budget Optimization
+```
+
+1. **Collecte des données** : Ventes quotidiennes, dépenses par canal, variables contextuelles
+2. **Feature engineering** : Création des variables de saisonnalité, événements spéciaux
+3. **Entraînement** : Calibration des paramètres adstock et saturation
+4. **Sélection du modèle** : Analyse de Pareto (NRMSE vs DECOMP.RSSD)
+5. **Optimisation** : Simulation de scénarios d'allocation budgétaire
+
+## Résultats Clés
+
+### Décomposition des ventes
+
+Le modèle permet de décomposer les ventes en :
+
+- **Baseline** : Ventes "naturelles" sans marketing (~60%)
+- **Contribution par canal** : Impact incrémental de chaque investissement
+- **Saisonnalité** : Variations liées au calendrier
+
+### Courbes de réponse
+
+Chaque canal présente une **courbe de réponse** différente, montrant les rendements décroissants :
+
+- **Google Ads** : Fort ROI initial, saturation rapide
+- **Facebook** : Courbe plus linéaire, moins de saturation
+- **Email** : Excellent ROI mais capacité limitée
+
+### Recommandations d'optimisation
+
+Le dashboard permet de simuler différents scénarios :
+
+- **Scénario actuel** : Allocation historique
+- **Scénario optimisé** : Rebalancement vers les canaux sous-investis
+- **Scénario contrainte** : Optimisation avec budget fixe
+
+## Démonstration
+
+<a href="https://arnaudraulet.shinyapps.io/mmm-robyn/" target="_blank" class="btn btn-primary">
+Voir le Dashboard Shiny
+</a>
+
+Le dashboard interactif permet de :
+
+- Visualiser la décomposition des ventes
+- Explorer les courbes de réponse par canal
+- Simuler des scénarios d'allocation
+- Comparer les ROI marginaux
+
+## Technologies
+
+| Composant | Technologie |
+|-----------|-------------|
+| Langage | R |
+| Framework MMM | Robyn (Meta) |
+| Décomposition temporelle | Prophet |
+| Optimisation | Nevergrad |
+| Dashboard | Shiny |
+| Gestion environnement | renv |
+
+## Code Source
+
+Le projet est organisé en plusieurs composants :
+
+```
+mmm-robyn-project/
+├── R/
+│   ├── 01_data_preparation.R    # Préparation des données
+│   ├── 02_robyn_training.R      # Entraînement du modèle
+│   ├── 03_model_selection.R     # Sélection Pareto
+│   └── 04_optimization.R        # Optimisation budget
+├── app/
+│   └── app.R                    # Dashboard Shiny
+├── data/
+│   └── marketing_data.csv       # Données d'entrée
+└── outputs/
+    ├── exploration/             # Visualisations EDA
+    ├── robyn/                   # Résultats modèle
+    └── optimization/            # Scénarios optimisés
+```
+
+## Enseignements
+
+Ce projet m'a permis d'approfondir :
+
+1. **La modélisation marketing** : Comprendre les effets adstock et saturation
+2. **L'optimisation multi-objectifs** : Trouver le bon compromis entre précision et interprétabilité
+3. **La communication des résultats** : Traduire des modèles complexes en recommandations actionnables
+
+---
+
+[← Retour au Portfolio Analysis](/portfolio/analysis/) | [Voir le Dashboard](https://arnaudraulet.shinyapps.io/mmm-robyn/){target="_blank"}

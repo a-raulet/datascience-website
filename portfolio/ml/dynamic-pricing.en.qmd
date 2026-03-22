@@ -1,0 +1,98 @@
+---
+title: "Dynamic Pricing Engine"
+description: "From econometrics to Reinforcement Learning for dynamic pricing"
+lang: en
+categories: [Reinforcement Learning, Pricing, Economics, Python]
+format:
+  html:
+    toc: true
+    code-fold: true
+---
+
+## Context & Problem
+
+> **Business question**: How to optimize prices in real-time based on context and demand?
+
+**Surge pricing** used by Uber and Lyft is a fascinating case where data science meets economics. This project progressively explores different approaches, from classical econometrics to reinforcement learning.
+
+## Dataset
+
+**Uber & Lyft Dataset** (Kaggle):
+
+- **~700,000 rides** in Boston
+- **Period**: November 2018
+- **Variables**: Price, distance, weather, hour, day, surge multiplier
+- **Two companies**: Uber and Lyft (for comparison)
+
+## Progressive Approach
+
+This project is structured in **4 notebooks** progressing in methodological complexity:
+
+### 1. EDA & Storytelling
+
+Data exploration to understand pricing patterns:
+
+- Prices are higher during peak hours (8-9am, 5-7pm)
+- Weather (rain, snow) significantly increases prices
+- Lyft and Uber have slightly different pricing strategies
+
+### 2. Bayesian Price Elasticity
+
+Econometric demand modeling as a function of price:
+
+- Elasticity ~ -0.8: A 10% price increase reduces demand by 8%
+- Demand is **relatively inelastic** (< 1 in absolute value)
+- This economically justifies surge pricing
+
+### 3. Contextual Bandits (Thompson Sampling)
+
+The explore/exploit problem: how to test new prices while maximizing revenue?
+
+Automatically balances exploration and exploitation, converges to optimal price, adapts to context changes.
+
+### 4. Reinforcement Learning (Q-Learning)
+
+Complete approach with an agent learning a pricing policy:
+
+**State**: (hour, day, weather, demand)
+**Actions**: Price levels (0.8x, 1.0x, 1.2x, 1.5x, 2.0x)
+**Reward**: Revenue = price × purchase_probability
+
+## Results
+
+### Approach Comparison
+
+| Approach | Advantages | Disadvantages |
+|----------|------------|---------------|
+| Fixed elasticity | Simple, interpretable | Ignores context |
+| Thompson Sampling | Adaptive, theoretically optimal | No generalization |
+| Q-Learning | Learns complete policy | Requires lots of data |
+
+### Learned Policy
+
+The Q-Learning agent learns a policy that:
+
+- **Increases prices** during peak hours (surge 1.5x-2.0x)
+- **Maintains prices** during normal periods (1.0x)
+- **Slightly lowers** during slow periods to stimulate demand (0.8x-1.0x)
+
+## Technologies
+
+| Component | Technology |
+|-----------|------------|
+| Data Processing | pandas, numpy |
+| Visualization | matplotlib, seaborn, plotly |
+| Bayesian Modeling | PyMC, ArviZ |
+| Machine Learning | scikit-learn |
+| Dashboard | Streamlit |
+
+## Learnings
+
+1. **Pricing economics**: Elasticity, consumer surplus, price discrimination
+2. **Bandits mastery**: The exploration/exploitation trade-off
+3. **RL implementation**: Q-Learning, states, actions, rewards
+4. **Methodological progression**: From simple to complex
+
+---
+
+[← Back to Portfolio ML](/portfolio/ml/)

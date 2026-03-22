@@ -1,7 +1,138 @@
 ---
-title: "Portfolio/Ml"
+title: "Portfolio - Machine Learning"
+description: "Machine learning, causal inference, and reinforcement learning projects"
+lang: en
+format:
+  html:
+    page-layout: custom
+    toc: false
 ---
 
-# Portfolio/Ml
+::: hero-banner
+# Machine Learning
 
-Contents to come...
+## Predictive models, causal inference & reinforcement learning
+
+From classical statistical models to reinforcement learning, projects that create business value.
+:::
+
+## Projects
+
+:::::: grid
+::: g-col-md-12
+
+::: portfolio-item
+### Causal Inference Platform for A/B Testing
+
+**Problem**: What is the real impact of our email campaigns on conversions?
+
+Complete A/B testing platform combining Bayesian analysis and Causal ML to go beyond simple correlation and measure causal impact of marketing interventions.
+
+**Approach**:
+
+- **Bayesian Analysis** with PyMC for interpretable results (probability of being best)
+- **Causal ML** with X-Learner to estimate heterogeneous effects (CATE)
+- **FastAPI** for real-time recommendation
+- **Streamlit Dashboard** for results exploration
+
+**Results**: On 64,000 e-commerce customers, identified +16% lift for "Mens" emails vs +8% for "Womens".
+
+**Technologies**: Python, PyMC, CausalML, SHAP, FastAPI, Streamlit
+
+[See details →](causal-inference.qmd) | [Streamlit Dashboard](https://causal-inference-platform.streamlit.app/){target="_blank"}
+:::
+
+:::
+::::::
+
+:::::: grid
+::: g-col-md-12
+
+::: portfolio-item
+### Dynamic Pricing Engine
+
+**Problem**: How to optimize prices in real-time based on context and demand?
+
+Project exploring surge pricing strategies used by Uber and Lyft, with methodological progression from econometrics to reinforcement learning.
+
+**Progressive approach**:
+
+1. **EDA & Storytelling**: Dataset exploration and business narrative
+2. **Bayesian Price Elasticity**: Econometric model with PyMC
+3. **Contextual Bandits**: Thompson Sampling for exploration/exploitation
+4. **Q-Learning**: Complete reinforcement learning agent
+
+**Dataset**: ~700K Uber & Lyft rides (Boston, Nov 2018)
+
+**Technologies**: Python, PyMC, ArviZ, scikit-learn, Streamlit
+
+[See details →](dynamic-pricing.qmd)
+:::
+
+:::
+::::::
+
+:::::: grid
+::: g-col-md-12
+
+::: portfolio-item
+### Penguin Explorer - Full-stack ML Demo
+
+**Problem**: How to deploy an ML model end-to-end with modern architecture?
+
+Demonstrative project of a complete ML architecture: from training to deployment, through API and frontend, with R and Python integration.
+
+**Architecture**:
+
+```
+DuckDB → scikit-learn → Vetiver → FastAPI → Shiny (Python & R)
+```
+
+**Highlights**:
+
+- **Model Registry** with Vetiver and pins
+- **REST API** auto-generated with OpenAPI documentation
+- **Dual frontends**: Shiny Python and Shiny R
+- **CI/CD** with GitHub Actions
+- **Complete containerization** with Docker Compose
+
+**Technologies**: Python, R, scikit-learn, Vetiver, FastAPI, Shiny, Docker, GitHub Actions
+
+[See details →](penguin-explorer.qmd) | [GitHub](https://github.com/a-raulet){target="_blank"}
+:::
+
+:::
+::::::
+
+:::::: grid
+::: g-col-md-12
+
+::: portfolio-item
+### House Prices Prediction - Harvard Certificate
+
+**Problem**: Predict house sale prices in Iowa from their characteristics.
+
+Final project for Harvard Data Science certificate, exploring and comparing many regression approaches.
+
+**Models tested**:
+
+- Linear regression (baseline)
+- Random Forest
+- XGBoost
+- GAM (Generalized Additive Models)
+- Neural Networks
+- **Ensemble** (combination of best models)
+
+**Results**: Systematic performance comparison and identification of most important features.
+
+**Technologies**: R, RMarkdown, caret, xgboost, randomForest
+
+[See details →](house-prices.qmd)
+:::
+
+:::
+::::::
+
+---
+
+[← Back to Portfolio](/portfolio/) | [See Analysis projects →](/portfolio/analysis/)

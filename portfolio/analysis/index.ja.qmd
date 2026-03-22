@@ -1,7 +1,112 @@
 ---
-title: "ポートフォリオ/分析"
+title: "ポートフォリオ - データ分析"
+description: "データ分析とデータエンジニアリングプロジェクト"
+lang: ja
+format:
+  html:
+    page-layout: custom
+    toc: false
 ---
 
-# ポートフォリオ/分析
+::: hero-banner
+# データ分析
 
-コンテンツはこれから...
+## データエンジニアリング＆マーケティングアナリティクス
+
+生データを実用的なインサイトに変換する探索、データパイプライン、ダッシュボード。
+:::
+
+## プロジェクト
+
+:::::: grid
+::: g-col-md-12
+
+::: portfolio-item
+### Robynを使用したマーケティングミックスモデリング
+
+**課題**：CMOは売上を最大化するためにマーケティング予算をどのように再配分すべきか？
+
+マーケティングミックスモデリング（MMM）は、季節性、飽和効果（収穫逓減）、残存効果（アドストック）を考慮して、各マーケティングチャネルの売上への影響を測定します。
+
+**アプローチ**：
+
+- Metaが開発した**Robyn**フレームワークを使用
+- Prophet時系列分解を用いたリッジ回帰
+- アドストック（幾何減衰）と飽和（ロジスティック）効果のモデリング
+- Nevergradによる多目的最適化
+
+**結果**：異なる予算配分シナリオをシミュレートし、予想される売上影響を可視化するインタラクティブダッシュボード。
+
+**テクノロジー**：R、Robyn、Prophet、Nevergrad、Shiny
+
+[詳細を見る →](mmm-robyn.qmd) | [Shinyダッシュボード](https://arnaudraulet.shinyapps.io/mmm-robyn/){target="_blank"}
+:::
+
+:::
+::::::
+
+:::::: grid
+::: g-col-md-12
+
+::: portfolio-item
+### マーケティングアナリティクスパイプライン（GCP + dbt）
+
+**課題**：マーケティングKPIをリアルタイムで追跡するためのモダンなインフラをどのように構築するか？
+
+このプロジェクトは、抽出から可視化まで、マルチチャネルマーケティングパフォーマンス分析のための完全なETLパイプラインの構築を実演します。
+
+**アーキテクチャ**：
+
+```
+CSV → Python抽出 → BigQuery → dbt変換 → Streamlitダッシュボード
+```
+
+**計算されるKPI**：
+
+- ROAS（広告費用対効果）
+- コンバージョン単価（CPA）
+- コンバージョン率
+- セッションあたり収益
+
+**テクノロジー**：Python、Google BigQuery、dbt、Streamlit、Plotly
+
+[詳細を見る →](marketing-pipeline.qmd) | [Streamlitダッシュボード](https://marketing-data-pipeline-demo.streamlit.app){target="_blank"}
+:::
+
+:::
+::::::
+
+:::::: grid
+::: g-col-md-12
+
+::: portfolio-item
+### リアルタイムクリックストリーム分析
+
+**課題**：Eコマースでユーザー行動の異常をリアルタイムで検出するには？
+
+時間ウィンドウ集計とリアルタイムダッシュボードを備えたユーザー行動分析のためのストリーミング分析パイプライン。
+
+**アーキテクチャ**：
+
+```
+CSVイベント → Kafkaプロデューサー → Sparkストリーミング → Delta Lake → Streamlitダッシュボード
+```
+
+**リアルタイムメトリクス**：
+
+- アクティブセッション
+- コンバージョンファネル（閲覧 → カート → 購入）
+- 人気商品
+- 異常アラート
+
+**テクノロジー**：Apache Kafka、PySpark Structured Streaming、Delta Lake、Streamlit、Docker
+
+[詳細を見る →](clickstream-analytics.qmd)
+:::
+
+:::
+::::::
+
+---
+
+[← ポートフォリオに戻る](/portfolio/) | [MLプロジェクトを見る →](/portfolio/ml/)

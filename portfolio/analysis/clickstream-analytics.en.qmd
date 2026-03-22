@@ -1,0 +1,241 @@
+---
+title: "Real-time Clickstream Analytics"
+description: "Streaming analytics pipeline for e-commerce behavioral analysis"
+lang: en
+categories: [Data Engineering, Streaming, Kafka, Spark]
+format:
+  html:
+    toc: true
+    code-fold: true
+---
+
+## Context & Problem
+
+> **Business question**: How to detect user behavior anomalies in e-commerce in real-time?
+
+As an e-commerce analyst, being able to observe user behavior in real-time allows you to:
+
+- **Quickly detect anomalies** (sudden traffic drop, checkout issues)
+- **Optimize experience** by identifying friction points
+- **React fast** to events (promotions, technical incidents)
+
+This project implements a **complete streaming analytics pipeline**, from ingestion to visualization.
+
+## Architecture
+
+```
+┌─────────────┐     ┌─────────────┐     ┌─────────────┐
+│  CSV Events │────▶│    Kafka    │────▶│    Spark    │
+│  (Source)   │     │  (Broker)   │     │ (Streaming) │
+└─────────────┘     └─────────────┘     └─────────────┘
+                                               │
+                                               ▼
+                    ┌─────────────┐     ┌─────────────┐
+                    │  Streamlit  │◀────│ Delta Lake  │
+                    │ (Dashboard) │     │  (Storage)  │
+                    └─────────────┘     └─────────────┘
+```
+
+### Components
+
+| Service | Role | Port |
+|---------|------|------|
+| Zookeeper | Kafka coordination | 2181 |
+| Kafka | Message broker | 9092 |
+| Spark | Stream processing | 4040 |
+| Delta Lake | Transactional storage | - |
+| Streamlit | Visualization | 8501 |
+
+## Data
+
+### Source
+
+**eCommerce Events** dataset (Kaggle):
+
+- **Volume**: 2.3 GB, 5 CSV files
+- **Period**: October 2019 - February 2020
+- **Events**: view, cart, remove_from_cart, purchase
+
+### Schema
+
+```python
+event_schema = {
+    'event_time': 'timestamp',      # Timestamp
+    'event_type': 'string',          # Event type
+    'product_id': 'integer',         # Product ID
+    'category_id': 'long',           # Category
+    'category_code': 'string',       # Category code
+    'brand': 'string',               # Brand
+    'price': 'float',                # Price
+    'user_id': 'integer',            # User ID
+    'user_session': 'string'         # Session
+}
+```
+
+## Implementation
+
+### 1. Kafka Producer
+
+```python
+# Sending events to Kafka
+from kafka import KafkaProducer
+import json
+
+producer = KafkaProducer(
+    bootstrap_servers=['localhost:9092'],
+    value_serializer=lambda v: json.dumps(v).encode('utf-8')
+)
+
+for event in read_csv_stream('events.csv'):
+    producer.send('clickstream', value=event)
+```
+
+### 2. Spark Structured Streaming
+
+```python
+# Reading from Kafka stream
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import window, count, sum, col
+
+spark = SparkSession.builder \
+    .appName("ClickstreamAnalytics") \
+    .config("spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension") \
+    .getOrCreate()
+
+# Stream from Kafka
+df = spark.readStream \
+    .format("kafka") \
+    .option("kafka.bootstrap.servers", "localhost:9092") \
+    .option("subscribe", "clickstream") \
+    .load()
+
+# Time-windowed aggregations
+aggregated = df \
+    .withWatermark("event_time", "1 minute") \
+    .groupBy(
+        window("event_time", "1 minute"),
+        "event_type"
+    ) \
+    .agg(
+        count("*").alias("event_count"),
+        countDistinct("user_session").alias("unique_sessions")
+    )
+
+# Writing to Delta Lake
+aggregated.writeStream \
+    .format("delta") \
+    .outputMode("append") \
+    .option("checkpointLocation", "/tmp/checkpoint") \
+    .start("/data/aggregated")
+```
+
+### 3. Streamlit Dashboard
+
+```python
+# Reading from Delta Lake and real-time display
+import streamlit as st
+from delta import DeltaTable
+
+st.set_page_config(page_title="Clickstream Analytics", layout="wide")
+
+# Configurable auto-refresh (1-30 seconds)
+refresh_interval = st.sidebar.slider("Refresh interval", 1, 30, 5)
+
+# Real-time metrics
+col1, col2, col3, col4 = st.columns(4)
+col1.metric("Active sessions", get_active_sessions())
+col2.metric("Unique users", get_unique_users())
+col3.metric("Total revenue", format_currency(get_total_revenue()))
+col4.metric("Conversion rate", f"{get_conversion_rate():.1%}")
+
+# Conversion funnel
+st.plotly_chart(create_funnel_chart())
+
+# Top products
+st.dataframe(get_top_products())
+```
+
+## Real-time Metrics
+
+### Aggregation Windows
+
+- **1 minute**: Quick anomaly detection
+- **5 minutes**: Short-term trends
+- **1 hour**: Overview
+
+### Calculated KPIs
+
+| Metric | Description |
+|--------|-------------|
+| Active sessions | Sessions with activity in last window |
+| Unique users | Distinct user_id count |
+| Total revenue | Sum of prices for "purchase" events |
+| Funnel | view → cart → purchase |
+| Top products | Most viewed/purchased products |
+
+## Demo
+
+The dashboard is not deployed online (requires Kafka/Spark infrastructure), but the project is fully reproducible locally with Docker Compose.
+
+### Prerequisites
+
+- Docker & Docker Compose
+- 4-5 GB RAM available
+- 2-3 CPU cores
+
+### Launch
+
+```bash
+# Start infrastructure
+docker-compose up -d
+
+# Launch producer
+python src/producer.py
+
+# Launch Spark consumer
+spark-submit src/consumer.py
+
+# Launch dashboard
+streamlit run src/dashboard.py
+```
+
+## Technologies
+
+| Component | Technology | Version |
+|-----------|------------|---------|
+| Message Broker | Apache Kafka | 2.8 |
+| Coordination | Zookeeper | 3.7 |
+| Stream Processing | PySpark | 3.5.0 |
+| Storage | Delta Lake | 3.1.0 |
+| Dashboard | Streamlit | - |
+| Orchestration | Docker Compose | - |
+
+## Project Structure
+
+```
+realtime-clickstream-analytics/
+├── docker-compose.yml       # Infrastructure
+├── src/
+│   ├── producer.py          # Kafka producer
+│   ├── consumer.py          # Spark streaming
+│   └── dashboard.py         # Streamlit dashboard
+├── data/
+│   └── raw/                 # Source CSV files
+├── config/
+│   └── config.yaml          # Configuration
+└── README.md
+```
+
+## Learnings
+
+This project allowed me to master:
+
+1. **Streaming architecture**: Understanding real-time processing patterns
+2. **Apache Kafka**: Large-scale message ingestion and distribution
+3. **Spark Structured Streaming**: Aggregations with watermarks and windows
+4. **Delta Lake**: Transactional storage for streaming
+5. **Docker Compose**: Multi-service orchestration
+
+---
+
+[← Back to Portfolio Analysis](/portfolio/analysis/)

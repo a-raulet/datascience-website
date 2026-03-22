@@ -1,0 +1,210 @@
+---
+title: "Plateforme d'Inférence Causale pour A/B Testing"
+description: "Analyse Bayésienne et Causal ML pour mesurer l'impact réel des campagnes marketing"
+lang: fr
+categories: [Causal Inference, Bayesian Statistics, A/B Testing, Python]
+format:
+  html:
+    toc: true
+    code-fold: true
+---
+
+## Contexte & Problématique
+
+> **Question business** : Quel est l'impact réel de nos campagnes email sur les conversions ?
+
+L'A/B testing traditionnel répond à "Y a-t-il une différence ?". Mais les décideurs ont besoin de réponses plus nuancées :
+
+- **Quelle est la probabilité** que l'email A soit meilleur que B ?
+- **Pour quels segments** de clients l'intervention est-elle la plus efficace ?
+- **Quel est l'effet causal** de l'intervention, pas juste la corrélation ?
+
+Ce projet implémente une **plateforme complète d'inférence causale** qui répond à ces questions.
+
+## Dataset
+
+**Hillstrom Email Marketing Dataset** (cas classique en marketing analytics) :
+
+- **64,000 clients** e-commerce
+- **3 groupes** : Mens E-Mail, Womens E-Mail, No E-Mail (contrôle)
+- **Métriques** : Visite (oui/non), Conversion (oui/non), Montant dépensé
+
+## Approche & Méthodologie
+
+### 1. Analyse Bayésienne de l'A/B Test
+
+Plutôt qu'un simple test de significativité (p-value), l'approche Bayésienne fournit :
+
+```python
+import pymc as pm
+import arviz as az
+
+with pm.Model() as ab_model:
+    # Priors (peu informatifs)
+    p_control = pm.Beta('p_control', alpha=1, beta=1)
+    p_treatment = pm.Beta('p_treatment', alpha=1, beta=1)
+
+    # Likelihood
+    obs_control = pm.Binomial('obs_control',
+                               n=n_control,
+                               p=p_control,
+                               observed=conversions_control)
+    obs_treatment = pm.Binomial('obs_treatment',
+                                 n=n_treatment,
+                                 p=p_treatment,
+                                 observed=conversions_treatment)
+
+    # Métriques d'intérêt
+    lift = pm.Deterministic('lift',
+                            (p_treatment - p_control) / p_control)
+    prob_better = pm.Deterministic('prob_better',
+                                    pm.math.gt(p_treatment, p_control))
+
+    # Inférence
+    trace = pm.sample(2000, tune=1000)
+```
+
+**Résultats interprétables** :
+
+- Intervalle de crédibilité à 95% du lift
+- Probabilité que le traitement soit meilleur (P(Best))
+- Distribution complète de l'effet
+
+### 2. Causal ML - Effets Hétérogènes (CATE)
+
+L'effet moyen cache souvent des variations importantes entre segments. Le **Conditional Average Treatment Effect (CATE)** permet d'identifier pour qui l'intervention fonctionne le mieux.
+
+```python
+from causalml.inference.meta import XLearner
+from sklearn.ensemble import RandomForestRegressor
+
+# X-Learner pour estimer les effets hétérogènes
+xl = XLearner(
+    learner=RandomForestRegressor(n_estimators=100),
+    control_learner=RandomForestRegressor(n_estimators=100),
+    treatment_learner=RandomForestRegressor(n_estimators=100)
+)
+
+# Estimation du CATE
+cate = xl.fit_predict(
+    X=features,
+    treatment=treatment_indicator,
+    y=outcome
+)
+
+# Interprétation avec SHAP
+import shap
+explainer = shap.TreeExplainer(xl.models_tau[0])
+shap_values = explainer.shap_values(features)
+```
+
+### 3. API de Recommandation
+
+FastAPI pour servir les recommandations en temps réel :
+
+```python
+from fastapi import FastAPI
+from pydantic import BaseModel
+
+app = FastAPI()
+
+class Customer(BaseModel):
+    recency: int
+    history: float
+    mens: int
+    womens: int
+    newbie: int
+
+@app.post("/recommend")
+def recommend_treatment(customer: Customer):
+    """Recommande le meilleur traitement pour ce client."""
+    features = customer.dict()
+    cate_mens = model_mens.predict(features)
+    cate_womens = model_womens.predict(features)
+
+    if cate_mens > cate_womens and cate_mens > 0:
+        return {"recommendation": "mens_email", "expected_lift": cate_mens}
+    elif cate_womens > 0:
+        return {"recommendation": "womens_email", "expected_lift": cate_womens}
+    else:
+        return {"recommendation": "no_email", "expected_lift": 0}
+```
+
+## Résultats Clés
+
+### Analyse Bayésienne
+
+| Groupe | Taux de conversion | Lift vs Contrôle | P(Best) |
+|--------|-------------------|------------------|---------|
+| Contrôle | ~5.0% | - | 0.00 |
+| Mens E-Mail | ~5.8% | +16% | **0.92** |
+| Womens E-Mail | ~5.4% | +8% | 0.78 |
+
+### Effets Hétérogènes
+
+Les clients qui bénéficient le plus des emails "Mens" :
+
+- **Historique d'achat élevé** (histoire > $200)
+- **Acheteurs récents** (recency < 6 mois)
+- **Déjà clients "mens"** (achats précédents dans cette catégorie)
+
+### Recommandations Business
+
+1. **Cibler prioritairement** les clients avec historique élevé pour les emails
+2. **Personnaliser** : Mens vs Womens selon l'historique d'achat
+3. **Éviter** d'envoyer des emails aux newbies (effet quasi-nul)
+
+## Démonstration
+
+<a href="https://causal-inference-platform.streamlit.app/" target="_blank" class="btn btn-primary">
+Voir le Dashboard Streamlit
+</a>
+
+Le dashboard permet de :
+
+- Explorer les résultats de l'analyse Bayésienne
+- Visualiser les distributions CATE par segment
+- Tester l'API de recommandation
+- Comprendre les drivers de l'effet via SHAP
+
+## Technologies
+
+| Composant | Technologie |
+|-----------|-------------|
+| Bayesian Modeling | PyMC, ArviZ |
+| Causal ML | CausalML (X-Learner) |
+| Interprétabilité | SHAP |
+| API | FastAPI, Pydantic, Uvicorn |
+| Dashboard | Streamlit |
+| Data Processing | pandas, scikit-learn |
+
+## Structure du Projet
+
+```
+causal-inference-platform/
+├── notebooks/
+│   ├── 01_exploration.ipynb           # EDA
+│   ├── 02_bayesian_ab_testing.ipynb   # Analyse Bayésienne
+│   ├── 03_causal_ml.ipynb             # X-Learner + SHAP
+│   └── 04_simulator.ipynb             # Simulation de scénarios
+├── src/
+│   ├── models/                        # Modèles entraînés
+│   ├── api/                           # FastAPI endpoints
+│   └── dashboard/                     # Streamlit app
+├── data/
+│   └── hillstrom.csv                  # Dataset
+└── requirements.txt
+```
+
+## Enseignements
+
+Ce projet m'a permis d'approfondir :
+
+1. **L'inférence Bayésienne** : Penser en termes de distributions, pas de points
+2. **L'inférence causale** : La différence entre corrélation et causalité
+3. **Le Causal ML** : Estimer des effets hétérogènes avec le X-Learner
+4. **Le déploiement** : Servir des modèles ML via API
+
+---
+
+[← Retour au Portfolio ML](/portfolio/ml/) | [Voir le Dashboard](https://causal-inference-platform.streamlit.app/){target="_blank"}

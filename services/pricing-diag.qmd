@@ -1,0 +1,118 @@
+---
+title: "PricingDiag — Diagnostic pricing en 2 semaines"
+description: "Un diagnostic opérationnel de vos prix, avec des recommandations actionnables. Périmètre clair, prix fixe, livrable concret."
+lang: fr
+format:
+  html:
+    toc: true
+    toc-depth: 2
+---
+
+::: hero-banner
+# Vos prix laissent-ils de l'argent sur la table ?
+
+## Un diagnostic opérationnel en 2 semaines. Des recommandations que vous pouvez appliquer dès la semaine suivante.
+
+[Réserver un appel découverte](/contact/){.btn .btn-primary .btn-lg}
+:::
+
+## Le problème
+
+La plupart des dirigeants savent que leurs prix ne sont pas optimaux. Mais entre "je pense que le produit X est trop bon marché" et "voici exactement de combien, et voici quoi faire", il y a un gouffre.
+
+Ce gouffre, c'est celui entre l'intuition et la décision.
+
+Les conséquences sont réelles :
+
+- Des produits sous-tarifés qui financent les marges de vos clients, pas les vôtres
+- Des produits sur-tarifés qui freinent le volume sans que vous le voyiez clairement
+- Des promotions dont vous ne savez pas vraiment si elles créent de la valeur ou la détruisent
+- Une politique de prix construite historiquement, jamais remise à plat
+
+Le problème n'est pas un manque d'intuition. C'est un manque de méthode et de données structurées.
+
+---
+
+## La solution : PricingDiag
+
+**PricingDiag est un diagnostic pricing opérationnel.** En deux semaines, à partir de vos données de vente existantes, j'identifie où vos prix sous-performent et je vous donne des recommandations concrètes et chiffrées.
+
+Ce n'est pas du consulting généraliste. Ce n'est pas un dashboard à maintenir. C'est un diagnostic avec un périmètre clair, un prix fixe, et un livrable que vous pouvez utiliser le lendemain.
+
+---
+
+## Comment ça marche
+
+### 1. Briefing et ingestion des données
+
+Un appel d'une heure pour comprendre votre contexte — marchés, canaux, saisonnalité, enjeux spécifiques. Vous m'envoyez vos données de vente au format CSV ou Excel. Aucune infrastructure technique requise de votre côté.
+
+### 2. Diagnostic automatisé
+
+J'analyse la structure complète de vos prix : distribution par segment, élasticité-prix estimée, détection des produits sous- et sur-tarifés, effets de saisonnalité, impact des promotions passées.
+
+### 3. Interprétation et recommandations
+
+C'est là que le travail manuel commence. Je traduis les résultats en recommandations actionnables, priorisées, et contextualisées à votre situation. Chaque recommandation est accompagnée d'une fourchette d'impact estimé et de scénarios alternatifs.
+
+### 4. Livraison
+
+Vous recevez le rapport final et nous faisons une session de restitution de 45 minutes pour répondre à vos questions.
+
+---
+
+## Ce que vous recevez
+
+- **Rapport PDF de 8 à 12 pages** : diagnostic structuré, visualisations claires, recommandations priorisées
+- **Fichier Excel de simulation** : testez l'impact d'un changement de prix sur votre marge avant de décider
+- **Session de restitution de 45 min** : pour passer en revue les conclusions et répondre à vos questions
+
+Tout est conçu pour être utilisable par un directeur commercial ou un COO, sans formation data.
+
+---
+
+## Exemple concret
+
+::: {.callout-note appearance="simple"}
+**Cas fictif représentatif :**
+
+Un e-commerçant de 5 M€ de CA, 20 produits phares, pense que ses prix sont "à peu près alignés avec le marché". Le diagnostic révèle que 3 de ces 20 produits sont systématiquement sous-tarifés de 12 à 18 % — précisément ceux qui ont le taux de conversion le plus élevé. Ce sont ses best-sellers, et il les vend trop peu cher depuis deux ans.
+
+Scénario recommandé : hausse progressive de 10 % sur ces 3 produits, avec suivi sur 6 semaines. Impact potentiel estimé : +180 à +220 k€ de marge annuelle, sans toucher au volume.
+
+Le diagnostic a coûté 8 500 €. Il s'est remboursé en moins de trois semaines d'application.
+:::
+
+---
+
+## Pour qui
+
+PricingDiag est conçu pour les **CEO, COO et directeurs commerciaux de PME et scale-ups** qui :
+
+- Ont entre 500 k€ et 20 M€ de CA
+- Vendent plusieurs produits ou offres avec des marges différentes
+- Ont des données de vente historiques (au moins 12 mois)
+- Savent que leur politique de prix mérite d'être revue, mais n'ont pas le temps ou la méthode pour le faire en interne
+
+Ce n'est **pas** adapté si vous avez moins de 6 mois d'historique de ventes, ou si vous opérez sur un marché à prix unique non-négociable.
+
+---
+
+## Tarifs et délais
+
+| Format | Périmètre | Tarif indicatif | Délai |
+|---|---|---|---|
+| Standard | Jusqu'à 3 canaux, catalogue homogène | 7 000 – 9 000 € | 2 semaines |
+| Complexe | Multi-canaux, saisonnalité forte, catalogue étendu | 12 000 – 15 000 € | 3 semaines |
+
+Prix HT. Un devis précis est établi après l'appel découverte, sans engagement.
+
+---
+
+::: contact-section
+### Vous pensez que vos prix pourraient être meilleurs ?
+
+Un appel de 30 minutes suffit pour savoir si PricingDiag est pertinent pour votre situation. Pas de pitch. Pas d'engagement. Une conversation directe.
+
+[Réserver un appel découverte](/contact/){.btn .btn-primary .btn-lg}
+:::

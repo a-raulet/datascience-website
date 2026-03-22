@@ -1,0 +1,93 @@
+---
+title: "JapanTechRadar — Japan Technology Intelligence"
+description: "What Japanese patents reveal about your competitors and partners. Quantitative analysis, contextualised, delivered in English."
+lang: en
+format:
+  html:
+    toc: true
+    toc-depth: 2
+---
+
+::: hero-banner
+# What Japanese Patents Reveal About Your Competitors
+
+## Public Japanese data, invisible behind the language barrier — made readable and actionable.
+
+[Book a discovery call](/contact/){.btn .btn-primary .btn-lg}
+:::
+
+## The Problem
+
+Japanese companies file tens of thousands of patents every year. These filings are public, freely accessible on J-PlatPat — and completely invisible to European companies that don't read technical Japanese.
+
+The result: you're navigating without a map in a sector where Japanese players are innovating, repositioning, and eroding your competitive advantages — without you knowing it.
+
+---
+
+## The Solution: JapanTechRadar
+
+JapanTechRadar turns this raw data into strategic intelligence. In 3 to 4 weeks, I analyse the patent filings of Japanese players in your sector and deliver a clear report, in English, with actionable recommendations.
+
+This is not a generalist intelligence report. It's a targeted analysis focused on your sector, your competitors, your questions.
+
+---
+
+## What You Receive
+
+A report of 10 to 20 pages covering:
+
+- **Actor mapping** — Who are the leaders and emerging players in your sector in Japan, measured by their patent filings
+- **Technology trends** — Which technologies are rising, which are declining, where the potential disruptions lie
+- **Comparative analysis** — How your Japanese competitors position themselves relative to each other — and relative to you
+- **Weak signals** — New entrants, strategy changes, unusual collaborations detected in the filings
+- **Recommendations** — What these data concretely mean for your decisions (partnership, investment, positioning, R&D)
+
+---
+
+## A Concrete Example
+
+::: {.callout-note appearance="simple"}
+**Representative fictitious case:**
+
+A French automotive supplier wants to understand the technological lead of its Japanese competitors in solid-state batteries. The analysis covers 36 companies and their patent filings over 5 years. It reveals the real leaders (different from the media-visible ones), the emerging technologies to watch, and two partnership opportunity windows before a probable sector consolidation.
+
+All delivered in English. Contextualised. Actionable.
+:::
+
+---
+
+## Methodology
+
+Each report combines:
+
+- Quantitative extraction and analysis of Japanese patent databases (J-PlatPat, Espacenet)
+- R-corrected patent counts for a fair comparison between actors of different sizes
+- Contextual interpretation by a trilingual analyst based in Japan for nearly 10 years
+
+---
+
+## Sectors Covered
+
+Automotive and mobility · Aerospace and defence · Energy · Advanced materials · Cybersecurity · Other sectors on request
+
+---
+
+## Pricing and Timeline
+
+| Format | Scope | Indicative fee | Timeline |
+|---|---|---|---|
+| Sector report | Full analysis of a sector, 20–50 actors | €5,000 – €8,000 | 3-4 weeks |
+| Pilot report | First report at discovery pricing | Contact me | 2 weeks |
+| Quarterly subscription | Updated report + alerts | from €2,000/month | — |
+
+Fees exclusive of tax. A precise quote is provided after the discovery call, with no commitment required.
+
+---
+
+::: contact-section
+### Who is innovating in your sector in Japan?
+
+A 30-minute call to define the scope of your analysis and see what JapanTechRadar can bring you.
+
+[Book a discovery call](/contact/){.btn .btn-primary .btn-lg}
+:::

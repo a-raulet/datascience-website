@@ -1,5 +1,50 @@
 ---
 title: "About"
+lang: en
+format:
+  html:
+    toc: true
+    toc-depth: 2
 ---
 
-About this site
+## The Data Translator
+
+My name is Arnaud Raulet. I'm a data scientist, former patent translator, and consultant based in Tokyo for nearly a decade.
+
+My career path is not linear — and that's precisely what makes me useful.
+
+---
+
+## From Translation to Data
+
+I started by translating Japanese patents for the automotive industry. That work taught me something most data scientists never learn: raw data is worthless without context. A Japanese patent is technical text. But knowing *why* IHI files 15 patents on space propulsion in 2024, what that means in the context of METI budgets, and how it affects a European competitor — that's intelligence.
+
+I applied the same logic to marketing and business data. Most companies have data. Few have answers. My work is to bridge the two.
+
+---
+
+## What I Bring
+
+**Trilingual French, Japanese, English** — I read Japanese patents in the original, I understand the cultural nuances of Japanese business, and I deliver in French or English.
+
+**Analytical rigour** — Causal analysis, Bayesian reasoning, inference — I don't confuse correlation with causation. Every recommendation comes with a clear quantification of uncertainty.
+
+**On-the-ground understanding** — Nearly 10 years in Japan, across industrial sectors (automotive, aerospace, defence, energy). I understand business realities as well as statistical methods.
+
+---
+
+## Education and Certifications
+
+- UC Berkeley — Marketing Analytics
+- Harvard — Data Science
+- Specialisations: causal inference, Bayesian methods (Statistical Rethinking), Marketing Mix Modeling (Robyn)
+
+---
+
+::: contact-section
+## Get in Touch
+
+I'm based in Tokyo and work with clients in France, Japan and internationally.
+
+[Book a discovery call](/contact/){.btn .btn-primary .btn-lg}
+:::

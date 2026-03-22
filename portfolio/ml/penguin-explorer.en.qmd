@@ -1,0 +1,86 @@
+---
+title: "Penguin Explorer - Full-stack ML Demo"
+description: "Complete ML architecture: from model to API, with R and Python"
+lang: en
+categories: [MLOps, Full-stack, R, Python, Docker]
+format:
+  html:
+    toc: true
+    code-fold: true
+---
+
+## Context & Problem
+
+> **Technical question**: How to deploy an ML model end-to-end with modern architecture?
+
+This project demonstrates a **complete ML architecture** using the famous Palmer Penguins dataset. The goal is not the model itself (simple linear regression), but the deployment infrastructure.
+
+## Architecture
+
+```
+┌─────────────┐     ┌─────────────┐     ┌─────────────┐
+│   DuckDB    │────▶│  scikit-    │────▶│   Vetiver   │
+│   (Data)    │     │   learn     │     │  (Registry) │
+└─────────────┘     └─────────────┘     └─────────────┘
+                                               │
+                         ┌─────────────────────┼─────────────────────┐
+                         ▼                     ▼                     ▼
+                  ┌─────────────┐     ┌─────────────┐     ┌─────────────┐
+                  │   FastAPI   │     │   Shiny     │     │   Shiny     │
+                  │    (API)    │     │  (Python)   │     │    (R)      │
+                  └─────────────┘     └─────────────┘     └─────────────┘
+```
+
+### Architecture Highlights
+
+1. **Model Registry** with Vetiver and pins (version management)
+2. **Auto-generated API** with OpenAPI documentation
+3. **Dual frontends**: Shiny Python AND Shiny R
+4. **Complete containerization** with Docker Compose
+5. **CI/CD** with GitHub Actions
+
+## Implementation
+
+### Model Training & Registry
+
+Using Vetiver to create a versioned model that auto-generates an API.
+
+### Docker Compose Deployment
+
+Three services deployed:
+- **API** (FastAPI via Vetiver): http://localhost:8080/docs
+- **Frontend Python** (Shiny): http://localhost:8000
+- **Frontend R** (Shiny): http://localhost:3838
+
+### CI/CD with GitHub Actions
+
+Automated deployment on push to main branch, publishing documentation to gh-pages.
+
+## Technologies
+
+| Component | Technology |
+|-----------|------------|
+| Data | DuckDB, palmerpenguins |
+| ML | scikit-learn |
+| Model Registry | Vetiver, pins |
+| API | FastAPI, Uvicorn |
+| Frontend Python | Shiny for Python |
+| Frontend R | Shiny |
+| Containerization | Docker, Docker Compose |
+| CI/CD | GitHub Actions |
+| Documentation | Quarto |
+
+## Learnings
+
+This project illustrates MLOps best practices:
+
+1. **Separation of concerns**: Model, API, Frontend distinct
+2. **Model Registry**: Model versioning with Vetiver
+3. **API-first**: Model exposed via standard API
+4. **Multi-language**: R and Python coexist harmoniously
+5. **Containerization**: Reproducible environments with Docker
+6. **CI/CD**: Automated deployment with GitHub Actions
+
+---
+
+[← Back to Portfolio ML](/portfolio/ml/) | [GitHub](https://github.com/a-raulet){target="_blank"}

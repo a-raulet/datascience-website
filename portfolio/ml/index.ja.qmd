@@ -1,7 +1,138 @@
 ---
-title: "ポートフォリオ/Ml"
+title: "ポートフォリオ - 機械学習"
+description: "機械学習、因果推論、強化学習プロジェクト"
+lang: ja
+format:
+  html:
+    page-layout: custom
+    toc: false
 ---
 
-# ポートフォリオ/ml
+::: hero-banner
+# 機械学習
 
-コンテンツはこれから...
+## 予測モデル、因果推論、強化学習
+
+古典的な統計モデルから強化学習まで、ビジネス価値を生み出すプロジェクト。
+:::
+
+## プロジェクト
+
+:::::: grid
+::: g-col-md-12
+
+::: portfolio-item
+### A/Bテストのための因果推論プラットフォーム
+
+**課題**：メールキャンペーンのコンバージョンへの実際の影響は？
+
+ベイズ分析とCausal MLを組み合わせた完全なA/Bテストプラットフォームで、単純な相関を超えてマーケティング介入の因果的影響を測定。
+
+**アプローチ**：
+
+- **ベイズ分析**：PyMCを使用した解釈可能な結果（最良である確率）
+- **Causal ML**：X-Learnerを使用した異質性効果（CATE）の推定
+- **FastAPI**：リアルタイム推薦
+- **Streamlitダッシュボード**：結果の探索
+
+**結果**：64,000人のEコマース顧客で、「Mens」メールで+16%のリフト、「Womens」で+8%を特定。
+
+**テクノロジー**：Python、PyMC、CausalML、SHAP、FastAPI、Streamlit
+
+[詳細を見る →](causal-inference.qmd) | [Streamlitダッシュボード](https://causal-inference-platform.streamlit.app/){target="_blank"}
+:::
+
+:::
+::::::
+
+:::::: grid
+::: g-col-md-12
+
+::: portfolio-item
+### ダイナミックプライシングエンジン
+
+**課題**：コンテキストと需要に基づいてリアルタイムで価格を最適化するには？
+
+UberとLyftが使用するサージプライシング戦略を探索するプロジェクトで、計量経済学から強化学習への方法論的進行。
+
+**段階的アプローチ**：
+
+1. **EDA＆ストーリーテリング**：データセット探索とビジネスナラティブ
+2. **ベイズ価格弾力性**：PyMCを使用した計量経済モデル
+3. **コンテキストバンディット**：探索/活用のためのトンプソンサンプリング
+4. **Q学習**：完全な強化学習エージェント
+
+**データセット**：約70万件のUber＆Lyft乗車（ボストン、2018年11月）
+
+**テクノロジー**：Python、PyMC、ArviZ、scikit-learn、Streamlit
+
+[詳細を見る →](dynamic-pricing.qmd)
+:::
+
+:::
+::::::
+
+:::::: grid
+::: g-col-md-12
+
+::: portfolio-item
+### Penguin Explorer - フルスタックMLデモ
+
+**課題**：モダンなアーキテクチャでMLモデルをエンドツーエンドでデプロイするには？
+
+トレーニングからデプロイまで、APIとフロントエンドを通じて、RとPythonの統合を含む完全なMLアーキテクチャのデモプロジェクト。
+
+**アーキテクチャ**：
+
+```
+DuckDB → scikit-learn → Vetiver → FastAPI → Shiny (Python & R)
+```
+
+**ハイライト**：
+
+- Vetiverとpinsを使用した**モデルレジストリ**
+- OpenAPIドキュメント付きの自動生成**REST API**
+- **デュアルフロントエンド**：Shiny PythonとShiny R
+- GitHub Actionsによる**CI/CD**
+- Docker Composeによる**完全なコンテナ化**
+
+**テクノロジー**：Python、R、scikit-learn、Vetiver、FastAPI、Shiny、Docker、GitHub Actions
+
+[詳細を見る →](penguin-explorer.qmd) | [GitHub](https://github.com/a-raulet){target="_blank"}
+:::
+
+:::
+::::::
+
+:::::: grid
+::: g-col-md-12
+
+::: portfolio-item
+### 住宅価格予測 - ハーバード修了証
+
+**課題**：特性からアイオワ州の住宅販売価格を予測する。
+
+ハーバードデータサイエンス修了証の最終プロジェクトで、多くの回帰アプローチを探索し比較。
+
+**テストされたモデル**：
+
+- 線形回帰（ベースライン）
+- ランダムフォレスト
+- XGBoost
+- GAM（一般化加法モデル）
+- ニューラルネットワーク
+- **アンサンブル**（最良モデルの組み合わせ）
+
+**結果**：体系的なパフォーマンス比較と最も重要な特徴量の特定。
+
+**テクノロジー**：R、RMarkdown、caret、xgboost、randomForest
+
+[詳細を見る →](house-prices.qmd)
+:::
+
+:::
+::::::
+
+---
+
+[← ポートフォリオに戻る](/portfolio/) | [分析プロジェクトを見る →](/portfolio/analysis/)

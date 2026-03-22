@@ -1,7 +1,221 @@
 ---
-title: "Portfolio/Viz"
+title: "Portfolio - Visualization"
+description: "Interactive dashboards and data visualizations"
+lang: en
+format:
+  html:
+    page-layout: custom
+    toc: false
 ---
 
-# Portfolio/Viz
+::: hero-banner
+# Visualization
 
-Contents to come...
+## Interactive Dashboards & Data Storytelling
+
+Visualizations that transform complex data into actionable insights.
+:::
+
+## Production Dashboards
+
+:::::: grid
+::: g-col-md-6
+
+::: portfolio-item
+### Marketing Mix Modeling Dashboard
+
+**Framework**: Shiny (R)
+
+Interactive dashboard to visualize Marketing Mix Modeling results and simulate budget allocation scenarios.
+
+**Features**:
+
+- Sales decomposition by channel
+- Response and saturation curves
+- Budget simulator
+- ROI comparison by channel
+
+<a href="https://arnaudraulet.shinyapps.io/mmm-robyn/" target="_blank" class="btn btn-primary">
+View Dashboard
+</a>
+:::
+
+:::
+
+::: g-col-md-6
+
+::: portfolio-item
+### Causal Inference Platform
+
+**Framework**: Streamlit (Python)
+
+Platform for exploring A/B testing results with Bayesian analysis and heterogeneous effects.
+
+**Features**:
+
+- Interactive posterior distributions
+- CATE visualization by segment
+- Recommendation API interface
+- SHAP explanations
+
+<a href="https://causal-inference-platform.streamlit.app/" target="_blank" class="btn btn-primary">
+View Dashboard
+</a>
+:::
+
+:::
+::::::
+
+:::::: grid
+::: g-col-md-6
+
+::: portfolio-item
+### Marketing Analytics Dashboard
+
+**Framework**: Streamlit (Python)
+
+Dashboard for tracking multi-channel marketing KPIs with real-time data from BigQuery.
+
+**Features**:
+
+- Global KPIs (Spend, Revenue, ROAS)
+- Temporal trends
+- Performance by channel
+- Conversion funnel
+
+<a href="https://marketing-data-pipeline-demo.streamlit.app" target="_blank" class="btn btn-primary">
+View Dashboard
+</a>
+:::
+
+:::
+
+::: g-col-md-6
+
+::: portfolio-item
+### Clickstream Analytics (Local)
+
+**Framework**: Streamlit + Plotly
+
+Real-time dashboard for e-commerce behavioral analysis with streaming data.
+
+**Features**:
+
+- Real-time metrics
+- Interactive funnel
+- Top products
+- Configurable auto-refresh
+
+*Available locally with Docker*
+
+[See project →](/portfolio/analysis/clickstream-analytics.qmd)
+:::
+
+:::
+::::::
+
+---
+
+## Visualization Technologies
+
+:::::: grid
+::: g-col-md-3
+
+### Streamlit
+
+Python framework to quickly create interactive data applications.
+
+**Used in**:
+
+- Causal Inference
+- Marketing Pipeline
+- Clickstream Analytics
+
+:::
+
+::: g-col-md-3
+
+### Shiny
+
+R (and Python) framework for advanced statistical dashboards.
+
+**Used in**:
+
+- MMM Robyn
+- Penguin Explorer
+
+:::
+
+::: g-col-md-3
+
+### Plotly
+
+Interactive charting library for Python and R.
+
+**Chart types**:
+
+- Scatter plots
+- Time series
+- Funnel charts
+- Heatmaps
+
+:::
+
+::: g-col-md-3
+
+### Quarto
+
+Scientific publishing system for creating reports and websites.
+
+**Used for**:
+
+- This portfolio site
+- Project documentation
+- Analysis reports
+
+:::
+::::::
+
+---
+
+## Visualization Types
+
+### Marketing Analysis
+
+- **Sales decomposition**: Waterfall charts showing each channel's contribution
+- **Response curves**: Diminishing returns visualization
+- **Budget heatmaps**: Optimal allocation matrix
+
+### Time Series
+
+- **Trends**: KPI evolution over time
+- **Seasonality**: Weekly/annual patterns
+- **Anomalies**: Visual outlier detection
+
+### Machine Learning
+
+- **SHAP plots**: Variable importance and local explanations
+- **Posterior distributions**: Bayesian uncertainty visualization
+- **Conversion funnel**: Sankey diagrams for user journeys
+
+### Bayesian Statistics
+
+- **Trace plots**: MCMC convergence
+- **Forest plots**: Credible intervals
+- **Posterior predictive checks**: Model validation
+
+---
+
+## Design Principles
+
+My visualizations follow these principles:
+
+1. **Clarity**: One chart = one message
+2. **Context**: Always show relevant comparisons
+3. **Interactivity**: Enable exploration without overload
+4. **Accessibility**: Color palettes adapted for all
+5. **Reproducibility**: Code available for each visualization
+
+---
+
+[← Back to Portfolio](/portfolio/) | [See Analysis projects →](/portfolio/analysis/)

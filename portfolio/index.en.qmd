@@ -1,7 +1,133 @@
 ---
 title: "Portfolio"
+description: "Data Science & Marketing Analytics Projects"
+lang: en
+format:
+  html:
+    page-layout: custom
+    toc: false
 ---
 
+::: hero-banner
 # Portfolio
 
-Contents to come...
+## Data Science & Marketing Analytics Projects
+
+A selection of projects demonstrating my expertise in data analysis, machine learning, and data engineering.
+:::
+
+## Categories
+
+:::::: grid
+::: g-col-md-4
+
+### Data Analysis
+
+Exploration, visualization, and business insights from marketing and e-commerce data.
+
+[See Analysis projects →](/portfolio/analysis/)
+
+:::
+
+::: g-col-md-4
+
+### Machine Learning
+
+Predictive models, causal inference, and reinforcement learning applied to real-world use cases.
+
+[See ML projects →](/portfolio/ml/)
+
+:::
+
+::: g-col-md-4
+
+### Visualization
+
+Interactive dashboards and data visualizations for decision-making.
+
+[See visualizations →](/portfolio/viz/)
+
+:::
+::::::
+
+---
+
+## Featured Projects
+
+:::::: grid
+::: g-col-md-6
+
+::: portfolio-item
+### Marketing Mix Modeling (Robyn)
+
+**Business question**: How to reallocate marketing budget to maximize sales?
+
+Using Meta's Robyn framework to measure the impact of each marketing channel and optimize budget allocation.
+
+**Technologies**: R, Robyn, Prophet, Shiny
+
+[See project →](/portfolio/analysis/mmm-robyn.qmd) | [Shiny Dashboard](https://arnaudraulet.shinyapps.io/mmm-robyn/){target="_blank"}
+:::
+
+:::
+
+::: g-col-md-6
+
+::: portfolio-item
+### Causal Inference Platform
+
+**Business question**: What is the real impact of our email campaigns on conversions?
+
+Complete A/B testing platform with Bayesian analysis and Causal ML to measure treatment effects.
+
+**Technologies**: Python, PyMC, CausalML, FastAPI, Streamlit
+
+[See project →](/portfolio/ml/causal-inference.qmd) | [Streamlit Dashboard](https://causal-inference-platform.streamlit.app/){target="_blank"}
+:::
+
+:::
+::::::
+
+:::::: grid
+::: g-col-md-6
+
+::: portfolio-item
+### Marketing Analytics Pipeline
+
+**Business question**: How to track marketing channel performance in real-time?
+
+Complete ETL pipeline with BigQuery, dbt, and Streamlit dashboard for marketing KPI tracking.
+
+**Technologies**: Python, BigQuery, dbt, Streamlit
+
+[See project →](/portfolio/analysis/marketing-pipeline.qmd) | [Streamlit Dashboard](https://marketing-data-pipeline-demo.streamlit.app){target="_blank"}
+:::
+
+:::
+
+::: g-col-md-6
+
+::: portfolio-item
+### Dynamic Pricing Engine
+
+**Business question**: How to optimize prices in real-time based on demand?
+
+Progression from econometrics to Reinforcement Learning for dynamic pricing (Uber/Lyft case).
+
+**Technologies**: Python, PyMC, Q-Learning, Streamlit
+
+[See project →](/portfolio/ml/dynamic-pricing.qmd)
+:::
+
+:::
+::::::
+
+---
+
+::: contact-section
+## Have a Similar Project?
+
+I'd be happy to discuss your needs and see how these approaches can apply to your context.
+
+[Contact me](mailto:contact-quarto-site.le77r@simplelogin.com){.btn .btn-primary} [LinkedIn](https://linkedin.com/in/arnaud-raulet-13308310/){.btn .btn-outline-secondary}
+:::

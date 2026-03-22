@@ -1,7 +1,185 @@
 ---
 title: "サービス"
+description: "マーケティングアナリティクス、データエンジニアリング、A/Bテスト、機械学習の専門知識"
+lang: ja
+format:
+  html:
+    page-layout: custom
+    toc: false
 ---
 
-# サービス
+::: hero-banner
+# データサイエンス＆マーケティングアナリティクスサービス
 
-コンテンツはこれから...
+## データを競争優位性に変えるカスタムソリューション
+
+探索的分析から本番モデルのデプロイまで、データジャーニーのあらゆる段階でサポートします。
+
+[実績を見る](/portfolio/){.btn .btn-primary .btn-lg} [お問い合わせ](mailto:contact-quarto-site.le77r@simplelogin.com){.btn .btn-outline-secondary .btn-lg}
+:::
+
+## 提供できる価値
+
+:::::: grid
+::: g-col-md-6
+
+### マーケティングアナリティクス
+
+**信頼性の高いデータでマーケティング投資を最適化**
+
+- **マーケティングミックスモデリング（MMM）**：各チャネルの売上への実際の影響を測定し、予算配分を最適化
+- **マルチタッチアトリビューション**：完全なカスタマージャーニーを理解し、各タッチポイントを評価
+- **キャンペーン分析**：実用的なKPI（ROAS、CPA、LTV）でキャンペーンパフォーマンスを評価
+- **顧客セグメンテーション**：最も収益性の高いセグメントを特定し、アクションをパーソナライズ
+
+**テクノロジー**：R（Robyn、Prophet）、Python、BigQuery、Looker Studio
+
+[MMMプロジェクトを見る →](/portfolio/analysis/mmm-robyn.qmd)
+
+:::
+
+::: g-col-md-6
+
+### データエンジニアリング
+
+**モダンでスケーラブルなデータインフラストラクチャを構築**
+
+- **ETL/ELTパイプライン**：データの抽出、変換、ロードを自動化
+- **データウェアハウジング**：最適化されたクラウドアーキテクチャを設計（BigQuery、Snowflake）
+- **dbt変換**：バージョン管理され、テストされ、文書化された変換を実装
+- **ストリーミングアナリティクス**：KafkaとSparkでリアルタイムデータを処理
+
+**テクノロジー**：dbt、BigQuery、Airflow、Kafka、Spark、Delta Lake、Docker
+
+[パイプラインプロジェクトを見る →](/portfolio/analysis/marketing-pipeline.qmd)
+
+:::
+::::::
+
+:::::: grid
+::: g-col-md-6
+
+### 実験とA/Bテスト
+
+**直感ではなく、証拠に基づいた意思決定を**
+
+- **実験設計**：適切な検出力計算を用いた統計的に堅牢なテストを設計
+- **ベイズ分析**：信用区間を用いた解釈可能な結果を取得
+- **因果推論**：相関を超えて、アクションの実際の影響を測定
+- **異質性効果（CATE）**：介入に最もよく反応するセグメントを特定
+
+**テクノロジー**：PyMC、CausalML、DoWhy、statsmodels、ArviZ
+
+[因果推論プロジェクトを見る →](/portfolio/ml/causal-inference.qmd)
+
+:::
+
+::: g-col-md-6
+
+### 応用機械学習
+
+**ビジネス価値を生み出すモデルをデプロイ**
+
+- **予測モデル**：解釈可能なモデルでチャーン、需要、売上を予測
+- **ダイナミックプライシング**：コンテキストと需要に基づいてリアルタイムで価格を最適化
+- **レコメンデーション**：レコメンデーションシステムで顧客体験をパーソナライズ
+- **MLOps**：本番モデルをデプロイし監視（Vetiver、FastAPI、Docker）
+
+**テクノロジー**：scikit-learn、XGBoost、PyTorch、Vetiver、FastAPI、MLflow
+
+[ダイナミックプライシングプロジェクトを見る →](/portfolio/ml/dynamic-pricing.qmd)
+
+:::
+::::::
+
+---
+
+## 仕事の進め方
+
+:::::: grid
+::: g-col-md-4
+
+### 1. 発見
+
+ビジネス目標を一緒に定義し、利用可能なデータと技術的制約を特定します。お客様のコンテキストに適したアプローチを提案します。
+
+:::
+
+::: g-col-md-4
+
+### 2. 開発
+
+定期的なチェックポイントで方向性を検証しながら、反復的にソリューションを開発します。進捗を完全に把握できます。
+
+:::
+
+::: g-col-md-4
+
+### 3. 納品
+
+文書化され、テストされ、すぐに使用できるソリューションを納品します。立ち上げをサポートし、その後のサポートにも対応します。
+
+:::
+::::::
+
+---
+
+## 技術スタック
+
+:::::: grid
+::: g-col-md-3
+
+**言語**
+
+- Python
+- R
+- SQL
+
+:::
+
+::: g-col-md-3
+
+**データエンジニアリング**
+
+- dbt
+- BigQuery
+- Kafka
+- Spark
+- Airflow
+
+:::
+
+::: g-col-md-3
+
+**機械学習**
+
+- scikit-learn
+- PyMC
+- XGBoost
+- CausalML
+- Robyn
+
+:::
+
+::: g-col-md-3
+
+**可視化＆デプロイ**
+
+- Streamlit
+- Shiny
+- Plotly
+- Docker
+- FastAPI
+
+:::
+::::::
+
+---
+
+::: contact-section
+## プロジェクトについて相談しましょう
+
+すべてのプロジェクトはユニークです。ニーズについて話し合い、目標達成をどのようにサポートできるかご相談ください。
+
+[お問い合わせ](mailto:contact-quarto-site.le77r@simplelogin.com){.btn .btn-primary} [LinkedIn](https://linkedin.com/in/arnaud-raulet-13308310/){.btn .btn-outline-secondary}
+:::
