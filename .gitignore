@@ -64,3 +64,4 @@ dist/
 build/
 node_modules/
 **/*.quarto_ipynb
+CLAUDE.md
