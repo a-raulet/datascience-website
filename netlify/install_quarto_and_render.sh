@@ -1,12 +1,17 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-VERSION=${QUARTO_VERSION:-1.8.25}
-echo "Installing Quarto v${VERSION}..."
+QUARTO_VERSION="${QUARTO_VERSION:-1.8.25}"
+TMPDIR="$(mktemp -d)"
+ARCHIVE="$TMPDIR/quarto.tar.gz"
+DOWNLOAD_URL="https://github.com/quarto-dev/quarto-cli/releases/download/v${QUARTO_VERSION}/quarto-${QUARTO_VERSION}-linux-amd64.tar.gz"
 
-curl -L "https://github.com/quarto-dev/quarto-cli/releases/download/v${VERSION}/quarto-${VERSION}-linux-amd64.tar.gz" -o quarto.tar.gz
-tar -xzf quarto.tar.gz
-export PATH="$PWD/quarto-${VERSION}/bin:$PATH"
+echo "Installing Quarto v${QUARTO_VERSION} to ${TMPDIR}..."
+curl -L -o "$ARCHIVE" "$DOWNLOAD_URL"
+tar -xzf "$ARCHIVE" -C "$TMPDIR"
 
-quarto --version
-quarto render
+QUARTO_BIN="$TMPDIR/quarto-${QUARTO_VERSION}/bin/quarto"
+"$QUARTO_BIN" --version
+"$QUARTO_BIN" render
+
+rm -rf "$TMPDIR"
