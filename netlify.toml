@@ -1,5 +1,5 @@
 [build]
-  command = "quarto render"
+  command = "bash netlify/install_quarto_and_render.sh"
   publish = "_site"
 
 [build.environment]
