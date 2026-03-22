@@ -68,4 +68,4 @@ api_keys/
 *.log
 dist/
 build/
-node_modules/
+node_modules/_site/
