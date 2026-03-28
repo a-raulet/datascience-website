@@ -1,108 +1,116 @@
 ---
-title: "データサイエンス・ポートフォリオへようこそ"
-description: "データ分析・機械学習・可視化の専門家"
+pagetitle: "Arnaud Raulet | Decision Science · フランス×日本"
+description: "デシジョンサイエンス、マーケティングアナリティクス、ジャパンインテリジェンス"
 lang: ja
 format:
   html:
-    page-layout: custom
+    page-layout: article
     toc: false
+body-classes: home
 ---
 
+:::: column-screen
 ::: hero-banner
-# データを戦略的意思決定に変える
-
-## そして、競合他社よりも早く前進する。
-
-データ分析、機械学習、インタラクティブな視覚化を専門とし、データサイエンス・プロジェクトのAからZまでお手伝いします。
-
-[サービス](/services/){.btn .btn-primary .btn-lg} [ポートフォリオ](/portfolio/){.btn .btn-outline-secondary .btn-lg}.
+::: hero-title
+データを意思決定に変える。
 :::
 
-## 専門分野
-
-:::::: grid
-::: g-col-md-4
-### データ分析
-
-データの探索、クレンジング、統計分析により、隠れたパターンを明らかにし、実用的な洞察を生み出します。
+::: hero-subtitle
+日本を拠点とするデータサイエンティストとして、「本当に知っていること」と「思い込んでいること」を分けるお手伝いをします。
 :::
 
-::: g-col-md-4
-### 🤖 機械学習
+因果分析・マーケティングアナリティクス・日本技術インテリジェンス。
 
-お客様のビジネスニーズに合わせた予測モデルと機械学習アルゴリズムの開発。
+[無料相談を予約する](/contact/){.btn .btn-primary .btn-lg} [サービスを見る](/services/){.btn .btn-outline-secondary .btn-lg}
 :::
+::::
 
-::: g-col-md-4
-### ビジュアライゼーション
+## 課題
 
-インタラクティブなダッシュボードや魅力的なビジュアライゼーションを作成し、結果を効果的に伝えます。
-:::
-::::::
+データはある。でも、答えはあるか？
 
-## 最近のプロジェクト
+多くの企業は「データが多い＝より良い意思決定」だと考えています。しかし実際には、因果関係に辿り着けないまま相関関係に溺れています。
 
-```{r}
-#| echo: false
-#| message: false
-#| warning: false
+> *「キャンペーンで売上+15%」*——本当に？それとも市場全体が上昇していただけ？
+>
+> *「このセグメントは収益性が高い」*——なぜ？では、具体的に何をすべきか？
 
-# Exemple de visualisation interactive avec plotly
-library(plotly)
-library(dplyr)
-
-# Données d'exemple pour un projet
-project_data <- data.frame(
-  Projet = c("Analyse RH", "Prédiction Ventes", "Segmentation Client", "Optimisation Prix"),
-  Secteur = c("RH", "Ventes", "Marketing", "Finance"),
-  Impact = c(85, 92, 78, 88),
-  Complexité = c(6, 8, 7, 9),
-  Durée_semaines = c(4, 12, 8, 16)
-)
-
-# Graphique interactif avec hovertemplate corrigé
-p <- plot_ly(project_data, 
-             x = ~Complexité, 
-             y = ~Impact, 
-             size = ~Durée_semaines,
-             color = ~Secteur,
-             text = ~Projet,
-             hovertemplate = paste0(
-               "<b>%{text}</b><br>",
-               "Complexité: %{x}<br>",
-               "Impact: %{y}%<br>",
-               "Durée: %{marker.size} semaines<br>",
-               "<extra></extra>"
-             )) %>%
-  add_markers() %>%
-  layout(title = "Vue d'ensemble de mes projets récents",
-         xaxis = list(title = "Complexité (1-10)"),
-         yaxis = list(title = "Impact (%)"),
-         showlegend = TRUE)
-
-p
-```
-
-[すべてのプロジェクトを見る→](/portfolio/)
-
-## 最新記事
-
-<!--最新のブログ記事は自動的にここに表示されます -->
+私はダッシュボードを作りません。明確な答えを提供します。
 
 ------------------------------------------------------------------------
 
-::: contact-session
-## 一緒に仕事をしませんか？
+## 提供するもの
+::: {.column-page}
+:::::: grid
+::: g-col-md-4
+### 🎯 デシジョンサイエンス
 
-私のデータ・サイエンス・スキルがお客様の目標達成にどのように貢献できるか、ぜひご相談ください。
-
-[お問い合わせ](mailto:contact-quarto-site.le77r@simplelogin.com){.btn .btn-primary} [LinkedIn](https://linkedin.com/in/arnaud-raulet-13308310/){.btn .btn-outline-secondary} 
+相関の先へ。結果の**真の原因**を特定し、不確実性を定量化し、不完全なデータでも堅固な意思決定を実現します。
 :::
 
-<!-- babelquartoの設定 -->
+::: g-col-md-4
+### 📊 マーケティングアナリティクス
 
-```{=html}
-<script>
-// Ajout de fonctionnalités interactives si nécessaire
-</script>
-```
+**本当に機能していること**を把握：厳密なアトリビューション、実行可能なセグメンテーション、直感ではなく知覚価値に基づく価格設定。
+:::
+
+::: g-col-md-4
+### 🇯🇵 ジャパンインテリジェンス
+
+日本在住10年以上。言語の壁に隠された日本のデータを可読化します：特許、R&Dシグナル、競合他社・パートナーの技術的ポジショニング。
+:::
+::::::
+:::
+[サービスの詳細を見る →](/services/)
+
+------------------------------------------------------------------------
+
+## 対象クライアント
+
+こんな方と仕事をしています：
+
+-   **中小・中堅企業** ――レポートではなく、答えが必要な方
+-   **マーケティングチーム** ――直感を証明（または否定）したい方
+-   **欧州企業** ――意思決定の前に、日本のプレイヤーの動向を把握したい方
+
+------------------------------------------------------------------------
+
+## アプローチ
+
+**厳密さ。明確さ。行動。**
+
+因果分析とベイズ推論を組み合わせたアプローチ。具体的には：すべての分析が実行可能な推奨事項と、不確実性の明確な定量化で終わります。
+
+何を断言できるか——そして何を検証すべきかが、明確にわかります。
+
+------------------------------------------------------------------------
+
+## 経歴
+
+::::: grid
+::: g-col-md-6
+**日本在住** 約10年
+
+**三言語対応** フランス語・日本語・英語
+
+**データサイエンティスト** 因果分析・ベイズ手法専門
+:::
+
+::: g-col-md-6
+**現場＋技術**: ビジネスの現実と統計手法の両方を理解
+
+**東京在住**、フランス・日本・国際的なクライアントと協業
+:::
+:::::
+
+------------------------------------------------------------------------
+
+::: contact-section
+## データを明確にする準備はできていますか？
+
+30分の無料相談を予約してください。私がお役に立てるかどうか、どのように貢献できるかを一緒に確認します。
+
+売り込みなし。コミットメントなし。ただの会話。
+
+[無料相談を予約する](/contact/){.btn .btn-primary .btn-lg} [メールで連絡する](mailto:contact-quarto-site.le77r@simplelogin.com){.btn .btn-outline-secondary .btn-lg}
+:::

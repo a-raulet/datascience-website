@@ -1,12 +1,17 @@
 project:
   type: website
   output-dir: _site
+  render:
+    - "**/*.qmd"
+    - "!test.qmd"
+    - "!test.en.qmd"
+    - "!test.ja.qmd"
 
 execute:
   freeze: auto
   
 website:
-  title: "Arnaud RAULET | Decision Science"
+  title: "Arnaud RAULET | Decision Science · France-Japon"
   description: "Decision Science, Marketing Analytics et Intelligence Japon"
   navbar:
     background: primary
@@ -33,13 +38,17 @@ website:
         href: https://github.com/a-raulet
       - icon: linkedin
         href: https://linkedin.com/in/arnaud-raulet-13308310/
+      - text: "🇫🇷 FR"
+        href: "/"
+      - text: "🇬🇧 EN"
+        href: "/index.en.html"
+      - text: "🇯🇵 JA"
+        href: "/index.ja.html"
 
 
 format:
   html:
-    theme:
-      - cosmo
-      - custom.scss
+    theme: cosmo
     css: styles.css
     toc: true
     code-fold: true
@@ -47,6 +56,25 @@ format:
     include-in-header:
       - text: |
           <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+          <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            var path = window.location.pathname;
+            if (path.endsWith('/')) path += 'index.html';
+            // Base = FR version of current page
+            var base = path.replace(/\.(en|ja)\.html$/, '.html');
+            document.querySelectorAll('.navbar a[href]').forEach(function(a) {
+              var href = a.getAttribute('href') || '';
+              // Match the language switcher links by their href pattern
+              if (/index\.en\.html$/.test(href) || href === '/index.en.html') {
+                a.href = base.replace(/\.html$/, '.en.html');
+              } else if (/index\.ja\.html$/.test(href) || href === '/index.ja.html') {
+                a.href = base.replace(/\.html$/, '.ja.html');
+              } else if (href === '/' || /^\.*\/index\.html$/.test(href)) {
+                a.href = base;
+              }
+            });
+          });
+          </script>
 
 babelquarto:
   mainlanguage: 'fr'

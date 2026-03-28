@@ -1,7 +1,6 @@
 ---
-pagetitle: "Arnaud Raulet"
+pagetitle: "Arnaud Raulet | Decision Science · France-Japon"
 description: "Decision Science, Marketing Analytics et Intelligence Japon"
-title-block-style: none
 lang: fr
 format:
   html:
@@ -12,9 +11,13 @@ body-classes: home
 
 :::: column-screen
 ::: hero-banner
-# Transformez vos données en décisions.
+::: hero-title
+Transformez vos données en décisions.
+:::
 
-## Data scientist basé au Japon, j'aide les entreprises à séparer ce qu'elles savent vraiment de ce qu'elles croient savoir.
+::: hero-subtitle
+Data scientist basé au Japon, j'aide les entreprises à séparer ce qu'elles savent vraiment de ce qu'elles croient savoir.
+:::
 
 Analyse causale, marketing analytics, intelligence technologique Japon.
 

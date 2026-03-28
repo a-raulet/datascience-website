@@ -11,7 +11,7 @@ format:
 
 My name is Arnaud Raulet. I'm a data scientist, former patent translator, and consultant based in Tokyo for nearly a decade.
 
-My career path is not linear — and that's precisely what makes me useful.
+My career path is not linear — and that's precisely the added value that I can bring to your company.
 
 ---
 
@@ -37,7 +37,7 @@ I applied the same logic to marketing and business data. Most companies have dat
 
 - UC Berkeley — Marketing Analytics
 - Harvard — Data Science
-- Specialisations: causal inference, Bayesian methods (Statistical Rethinking), Marketing Mix Modeling (Robyn)
+- Specialisations: causal inference, Bayesian and Frequentist methods, Marketing Mix Modeling (Robyn)
 
 ---
 

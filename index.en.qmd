@@ -1,108 +1,116 @@
 ---
-title: "Welcome to my Data Science Portfolio"
-description: "Data analysis, machine learning and visualization expert"
+pagetitle: "Arnaud Raulet | Decision Science · France-Japan"
+description: "Decision Science, Marketing Analytics and Japan Intelligence"
 lang: en
 format:
   html:
-    page-layout: custom
+    page-layout: article
     toc: false
+body-classes: home
 ---
 
+:::: column-screen
 ::: hero-banner
-# Transform your data into strategic decisions
-
-## And move faster than your competitors.
-
-Specialized in data analysis, machine learning and interactive visualization, I can help you with your data science projects from A to Z.
-
-[Discover my services](/services/){.btn .btn-primary .btn-lg} [View my portfolio](/portfolio/){.btn .btn-outline-secondary .btn-lg}
+::: hero-title
+Turn your data into decisions.
 :::
 
-## My Expertise
+::: hero-subtitle
+Data scientist based in Japan, I help companies separate what they truly know from what they merely believe.
+:::
 
+Causal analysis, marketing analytics, Japan technology intelligence.
+
+[Book a discovery call](/contact/){.btn .btn-primary .btn-lg} [See my services](/services/){.btn .btn-outline-secondary .btn-lg}
+:::
+::::
+
+## The problem
+
+You have data. But do you have answers?
+
+Most companies believe that more data equals better decisions. In reality, they drown in correlations without ever reaching causality.
+
+> *"Our campaign generated +15% in sales"* — Really? Or was the market already rising?
+>
+> *"This segment is more profitable"* — But why? And what should you actually do about it?
+
+I don't build dashboards. I deliver clarity.
+
+------------------------------------------------------------------------
+
+## What I bring
+::: {.column-page}
 :::::: grid
 ::: g-col-md-4
-### 📊 Data Analysis
+### 🎯 Decision Science
 
-Exploration, cleansing and statistical analysis of your data to reveal hidden patterns and generate actionable insights.
+Going beyond correlations. Identifying what **truly causes** your results, quantifying uncertainty, making robust decisions even with imperfect data.
 :::
 
 ::: g-col-md-4
-### 🤖 Machine Learning
+### 📊 Marketing Analytics
 
-Development of predictive models and machine learning algorithms tailored to your business needs.
+Understanding what **actually works**: rigorous attribution, actionable segmentation, value-based pricing — not gut feeling.
 :::
 
 ::: g-col-md-4
-### 📈 Visualization
+### 🇯🇵 Japan Intelligence
 
-Create interactive dashboards and engaging visualizations to effectively communicate your results.
+10+ years in Japan. I make readable the Japanese data hidden behind the language barrier: patents, R&D signals, competitive and partner positioning.
 :::
 ::::::
+:::
+[Explore my services in detail →](/services/)
 
-## Recent Projects
+------------------------------------------------------------------------
 
-```{r}
-#| echo: false
-#| message: false
-#| warning: false
+## Who is this for?
 
-# Exemple de visualisation interactive avec plotly
-library(plotly)
-library(dplyr)
+I work with:
 
-# Données d'exemple pour un projet
-project_data <- data.frame(
-  Projet = c("Analyse RH", "Prédiction Ventes", "Segmentation Client", "Optimisation Prix"),
-  Secteur = c("RH", "Ventes", "Marketing", "Finance"),
-  Impact = c(85, 92, 78, 88),
-  Complexité = c(6, 8, 7, 9),
-  Durée_semaines = c(4, 12, 8, 16)
-)
+-   **SMEs and mid-size companies** who want answers, not reports
+-   **Marketing teams** who need to prove (or disprove) their intuitions
+-   **European companies** who need to understand what Japanese players in their sector are doing — before deciding.
 
-# Graphique interactif avec hovertemplate corrigé
-p <- plot_ly(project_data, 
-             x = ~Complexité, 
-             y = ~Impact, 
-             size = ~Durée_semaines,
-             color = ~Secteur,
-             text = ~Projet,
-             hovertemplate = paste0(
-               "<b>%{text}</b><br>",
-               "Complexité: %{x}<br>",
-               "Impact: %{y}%<br>",
-               "Durée: %{marker.size} semaines<br>",
-               "<extra></extra>"
-             )) %>%
-  add_markers() %>%
-  layout(title = "Vue d'ensemble de mes projets récents",
-         xaxis = list(title = "Complexité (1-10)"),
-         yaxis = list(title = "Impact (%)"),
-         showlegend = TRUE)
+------------------------------------------------------------------------
 
-p
-```
+## My approach
 
-[View all my projects →](/portfolio/)
+**Rigour. Clarity. Action.**
 
-## Latest Articles
+My approach combines causal analysis and Bayesian reasoning. Concretely: every analysis ends with an actionable recommendation and a clear quantification of uncertainty.
 
-<!-- The latest blog posts will be automatically listed here -->
+You will know what you can assert — and what remains to be verified.
+
+------------------------------------------------------------------------
+
+## Background
+
+::::: grid
+::: g-col-md-6
+**Nearly 10 years** of experience in Japan
+
+**Trilingual** French, Japanese, English
+
+**Data Scientist** specialised in causal analysis and Bayesian methods
+:::
+
+::: g-col-md-6
+**Field + Technical**: I understand business realities as much as statistical methods
+
+**Based in Tokyo**, working with clients in France, Japan and internationally
+:::
+:::::
 
 ------------------------------------------------------------------------
 
 ::: contact-section
-## Ready to collaborate?
+## Ready to see clearly in your data?
 
-I'd be delighted to discuss your project and see how my data science skills can help you achieve your goals.
+Book a 30-minute discovery call. We identify together whether I can help you, and how.
 
-[Contact me](mailto:contact-quarto-site.le77r@simplelogin.com){.btn .btn-primary} [LinkedIn](https://linkedin.com/in/arnaud-raulet-13308310/){.btn .btn-outline-secondary}
+No pitch. No commitment. Just a conversation.
+
+[Book a discovery call](/contact/){.btn .btn-primary .btn-lg} [Email me](mailto:contact-quarto-site.le77r@simplelogin.com){.btn .btn-outline-secondary .btn-lg}
 :::
-
-<!-- Configuration for babelquarto -->
-
-```{=html}
-<script>
-// Ajout de fonctionnalités interactives si nécessaire
-</script>
-```

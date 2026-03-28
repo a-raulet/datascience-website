@@ -28,23 +28,24 @@ body.home main {
   background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
   color: white;
   padding: 4rem 2rem;
-  margin: 0rem -2rem 3rem -2rem;
+  margin: 0 0 3rem 0;
   text-align: center;
-  border-radius: 0 0 var(--border-radius) var(--border-radius);
 }
 
-.hero-banner h1 {
+.hero-title {
   font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  line-height: 1.2;
 }
 
-.hero-banner h2 {
+.hero-subtitle {
   font-size: 1.5rem;
   font-weight: 300;
   margin-bottom: 2rem;
   opacity: 0.9;
+  line-height: 1.4;
 }
 
 /* Boutons personnalisés */
@@ -129,6 +130,29 @@ body.home main {
 
 .navbar .nav-link:hover {
   color: var(--accent-color) !important;
+}
+
+/* Sélecteur de langue dans la navbar */
+.navbar .nav-item:has(.nav-link[href*=".en.html"]),
+.navbar .nav-item:has(.nav-link[href*=".ja.html"]),
+.navbar .nav-item:has(.nav-link[href="/"]) {
+  font-size: 0.85rem;
+}
+
+.navbar .nav-link[href="/"],
+.navbar .nav-link[href*=".en.html"],
+.navbar .nav-link[href*=".ja.html"] {
+  padding: 4px 8px !important;
+  border-radius: 4px;
+  margin: 0 2px;
+  opacity: 0.85;
+}
+
+.navbar .nav-link[href*=".en.html"]:hover,
+.navbar .nav-link[href*=".ja.html"]:hover,
+.navbar .nav-link[href="/"]:hover {
+  opacity: 1;
+  background: rgba(255,255,255,0.15);
 }
 
 /* Graphiques et visualisations */
