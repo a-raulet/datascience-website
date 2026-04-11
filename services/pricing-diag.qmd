@@ -1,5 +1,5 @@
 ---
-title: "PricingDiag — Diagnostic pricing en 2 semaines"
+title: "PricingDiag : Diagnostic Pricing en 2 semaines"
 description: "Un diagnostic opérationnel de vos prix, avec des recommandations actionnables. Périmètre clair, prix fixe, livrable concret."
 lang: fr
 format:
@@ -9,11 +9,13 @@ format:
 ---
 
 ::: hero-banner
-# Vos prix laissent-ils de l'argent sur la table ?
-
-## Un diagnostic opérationnel en 2 semaines. Des recommandations que vous pouvez appliquer dès la semaine suivante.
-
-[Réserver un appel découverte](/contact/){.btn .btn-primary .btn-lg}
+::: hero-title
+Vos prix laissent-ils de l'argent sur la table ?
+:::
+::: hero-subtitle
+Un diagnostic opérationnel en 2 semaines. Des recommandations que vous pouvez appliquer dès la semaine suivante.
+:::
+[Réserver un appel](/contact/){.btn .btn-primary .btn-lg}
 :::
 
 ## Le problème
@@ -43,58 +45,51 @@ Ce n'est pas du consulting généraliste. Ce n'est pas un dashboard à maintenir
 
 ## Comment ça marche
 
-### 1. Briefing et ingestion des données
+**1. Briefing et ingestion des données**
 
-Un appel d'une heure pour comprendre votre contexte — marchés, canaux, saisonnalité, enjeux spécifiques. Vous m'envoyez vos données de vente au format CSV ou Excel. Aucune infrastructure technique requise de votre côté.
+Un appel d'une heure pour comprendre votre contexte : marchés, canaux, saisonnalité, enjeux spécifiques. Vous m'envoyez vos données de vente au format CSV ou Excel. Aucune infrastructure technique requise de votre côté.
 
-### 2. Diagnostic automatisé
+**2. Diagnostic automatisé**
 
 J'analyse la structure complète de vos prix : distribution par segment, élasticité-prix estimée, détection des produits sous- et sur-tarifés, effets de saisonnalité, impact des promotions passées.
 
-### 3. Interprétation et recommandations
+**3. Interprétation et recommandations**
 
-C'est là que le travail manuel commence. Je traduis les résultats en recommandations actionnables, priorisées, et contextualisées à votre situation. Chaque recommandation est accompagnée d'une fourchette d'impact estimé et de scénarios alternatifs.
+Je traduis les résultats en recommandations actionnables, priorisées, et contextualisées à votre situation. Chaque recommandation est accompagnée d'une fourchette d'impact estimé et de scénarios alternatifs.
 
-### 4. Livraison
+**4. Livraison**
 
 Vous recevez le rapport final et nous faisons une session de restitution de 45 minutes pour répondre à vos questions.
 
 ---
 
-## Ce que vous recevez
+## Exemple de livrable
 
-- **Rapport PDF de 8 à 12 pages** : diagnostic structuré, visualisations claires, recommandations priorisées
-- **Fichier Excel de simulation** : testez l'impact d'un changement de prix sur votre marge avant de décider
-- **Session de restitution de 45 min** : pour passer en revue les conclusions et répondre à vos questions
+Un rapport PricingDiag type contient :
 
-Tout est conçu pour être utilisable par un directeur commercial ou un COO, sans formation data.
+1. **Synthèse exécutive** (1 page) : les 3 actions prioritaires à mener, classées par impact estimé
+2. **Diagnostic de la structure tarifaire** : distribution des prix par segment, visualisation des zones sous- et sur-tarification, comparaison avec le positionnement concurrentiel
+3. **Analyse de l'élasticité** : estimation de la sensibilité prix par catégorie de produits, avec intervalles de confiance
+4. **Impact des promotions passées** : décomposition de l'effet réel des promotions vs. tendance de fond
+5. **Recommandations priorisées** : actions spécifiques par référence ou catégorie, fourchette d'impact chiffrée, risques identifiés
+6. **Fichier de simulation** : outil Excel pour tester l'impact d'un changement de prix sur la marge avant de décider
 
----
+Format : rapport PDF 8-12 pages + fichier Excel + session de restitution 45 min.
 
-## Exemple concret
-
-::: {.callout-note appearance="simple"}
-**Cas fictif représentatif :**
-
-Un e-commerçant de 5 M€ de CA, 20 produits phares, pense que ses prix sont "à peu près alignés avec le marché". Le diagnostic révèle que 3 de ces 20 produits sont systématiquement sous-tarifés de 12 à 18 % — précisément ceux qui ont le taux de conversion le plus élevé. Ce sont ses best-sellers, et il les vend trop peu cher depuis deux ans.
-
-Scénario recommandé : hausse progressive de 10 % sur ces 3 produits, avec suivi sur 6 semaines. Impact potentiel estimé : +180 à +220 k€ de marge annuelle, sans toucher au volume.
-
-Le diagnostic a coûté 8 500 €. Il s'est remboursé en moins de trois semaines d'application.
-:::
+*Variante disponible avec analyse du positionnement sur le marché japonais pour les entreprises qui y opèrent.*
 
 ---
 
 ## Pour qui
 
-PricingDiag est conçu pour les **CEO, COO et directeurs commerciaux de PME et scale-ups** qui :
+PricingDiag est conçu pour les **CEO, COO et directeurs commerciaux de PME et ETI** qui :
 
-- Ont entre 500 k€ et 20 M€ de CA
+- Ont entre 500 k€ et 20 M€ de chiffre d'affaires
 - Vendent plusieurs produits ou offres avec des marges différentes
 - Ont des données de vente historiques (au moins 12 mois)
 - Savent que leur politique de prix mérite d'être revue, mais n'ont pas le temps ou la méthode pour le faire en interne
 
-Ce n'est **pas** adapté si vous avez moins de 6 mois d'historique de ventes, ou si vous opérez sur un marché à prix unique non-négociable.
+Ce n'est **pas** adapté si vous avez moins de 6 mois d'historique de ventes, ou si vous opérez sur un marché à prix unique non négociable.
 
 ---
 
@@ -114,5 +109,5 @@ Un devis précis est établi après l'appel découverte, sans engagement.
 
 Un appel de 30 minutes suffit pour savoir si PricingDiag est pertinent pour votre situation. Pas de pitch. Pas d'engagement. Une conversation directe.
 
-[Réserver un appel découverte](/contact/){.btn .btn-primary .btn-lg}
+[Réserver un appel](/contact/){.btn .btn-primary .btn-lg}
 :::

@@ -1,6 +1,6 @@
 ---
-pagetitle: "Arnaud Raulet | Decision Science · France-Japon"
-description: "Decision Science, Marketing Analytics et Intelligence Japon"
+pagetitle: "Arnaud Raulet | Data Scientist · France-Japon"
+description: "Data scientist basé à Tokyo, j'analyse les données que la barrière linguistique ou le manque de méthode vous cachent, et je les traduis en recommandations chiffrées."
 lang: fr
 format:
   html:
@@ -12,16 +12,14 @@ body-classes: home
 :::: column-screen
 ::: hero-banner
 ::: hero-title
-Transformez vos données en décisions.
+Les données que personne d'autre n'analyse, pour les décisions qui comptent.
 :::
 
 ::: hero-subtitle
-Data scientist basé au Japon, j'aide les entreprises à séparer ce qu'elles savent vraiment de ce qu'elles croient savoir.
+Data scientist basé à Tokyo, j'analyse les données que la barrière linguistique ou le manque de méthode vous cachent : brevets japonais, signaux prix, performance marketing. Et je les traduis en recommandations chiffrées.
 :::
 
-Analyse causale, marketing analytics, intelligence technologique Japon.
-
-[Réserver un appel découverte](/contact/){.btn .btn-primary .btn-lg} [Voir mes services](/services/){.btn .btn-outline-secondary .btn-lg}
+[Réserver un appel](/contact/){.btn .btn-primary .btn-lg} [Voir mes services](/services/){.btn .btn-outline-secondary .btn-lg}
 :::
 ::::
 
@@ -29,39 +27,93 @@ Analyse causale, marketing analytics, intelligence technologique Japon.
 
 Vous avez des données. Mais avez-vous des réponses ?
 
-La plupart des entreprises croient que plus de données = meilleures décisions. En réalité, elles se noient dans les corrélations sans jamais toucher la causalité.
+::: {.column-page}
+:::::: grid
+::: g-col-md-6
+**Vos concurrents japonais déposent des brevets, signent des alliances, investissent en R&D. Et vous ne le voyez pas.**
 
-> *"Notre campagne a généré +15% de ventes"* — Vraiment ? Ou le marché montait déjà ?
->
-> *"Ce segment est plus rentable"* — Mais pourquoi ? Et que faire concrètement ?
+Les données sont publiques, accessibles sur J-PlatPat. Mais elles sont en japonais, et leur interprétation exige une double compétence rare : technique et linguistique.
 
-Je ne construis pas des dashboards. J'offre de la clarté.
+*Combien de décisions stratégiques prenez-vous sans voir ce que vos concurrents japonais font réellement ?*
+
+[JapanTechRadar →](/services/japan-tech-radar/)
+:::
+
+::: g-col-md-6
+**Vos prix sont-ils réellement optimaux ?**
+
+La plupart des politiques de prix sont construites sur l'intuition et l'historique, jamais remises à plat avec des données. Des produits sous-tarifés peuvent financer les marges de vos clients pendant des années sans que l'alarme se déclenche.
+
+*Savoir exactement où vos prix sous-performent, de combien, et quoi faire : ça change la décision.*
+
+[PricingDiag →](/services/pricing-diag/)
+:::
+::::::
+
+:::::: grid
+::: g-col-md-6
+**Votre campagne a généré +15 % de ventes. Vraiment ?**
+
+Ou le marché montait déjà ? Sans méthode rigoureuse, vous optimisez dans le noir. Les tableaux de bord montrent des chiffres ; ils ne montrent pas les causes.
+
+*Attribution mal mesurée : vous allouez votre budget au mauvais endroit depuis des mois.*
+
+[Marketing Analytics →](/services/#marketing-analytics)
+:::
+
+::: g-col-md-6
+**Vous voyez une corrélation dans vos données. Mais est-ce la cause du problème ?**
+
+Se tromper de levier, c'est investir au mauvais endroit. L'inférence causale distingue ce qui cause réellement un résultat de ce qui lui est juste corrélé.
+
+*Une décision fondée sur une corrélation trompeuse peut coûter des mois d'optimisation inutile.*
+
+[Decision Science →](/services/#decision-science)
+:::
+::::::
+:::
 
 ------------------------------------------------------------------------
 
 ## Ce que j'apporte
+
 ::: {.column-page}
 :::::: grid
-::: g-col-md-4
-### 🎯 Decision Science
+::: g-col-md-6
+### Intelligence Technologique Japon
 
-Aller au-delà des corrélations. Identifier ce qui **cause** vraiment vos résultats, quantifier l'incertitude, prendre des décisions robustes même avec des données imparfaites.
+Ce que font vos concurrents japonais : extrait des données brevets, quantifié, livré en français. Cartographie des acteurs, tendances technologiques, signaux faibles.
+
+[Découvrir JapanTechRadar →](/services/japan-tech-radar/)
 :::
 
-::: g-col-md-4
-### 📊 Marketing Analytics
+::: g-col-md-6
+### Diagnostic Pricing
 
-Comprendre ce qui fonctionne **vraiment** : attribution rigoureuse, segmentation actionnable, pricing basé sur la valeur perçue — pas sur l'intuition.
+Où vos prix sous-performent, de combien, et quoi faire. En 2 semaines, à partir de vos données de vente existantes. Recommandations chiffrées, fichier de simulation inclus.
+
+[Découvrir PricingDiag →](/services/pricing-diag/)
+:::
+::::::
+
+:::::: grid
+::: g-col-md-6
+### Marketing Analytics
+
+Quel canal génère vraiment vos conversions ? Quel est le ROI réel de chaque campagne ? Des réponses chiffrées fondées sur vos données, pas sur des approximations.
+
+[Voir les services →](/services/#marketing-analytics)
 :::
 
-::: g-col-md-4
-### 🇯🇵 Intelligence Japon
+::: g-col-md-6
+### Inférence Causale & Decision Science
 
-10+ ans au Japon. Je rends lisibles les données japonaises que la barrière linguistique vous cache : brevets, signaux R&D, positionnement technologique de vos concurrents et partenaires japonais.
+Identifier ce qui cause réellement un résultat, pas ce qui lui est juste corrélé. Pour investir au bon levier, avec une quantification explicite de l'incertitude.
+
+[Voir les services →](/services/#decision-science)
 :::
 ::::::
 :::
-[Découvrir mes services en détail →](/services/)
 
 ------------------------------------------------------------------------
 
@@ -69,19 +121,20 @@ Comprendre ce qui fonctionne **vraiment** : attribution rigoureuse, segmentation
 
 Je travaille avec :
 
--   **Des PME et ETI** qui veulent des réponses, pas des rapports
--   **Des équipes marketing** qui cherchent à prouver (ou invalider) leurs intuitions\
--   **Des entreprises européennes** qui ont besoin de comprendre ce que font les acteurs japonais de leur secteur — avant de décider.
+- **Des dirigeants de PME et ETI** qui veulent des réponses chiffrées, pas des rapports de plus
+- **Des directeurs marketing** qui veulent mesurer ce qui fonctionne vraiment dans leur mix
+- **Des directeurs commerciaux** qui soupçonnent que leur politique de prix n'est pas optimale
+- **Des entreprises européennes** qui ont besoin de comprendre ce que font les acteurs japonais de leur secteur
 
 ------------------------------------------------------------------------
 
 ## Mon approche
 
-**Rigueur. Clarté. Action.**
+**Données primaires. Méthodes rigoureuses. Recommandations actionnables.**
 
-Mon approche combine analyse causale et raisonnement bayésien. Concrètement : chaque analyse aboutit à une recommandation actionnable et une quantification claire de l'incertitude.
+Je travaille sur des données primaires, pas des rapports de seconde main. Chaque analyse combine extraction de données structurées (brevets, transactions, données marketing), méthodes quantitatives rigoureuses, et interprétation contextuelle.
 
-Vous saurez ce que vous pouvez affirmer — et ce qui reste à vérifier.
+Le résultat : des recommandations chiffrées avec une quantification explicite de l'incertitude. Vous saurez ce que vous pouvez affirmer, et ce qui reste à vérifier.
 
 ```{r}
 #| echo: false
@@ -92,18 +145,13 @@ Vous saurez ce que vous pouvez affirmer — et ce qui reste à vérifier.
 #| fig-align: center
 
 # Visualisation "Corrélation vs Causalité"
-# Exemple léger : parapluies et cafés
-
 library(ggplot2)
 
 set.seed(69)
 
-# Simuler des données où corrélation ≠ causalité
-# Variable cachée : la météo (pluie)
 n <- 60
-pluie <- rbeta(n, 2, 5) * 100  # % de jours de pluie dans le mois
+pluie <- rbeta(n, 2, 5) * 100
 
-# Quand il pleut : plus de parapluies vendus, plus de cafés bus (on se réchauffe)
 parapluies <- 200 + 8 * pluie + rnorm(n, sd = 50)
 cafes <- 1000 + 15 * pluie + rnorm(n, sd = 100)
 
@@ -113,7 +161,6 @@ data <- data.frame(
   pluie = pluie
 )
 
-# Graphique montrant la fausse corrélation
 ggplot(data, aes(x = parapluies, y = cafes)) +
   geom_point(aes(color = pluie), size = 4, alpha = 0.8) +
   geom_smooth(method = "lm", se = TRUE, color = "#e63946", linetype = "dashed", alpha = 0.2) +
@@ -141,32 +188,34 @@ ggplot(data, aes(x = parapluies, y = cafes)) +
 
 ::::: grid
 ::: g-col-md-6
-**Près de 10 ans** d'expérience au Japon
+**Près de 10 ans** au Japon, dans des secteurs exigeants : défense, aérospatial, automobile, industrie
 
-**Trilingue** français, japonais, anglais
+**Trilingue** français, japonais, anglais : lecture de brevets techniques, compréhension des nuances du monde des affaires japonais
 
-**Data Scientist** spécialisé en analyse causale et approche bayésienne
+**Ancien traducteur de brevets** JP vers FR pour l'industrie automobile
 :::
 
 ::: g-col-md-6
-**Terrain + Technique** : Je comprends les réalités business autant que les méthodes statistiques
+**Certifié** UC Berkeley (Marketing Analytics), Harvard (Data Science)
 
 **Basé à Tokyo**, je travaille avec des clients en France, au Japon et à l'international
+
+**Data Scientist** spécialisé en inférence causale et modélisation bayésienne
 :::
 :::::
+
+[En savoir plus →](/about/)
 
 ------------------------------------------------------------------------
 
 ## Derniers articles
-
-<!-- Les derniers articles du blog seront automatiquement listés ici -->
 
 [Voir tous les articles →](/blog/)
 
 ------------------------------------------------------------------------
 
 ::: contact-section
-## Prêt à y voir clair dans vos données ?
+## Parlons de votre situation
 
 Réservez un appel découverte de 30 minutes. On identifie ensemble si je peux vous aider, et comment.
 

@@ -1,6 +1,6 @@
 ---
-title: "PricingDiag — Pricing Audit in 2 Weeks"
-description: "An operational pricing audit with actionable recommendations. Clear scope, fixed price, concrete deliverable."
+title: "PricingDiag: Pricing Diagnostic in 2 Weeks"
+description: "An operational pricing diagnostic with actionable recommendations. Clear scope, fixed price, concrete deliverable."
 lang: en
 format:
   html:
@@ -9,14 +9,16 @@ format:
 ---
 
 ::: hero-banner
-# Are Your Prices Leaving Money on the Table?
-
-## An operational pricing audit in 2 weeks. Recommendations you can act on the following week.
-
+::: hero-title
+Is your pricing leaving money on the table?
+:::
+::: hero-subtitle
+An operational pricing diagnostic in 2 weeks. Recommendations you can act on the following week.
+:::
 [Book a discovery call](/contact/){.btn .btn-primary .btn-lg}
 :::
 
-## The Problem
+## The problem
 
 Most business leaders know their pricing isn't optimal. But there's a wide gap between "I think product X is underpriced" and "here's exactly by how much, and here's what to do about it."
 
@@ -24,81 +26,74 @@ That gap is the distance between intuition and decision.
 
 The consequences are real:
 
-- Underpriced products that subsidize your customers' margins instead of your own
+- Underpriced products subsidising your customers' margins instead of your own
 - Overpriced products quietly dragging down volume without a clear signal
-- Promotions whose net value — positive or negative — you've never actually measured
+- Promotions whose net value you've never actually measured
 - A pricing policy built on history and habit, never properly reviewed
 
 The problem isn't a lack of intuition. It's a lack of method and structured data.
 
 ---
 
-## The Solution: PricingDiag
+## The solution: PricingDiag
 
-**PricingDiag is an operational pricing audit.** In two weeks, using your existing sales data, I identify where your pricing underperforms and deliver concrete, quantified recommendations.
+**PricingDiag is an operational pricing diagnostic.** In two weeks, using your existing sales data, I identify where your pricing underperforms and deliver concrete, quantified recommendations.
 
 This is not generalist consulting. This is not a dashboard to maintain. It's a diagnostic with a defined scope, a fixed price, and a deliverable you can use the next day.
 
 ---
 
-## How It Works
+## How it works
 
-### 1. Briefing and Data Ingestion
+**1. Briefing and data ingestion**
 
-A one-hour call to understand your context — markets, channels, seasonality, specific challenges. You send me your sales data in CSV or Excel format. No technical infrastructure required on your end.
+A one-hour call to understand your context: markets, channels, seasonality, specific challenges. You send your sales data in CSV or Excel format. No technical infrastructure required on your end.
 
-### 2. Automated Diagnostic
+**2. Diagnostic**
 
 I analyse the full structure of your pricing: distribution by segment, estimated price elasticity, detection of under- and over-priced products, seasonality effects, impact of past promotions.
 
-### 3. Interpretation and Recommendations
+**3. Interpretation and recommendations**
 
-This is where the manual work begins. I translate the findings into actionable, prioritised recommendations, contextualised to your specific situation. Each recommendation comes with an estimated impact range and alternative scenarios.
+I translate the findings into actionable, prioritised recommendations contextualised to your specific situation. Each recommendation includes an estimated impact range.
 
-### 4. Delivery
+**4. Delivery and debrief**
 
-You receive the final report, and we hold a 45-minute debrief session to walk through the findings and answer your questions.
-
----
-
-## What You Receive
-
-- **PDF report, 8 to 12 pages**: structured diagnostic, clear visualisations, prioritised recommendations
-- **Excel simulation file**: test the margin impact of a price change before committing
-- **45-minute debrief session**: to review the conclusions and answer your questions
-
-Everything is designed to be usable by a sales director or COO, with no data background required.
+You receive the final report and we hold a 45-minute session to walk through the findings and answer your questions.
 
 ---
 
-## A Concrete Example
+## Sample deliverable
 
-::: {.callout-note appearance="simple"}
-**Representative fictitious case:**
+A typical PricingDiag report contains:
 
-An e-commerce company with €5M in revenue and 20 flagship products believes its prices are "roughly in line with the market." The audit reveals that 3 of those 20 products are systematically underpriced by 12 to 18% — and they happen to be the ones with the highest conversion rates. They're the best-sellers, sold too cheaply for two years.
+1. **Executive summary** (1 page): the 3 priority actions, ranked by estimated impact
+2. **Pricing structure diagnostic:** price distribution by segment, under/over-pricing zones, competitive positioning
+3. **Elasticity analysis:** price sensitivity estimates by product category, with confidence intervals
+4. **Promotional impact analysis:** decomposition of true promotional effect vs. underlying trend
+5. **Prioritised recommendations:** specific actions by reference or category, quantified impact ranges, identified risks
+6. **Simulation file:** Excel tool to test the margin impact of a price change before deciding
 
-Recommended scenario: a gradual 10% price increase on those 3 products, monitored over 6 weeks. Estimated potential impact: €180k–€220k in additional annual margin, with no effect on volume.
+Format: 8-12 page PDF report + Excel file + 45-min debrief session.
 
-The audit cost €8,500. It paid for itself in under three weeks of implementation.
-:::
+*Also available with Japanese market positioning analysis for companies operating in Japan.*
 
 ---
 
-## Who It's For
+## Who it's for
 
-PricingDiag is designed for **CEOs, COOs, and sales directors at SMEs and scale-ups** who:
+PricingDiag is designed for **CEOs, COOs and sales directors at SMEs and scale-ups** who:
 
 - Have between €500k and €20M in annual revenue
-- Sell multiple products or offerings with different margins
+- Sell multiple products or offers with different margins
 - Have at least 12 months of historical sales data
-- Know their pricing policy needs a review, but lack the time or method to do it internally
+- Know their pricing needs a review, but lack the time or method to do it internally
 
 It is **not** a fit if you have less than 6 months of sales history, or if you operate in a market with a single non-negotiable price point.
 
 ---
 
-## Pricing and Timeline
+## Pricing and timeline
 
 | Format | Scope | Timeline |
 |---|---|---|
@@ -112,7 +107,7 @@ A precise quote is provided after the discovery call, with no commitment require
 ::: contact-section
 ### Think your pricing could be doing more?
 
-A 30-minute call is enough to find out whether PricingDiag is right for your situation. No pitch. No commitment. A direct conversation.
+A 30-minute call is enough to find out whether PricingDiag is right for your situation.
 
 [Book a discovery call](/contact/){.btn .btn-primary .btn-lg}
 :::

@@ -7,44 +7,54 @@ format:
     toc-depth: 2
 ---
 
-## Le Traducteur de Données
+## Arnaud Raulet, Data Scientist - Tokyo
 
-Je m'appelle Arnaud Raulet. Je suis data scientist, ancien traducteur de brevets, et consultant basé à Tokyo depuis près de 10 ans.
+Je suis data scientist, basé à Tokyo depuis près de 10 ans. Après avoir travaillé comme traducteur puis conseiller et représentant commercial France-Japon, j'ai développé une activité d'analyse et de conseil en données.
 
-Mon parcours n'est pas linéaire, et c'est précisément la valeur ajoutée que je peux vous apporter.
+Mon profil est hybride : rigueur quantitative d'un côté, expertise terrain Japon de l'autre. La plupart des data scientists ne lisent pas les brevets japonais. La plupart des experts Japon ne font pas d'analyse quantitative. Je fais les deux.
 
 ------------------------------------------------------------------------
 
-## De la traduction à la donnée
+## De la traduction à la data science
 
-J'ai commencé par traduire des brevets japonais pour l'industrie automobile. Ce travail m'a appris quelque chose que la plupart des data scientists n'apprennent jamais : la donnée brute ne vaut rien sans contexte. Un brevet japonais, c'est du texte technique. Mais savoir *pourquoi* IHI dépose 15 brevets sur la propulsion spatiale en 2024, ce que ça signifie dans le contexte des budgets METI, et comment ça affecte un concurrent européen : ça, c'est de l'intelligence.
+J'ai commencé comme traducteur de brevets, japonais vers français, principalement pour l'industrie automobile. Ce travail m'a appris quelque chose que la plupart des data scientists n'apprennent jamais : **la donnée brute ne vaut rien sans contexte**.
 
-J'ai appliqué la même logique aux données marketing et business. La plupart des entreprises ont des données. Peu ont des réponses. Mon travail est de faire le pont entre les deux.
+Un brevet japonais, c'est du texte technique. Mais savoir *pourquoi* IHI dépose 15 brevets sur la propulsion spatiale en un an, ce que ça signifie dans le contexte des budgets METI et des alliances industrielles japonaises, et comment ça affecte un concurrent européen, c'est de l'intelligence. Cette double lecture, technique et contextuelle, est au cœur de mon approche.
+
+J'ai appliqué la même logique aux données marketing et business. Les entreprises ont des données. Rarement des réponses. Mon travail est de faire le pont.
 
 ------------------------------------------------------------------------
 
 ## Ce que j'apporte
 
-**Trilingue français, japonais, anglais** — Je lis les brevets japonais, je comprends les nuances culturelles du monde des affaires japonais, et je livre en français ou en anglais.
+**Trilingue.** Je lis les brevets japonais dans la langue originale, je comprends les nuances du monde des affaires japonais, et je livre en français ou en anglais. Il n'y a pas d'intermédiaire qui déforme les signaux.
 
-**Rigueur analytique** — Analyse causale, approche bayésienne, inférence... Je ne confonds pas corrélation et causalité. Chaque recommandation est accompagnée de son degré d'incertitude.
+**Rigueur analytique.** Je ne confonds pas corrélation et causalité. J'utilise les méthodes de l'inférence causale et de la modélisation bayésienne pour produire des recommandations accompagnées d'une quantification explicite de l'incertitude.
 
-**Compréhension terrain** — Près de 10 ans au Japon, dans des secteurs industriels (automobile, aérospatial, défense, énergie). Je comprends les réalités du monde des affaires autant que les méthodes statistiques.
+**Expérience sectorielle.** Près de 10 ans dans des secteurs industriels exigeants au Japon : automobile, aérospatial, défense, énergie. Je comprends les réalités business autant que les méthodes statistiques.
 
 ------------------------------------------------------------------------
 
 ## Formation et certifications
 
--   UC Berkeley — Marketing Analytics
--   Harvard — Data Science
--   Spécialisations : analyse causale, méthodes bayésiennes et fréquentistes, Marketing Mix Modeling (Robyn)
+-   UC Berkeley : Marketing Analytics (certification)
+-   Harvard : Data Science (certification)
+-   Stanford : Machine Learning & Deep Learning (certification)
+-   Spécialisations : Marketing Mix Modeling (Robyn), inférence causale, méthodes bayésiennes
+-   Traduction spécialisée japonais technique : automobile, mécanique, aérospatial
+
+------------------------------------------------------------------------
+
+## Par ailleurs
+
+Je tiens également [japanorama.fr](https://japanorama.fr), un site sur la culture japonaise. L'immersion ne s'arrête pas au travail.
 
 ------------------------------------------------------------------------
 
 ::: contact-section
-## Me contacter
+## Parlons de votre situation
 
 Je suis basé à Tokyo et je travaille avec des clients en France, au Japon et à l'international.
 
-[Réserver un appel découverte](/contact/){.btn .btn-primary .btn-lg}
+[Réserver un appel découverte](/contact/){.btn .btn-primary .btn-lg} [Me contacter par email](mailto:contact-quarto-site.le77r@simplelogin.com){.btn .btn-outline-secondary .btn-lg}
 :::

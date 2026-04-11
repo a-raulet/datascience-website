@@ -132,27 +132,28 @@ body.home main {
   color: var(--accent-color) !important;
 }
 
-/* Sélecteur de langue dans la navbar */
-.navbar .nav-item:has(.nav-link[href*=".en.html"]),
-.navbar .nav-item:has(.nav-link[href*=".ja.html"]),
-.navbar .nav-item:has(.nav-link[href="/"]) {
-  font-size: 0.85rem;
-}
-
-.navbar .nav-link[href="/"],
-.navbar .nav-link[href*=".en.html"],
-.navbar .nav-link[href*=".ja.html"] {
+/* Sélecteur de langue — dropdown navbar */
+#lang-switcher > .nav-link {
+  font-size: 1.15rem;
   padding: 4px 8px !important;
   border-radius: 4px;
-  margin: 0 2px;
-  opacity: 0.85;
+  opacity: 0.88;
+  line-height: 1.5;
 }
-
-.navbar .nav-link[href*=".en.html"]:hover,
-.navbar .nav-link[href*=".ja.html"]:hover,
-.navbar .nav-link[href="/"]:hover {
+#lang-switcher > .nav-link:hover {
   opacity: 1;
-  background: rgba(255,255,255,0.15);
+  background: rgba(255, 255, 255, 0.15);
+  color: inherit !important;
+}
+#lang-switcher .dropdown-menu {
+  min-width: 130px;
+}
+#lang-switcher .dropdown-item {
+  font-size: 0.9rem;
+}
+#lang-switcher .dropdown-item.active,
+#lang-switcher .dropdown-item:active {
+  background-color: var(--primary-color);
 }
 
 /* Graphiques et visualisations */
@@ -291,3 +292,4 @@ html[lang="ja"] {
   font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
   line-height: 1.8;
 }
+

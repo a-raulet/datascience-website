@@ -1,6 +1,6 @@
 ---
-pagetitle: "Arnaud Raulet | Decision Science · France-Japan"
-description: "Decision Science, Marketing Analytics and Japan Intelligence"
+pagetitle: "Arnaud Raulet | Data Scientist · France-Japan"
+description: "Data scientist based in Tokyo, I analyse the data hidden behind language barriers or methodological gaps, and turn them into quantified recommendations."
 lang: en
 format:
   html:
@@ -12,16 +12,14 @@ body-classes: home
 :::: column-screen
 ::: hero-banner
 ::: hero-title
-Turn your data into decisions.
+The data nobody else analyses, for the decisions that matter.
 :::
 
 ::: hero-subtitle
-Data scientist based in Japan, I help companies separate what they truly know from what they merely believe.
+Data scientist based in Tokyo, I analyse the data hidden behind language barriers or methodological gaps — Japanese patents, pricing signals, marketing performance — and turn them into quantified recommendations.
 :::
 
-Causal analysis, marketing analytics, Japan technology intelligence.
-
-[Book a discovery call](/contact/){.btn .btn-primary .btn-lg} [See my services](/services/){.btn .btn-outline-secondary .btn-lg}
+[Book a call](/contact/){.btn .btn-primary .btn-lg} [See my services](/services/index.en.html){.btn .btn-outline-secondary .btn-lg}
 :::
 ::::
 
@@ -29,39 +27,93 @@ Causal analysis, marketing analytics, Japan technology intelligence.
 
 You have data. But do you have answers?
 
-Most companies believe that more data equals better decisions. In reality, they drown in correlations without ever reaching causality.
+::: {.column-page}
+:::::: grid
+::: g-col-md-6
+**Your Japanese competitors are filing patents, signing alliances, investing in R&D. And you don't see it.**
 
-> *"Our campaign generated +15% in sales"* — Really? Or was the market already rising?
->
-> *"This segment is more profitable"* — But why? And what should you actually do about it?
+The data is public, freely available on J-PlatPat. But it's in Japanese, and interpreting it requires a rare combination of technical and linguistic expertise.
 
-I don't build dashboards. I deliver clarity.
+*How many strategic decisions are you making without seeing what your Japanese competitors are actually doing?*
+
+[JapanTechRadar →](/services/japan-tech-radar.en.html)
+:::
+
+::: g-col-md-6
+**Is your pricing really optimal?**
+
+Most pricing policies are built on intuition and history, never properly reviewed with structured data. Underpriced products can subsidise your customers' margins for years without any clear alarm signal.
+
+*Knowing exactly where your prices underperform, by how much, and what to do about it changes the decision.*
+
+[PricingDiag →](/services/pricing-diag.en.html)
+:::
+::::::
+
+:::::: grid
+::: g-col-md-6
+**Your campaign generated +15% in sales. Did it, really?**
+
+Or was the market already rising? Without rigorous method, you're optimising in the dark. Dashboards show numbers — they don't show causes.
+
+*Misattributed performance: you've been allocating budget to the wrong channels for months.*
+
+[Marketing Analytics →](/services/index.en.html#marketing-analytics)
+:::
+
+::: g-col-md-6
+**You see a correlation in your data. But is that the actual cause?**
+
+Acting on the wrong lever means investing in the wrong place. Causal inference separates what truly causes a result from what is merely correlated with it.
+
+*A decision built on a spurious correlation can cost months of wasted optimisation.*
+
+[Decision Science →](/services/index.en.html#decision-science)
+:::
+::::::
+:::
 
 ------------------------------------------------------------------------
 
 ## What I bring
+
 ::: {.column-page}
 :::::: grid
-::: g-col-md-4
-### 🎯 Decision Science
+::: g-col-md-6
+### Japan Technology Intelligence
 
-Going beyond correlations. Identifying what **truly causes** your results, quantifying uncertainty, making robust decisions even with imperfect data.
+What your Japanese competitors are doing: extracted from patent data, quantified, delivered in English. Actor mapping, technology trends, weak signals.
+
+[Discover JapanTechRadar →](/services/japan-tech-radar.en.html)
 :::
 
-::: g-col-md-4
-### 📊 Marketing Analytics
+::: g-col-md-6
+### Pricing Diagnostic
 
-Understanding what **actually works**: rigorous attribution, actionable segmentation, value-based pricing — not gut feeling.
+Where your prices underperform, by how much, and what to do about it. In 2 weeks, using your existing sales data. Prioritised recommendations, simulation file included.
+
+[Discover PricingDiag →](/services/pricing-diag.en.html)
+:::
+::::::
+
+:::::: grid
+::: g-col-md-6
+### Marketing Analytics
+
+Which channel is really driving your conversions? What is the true ROI of each campaign? Quantified answers grounded in your data, not approximations.
+
+[See services →](/services/index.en.html#marketing-analytics)
 :::
 
-::: g-col-md-4
-### 🇯🇵 Japan Intelligence
+::: g-col-md-6
+### Causal Inference & Decision Science
 
-10+ years in Japan. I make readable the Japanese data hidden behind the language barrier: patents, R&D signals, competitive and partner positioning.
+Identifying what truly causes a result, not just what correlates with it. So you invest in the right lever, with an explicit quantification of uncertainty.
+
+[See services →](/services/index.en.html#decision-science)
 :::
 ::::::
 :::
-[Explore my services in detail →](/services/)
 
 ------------------------------------------------------------------------
 
@@ -69,19 +121,57 @@ Understanding what **actually works**: rigorous attribution, actionable segmenta
 
 I work with:
 
--   **SMEs and mid-size companies** who want answers, not reports
--   **Marketing teams** who need to prove (or disprove) their intuitions
--   **European companies** who need to understand what Japanese players in their sector are doing — before deciding.
+- **Leaders of SMEs and mid-size companies** who want quantified answers, not more reports
+- **Marketing directors** who want to measure what actually works in their mix
+- **Commercial directors** who suspect their pricing policy is not optimal
+- **European companies** who need to understand what Japanese players in their sector are doing
 
 ------------------------------------------------------------------------
 
 ## My approach
 
-**Rigour. Clarity. Action.**
+**Primary data. Rigorous methods. Actionable recommendations.**
 
-My approach combines causal analysis and Bayesian reasoning. Concretely: every analysis ends with an actionable recommendation and a clear quantification of uncertainty.
+I work on primary data, not second-hand reports. Each analysis combines structured data extraction (patents, transactions, marketing data), rigorous quantitative methods, and contextual interpretation.
 
-You will know what you can assert — and what remains to be verified.
+The result: quantified recommendations with an explicit measure of uncertainty. You will know what you can assert, and what remains to be verified.
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| fig-width: 10
+#| fig-height: 6
+#| fig-align: center
+
+library(ggplot2)
+set.seed(69)
+n <- 60
+rain <- rbeta(n, 2, 5) * 100
+umbrellas <- 200 + 8 * rain + rnorm(n, sd = 50)
+coffees <- 1000 + 15 * rain + rnorm(n, sd = 100)
+data <- data.frame(umbrellas = umbrellas, coffees = coffees, rain = rain)
+
+ggplot(data, aes(x = umbrellas, y = coffees)) +
+  geom_point(aes(color = rain), size = 4, alpha = 0.8) +
+  geom_smooth(method = "lm", se = TRUE, color = "#e63946", linetype = "dashed", alpha = 0.2) +
+  scale_color_gradient(low = "#f4a261", high = "#457b9d", name = "Rainy days (%)") +
+  labs(
+    title = "Correlation ≠ Causation",
+    subtitle = "Umbrella sales correlate with coffee consumption.\nShould you distribute umbrellas to sell more coffee?",
+    x = "Umbrella sales",
+    y = "Coffees consumed",
+    caption = "The real cause: the weather. My work: identifying these hidden variables in your data."
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(
+    plot.title = element_text(face = "bold", size = 20, hjust = 0.5),
+    plot.subtitle = element_text(color = "gray40", size = 13, hjust = 0.5, lineheight = 1.2),
+    plot.caption = element_text(color = "gray50", face = "italic", size = 11),
+    legend.position = "right",
+    panel.grid.minor = element_blank()
+  )
+```
 
 ------------------------------------------------------------------------
 
@@ -89,24 +179,34 @@ You will know what you can assert — and what remains to be verified.
 
 ::::: grid
 ::: g-col-md-6
-**Nearly 10 years** of experience in Japan
+**Nearly 10 years** in Japan, across demanding sectors: defence, aerospace, automotive, industry
 
-**Trilingual** French, Japanese, English
+**Trilingual** French, Japanese, English: technical patent reading, nuanced understanding of Japanese business
 
-**Data Scientist** specialised in causal analysis and Bayesian methods
+**Former patent translator** JP to FR for the automotive industry
 :::
 
 ::: g-col-md-6
-**Field + Technical**: I understand business realities as much as statistical methods
+**Certified** UC Berkeley (Marketing Analytics), Harvard (Data Science)
 
 **Based in Tokyo**, working with clients in France, Japan and internationally
+
+**Data Scientist** specialised in causal inference and Bayesian modelling
 :::
 :::::
+
+[About me →](/about.en.html)
+
+------------------------------------------------------------------------
+
+## Latest articles
+
+[See all articles →](/blog/index.en.html)
 
 ------------------------------------------------------------------------
 
 ::: contact-section
-## Ready to see clearly in your data?
+## Let's talk about your situation
 
 Book a 30-minute discovery call. We identify together whether I can help you, and how.
 

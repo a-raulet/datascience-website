@@ -1,6 +1,6 @@
 ---
 title: "Services"
-description: "Decision Science, Marketing Analytics et Intelligence Japon"
+description: "J'interviens là où l'analyse de données change la décision : intelligence technologique, pricing, marketing analytics, inférence causale."
 lang: fr
 format:
   html:
@@ -9,135 +9,93 @@ format:
 ---
 
 ::: hero-banner
-# Des données aux décisions
-
-## Trois domaines d'expertise. Un seul objectif : la clarté.
-
-Je ne produis pas des rapports qu'on archive, mais des réponses qu'on utilise.
-
-[Réserver un appel découverte](/contact/){.btn .btn-primary .btn-lg}
+::: hero-title
+J'interviens là où l'analyse de données change la décision.
+:::
+::: hero-subtitle
+Chaque service part d'un problème business concret et produit des recommandations chiffrées et actionnables.
+:::
 :::
 
-## Decision Science
+## JapanTechRadar : Intelligence Technologique Japon {#japantechradar}
 
-**Aller au-delà des corrélations. Comprendre ce qui cause vraiment vos résultats.**
+**Problème : que préparent vos concurrents japonais ? Les données sont publiques, mais en japonais.**
 
-La plupart des analyses répondent à "que s'est-il passé ?". Les miennes répondent à "pourquoi ?" et "que faire ?".
+Les entreprises japonaises déposent des dizaines de milliers de brevets chaque année. Ces données sont gratuites, accessibles sur J-PlatPat, et totalement opaques pour les entreprises européennes qui ne lisent pas le japonais technique.
 
-J'utilise l'analyse causale et l'approche bayésienne pour :
+Ce n'est pas juste une question de traduction. C'est une question d'interprétation : comprendre pourquoi un acteur accélère sur une technologie, ce que ça signifie dans le contexte sectoriel japonais, et ce que ça implique pour vous.
 
-- **Identifier les vrais leviers** — Séparer les corrélations des relations de cause à effet
-- **Quantifier l'incertitude** — Savoir ce qu'on sait, et avec quelle confiance
-- **Simuler des scénarios** — Tester des décisions avant de les prendre
-- **Structurer la décision** — Transformer l'analyse en action concrète
+**Ce que ça produit :** un rapport qui cartographie les acteurs, les tendances technologiques et les signaux faibles de votre secteur au Japon, à partir de l'analyse quantitative des brevets. Livré en français, structuré pour être utilisable par un directeur.
 
-::: {.callout-note appearance="simple"}
-**Exemple concret :** Une entreprise voit ses ventes augmenter après une campagne. Corrélation ou causalité ? Mon travail : isoler l'effet réel de la campagne, quantifier l'incertitude, et recommander le budget optimal pour la prochaine.
-:::
+[Découvrir JapanTechRadar →](/services/japan-tech-radar/){.btn .btn-primary}
 
 ---
 
-## Marketing Analytics
+## PricingDiag : Diagnostic Pricing {#pricingdiag}
 
-**Comprendre ce qui fonctionne vraiment dans votre mix marketing.**
+**Problème : vos prix sont-ils optimaux ? La plupart des entreprises ne le savent pas, et ça leur coûte cher.**
 
-Trop d'équipes marketing naviguent à l'intuition, puis justifient a posteriori. Je vous aide à inverser la logique.
+La plupart des politiques de prix sont construites historiquement, ajustées à la marge, jamais remises à plat avec des données structurées. Des produits sous-tarifés peuvent financer les marges de vos clients pendant des années sans déclencher d'alarme claire.
 
-- **Attribution rigoureuse** — Quel canal génère vraiment vos conversions ? Avec quelle certitude ?
-- **Segmentation actionnable** — Des segments qu'on peut cibler, pas juste décrire
-- **Optimisation pricing** — Fixer vos prix sur la valeur perçue, pas sur le coût + marge
-- **Mesure d'impact** — Vos actions marketing fonctionnent-elles ? Prouvons-le (ou invalidons-le)
+**Ce que ça produit :** un diagnostic en 2 semaines qui identifie où vos prix sous-performent, de combien, et quoi faire. À partir de vos données de vente existantes. Recommandations priorisées, fichier de simulation inclus, session de restitution.
 
-::: {.callout-note appearance="simple"}
-**Exemple concret :** Votre CAC augmente mais vous ne savez pas pourquoi. Mon travail : décomposer le parcours d'acquisition, identifier les fuites, quantifier le potentiel de chaque optimisation.
-:::
+[Découvrir PricingDiag →](/services/pricing-diag/){.btn .btn-primary}
 
 ---
 
-## Intelligence Japon
+## Marketing Analytics {#marketing-analytics}
 
-**Comprendre le marché japonais par les données.**
+**Problème : quel canal génère vraiment vos conversions ? Votre budget marketing est-il bien alloué ?**
 
-Le Japon produit une quantité massive de données publiques — brevets, publications techniques, appels d'offres, rapports sectoriels — que la barrière linguistique rend invisibles aux entreprises européennes. Je les rends lisibles et actionnables.
+Sans méthode rigoureuse, l'attribution marketing est une approximation. Les outils analytiques classiques comptent des clics et des sessions ; ils ne mesurent pas l'impact causal de chaque canal sur vos ventes réelles.
 
-- **Veille technologique japonaise (JapanTechRadar)** — Analyse de brevets et signaux R&D des acteurs japonais de votre secteur. Qui innove, sur quoi, à quel rythme, et ce que ça signifie pour vous.
-- **Due diligence technologique** — Vous évaluez un partenaire, un concurrent ou une cible d'acquisition au Japon ? Rapport d'analyse combinant données brevets, positionnement marché et contexte culturel.
-- **Benchmark concurrentiel Japon** — Où en sont les acteurs japonais de votre secteur par rapport à vous ? Analyse quantitative contextualisée par une compréhension terrain.
+**Ce que ça produit :** une mesure fiable de l'impact de chaque canal marketing (Marketing Mix Modeling), une segmentation actionnable, une attribution fondée sur des données plutôt que sur des heuristiques. Des réponses chiffrées, pas des tableaux de bord supplémentaires.
 
-::: {.callout-note appearance="simple"}
-**Exemple concret :** Un équipementier automobile français veut comprendre l'avance technologique de ses concurrents japonais sur les batteries solides. Mon analyse de 36 entreprises et de leurs dépôts brevets sur 5 ans révèle les leaders réels, les technologies émergentes, et les fenêtres d'opportunité — le tout livré en français, contextualisé, actionnable.
-:::
+Voir la démonstration technique dans le portfolio : [Marketing Mix Modeling (Robyn) →](/portfolio/analysis/mmm-robyn/)
 
 ---
 
-## Diagnostics packagés
+## Inférence Causale & Decision Science {#decision-science}
 
-Deux offres à périmètre fixe et prix transparent, pour aller vite :
+**Problème : vous voyez un problème dans vos données. Mais est-ce la cause, ou juste un symptôme ?**
 
-:::::: grid
-::: g-col-md-6
-### 💰 PricingDiag
+Agir sur le mauvais levier, c'est gaspiller du temps et de l'argent. La plupart des analyses business répondent à "que s'est-il passé ?" ; rarement à "pourquoi ?" et "que faire ?".
 
-Vos prix sont-ils vraiment optimaux ? Diagnostic opérationnel en 2 semaines, rapport actionnable, fichier de simulation Excel.
+**Ce que ça produit :** l'identification des vrais leviers d'action dans vos données, avec une quantification explicite de l'incertitude. Vous saurez ce que vous pouvez affirmer, avec quelle confiance, et ce qui reste à vérifier. J'utilise les méthodes de l'inférence causale et de la modélisation bayésienne pour les petits échantillons.
 
-**Délai** · 2-3 semaines
-
-[Découvrir PricingDiag →](/services/pricing-diag/)
-:::
-
-::: g-col-md-6
-### 🔬 JapanTechRadar
-
-Ce que les brevets japonais révèlent sur vos concurrents. Analyse quantitative, cartographie des acteurs, recommandations contextualisées.
-
-**Délai** · 3-4 semaines
-
-[Découvrir JapanTechRadar →](/services/japan-tech-radar/)
-:::
-::::::
+Voir la démonstration technique dans le portfolio : [Plateforme d'Inférence Causale →](/portfolio/ml/causal-inference/)
 
 ---
 
 ## Formats d'intervention
 
-Je structure mes interventions selon vos besoins :
+:::::: grid
+::: g-col-md-4
+### Mission ponctuelle
 
-### Diagnostic
+Périmètre défini, livrable concret, prix fixe. Un diagnostic, une analyse, un rapport.
 
-Un état des lieux ciblé avec recommandations priorisées. Idéal pour démarrer ou débloquer une situation.
+*Exemples : JapanTechRadar rapport sectoriel, PricingDiag, analyse d'attribution marketing*
+:::
 
-- Audit de votre stack analytics
-- [Diagnostic pricing (PricingDiag)](/services/pricing-diag/)
-- [Veille technologique japonaise (JapanTechRadar)](/services/japan-tech-radar/)
+::: g-col-md-4
+### Projet
 
-### Mission projet
+Mission plus large avec plusieurs livrables. Un modèle d'attribution, un système de pricing, une infrastructure d'analyse.
 
-Une mission complète avec livrable actionnable. Périmètre défini, objectif clair.
+*Pour des problèmes qui demandent plus d'une semaine et un ou deux livrables.*
+:::
 
-- Modèle d'attribution marketing
-- Étude de segmentation
-- Analyse causale d'une problématique business
-- Analyse concurrentielle Japon (JapanTechRadar)
-
-### Workflow intégré
-
-Un système complet intégré à vos opérations. Pour les entreprises qui veulent institutionnaliser une capacité.
-
-- Système de pricing dynamique
-- Infrastructure d'expérimentation (A/B testing)
-- Processus de décision data-driven
-
+::: g-col-md-4
 ### Retainer
 
-Un accès continu à mon expertise. Pour les entreprises qui ont besoin d'un sparring partner régulier.
+Accès continu à l'expertise. Un sparring partner data pour vos décisions récurrentes.
 
-- Revue mensuelle de vos KPIs
-- Support ad hoc sur vos décisions
-- Intelligence Japon trimestrielle
+*Revue mensuelle de vos KPIs, support ad hoc, veille sectorielle Japon.*
+:::
+::::::
 
 ---
-
-## Prochaine étape
 
 ::: contact-section
 ### Parlons de votre situation
@@ -146,5 +104,5 @@ Un appel de 30 minutes pour comprendre votre contexte et voir si je peux vous ai
 
 Pas de pitch. Pas d'engagement. Juste une conversation.
 
-[Réserver un appel découverte](/contact/){.btn .btn-primary .btn-lg}
+[Réserver un appel](/contact/){.btn .btn-primary .btn-lg}
 :::

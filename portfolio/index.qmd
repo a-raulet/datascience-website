@@ -11,11 +11,12 @@ body-classes: home
 ---
 ::: column-screen
 ::: hero-banner
-# Portfolio
-
-## Projets Data Science & Marketing Analytics
-
-Une sélection de projets sur l'analyse de données, le machine learning et l'ingénierie de données.
+::: hero-title
+Portfolio
+:::
+::: hero-subtitle
+Projets Data Science & Marketing Analytics : code, méthodes et applications interactives.
+:::
 :::
 :::
 
@@ -56,11 +57,11 @@ Dashboards interactifs et visualisations de données pour la prise de décision.
 ::: portfolio-item
 ### Marketing Mix Modeling (Robyn)
 
-**Question business** : Comment réallouer le budget marketing pour maximiser les ventes ?
+**Votre budget marketing est-il bien réparti ?** Ce modèle mesure l'impact réel de chaque canal et identifie les réallocations qui améliorent le ROI, en distinguant l'effet causal des campagnes du bruit statistique et de la tendance de fond.
 
-Utilisation du framework Robyn (Meta) pour mesurer l'impact de chaque canal marketing et optimiser l'allocation budgétaire.
+Utilisation du framework Robyn (Meta) pour la décomposition des ventes et l'optimisation du budget marketing.
 
-**Technologies** : R, Robyn, Prophet, Shiny
+**Technologies :** R, Robyn, Prophet, Shiny
 
 [Voir le projet →](/portfolio/analysis/mmm-robyn.qmd) \| [Dashboard Shiny](https://arnaudraulet.shinyapps.io/mmm-robyn/){target="_blank"}
 :::
@@ -70,11 +71,11 @@ Utilisation du framework Robyn (Meta) pour mesurer l'impact de chaque canal mark
 ::: portfolio-item
 ### Plateforme d'Inférence Causale
 
-**Question business** : Quel est l'impact réel de nos campagnes email sur les conversions ?
+**Votre campagne a-t-elle réellement généré des ventes ?** Cette plateforme distingue l'effet réel d'une action commerciale du bruit statistique, pour mesurer ce qui fonctionne avant de le répliquer.
 
-Plateforme complète d'A/B testing avec analyse Bayésienne et Causal ML pour mesurer les effets de traitement.
+Plateforme complète d'A/B testing avec analyse bayésienne et Causal ML pour la mesure des effets de traitement.
 
-**Technologies** : Python, PyMC, CausalML, FastAPI, Streamlit
+**Technologies :** Python, PyMC, CausalML, FastAPI, Streamlit
 
 [Voir le projet →](/portfolio/ml/causal-inference.qmd) \| [Dashboard Streamlit](https://causal-inference-platform.streamlit.app/){target="_blank"}
 :::
@@ -86,11 +87,11 @@ Plateforme complète d'A/B testing avec analyse Bayésienne et Causal ML pour me
 ::: portfolio-item
 ### Pipeline Marketing Analytics
 
-**Question business** : Comment suivre en temps réel la performance de nos canaux marketing ?
+**Vos KPIs marketing sont-ils fiables et à jour ?** Ce pipeline automatise la collecte, le traitement et la visualisation des données marketing, avec une architecture reproductible et maintenable.
 
-Pipeline ETL complet avec BigQuery, dbt et dashboard Streamlit pour le suivi des KPIs marketing.
+Pipeline ETL complet avec BigQuery, dbt et dashboard de suivi des KPIs en temps réel.
 
-**Technologies** : Python, BigQuery, dbt, Streamlit
+**Technologies :** Python, BigQuery, dbt, Streamlit
 
 [Voir le projet →](/portfolio/analysis/marketing-pipeline.qmd) \| [Dashboard Streamlit](https://marketing-data-pipeline-demo.streamlit.app){target="_blank"}
 :::
@@ -100,11 +101,11 @@ Pipeline ETL complet avec BigQuery, dbt et dashboard Streamlit pour le suivi des
 ::: portfolio-item
 ### Dynamic Pricing Engine
 
-**Question business** : Comment optimiser les prix en temps réel selon la demande ?
+**Vos prix réagissent-ils à la demande ?** Ce moteur optimise les prix en temps réel selon les conditions de marché, en progressant de l'économétrie classique au reinforcement learning.
 
-Progression de l'économétrie au Reinforcement Learning pour la tarification dynamique (cas Uber/Lyft).
+Modélisation de la demande et optimisation tarifaire dynamique appliquées au cas du transport à la demande.
 
-**Technologies** : Python, PyMC, Q-Learning, Streamlit
+**Technologies :** Python, PyMC, Q-Learning, Streamlit
 
 [Voir le projet →](/portfolio/ml/dynamic-pricing.qmd)
 :::
@@ -114,7 +115,7 @@ Progression de l'économétrie au Reinforcement Learning pour la tarification dy
 ------------------------------------------------------------------------
 
 ::: contact-section
-## Un projet similaire ?
+## Une problématique similaire dans votre entreprise ?
 
 Je serais ravi de discuter de vos besoins et de voir comment ces approches peuvent s'appliquer à votre contexte.
 

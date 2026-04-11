@@ -7,44 +7,66 @@ format:
     toc-depth: 2
 ---
 
-## The Data Translator
+## Arnaud Raulet, Data Scientist · Tokyo
 
-My name is Arnaud Raulet. I'm a data scientist, former patent translator, and consultant based in Tokyo for nearly a decade.
+I am a data scientist based in Tokyo for nearly 10 years. I work within a France-Japan commercial representation firm and run a parallel independent practice in data analysis and consulting.
 
-My career path is not linear — and that's precisely the added value that I can bring to your company.
+My profile is hybrid: quantitative rigour on one side, hands-on Japan expertise on the other. Most data scientists don't read Japanese patents. Most Japan experts don't do quantitative analysis. I do both.
 
----
+------------------------------------------------------------------------
 
-## From Translation to Data
+## From translation to data science
 
-I started by translating Japanese patents for the automotive industry. That work taught me something most data scientists never learn: raw data is worthless without context. A Japanese patent is technical text. But knowing *why* IHI files 15 patents on space propulsion in 2024, what that means in the context of METI budgets, and how it affects a European competitor — that's intelligence.
+I started as a patent translator, Japanese to French, for the automotive and aerospace industries. That work taught me something most data scientists never learn: **raw data is worthless without context**.
 
-I applied the same logic to marketing and business data. Most companies have data. Few have answers. My work is to bridge the two.
+A Japanese patent is technical text. But knowing *why* IHI files 15 patents on space propulsion in a single year, what that means in the context of METI budgets and Japanese industrial alliances, and how it affects a European competitor: that is intelligence. This dual reading, technical and contextual, is at the core of my approach.
 
----
+I applied the same logic to marketing and business data. Companies have data. Rarely answers. My work is to bridge the two.
 
-## What I Bring
+------------------------------------------------------------------------
 
-**Trilingual French, Japanese, English** — I read Japanese patents in the original, I understand the cultural nuances of Japanese business, and I deliver in French or English.
+## What I bring
 
-**Analytical rigour** — Causal analysis, Bayesian reasoning, inference — I don't confuse correlation with causation. Every recommendation comes with a clear quantification of uncertainty.
+**Trilingual, not translated.** I read Japanese patents in the original language, I understand the nuances of Japanese business culture, and I deliver in French or English. There is no intermediary distorting the signals.
 
-**On-the-ground understanding** — Nearly 10 years in Japan, across industrial sectors (automotive, aerospace, defence, energy). I understand business realities as well as statistical methods.
+**Analytical rigour.** I don't confuse correlation with causation. I use causal inference methods and Bayesian modelling to produce recommendations with an explicit quantification of uncertainty.
 
----
+**Field experience.** Nearly 10 years in demanding industrial sectors in Japan: automotive, aerospace, defence, energy. I understand business realities as well as statistical methods.
 
-## Education and Certifications
+**Independent.** I work as an independent consultant. My recommendations are not influenced by firm interests, upselling objectives, or local partnerships that would create conflicts of interest.
 
-- UC Berkeley — Marketing Analytics
-- Harvard — Data Science
-- Specialisations: causal inference, Bayesian and Frequentist methods, Marketing Mix Modeling (Robyn)
+------------------------------------------------------------------------
 
----
+## Sector experience
+
+My work is concentrated in technology-intensive sectors where understanding Japanese innovation gives a direct competitive advantage:
+
+- **Automotive and mobility:** tier-1 and tier-2 suppliers, new mobility
+- **Aerospace and defence:** propulsion, materials, embedded systems
+- **Energy:** renewables, storage, energy efficiency
+- **Advanced materials:** composites, nanomaterials, surface treatment
+
+------------------------------------------------------------------------
+
+## Education
+
+- UC Berkeley: Marketing Analytics (certificate)
+- Harvard: Data Science (certificate)
+- Specialisations: Marketing Mix Modeling (Robyn), causal inference, Bayesian methods
+- Technical Japanese translation: automotive, mechanical, aerospace
+
+------------------------------------------------------------------------
+
+## Beyond work
+
+I also run [japanorama.fr](https://japanorama.fr), a site on contemporary Japanese culture. A sign that the immersion doesn't stop at work.
+
+------------------------------------------------------------------------
 
 ::: contact-section
-## Get in Touch
+## Let's talk about your situation
 
-I'm based in Tokyo and work with clients in France, Japan and internationally.
+Based in Tokyo, working with clients in France, Japan and internationally.
 
-[Book a discovery call](/contact/){.btn .btn-primary .btn-lg}
+[Book a discovery call](/contact/){.btn .btn-primary .btn-lg} [Email me](mailto:contact-quarto-site.le77r@simplelogin.com){.btn .btn-outline-secondary .btn-lg}
 :::

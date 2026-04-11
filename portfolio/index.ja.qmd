@@ -1,133 +1,119 @@
 ---
-title: "ポートフォリオ"
-description: "データサイエンス＆マーケティングアナリティクスプロジェクト"
+pagetitle: "ポートフォリオ"
+description: "データサイエンス＆マーケティングアナリティクスプロジェクト：コード、手法、インタラクティブアプリケーション。"
+title-block-style: none
 lang: ja
 format:
   html:
-    page-layout: custom
+    page-layout: article
     toc: false
+body-classes: home
 ---
-
+::: column-screen
 ::: hero-banner
-# ポートフォリオ
-
-## データサイエンス＆マーケティングアナリティクスプロジェクト
-
-データ分析、機械学習、データエンジニアリングの専門知識を示すプロジェクト集。
+::: hero-title
+ポートフォリオ
+:::
+::: hero-subtitle
+データサイエンス＆マーケティングアナリティクスプロジェクト：コード、手法、インタラクティブアプリケーション。
+:::
+:::
 :::
 
 ## カテゴリー
-
+::: column-page
 :::::: grid
 ::: g-col-md-4
-
 ### データ分析
 
 マーケティングとEコマースデータからの探索、可視化、ビジネスインサイト。
 
-[分析プロジェクトを見る →](/portfolio/analysis/)
-
+[分析プロジェクトを見る →](/portfolio/analysis/index.ja.html)
 :::
 
 ::: g-col-md-4
-
 ### 機械学習
 
 実際のユースケースに適用された予測モデル、因果推論、強化学習。
 
-[MLプロジェクトを見る →](/portfolio/ml/)
-
+[MLプロジェクトを見る →](/portfolio/ml/index.ja.html)
 :::
 
 ::: g-col-md-4
-
 ### 可視化
 
 意思決定のためのインタラクティブなダッシュボードとデータ可視化。
 
-[可視化を見る →](/portfolio/viz/)
-
+[可視化を見る →](/portfolio/viz/index.ja.html)
 :::
 ::::::
-
----
+:::
+------------------------------------------------------------------------
 
 ## 注目のプロジェクト
-
-:::::: grid
-::: g-col-md-6
-
+::: column-screen
+::::::: grid
+:::: g-col-md-6
 ::: portfolio-item
 ### マーケティングミックスモデリング（Robyn）
 
-**ビジネス課題**：売上を最大化するためにマーケティング予算をどのように再配分すべきか？
+**マーケティング予算の配分は最適か？** このモデルは各チャネルの実際のインパクトを測定し、ROIを改善する再配分を特定します。キャンペーンの因果的効果と統計ノイズ・トレンドを区別します。
 
-MetaのRobynフレームワークを使用して、各マーケティングチャネルの影響を測定し、予算配分を最適化。
+MetaのRobynフレームワークを使用した売上分解とマーケティング予算最適化。
 
-**テクノロジー**：R、Robyn、Prophet、Shiny
+**テクノロジー：** R、Robyn、Prophet、Shiny
 
-[プロジェクトを見る →](/portfolio/analysis/mmm-robyn.qmd) | [Shinyダッシュボード](https://arnaudraulet.shinyapps.io/mmm-robyn/){target="_blank"}
+[プロジェクトを見る →](/portfolio/analysis/mmm-robyn.ja.html) \| [Shinyダッシュボード](https://arnaudraulet.shinyapps.io/mmm-robyn/){target="_blank"}
 :::
+::::
 
-:::
-
-::: g-col-md-6
-
+:::: g-col-md-6
 ::: portfolio-item
 ### 因果推論プラットフォーム
 
-**ビジネス課題**：メールキャンペーンのコンバージョンへの実際の影響は？
+**キャンペーンは本当に売上を生んだか？** このプラットフォームは、施策の真の効果と統計ノイズを区別します。スケールアップ前に何が機能しているかを測定するために。
 
-ベイズ分析とCausal MLを用いた完全なA/Bテストプラットフォームで処置効果を測定。
+ベイズ分析とCausal MLを用いた完全なA/Bテストプラットフォーム。
 
-**テクノロジー**：Python、PyMC、CausalML、FastAPI、Streamlit
+**テクノロジー：** Python、PyMC、CausalML、FastAPI、Streamlit
 
-[プロジェクトを見る →](/portfolio/ml/causal-inference.qmd) | [Streamlitダッシュボード](https://causal-inference-platform.streamlit.app/){target="_blank"}
+[プロジェクトを見る →](/portfolio/ml/causal-inference.ja.html) \| [Streamlitダッシュボード](https://causal-inference-platform.streamlit.app/){target="_blank"}
 :::
+::::
+:::::::
 
-:::
-::::::
-
-:::::: grid
-::: g-col-md-6
-
+::::::: grid
+:::: g-col-md-6
 ::: portfolio-item
 ### マーケティングアナリティクスパイプライン
 
-**ビジネス課題**：マーケティングチャネルのパフォーマンスをリアルタイムで追跡するには？
+**マーケティングKPIは信頼できるか？** このパイプラインはマーケティングデータの収集、処理、可視化を自動化します。再現性があり保守可能なアーキテクチャで。
 
-BigQuery、dbt、Streamlitダッシュボードを使用した完全なETLパイプラインでマーケティングKPIを追跡。
+BigQuery、dbt、リアルタイムKPIダッシュボードを使用した完全なETLパイプライン。
 
-**テクノロジー**：Python、BigQuery、dbt、Streamlit
+**テクノロジー：** Python、BigQuery、dbt、Streamlit
 
-[プロジェクトを見る →](/portfolio/analysis/marketing-pipeline.qmd) | [Streamlitダッシュボード](https://marketing-data-pipeline-demo.streamlit.app){target="_blank"}
+[プロジェクトを見る →](/portfolio/analysis/marketing-pipeline.ja.html) \| [Streamlitダッシュボード](https://marketing-data-pipeline-demo.streamlit.app){target="_blank"}
 :::
+::::
 
-:::
-
-::: g-col-md-6
-
+:::: g-col-md-6
 ::: portfolio-item
 ### ダイナミックプライシングエンジン
 
-**ビジネス課題**：需要に基づいてリアルタイムで価格を最適化するには？
+**価格は需要に反応しているか？** このエンジンは市場状況に応じてリアルタイムで価格を最適化します。古典的な計量経済学から強化学習へ段階的に発展。
 
-計量経済学から強化学習への進行によるダイナミックプライシング（Uber/Lyftケース）。
+**テクノロジー：** Python、PyMC、Q-Learning、Streamlit
 
-**テクノロジー**：Python、PyMC、Q-Learning、Streamlit
-
-[プロジェクトを見る →](/portfolio/ml/dynamic-pricing.qmd)
+[プロジェクトを見る →](/portfolio/ml/dynamic-pricing.ja.html)
 :::
-
+::::
+:::::::
 :::
-::::::
-
----
+------------------------------------------------------------------------
 
 ::: contact-section
-## 類似のプロジェクトはありますか？
+## 類似の課題がお客様のビジネスにありますか？
 
-ニーズについて話し合い、これらのアプローチがお客様のコンテキストにどのように適用できるかをご相談させてください。
-
-[お問い合わせ](mailto:contact-quarto-site.le77r@simplelogin.com){.btn .btn-primary} [LinkedIn](https://linkedin.com/in/arnaud-raulet-13308310/){.btn .btn-outline-secondary}
+[相談を予約する](/contact/){.btn .btn-primary} [サービスを見る →](/services/index.ja.html){.btn .btn-outline-secondary}
 :::

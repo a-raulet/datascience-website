@@ -1,185 +1,108 @@
 ---
 title: "Services"
-description: "Expertise in Marketing Analytics, Data Engineering, A/B Testing and Machine Learning"
+description: "I work where data analysis changes the decision: Japan technology intelligence, pricing, marketing analytics, causal inference."
 lang: en
 format:
   html:
-    page-layout: custom
-    toc: false
+    toc: true
+    toc-depth: 2
 ---
 
 ::: hero-banner
-# Data Science & Marketing Analytics Services
-
-## Tailored solutions to turn your data into competitive advantage
-
-From exploratory analysis to production model deployment, I support you at every step of your data journey.
-
-[View my work](/portfolio/){.btn .btn-primary .btn-lg} [Contact me](mailto:contact-quarto-site.le77r@simplelogin.com){.btn .btn-outline-secondary .btn-lg}
+::: hero-title
+I work where data analysis changes the decision.
+:::
+::: hero-subtitle
+Each service starts from a concrete business problem and delivers quantified, actionable recommendations.
+:::
 :::
 
-## What I Can Bring You
+## JapanTechRadar: Japan Technology Intelligence {#japantechradar}
 
-:::::: grid
-::: g-col-md-6
+**Problem: what are your Japanese competitors preparing? The data is public, but in Japanese.**
 
-### Marketing Analytics
+Japanese companies file tens of thousands of patents every year. This data is free, available on J-PlatPat, and completely opaque to European companies that don't read technical Japanese.
 
-**Optimize your marketing investments with reliable data**
+This is not just a translation issue. It is an interpretation issue: understanding why an actor is accelerating on a technology, what it means in the Japanese sector context, and what it implies for you.
 
-- **Marketing Mix Modeling (MMM)**: Measure the real impact of each channel on sales and optimize budget allocation
-- **Multi-touch Attribution**: Understand the complete customer journey and value each touchpoint
-- **Campaign Analysis**: Evaluate campaign performance with actionable KPIs (ROAS, CPA, LTV)
-- **Customer Segmentation**: Identify your most profitable segments to personalize actions
+**What it produces:** a report mapping the actors, technology trends and weak signals in your sector in Japan, based on quantitative patent analysis. Delivered in English, structured for use by a director.
 
-**Technologies**: R (Robyn, Prophet), Python, BigQuery, Looker Studio
-
-[See MMM project →](/portfolio/analysis/mmm-robyn.qmd)
-
-:::
-
-::: g-col-md-6
-
-### Data Engineering
-
-**Build a modern and scalable data infrastructure**
-
-- **ETL/ELT Pipelines**: Automate data extraction, transformation, and loading
-- **Data Warehousing**: Design optimized cloud architectures (BigQuery, Snowflake)
-- **dbt Transformation**: Implement versioned, tested, and documented transformations
-- **Streaming Analytics**: Process real-time data with Kafka and Spark
-
-**Technologies**: dbt, BigQuery, Airflow, Kafka, Spark, Delta Lake, Docker
-
-[See Pipeline project →](/portfolio/analysis/marketing-pipeline.qmd)
-
-:::
-::::::
-
-:::::: grid
-::: g-col-md-6
-
-### Experimentation & A/B Testing
-
-**Make decisions based on evidence, not intuition**
-
-- **Experiment Design**: Create statistically robust tests with appropriate power calculations
-- **Bayesian Analysis**: Get interpretable results with credible intervals
-- **Causal Inference**: Go beyond correlation to measure real impact of your actions
-- **Heterogeneous Effects (CATE)**: Identify segments that respond best to your interventions
-
-**Technologies**: PyMC, CausalML, DoWhy, statsmodels, ArviZ
-
-[See Causal Inference project →](/portfolio/ml/causal-inference.qmd)
-
-:::
-
-::: g-col-md-6
-
-### Applied Machine Learning
-
-**Deploy models that create business value**
-
-- **Predictive Models**: Anticipate churn, demand, sales with interpretable models
-- **Dynamic Pricing**: Optimize prices in real-time based on context and demand
-- **Recommendation**: Personalize customer experience with recommendation systems
-- **MLOps**: Deploy and monitor production models (Vetiver, FastAPI, Docker)
-
-**Technologies**: scikit-learn, XGBoost, PyTorch, Vetiver, FastAPI, MLflow
-
-[See Dynamic Pricing project →](/portfolio/ml/dynamic-pricing.qmd)
-
-:::
-::::::
+[Discover JapanTechRadar →](/services/japan-tech-radar.en.html){.btn .btn-primary}
 
 ---
 
-## How I Work
+## PricingDiag: Pricing Diagnostic {#pricingdiag}
 
-:::::: grid
-::: g-col-md-4
+**Problem: is your pricing optimal? Most companies don't know, and it costs them.**
 
-### 1. Discovery
+Most pricing policies are built historically, adjusted at the margins, never properly reviewed with structured data. Underpriced products can subsidise customers' margins for years without triggering a clear alarm.
 
-Together we define your business objectives, identify available data and technical constraints. I propose an approach adapted to your context.
+**What it produces:** a two-week diagnostic identifying where your prices underperform, by how much, and what to do. Using your existing sales data. Prioritised recommendations, simulation file included, debrief session.
 
-:::
-
-::: g-col-md-4
-
-### 2. Development
-
-I develop the solution iteratively, with regular checkpoints to validate direction. You have complete visibility on progress.
-
-:::
-
-::: g-col-md-4
-
-### 3. Delivery
-
-I deliver a documented, tested, and ready-to-use solution. I support you in getting started and remain available for support.
-
-:::
-::::::
+[Discover PricingDiag →](/services/pricing-diag.en.html){.btn .btn-primary}
 
 ---
 
-## Technical Stack
+## Marketing Analytics {#marketing-analytics}
+
+**Problem: which channel is really driving your conversions? Is your marketing budget well allocated?**
+
+Without rigorous method, marketing attribution is an approximation. Standard analytics tools count clicks and sessions; they don't measure the causal impact of each channel on your actual sales.
+
+**What it produces:** a reliable measure of the impact of each marketing channel (Marketing Mix Modeling), actionable segmentation, attribution grounded in data rather than heuristics. Quantified answers, not more dashboards.
+
+See the technical demonstration in the portfolio: [Marketing Mix Modeling (Robyn) →](/portfolio/analysis/mmm-robyn.en.html)
+
+---
+
+## Causal Inference & Decision Science {#decision-science}
+
+**Problem: you see a problem in your data. But is that the cause, or just a symptom?**
+
+Acting on the wrong lever means wasting time and money. Most business analyses answer "what happened?" — rarely "why?" and "what should we do?"
+
+**What it produces:** the identification of the real levers in your data, with an explicit quantification of uncertainty. You will know what you can assert, with what confidence, and what remains to be verified. I use causal inference methods and Bayesian modelling for small samples.
+
+See the technical demonstration in the portfolio: [Causal Inference Platform →](/portfolio/ml/causal-inference.en.html)
+
+---
+
+## Engagement formats
 
 :::::: grid
-::: g-col-md-3
+::: g-col-md-4
+### Single project
 
-**Languages**
+Defined scope, concrete deliverable, fixed price. One diagnostic, one analysis, one report.
 
-- Python
-- R
-- SQL
-
+*Examples: JapanTechRadar sector report, PricingDiag, marketing attribution analysis*
 :::
 
-::: g-col-md-3
+::: g-col-md-4
+### Project
 
-**Data Engineering**
+Broader engagement with multiple deliverables. An attribution model, a pricing system, an analytics infrastructure.
 
-- dbt
-- BigQuery
-- Kafka
-- Spark
-- Airflow
-
+*For problems that require more than a week and one or two deliverables.*
 :::
 
-::: g-col-md-3
+::: g-col-md-4
+### Retainer
 
-**Machine Learning**
+Ongoing access to expertise. A data sparring partner for your recurring decisions.
 
-- scikit-learn
-- PyMC
-- XGBoost
-- CausalML
-- Robyn
-
-:::
-
-::: g-col-md-3
-
-**Visualization & Deploy**
-
-- Streamlit
-- Shiny
-- Plotly
-- Docker
-- FastAPI
-
+*Monthly KPI review, ad hoc support, quarterly Japan sector watch.*
 :::
 ::::::
 
 ---
 
 ::: contact-section
-## Let's Discuss Your Project
+### Let's talk about your situation
 
-Every project is unique. Contact me to discuss your needs and see how I can help you achieve your goals.
+A 30-minute call to understand your context and see whether I can help.
 
-[Contact me](mailto:contact-quarto-site.le77r@simplelogin.com){.btn .btn-primary} [LinkedIn](https://linkedin.com/in/arnaud-raulet-13308310/){.btn .btn-outline-secondary}
+No pitch. No commitment. Just a conversation.
+
+[Book a discovery call](/contact/){.btn .btn-primary .btn-lg}
 :::

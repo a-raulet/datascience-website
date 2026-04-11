@@ -1,6 +1,6 @@
 ---
-title: "JapanTechRadar — Japan Technology Intelligence"
-description: "What Japanese patents reveal about your competitors and partners. Quantitative analysis, contextualised, delivered in English."
+title: "JapanTechRadar: Japan Technology Intelligence"
+description: "What your Japanese competitors are doing: extracted from patent data, quantified, delivered in English."
 lang: en
 format:
   html:
@@ -9,50 +9,50 @@ format:
 ---
 
 ::: hero-banner
-# What Japanese Patents Reveal About Your Competitors
-
-## Public Japanese data, invisible behind the language barrier — made readable and actionable.
-
+::: hero-title
+What your Japanese competitors are doing: extracted from patent data, quantified, delivered in English.
+:::
+::: hero-subtitle
+The data is public. It's in Japanese. JapanTechRadar makes it readable and actionable.
+:::
 [Book a discovery call](/contact/){.btn .btn-primary .btn-lg}
 :::
 
-## The Problem
+## The problem
 
-Japanese companies file tens of thousands of patents every year. These filings are public, freely accessible on J-PlatPat — and completely invisible to European companies that don't read technical Japanese.
+Japanese companies file tens of thousands of patents every year. These filings are public and free on J-PlatPat, and completely opaque to European companies that don't read technical Japanese.
 
-The result: you're navigating without a map in a sector where Japanese players are innovating, repositioning, and eroding your competitive advantages — without you knowing it.
+This is not just a translation problem. A patent is not read like an article: you need to understand CPC classifications, relationships between applicants, co-filing dynamics, and the signals that Japanese terminology encodes differently from English.
 
----
-
-## The Solution: JapanTechRadar
-
-JapanTechRadar turns this raw data into strategic intelligence. In 3 to 4 weeks, I analyse the patent filings of Japanese players in your sector and deliver a clear report, in English, with actionable recommendations.
-
-This is not a generalist intelligence report. It's a targeted analysis focused on your sector, your competitors, your questions.
+The result: you make strategic decisions with an incomplete map of your sector.
 
 ---
 
-## What You Receive
+## The solution: JapanTechRadar
 
-A report of 10 to 20 pages covering:
+In 3 to 4 weeks, I analyse the patent filings of Japanese actors in your sector. You receive a report in English, structured for use by a director, not an analyst.
 
-- **Actor mapping** — Who are the leaders and emerging players in your sector in Japan, measured by their patent filings
-- **Technology trends** — Which technologies are rising, which are declining, where the potential disruptions lie
-- **Comparative analysis** — How your Japanese competitors position themselves relative to each other — and relative to you
-- **Weak signals** — New entrants, strategy changes, unusual collaborations detected in the filings
-- **Recommendations** — What these data concretely mean for your decisions (partnership, investment, positioning, R&D)
+**What you receive:**
+
+- **Actor mapping:** who are the real leaders (not the media-visible ones) and the emerging players in your sector in Japan, measured by patent activity
+- **Technology trends:** which technologies are rising, which are declining, where the potential disruptions lie
+- **Weak signals:** new entrants, strategy changes, unusual alliances detected in co-filings
+- **Comparative analysis:** how Japanese actors position themselves relative to each other, and relative to you
+- **Recommendations:** what this data concretely means for your partnership, investment and R&D decisions
 
 ---
 
-## A Concrete Example
+## Sample deliverable
 
-::: {.callout-note appearance="simple"}
-**Representative fictitious case:**
+A typical JapanTechRadar report contains:
 
-A French automotive supplier wants to understand the technological lead of its Japanese competitors in solid-state batteries. The analysis covers 36 companies and their patent filings over 5 years. It reveals the real leaders (different from the media-visible ones), the emerging technologies to watch, and two partnership opportunity windows before a probable sector consolidation.
+1. **Executive summary** (2 pages): the 5 key takeaways, priority recommendations
+2. **Actor mapping:** ranking by TechRadar Score (patent volume normalised by company size), actor-by-technology matrix
+3. **Trend analysis:** evolution of filing volume by technology over 3-5 years, acceleration/deceleration curves by actor
+4. **Weak signals:** watchlist of actors to monitor, detection of inter-company collaborations via co-filings
+5. **Strategic implications:** contextual interpretation by sector, actionable recommendations
 
-All delivered in English. Contextualised. Actionable.
-:::
+Format: 10-20 page PDF + source data file on request.
 
 ---
 
@@ -61,26 +61,26 @@ All delivered in English. Contextualised. Actionable.
 Each report combines:
 
 - Quantitative extraction and analysis of Japanese patent databases (J-PlatPat, Espacenet)
-- R-corrected patent counts for a fair comparison between actors of different sizes
+- *R-corrected patent counts* for a fair comparison between actors of different sizes
 - Contextual interpretation by a trilingual analyst based in Japan for nearly 10 years
 
 ---
 
-## Sectors Covered
+## Sectors covered
 
 Automotive and mobility · Aerospace and defence · Energy · Advanced materials · Cybersecurity · Other sectors on request
 
 ---
 
-## Pricing and Timeline
+## Pricing and timeline
 
 | Format | Scope | Timeline |
 |---|---|---|
-| Sector report | Full analysis of a sector, 20–50 actors | 3-4 weeks |
+| Sector report | Full analysis, 20-50 actors | 3-4 weeks |
 | Pilot report | First report at discovery pricing | 2 weeks |
-| Quarterly subscription | Updated report + alerts | — |
+| Quarterly subscription | Updated report + sector alerts | on request |
 
-Fees exclusive of tax. A precise quote is provided after the discovery call, with no commitment required.
+A precise quote is provided after the discovery call, with no commitment required.
 
 ---
 

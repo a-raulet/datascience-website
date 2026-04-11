@@ -11,38 +11,38 @@ execute:
   freeze: auto
   
 website:
-  title: "Arnaud RAULET | Decision Science"
-  description: "Decision Science, Marketing Analytics et Intelligence Japon"
+  title: "Arnaud RAULET | Intelligence Stratégique Japon"
+  description: "Intelligence stratégique Japon — pour les décisions qui comptent"
   navbar:
     background: primary
     search: true
     left:
-      - text: "Home"
+      - text: "Accueil"
         file: index.qmd
       - text: "Services"
         menu:
           - text: "Vue d'ensemble"
             file: services/index.qmd
-          - text: "PricingDiag"
-            file: services/pricing-diag.qmd
           - text: "JapanTechRadar"
             file: services/japan-tech-radar.qmd
+          - text: "PricingDiag"
+            file: services/pricing-diag.qmd
       - text: "Portfolio"
         file: portfolio/index.qmd
       - text: "Blog"
         file: blog/index.qmd
-      - text: "About"
+      - text: "À propos"
         file: about.qmd
     right:
       - icon: github
         href: https://github.com/a-raulet
       - icon: linkedin
         href: https://linkedin.com/in/arnaud-raulet-13308310/
-      - text: "🇫🇷 FR"
+      - text: "🇫🇷"
         href: "/"
-      - text: "🇬🇧 EN"
+      - text: "🇬🇧"
         href: "/index.en.html"
-      - text: "🇯🇵 JA"
+      - text: "🇯🇵"
         href: "/index.ja.html"
 
 
@@ -57,23 +57,103 @@ format:
       - text: |
           <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
           <script>
-          document.addEventListener('DOMContentLoaded', function() {
+          (function () {
+            function detectLang(p) {
+              return /\.en\.html$/.test(p) ? 'en' : /\.ja\.html$/.test(p) ? 'ja' : 'fr';
+            }
+            function toLang(href, lang) {
+              if (!href) return href;
+              var h = href.endsWith('/') ? href + 'index.html' : href;
+              var b = h.replace(/\.(en|ja)\.html$/, '.html');
+              return lang === 'en' ? b.replace(/\.html$/, '.en.html')
+                   : lang === 'ja' ? b.replace(/\.html$/, '.ja.html') : b;
+            }
+            function isFlagEmoji(txt) {
+              return /^\uD83C[\uDDE6-\uDDFF]\uD83C[\uDDE6-\uDDFF]$/.test(txt);
+            }
+            function flagImg(cc, alt) {
+              return '<img src="https://flagcdn.com/20x15/' + cc + '.png"'
+                + ' alt="' + alt + '" width="20" height="15"'
+                + ' style="vertical-align:middle;margin-bottom:2px">';
+            }
+            /* True si href est une URL externe (autre origin que la page courante).
+               Quarto-nav.js peut convertir les hrefs relatifs en URLs absolues
+               http://localhost..., d'où la nécessité de check par origin et pas par "://" */
+            function isExternalUrl(h) {
+              if (!/^https?:\/\//.test(h)) return false;
+              try { return new URL(h).origin !== window.location.origin; }
+              catch (e) { return true; }
+            }
             var path = window.location.pathname;
             if (path.endsWith('/')) path += 'index.html';
-            // Base = FR version of current page
+            var lang = detectLang(path);
             var base = path.replace(/\.(en|ja)\.html$/, '.html');
-            document.querySelectorAll('.navbar a[href]').forEach(function(a) {
-              var href = a.getAttribute('href') || '';
-              // Match the language switcher links by their href pattern
-              if (/index\.en\.html$/.test(href) || href === '/index.en.html') {
-                a.href = base.replace(/\.html$/, '.en.html');
-              } else if (/index\.ja\.html$/.test(href) || href === '/index.ja.html') {
-                a.href = base.replace(/\.html$/, '.ja.html');
-              } else if (href === '/' || /^\.*\/index\.html$/.test(href)) {
-                a.href = base;
+            var LANGS = [
+              { code: 'fr', img: flagImg('fr','FR'), label: 'Français', href: base },
+              { code: 'en', img: flagImg('gb','EN'), label: 'English',  href: base.replace(/\.html$/, '.en.html') },
+              { code: 'ja', img: flagImg('jp','JA'), label: '日本語',   href: base.replace(/\.html$/, '.ja.html') }
+            ];
+            var cur = LANGS.find(function(l) { return l.code === lang; }) || LANGS[0];
+            /* Note: Quarto applique smart quotes, donc 'Vue d\u2019ensemble' (U+2019) */
+            var NAV_LABELS = {
+              en: {
+                'Accueil': 'Home', 'Services': 'Services',
+                'Vue d\u2019ensemble': 'Overview',
+                'Portfolio': 'Portfolio', 'Blog': 'Blog', '\u00c0 propos': 'About'
+              },
+              ja: {
+                'Accueil': 'ホーム', 'Services': 'サービス',
+                'Vue d\u2019ensemble': '概要',
+                'Portfolio': 'ポートフォリオ', 'Blog': 'ブログ', '\u00c0 propos': 'プロフィール'
+              }
+            };
+            document.addEventListener('DOMContentLoaded', function () {
+              /* 1. Trouve les nav-items drapeaux par emoji et les remplace par un dropdown */
+              var flagItems = [];
+              document.querySelectorAll('.navbar .nav-item').forEach(function (li) {
+                var a = li.querySelector('a[href]');
+                if (!a) return;
+                if (isFlagEmoji(a.textContent.trim())) flagItems.push(li);
+              });
+              if (flagItems.length > 0) {
+                var ul = flagItems[0].parentNode;
+                var items = LANGS.map(function(l) {
+                  return '<li><a class="dropdown-item' + (l.code === lang ? ' active' : '') +
+                    '" href="' + l.href + '">' + l.img + '\u00a0' + l.label + '</a></li>';
+                }).join('');
+                var dd = document.createElement('li');
+                dd.id = 'lang-switcher';
+                dd.className = 'nav-item dropdown';
+                dd.innerHTML =
+                  '<a class="nav-link dropdown-toggle" href="#" role="button"' +
+                  ' data-bs-toggle="dropdown" aria-expanded="false">' + cur.img + '</a>' +
+                  '<ul class="dropdown-menu dropdown-menu-end">' + items + '</ul>';
+                ul.insertBefore(dd, flagItems[0]);
+                flagItems.forEach(function(li) { ul.removeChild(li); });
+              }
+              /* 2. Traduit les spans menu-text et dropdown-text pour les pages non-FR */
+              if (lang !== 'fr') {
+                var labels = NAV_LABELS[lang] || {};
+                document.querySelectorAll('.navbar .menu-text, .navbar .dropdown-text').forEach(function(el) {
+                  if (el.closest('#lang-switcher')) return;
+                  var txt = el.textContent.trim();
+                  if (labels[txt]) el.textContent = labels[txt];
+                });
+              }
+              /* 3. Réécrit les hrefs navbar pour pointer vers la version courante de la langue */
+              if (lang !== 'fr') {
+                document.querySelectorAll('.navbar a[href]').forEach(function(a) {
+                  if (a.closest('#lang-switcher')) return;
+                  var h = a.getAttribute('href') || '';
+                  if (!h || h.charAt(0) === '#') return;
+                  if (/^(mailto:|tel:|javascript:)/.test(h)) return;
+                  if (isExternalUrl(h)) return;
+                  var t = toLang(h, lang);
+                  if (t !== h) a.setAttribute('href', t);
+                });
               }
             });
-          });
+          })();
           </script>
 
 babelquarto:
@@ -89,10 +169,10 @@ babelquarto:
   languagelinks: navbar
   language-path: "prefix"
 
-title-en: "Data Science Portfolio"
-title-ja: "データサイエンス ポートフォリオ"
-description-en: "Decision Science, Marketing Analytics and Japan Intelligence"
-description-ja: "デシジョンサイエンス、マーケティングアナリティクス、ジャパンインテリジェンス"
+title-en: "Arnaud RAULET | Japan Strategic Intelligence"
+title-ja: "ローレ・アルノ | 日本戦略インテリジェンス"
+description-en: "Japan strategic intelligence — for decisions that matter"
+description-ja: "日本の戦略的インテリジェンス — 重要な意思決定のために"
 author-en: "Arnaud RAULET"
 author-ja: "ローレ・アルノ"
 

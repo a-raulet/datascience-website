@@ -1,133 +1,119 @@
 ---
-title: "Portfolio"
-description: "Data Science & Marketing Analytics Projects"
+pagetitle: "Portfolio"
+description: "Data Science & Marketing Analytics projects"
+title-block-style: none
 lang: en
 format:
   html:
-    page-layout: custom
+    page-layout: article
     toc: false
+body-classes: home
 ---
-
+::: column-screen
 ::: hero-banner
-# Portfolio
-
-## Data Science & Marketing Analytics Projects
-
-A selection of projects demonstrating my expertise in data analysis, machine learning, and data engineering.
+::: hero-title
+Portfolio
+:::
+::: hero-subtitle
+Data Science & Marketing Analytics projects: code, methods, and interactive applications.
+:::
+:::
 :::
 
 ## Categories
-
+::: column-page
 :::::: grid
 ::: g-col-md-4
-
 ### Data Analysis
 
-Exploration, visualization, and business insights from marketing and e-commerce data.
+Exploration, visualisation and business insights from marketing and e-commerce data.
 
-[See Analysis projects →](/portfolio/analysis/)
-
+[See Analysis projects →](/portfolio/analysis/index.en.html)
 :::
 
 ::: g-col-md-4
-
 ### Machine Learning
 
-Predictive models, causal inference, and reinforcement learning applied to real-world use cases.
+Predictive models, causal inference and reinforcement learning applied to concrete use cases.
 
-[See ML projects →](/portfolio/ml/)
-
+[See ML projects →](/portfolio/ml/index.en.html)
 :::
 
 ::: g-col-md-4
+### Visualisation
 
-### Visualization
+Interactive dashboards and data visualisations for decision-making.
 
-Interactive dashboards and data visualizations for decision-making.
-
-[See visualizations →](/portfolio/viz/)
-
+[See visualisations →](/portfolio/viz/index.en.html)
 :::
 ::::::
+:::
+------------------------------------------------------------------------
 
----
-
-## Featured Projects
-
-:::::: grid
-::: g-col-md-6
-
+## Featured projects
+::: column-screen
+::::::: grid
+:::: g-col-md-6
 ::: portfolio-item
 ### Marketing Mix Modeling (Robyn)
 
-**Business question**: How to reallocate marketing budget to maximize sales?
+**Is your marketing budget well allocated?** This model measures the real impact of each channel and identifies reallocations that improve ROI, distinguishing the causal effect of campaigns from statistical noise and underlying trend.
 
-Using Meta's Robyn framework to measure the impact of each marketing channel and optimize budget allocation.
+Using Meta's Robyn framework for sales decomposition and marketing budget optimisation.
 
-**Technologies**: R, Robyn, Prophet, Shiny
+**Technologies:** R, Robyn, Prophet, Shiny
 
-[See project →](/portfolio/analysis/mmm-robyn.qmd) | [Shiny Dashboard](https://arnaudraulet.shinyapps.io/mmm-robyn/){target="_blank"}
+[See project →](/portfolio/analysis/mmm-robyn.en.html) \| [Shiny Dashboard](https://arnaudraulet.shinyapps.io/mmm-robyn/){target="_blank"}
 :::
+::::
 
-:::
-
-::: g-col-md-6
-
+:::: g-col-md-6
 ::: portfolio-item
 ### Causal Inference Platform
 
-**Business question**: What is the real impact of our email campaigns on conversions?
+**Did your campaign actually generate sales?** This platform distinguishes the real effect of a commercial action from statistical noise, so you can measure what works before scaling it.
 
-Complete A/B testing platform with Bayesian analysis and Causal ML to measure treatment effects.
+Complete A/B testing platform with Bayesian analysis and Causal ML for treatment effect measurement.
 
-**Technologies**: Python, PyMC, CausalML, FastAPI, Streamlit
+**Technologies:** Python, PyMC, CausalML, FastAPI, Streamlit
 
-[See project →](/portfolio/ml/causal-inference.qmd) | [Streamlit Dashboard](https://causal-inference-platform.streamlit.app/){target="_blank"}
+[See project →](/portfolio/ml/causal-inference.en.html) \| [Streamlit Dashboard](https://causal-inference-platform.streamlit.app/){target="_blank"}
 :::
+::::
+:::::::
 
-:::
-::::::
-
-:::::: grid
-::: g-col-md-6
-
+::::::: grid
+:::: g-col-md-6
 ::: portfolio-item
 ### Marketing Analytics Pipeline
 
-**Business question**: How to track marketing channel performance in real-time?
+**Are your marketing KPIs reliable and up to date?** This pipeline automates the collection, processing and visualisation of marketing data, with a reproducible and maintainable architecture.
 
-Complete ETL pipeline with BigQuery, dbt, and Streamlit dashboard for marketing KPI tracking.
+Complete ETL pipeline with BigQuery, dbt and real-time KPI dashboard.
 
-**Technologies**: Python, BigQuery, dbt, Streamlit
+**Technologies:** Python, BigQuery, dbt, Streamlit
 
-[See project →](/portfolio/analysis/marketing-pipeline.qmd) | [Streamlit Dashboard](https://marketing-data-pipeline-demo.streamlit.app){target="_blank"}
+[See project →](/portfolio/analysis/marketing-pipeline.en.html) \| [Streamlit Dashboard](https://marketing-data-pipeline-demo.streamlit.app){target="_blank"}
 :::
+::::
 
-:::
-
-::: g-col-md-6
-
+:::: g-col-md-6
 ::: portfolio-item
 ### Dynamic Pricing Engine
 
-**Business question**: How to optimize prices in real-time based on demand?
+**Do your prices react to demand?** This engine optimises prices in real time according to market conditions, progressing from classical econometrics to reinforcement learning.
 
-Progression from econometrics to Reinforcement Learning for dynamic pricing (Uber/Lyft case).
+**Technologies:** Python, PyMC, Q-Learning, Streamlit
 
-**Technologies**: Python, PyMC, Q-Learning, Streamlit
-
-[See project →](/portfolio/ml/dynamic-pricing.qmd)
+[See project →](/portfolio/ml/dynamic-pricing.en.html)
 :::
-
+::::
+:::::::
 :::
-::::::
-
----
+------------------------------------------------------------------------
 
 ::: contact-section
-## Have a Similar Project?
+## A similar challenge in your business?
 
-I'd be happy to discuss your needs and see how these approaches can apply to your context.
-
-[Contact me](mailto:contact-quarto-site.le77r@simplelogin.com){.btn .btn-primary} [LinkedIn](https://linkedin.com/in/arnaud-raulet-13308310/){.btn .btn-outline-secondary}
+[Book a discovery call](/contact/){.btn .btn-primary} [See my services →](/services/index.en.html){.btn .btn-outline-secondary}
 :::
