@@ -63,10 +63,21 @@ format:
             }
             function toLang(href, lang) {
               if (!href) return href;
-              var h = href.endsWith('/') ? href + 'index.html' : href;
-              var b = h.replace(/\.(en|ja)\.html$/, '.html');
-              return lang === 'en' ? b.replace(/\.html$/, '.en.html')
-                   : lang === 'ja' ? b.replace(/\.html$/, '.ja.html') : b;
+              /* Conserve query string et fragment */
+              var qi = href.search(/[?#]/);
+              var tail = qi !== -1 ? href.slice(qi) : '';
+              var body = qi !== -1 ? href.slice(0, qi) : href;
+              /* Normalise / en /index pour pouvoir lui ajouter un suffixe de langue */
+              if (body.endsWith('/')) body += 'index';
+              /* Gère les URLs avec OU sans .html (Netlify sert les deux formes) */
+              var hasHtml = /\.html$/.test(body);
+              if (hasHtml) body = body.slice(0, -5);
+              /* Retire un suffixe de langue existant */
+              body = body.replace(/\.(en|ja)$/, '');
+              /* Ajoute le suffixe de langue cible */
+              if (lang !== 'fr') body += '.' + lang;
+              if (hasHtml) body += '.html';
+              return body + tail;
             }
             function isFlagEmoji(txt) {
               return /^\uD83C[\uDDE6-\uDDFF]\uD83C[\uDDE6-\uDDFF]$/.test(txt);
@@ -85,7 +96,10 @@ format:
               catch (e) { return true; }
             }
             var path = window.location.pathname;
+            /* Netlify pretty URLs: /about, /services/japan-tech-radar, etc.
+               Normalise en .html pour que detectLang et base fonctionnent uniformement */
             if (path.endsWith('/')) path += 'index.html';
+            else if (!/\.html$/.test(path)) path += '.html';
             var lang = detectLang(path);
             var base = path.replace(/\.(en|ja)\.html$/, '.html');
             var LANGS = [
