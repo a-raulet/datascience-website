@@ -55,6 +55,7 @@ format:
     html-math-method: katex
     include-in-header:
       - text: |
+          <script defer src="https://cloud.umami.is/script.js" data-website-id="461927ce-706a-4163-b2f7-446a71842798"></script>
           <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
           <script>
           (function () {
