@@ -68,5 +68,5 @@ I also run [japanorama.fr](https://japanorama.fr), a site on contemporary Japane
 
 Based in Tokyo, working with clients in France, Japan and internationally.
 
-[Book a discovery call](/contact/){.btn .btn-primary .btn-lg} [Email me](mailto:contact-quarto-site.le77r@simplelogin.com){.btn .btn-outline-secondary .btn-lg}
+[Book a discovery call](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg} [Email me](mailto:contact-quarto-site.le77r@simplelogin.com){.btn .btn-outline-secondary .btn-lg}
 :::

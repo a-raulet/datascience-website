@@ -15,7 +15,7 @@ Is your pricing leaving money on the table?
 ::: hero-subtitle
 An operational pricing diagnostic in 2 weeks. Recommendations you can act on the following week.
 :::
-[Book a discovery call](/contact/){.btn .btn-primary .btn-lg}
+[Book a discovery call](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg}
 :::
 
 ## The problem
@@ -109,5 +109,5 @@ A precise quote is provided after the discovery call, with no commitment require
 
 A 30-minute call is enough to find out whether PricingDiag is right for your situation.
 
-[Book a discovery call](/contact/){.btn .btn-primary .btn-lg}
+[Book a discovery call](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg}
 :::

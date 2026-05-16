@@ -19,7 +19,7 @@ The data nobody else analyses, for the decisions that matter.
 Data scientist based in Tokyo, I analyse the data hidden behind language barriers or methodological gaps — Japanese patents, pricing signals, marketing performance — and turn them into quantified recommendations.
 :::
 
-[Book a call](/contact/){.btn .btn-primary .btn-lg} [See my services](/services/index.en.html){.btn .btn-outline-secondary .btn-lg}
+[Book a call](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg} [See my services](/services/index.en.html){.btn .btn-outline-secondary .btn-lg}
 :::
 ::::
 
@@ -212,5 +212,5 @@ Book a 30-minute discovery call. We identify together whether I can help you, an
 
 No pitch. No commitment. Just a conversation.
 
-[Book a discovery call](/contact/){.btn .btn-primary .btn-lg} [Email me](mailto:contact-quarto-site.le77r@simplelogin.com){.btn .btn-outline-secondary .btn-lg}
+[Book a discovery call](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg} [Email me](mailto:contact-quarto-site.le77r@simplelogin.com){.btn .btn-outline-secondary .btn-lg}
 :::

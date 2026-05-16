@@ -104,5 +104,5 @@ Un appel de 30 minutes pour comprendre votre contexte et voir si je peux vous ai
 
 Pas de pitch. Pas d'engagement. Juste une conversation.
 
-[Réserver un appel](/contact/){.btn .btn-primary .btn-lg}
+[Réserver un appel](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg}
 :::

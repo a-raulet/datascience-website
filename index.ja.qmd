@@ -19,7 +19,7 @@ body-classes: home
 東京在住のデータサイエンティストとして、言語の壁や手法の不足によって見えていないデータ（特許情報、価格シグナル、マーケティング効果）を分析し、定量的な推奨事項として届けます。
 :::
 
-[相談を予約する](/contact/){.btn .btn-primary .btn-lg} [サービスを見る](/services/index.ja.html){.btn .btn-outline-secondary .btn-lg}
+[相談を予約する](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg} [サービスを見る](/services/index.ja.html){.btn .btn-outline-secondary .btn-lg}
 :::
 ::::
 
@@ -210,5 +210,5 @@ ggplot(data, aes(x = umbrellas, y = coffees)) +
 
 売り込みなし。コミットメントなし。ただの会話。
 
-[相談を予約する](/contact/){.btn .btn-primary .btn-lg} [メールで連絡する](mailto:contact-quarto-site.le77r@simplelogin.com){.btn .btn-outline-secondary .btn-lg}
+[相談を予約する](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg} [メールで連絡する](mailto:contact-quarto-site.le77r@simplelogin.com){.btn .btn-outline-secondary .btn-lg}
 :::

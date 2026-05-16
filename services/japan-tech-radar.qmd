@@ -15,7 +15,7 @@ Ce que font vos concurrents japonais : extrait des données brevets, quantifié,
 ::: hero-subtitle
 Les données sont publiques. Elles sont en japonais. JapanTechRadar les rend lisibles et actionnables.
 :::
-[Réserver un appel](/contact/){.btn .btn-primary .btn-lg}
+[Réserver un appel](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg}
 :::
 
 ## Le problème
@@ -89,5 +89,5 @@ Un devis précis est établi après l'appel découverte, sans engagement.
 
 Un appel de 30 minutes pour définir le périmètre de votre analyse et voir ce que JapanTechRadar peut vous apporter.
 
-[Réserver un appel](/contact/){.btn .btn-primary .btn-lg}
+[Réserver un appel](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg}
 :::

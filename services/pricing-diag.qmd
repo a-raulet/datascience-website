@@ -15,7 +15,7 @@ Vos prix laissent-ils de l'argent sur la table ?
 ::: hero-subtitle
 Un diagnostic opérationnel en 2 semaines. Des recommandations que vous pouvez appliquer dès la semaine suivante.
 :::
-[Réserver un appel](/contact/){.btn .btn-primary .btn-lg}
+[Réserver un appel](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg}
 :::
 
 ## Le problème
@@ -109,5 +109,5 @@ Un devis précis est établi après l'appel découverte, sans engagement.
 
 Un appel de 30 minutes suffit pour savoir si PricingDiag est pertinent pour votre situation. Pas de pitch. Pas d'engagement. Une conversation directe.
 
-[Réserver un appel](/contact/){.btn .btn-primary .btn-lg}
+[Réserver un appel](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg}
 :::

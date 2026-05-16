@@ -18,9 +18,8 @@ Exploration, pipelines de données et dashboards pour transformer les données b
 
 ## Projets
 
-:::::: grid
-::: g-col-md-12
-
+::::: grid
+:::: g-col-md-12
 ::: portfolio-item
 ### Marketing Mix Modeling avec Robyn
 
@@ -30,24 +29,22 @@ Le Marketing Mix Modeling (MMM) permet de mesurer l'impact de chaque canal marke
 
 **Approche** :
 
-- Utilisation du framework **Robyn** développé par Meta
-- Régression Ridge avec décomposition temporelle Prophet
-- Modélisation des effets adstock (geometric decay) et saturation (logistique)
-- Optimisation multi-objectifs avec Nevergrad
+-   Utilisation du framework **Robyn** développé par Meta
+-   Régression Ridge avec décomposition temporelle Prophet
+-   Modélisation des effets adstock (geometric decay) et saturation (logistique)
+-   Optimisation multi-objectifs avec Nevergrad
 
 **Résultats** : Dashboard interactif permettant de simuler différents scénarios d'allocation budgétaire et de visualiser l'impact attendu sur les ventes.
 
 **Technologies** : R, Robyn, Prophet, Nevergrad, Shiny
 
-[Voir le détail →](mmm-robyn.qmd) | [Dashboard Shiny](https://arnaudraulet.shinyapps.io/mmm-robyn/){target="_blank"}
+[Voir le détail →](mmm-robyn.qmd) \| [Dashboard Shiny](https://arnaudraulet.shinyapps.io/mmm-robyn/){target="_blank"}
 :::
+::::
+:::::
 
-:::
-::::::
-
-:::::: grid
-::: g-col-md-12
-
+::::: grid
+:::: g-col-md-12
 ::: portfolio-item
 ### Pipeline Marketing Analytics (GCP + dbt)
 
@@ -57,28 +54,26 @@ Ce projet démontre la mise en place d'un pipeline ETL complet pour l'analyse de
 
 **Architecture** :
 
-```
+```         
 CSV → Python Extract → BigQuery → dbt Transform → Streamlit Dashboard
 ```
 
 **KPIs calculés** :
 
-- ROAS (Return on Ad Spend)
-- Coût par conversion (CPA)
-- Taux de conversion
-- Revenue par session
+-   ROAS (Return on Ad Spend)
+-   Coût par conversion (CPA)
+-   Taux de conversion
+-   Revenue par session
 
 **Technologies** : Python, Google BigQuery, dbt, Streamlit, Plotly
 
-[Voir le détail →](marketing-pipeline.qmd) | [Dashboard Streamlit](https://marketing-data-pipeline-demo.streamlit.app){target="_blank"}
+[Voir le détail →](marketing-pipeline.qmd) \| [Dashboard Streamlit](https://marketing-data-pipeline-demo.streamlit.app){target="_blank"}
 :::
+::::
+:::::
 
-:::
-::::::
-
-:::::: grid
-::: g-col-md-12
-
+::::: grid
+:::: g-col-md-12
 ::: portfolio-item
 ### Real-time Clickstream Analytics
 
@@ -88,25 +83,24 @@ Pipeline de streaming analytics pour l'analyse du comportement utilisateur avec 
 
 **Architecture** :
 
-```
+```         
 CSV Events → Kafka Producer → Spark Streaming → Delta Lake → Streamlit Dashboard
 ```
 
 **Métriques temps réel** :
 
-- Sessions actives
-- Funnel de conversion (view → cart → purchase)
-- Top produits
-- Alertes anomalies
+-   Sessions actives
+-   Funnel de conversion (view → cart → purchase)
+-   Top produits
+-   Alertes anomalies
 
 **Technologies** : Apache Kafka, PySpark Structured Streaming, Delta Lake, Streamlit, Docker
 
 [Voir le détail →](clickstream-analytics.qmd)
 :::
+::::
+:::::
 
-:::
-::::::
+------------------------------------------------------------------------
 
----
-
-[← Retour au Portfolio](/portfolio/) | [Voir les projets ML →](/portfolio/ml/)
+[← Retour au Portfolio](/portfolio/) \| [Voir les projets ML →](/portfolio/ml/)

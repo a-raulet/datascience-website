@@ -19,7 +19,7 @@ Les données que personne d'autre n'analyse, pour les décisions qui comptent.
 Data scientist basé à Tokyo, j'analyse les données que la barrière linguistique ou le manque de méthode vous cachent : brevets japonais, signaux prix, performance marketing. Et je les traduis en recommandations chiffrées.
 :::
 
-[Réserver un appel](/contact/){.btn .btn-primary .btn-lg} [Voir mes services](/services/){.btn .btn-outline-secondary .btn-lg}
+[Réserver un appel](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg} [Voir mes services](/services/){.btn .btn-outline-secondary .btn-lg}
 :::
 ::::
 
@@ -221,5 +221,5 @@ Réservez un appel découverte de 30 minutes. On identifie ensemble si je peux v
 
 Pas de pitch. Pas d'engagement. Juste une conversation.
 
-[Réserver un appel découverte](/contact/){.btn .btn-primary .btn-lg} [Me contacter par email](mailto:contact-quarto-site.le77r@simplelogin.com){.btn .btn-outline-secondary .btn-lg}
+[Réserver un appel découverte](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg} [Me contacter par email](mailto:contact-quarto-site.le77r@simplelogin.com){.btn .btn-outline-secondary .btn-lg}
 :::

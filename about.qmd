@@ -56,5 +56,5 @@ Je tiens également [japanorama.fr](https://japanorama.fr), un site sur la cultu
 
 Je suis basé à Tokyo et je travaille avec des clients en France, au Japon et à l'international.
 
-[Réserver un appel découverte](/contact/){.btn .btn-primary .btn-lg} [Me contacter par email](mailto:contact-quarto-site.le77r@simplelogin.com){.btn .btn-outline-secondary .btn-lg}
+[Réserver un appel découverte](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg} [Me contacter par email](mailto:contact-quarto-site.le77r@simplelogin.com){.btn .btn-outline-secondary .btn-lg}
 :::

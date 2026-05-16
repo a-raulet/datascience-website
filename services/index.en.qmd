@@ -104,5 +104,5 @@ A 30-minute call to understand your context and see whether I can help.
 
 No pitch. No commitment. Just a conversation.
 
-[Book a discovery call](/contact/){.btn .btn-primary .btn-lg}
+[Book a discovery call](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg}
 :::

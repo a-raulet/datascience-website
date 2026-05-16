@@ -15,7 +15,7 @@ format:
 ::: hero-subtitle
 競合他社の特許活動は公開されている。それを体系的に分析している企業は少ない。JapanTechRadarはそのギャップを埋めます。
 :::
-[相談を予約する](/contact/){.btn .btn-primary .btn-lg}
+[相談を予約する](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg}
 :::
 
 ## 課題
@@ -89,5 +89,5 @@ JapanTechRadarの典型的なレポートは以下を含みます：
 
 30分の相談で、分析のスコープを定義し、JapanTechRadarで何が得られるかを確認します。
 
-[相談を予約する](/contact/){.btn .btn-primary .btn-lg}
+[相談を予約する](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg}
 :::

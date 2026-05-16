@@ -115,5 +115,5 @@ Complete ETL pipeline with BigQuery, dbt and real-time KPI dashboard.
 ::: contact-section
 ## A similar challenge in your business?
 
-[Book a discovery call](/contact/){.btn .btn-primary} [See my services →](/services/index.en.html){.btn .btn-outline-secondary}
+[Book a discovery call](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary} [See my services →](/services/index.en.html){.btn .btn-outline-secondary}
 :::

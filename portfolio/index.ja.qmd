@@ -115,5 +115,5 @@ BigQuery、dbt、リアルタイムKPIダッシュボードを使用した完全
 ::: contact-section
 ## 類似の課題がお客様のビジネスにありますか？
 
-[相談を予約する](/contact/){.btn .btn-primary} [サービスを見る →](/services/index.ja.html){.btn .btn-outline-secondary}
+[相談を予約する](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary} [サービスを見る →](/services/index.ja.html){.btn .btn-outline-secondary}
 :::
