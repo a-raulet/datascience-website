@@ -6,6 +6,8 @@ project:
     - "!test.qmd"
     - "!test.en.qmd"
     - "!test.ja.qmd"
+  resources:
+    - "assets/**"
 
 execute:
   freeze: auto
@@ -57,6 +59,8 @@ format:
       - file: _includes/umami.html
       - file: _includes/plotly.html
       - file: _includes/nav-i18n.html
+    include-after-body:
+      - file: _includes/tracking-loader.html
 
 babelquarto:
   mainlanguage: 'fr'
