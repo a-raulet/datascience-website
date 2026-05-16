@@ -5,7 +5,7 @@
 - **Branche actuelle** : `feat/tracking-instrumentation` (3 commits, working tree clean).
 - **Dernier commit avant ce fichier** : `f0efcf7 docs(tracking): plan d'événements + template de validation`.
 - **Build Quarto** : passe (54/54 pages rendues localement avec quarto 1.8.25).
-- **URL de preview Netlify** : `<À COMPLÉTER après push : https://deploy-preview-N--<site>.netlify.app>`
+- **URL de preview Netlify** : *conservée hors du repo (notes personnelles).* Le repo étant public, on ne committe pas le slug Netlify ni le pattern d'URL de preview. Récupérer l'URL depuis le dashboard Netlify ou le commentaire GitHub Actions du PR.
 - **Tests interactifs réalisés** : *aucun durant la session de développement.* La conformité runtime du tracker (events qui partent réellement, payloads corrects) **n'a pas été vérifiée**. Seuls le build, la présence du snippet Umami dans le HTML rendu, le bon path de `tracking.js` (`./` / `../` / `../../` selon profondeur) et la syntaxe JS (`node --check`) ont été validés.
 - **Merge sur `master` bloqué** tant que (a) la checklist `docs/tracking-validation-2026-05.md` n'est pas exécutée et passée sur preview Netlify, et (b) la couverture par branche linguistique n'est pas confirmée fonctionnellement.
 
