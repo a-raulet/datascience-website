@@ -1,6 +1,7 @@
 ---
 title: "Services"
-description: "J'interviens là où l'analyse de données change la décision : intelligence technologique, pricing, marketing analytics, inférence causale."
+pagetitle: "Services | Arnaud Raulet"
+description: "Deux offres productisées pour des décisions à fort enjeu : intelligence technologique Japon (JapanTechRadar) et diagnostic pricing (PricingDiag)."
 lang: fr
 format:
   html:
@@ -10,60 +11,59 @@ format:
 
 ::: hero-banner
 ::: hero-title
-J'interviens là où l'analyse de données change la décision.
+Transformer des données complexes en décisions claires.
 :::
 ::: hero-subtitle
-Chaque service part d'un problème business concret et produit des recommandations chiffrées et actionnables.
+Deux offres productisées : l'intelligence technologique japonaise (JapanTechRadar) et le diagnostic pricing (PricingDiag).
 :::
+[Réserver un appel](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg}
 :::
 
-## JapanTechRadar : Intelligence Technologique Japon {#japantechradar}
-
-**Problème : que préparent vos concurrents japonais ? Les données sont publiques, mais en japonais.**
-
-Les entreprises japonaises déposent des dizaines de milliers de brevets chaque année. Ces données sont gratuites, accessibles sur J-PlatPat, et totalement opaques pour les entreprises européennes qui ne lisent pas le japonais technique.
-
-Ce n'est pas juste une question de traduction. C'est une question d'interprétation : comprendre pourquoi un acteur accélère sur une technologie, ce que ça signifie dans le contexte sectoriel japonais, et ce que ça implique pour vous.
-
-**Ce que ça produit :** un rapport qui cartographie les acteurs, les tendances technologiques et les signaux faibles de votre secteur au Japon, à partir de l'analyse quantitative des brevets. Livré en français, structuré pour être utilisable par un directeur.
-
-[Découvrir JapanTechRadar →](/services/japan-tech-radar/){.btn .btn-primary}
+Mon avantage tient en une chose : une intelligence japonaise primaire, lue à la source et livrée en français, doublée d'une rigueur quantitative au service de vos décisions. Deux offres en découlent.
 
 ---
 
-## PricingDiag : Diagnostic Pricing {#pricingdiag}
+## Intelligence technologique Japon : JapanTechRadar
 
-**Problème : vos prix sont-ils optimaux ? La plupart des entreprises ne le savent pas, et ça leur coûte cher.**
+Capter ce que préparent vos concurrents japonais suppose de lire le japonais technique et de connaître les secteurs. C'est précisément ce que je fais : des données primaires en japonais (brevets, publications, signaux d'alliance) transformées en lecture stratégique, livrée en français.
 
-La plupart des politiques de prix sont construites historiquement, ajustées à la marge, jamais remises à plat avec des données structurées. Des produits sous-tarifés peuvent financer les marges de vos clients pendant des années sans déclencher d'alarme claire.
+**Le problème.** Vos concurrents japonais déposent des brevets, signent des alliances, investissent en R&D. En japonais. Vous l'apprenez quand c'est déjà sur le marché.
 
-**Ce que ça produit :** un diagnostic en 2 semaines qui identifie où vos prix sous-performent, de combien, et quoi faire. À partir de vos données de vente existantes. Recommandations priorisées, fichier de simulation inclus, session de restitution.
+**Ce que je livre.** Une cartographie des acteurs japonais de votre secteur, les tendances technologiques et les signaux faibles, quantifiés et livrés en français.
 
-[Découvrir PricingDiag →](/services/pricing-diag/){.btn .btn-primary}
+**Le résultat.** Vous voyez venir les mouvements de vos concurrents japonais assez tôt pour décider, pas pour subir.
 
----
+Pensé pour les entreprises européennes et leurs directions stratégie et innovation qui doivent surveiller les acteurs japonais de leur secteur, ainsi que pour les cabinets ayant besoin d'un relais Japon ponctuel.
 
-## Marketing Analytics {#marketing-analytics}
-
-**Problème : quel canal génère vraiment vos conversions ? Votre budget marketing est-il bien alloué ?**
-
-Sans méthode rigoureuse, l'attribution marketing est une approximation. Les outils analytiques classiques comptent des clics et des sessions ; ils ne mesurent pas l'impact causal de chaque canal sur vos ventes réelles.
-
-**Ce que ça produit :** une mesure fiable de l'impact de chaque canal marketing (Marketing Mix Modeling), une segmentation actionnable, une attribution fondée sur des données plutôt que sur des heuristiques. Des réponses chiffrées, pas des tableaux de bord supplémentaires.
-
-Voir la démonstration technique dans le portfolio : [Marketing Mix Modeling (Robyn) →](/portfolio/analysis/mmm-robyn/)
+[Découvrir JapanTechRadar →](japan-tech-radar.qmd){.btn .btn-primary}
 
 ---
 
-## Inférence Causale & Decision Science {#decision-science}
+## Diagnostic pricing : PricingDiag
 
-**Problème : vous voyez un problème dans vos données. Mais est-ce la cause, ou juste un symptôme ?**
+**Le problème.** Vous savez que vos prix laissent de l'argent sur la table, mais vous ne savez ni combien ni où.
 
-Agir sur le mauvais levier, c'est gaspiller du temps et de l'argent. La plupart des analyses business répondent à "que s'est-il passé ?" ; rarement à "pourquoi ?" et "que faire ?".
+**Ce que je livre.** Où vos prix sous-performent, de combien, et quoi faire, à partir de vos propres données de vente, livré en deux semaines environ.
 
-**Ce que ça produit :** l'identification des vrais leviers d'action dans vos données, avec une quantification explicite de l'incertitude. Vous saurez ce que vous pouvez affirmer, avec quelle confiance, et ce qui reste à vérifier. J'utilise les méthodes de l'inférence causale et de la modélisation bayésienne pour les petits échantillons.
+**Le résultat.** Des décisions de prix chiffrées et actionnables, fondées sur vos données plutôt que sur l'instinct.
 
-Voir la démonstration technique dans le portfolio : [Plateforme d'Inférence Causale →](/portfolio/ml/causal-inference/)
+Pensé pour les décideurs de PME et d'ETI qui veulent fonder leurs prix sur des données solides plutôt que sur l'intuition.
+
+[Découvrir PricingDiag →](pricing-diag.qmd){.btn .btn-primary}
+
+---
+
+## Les méthodes derrière les livrables
+
+[]{#marketing-analytics}[]{#decision-science}
+
+Derrière ces deux offres, il y a des questions que tout décideur se pose un jour :
+
+- « Votre campagne a généré +15 % de ventes. Vraiment, ou le marché montait déjà ? »
+- « Vous voyez une corrélation dans vos données. Mais est-ce la cause du problème, ou un simple reflet ? »
+- « Quel canal génère réellement vos conversions, et avec quelle certitude ? »
+
+Ces questions se tranchent avec des méthodes rigoureuses : attribution, mesure d'impact causal, quantification de l'incertitude. Je ne les vends pas comme des prestations à part ; je les mobilise au service des deux livrables ci-dessus, pour que vos décisions reposent sur des preuves et non sur des impressions.
 
 ---
 
@@ -73,25 +73,19 @@ Voir la démonstration technique dans le portfolio : [Plateforme d'Inférence Ca
 ::: g-col-md-4
 ### Mission ponctuelle
 
-Périmètre défini, livrable concret, prix fixe. Un diagnostic, une analyse, un rapport.
-
-*Exemples : JapanTechRadar rapport sectoriel, PricingDiag, analyse d'attribution marketing*
+Périmètre défini, livrable actionnable. Un diagnostic, une analyse, un rapport.
 :::
 
 ::: g-col-md-4
-### Projet
+### Abonnement et veille continue
 
-Mission plus large avec plusieurs livrables. Un modèle d'attribution, un système de pricing, une infrastructure d'analyse.
-
-*Pour des problèmes qui demandent plus d'une semaine et un ou deux livrables.*
+Intelligence récurrente, typiquement adossée à JapanTechRadar.
 :::
 
 ::: g-col-md-4
-### Retainer
+### Advisory retainer
 
-Accès continu à l'expertise. Un sparring partner data pour vos décisions récurrentes.
-
-*Revue mensuelle de vos KPIs, support ad hoc, veille sectorielle Japon.*
+Accès continu à l'expertise pour vos décisions ad hoc.
 :::
 ::::::
 
@@ -100,9 +94,7 @@ Accès continu à l'expertise. Un sparring partner data pour vos décisions réc
 ::: contact-section
 ### Parlons de votre situation
 
-Un appel de 30 minutes pour comprendre votre contexte et voir si je peux vous aider.
-
-Pas de pitch. Pas d'engagement. Juste une conversation.
+Un appel découverte de 30 minutes. Pas de pitch, pas d'engagement, juste une conversation pour voir si je peux vous aider.
 
 [Réserver un appel](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg}
 :::
