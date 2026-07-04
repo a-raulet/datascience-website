@@ -20,7 +20,8 @@ website:
   site-url: https://arnaudraulet.com
   description: "Intelligence stratégique Japon : analyses quantitatives (brevets japonais, pricing, marketing) pour les décisions qui comptent."
   navbar:
-    background: primary
+    background: "#151C24"
+    foreground: "#F4EFE6"
     search: true
     left:
       - text: "Accueil"
@@ -54,7 +55,7 @@ website:
 
 format:
   html:
-    theme: cosmo
+    theme: [cosmo, custom.scss]
     css: styles.css
     toc: true
     code-fold: true
