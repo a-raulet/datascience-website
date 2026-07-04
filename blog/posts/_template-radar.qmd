@@ -1,0 +1,75 @@
+---
+# GABARIT « Radar » : mini-analyse sectorielle trimestrielle (préfixe _ : non rendu).
+# Pour publier : dupliquer en radar-<secteur>-<annee>t<trimestre>.qmd (+ .en, .ja),
+# remplacer tous les <PLACEHOLDERS>, puis réactiver la section « Dernières analyses »
+# sur la home (TODO dans index.qmd / index.en.qmd / index.ja.qmd).
+title: "Radar <SECTEUR> : <QUESTION BUSINESS EN UNE LIGNE>"
+description: "<1-2 phrases : le signal principal et pourquoi il compte. Sert de meta description et d'accroche LinkedIn.>"
+author: "Arnaud RAULET"
+date: "<AAAA-MM-JJ>"
+lang: fr
+categories: [radar, "<secteur>"]
+format:
+  html:
+    toc: true
+    toc-depth: 2
+---
+
+<!-- Règles éditoriales :
+  - Uniquement des chiffres calculés à partir des données publiques (J-PlatPat,
+    Espacenet). Aucun chiffre estimé sans le dire, aucune donnée client.
+  - Chaque affirmation est adossée à un mécanisme nommé (comptage corrigé,
+    co-dépôts, classification CPC...).
+  - Typographie FR : pas de tiret em, espaces insécables avant : ; ! ?
+  - Périmètre SERIC : analyse quantitative et conclusions, pas de conseil
+    en développement commercial au Japon. -->
+
+## La question
+
+<Une question qu'une direction stratégie se pose réellement. Exemple de forme :
+« Qui accélère sur <technologie> au Japon, et depuis quand ? »>
+
+## Ce que montrent les données
+
+<3-5 paragraphes. Le classement ou la tendance principale, avec la méthode
+en une phrase à chaque fois. Un tableau court si utile.>
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+# <LE graphique du numéro : une seule visualisation, lisible seule.
+#  Palette du site : encre #151C24, vermillon #C1440E, papier #FBF9F5.>
+```
+
+## Le signal faible
+
+<Un fait inattendu repéré dans les données : nouvel entrant, co-dépôt
+inhabituel, inflexion de rythme. Ce paragraphe est la matière LinkedIn.>
+
+## Méthode
+
+::: {.callout-note title="Comment ces chiffres sont produits"}
+Comptages issus de <SOURCE : J-PlatPat / Espacenet>, période <PÉRIODE>,
+périmètre <CLASSES CPC / MOTS-CLÉS>. Comptage corrigé (*R-corrected patent
+counts*) pour comparer des déposants de tailles différentes. Les données
+sources sont disponibles sur demande.
+:::
+
+## Ce que ça implique
+
+<2-3 implications concrètes pour une direction stratégie/innovation du
+secteur. Pas de recommandation client : des conclusions d'analyse.>
+
+------------------------------------------------------------------------
+
+{{< include ../../_includes/newsletter-fr.qmd >}}
+
+::: contact-section
+### Besoin de cette analyse sur votre périmètre ?
+
+Le rapport pilote JapanTechRadar applique cette méthode à votre secteur, sur un périmètre réduit et à tarif découverte.
+
+[Réserver un appel](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg}
+:::
