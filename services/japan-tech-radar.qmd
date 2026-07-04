@@ -74,10 +74,12 @@ Automobile et mobilité · Aérospatial et défense · Énergie · Matériaux av
 
 ## Tarifs et délais
 
+Pour commencer : le **rapport pilote**, à périmètre réduit et tarif découverte, pour juger la méthode sur pièces avant d'engager une analyse complète.
+
 | Format | Périmètre | Délai |
 |---|---|---|
-| Rapport sectoriel | Analyse complète, 20-50 acteurs | 3-4 semaines |
 | Rapport pilote | Premier rapport à tarif découverte | 2 semaines |
+| Rapport sectoriel | Analyse complète, 20-50 acteurs | 3-4 semaines |
 | Abonnement trimestriel | Rapport mis à jour + alertes sectorielles | sur demande |
 
 Un devis précis est établi après l'appel découverte, sans engagement.
