@@ -1,6 +1,6 @@
 ---
 pagetitle: "Portfolio"
-description: "Data Science & Marketing Analytics projects"
+description: "Data science projects: causal inference, marketing analytics, dynamic pricing. Code, methods and interactive apps."
 title-block-style: none
 lang: en
 format:

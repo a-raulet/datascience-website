@@ -1,9 +1,9 @@
 ---
 title: "Blog"
+description: "Le blog d'Arnaud Raulet : data science appliquée aux décisions business, brevets japonais, pricing, inférence causale."
 author: "Arnaud RAULET"
 author-title: "Auteur"
+lang: fr
 ---
-
-# Blog
 
 Contenu à venir...

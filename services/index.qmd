@@ -1,6 +1,5 @@
 ---
 title: "Services"
-pagetitle: "Services | Arnaud Raulet"
 description: "Deux offres productisées pour des décisions à fort enjeu : intelligence technologique Japon (JapanTechRadar) et diagnostic pricing (PricingDiag)."
 lang: fr
 format:

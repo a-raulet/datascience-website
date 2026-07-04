@@ -1,0 +1,21 @@
+---
+title: "Extrait de rapport JapanTechRadar"
+description: "Demandez un extrait anonymisé d'un rapport JapanTechRadar : la méthode, le format des livrables et le niveau de détail."
+lang: fr
+format:
+  html:
+    toc: false
+---
+
+Un extrait anonymisé d'un rapport JapanTechRadar : la méthode, le format des livrables et le niveau de détail.
+
+En attendant la mise en place du téléchargement, demandez l'extrait par email : [contact@arnaudraulet.com](mailto:contact@arnaudraulet.com){.btn .btn-primary}
+
+<!-- TODO: formulaire de capture email (placeholder, à brancher sur le provider choisi : Netlify Forms, Buttondown, autre)
+<form name="extrait-jtr" method="POST">
+  <label>Votre email professionnel
+    <input type="email" name="email" required>
+  </label>
+  <button type="submit" class="btn btn-primary">Recevoir l'extrait</button>
+</form>
+-->

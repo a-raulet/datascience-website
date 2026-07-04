@@ -1,5 +1,5 @@
 ---
-pagetitle: "Arnaud Raulet | データサイエンティスト · フランス×日本"
+pagetitle: "ローレ・アルノ | データサイエンス×日本戦略"
 description: "東京在住のデータサイエンティスト。言語の壁や手法の不足で見えていないデータを分析し、定量的な推奨事項として届けます。"
 lang: ja
 format:
@@ -12,14 +12,14 @@ body-classes: home
 :::: column-screen
 ::: hero-banner
 ::: hero-title
-誰も解析していないデータで、確かな意思決定を。
+データサイエンス×日本戦略
 :::
 
 ::: hero-subtitle
-東京在住のデータサイエンティストとして、言語の壁や手法の不足によって見えていないデータ（特許情報、価格シグナル、マーケティング効果）を分析し、定量的な推奨事項として届けます。
+誰も解析していないデータで、確かな意思決定を。
 :::
 
-[相談を予約する](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg} [サービスを見る](/services/index.ja.html){.btn .btn-outline-secondary .btn-lg}
+[レポート抜粋をダウンロード](/ressources/extrait-jtr.ja.html){.btn .btn-primary .btn-lg data-umami-event="cta_jtr_extract_click" data-umami-event-position="hero" data-umami-event-lang="ja"} [相談を予約する](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-outline-secondary .btn-lg}
 :::
 ::::
 
@@ -28,8 +28,7 @@ body-classes: home
 データはある。でも、答えはあるか？
 
 ::: {.column-page}
-:::::: grid
-::: g-col-md-6
+::: problem-main
 **競合他社の特許活動は公開データですが、定量的に解析している企業はほとんどいません。**
 
 特許データベースは無料で公開されています。しかし、技術領域ごとの強度・速度・方向性を数値で把握し、戦略的示唆に変えるには専門的な手法が必要です。
@@ -39,34 +38,27 @@ body-classes: home
 [JapanTechRadar →](/services/japan-tech-radar.ja.html)
 :::
 
-::: g-col-md-6
+:::::: {.grid .problem-secondary}
+::: g-col-md-4
 **自社の価格設定は本当に最適ですか？**
 
-多くの企業の価格は、過去の経緯と直感で決まっており、構造的なデータ分析に基づいて見直されたことがありません。値付けが低すぎる商品が、気づかないまま顧客の利益を増やし続けている可能性があります。
-
-*価格がどこで、どれだけ損をしているかを数値で把握することが、意思決定を変えます。*
+値付けが低すぎる商品が、気づかないまま顧客の利益を増やし続けている可能性があります。
 
 [PricingDiag →](/services/pricing-diag.ja.html)
 :::
-::::::
 
-:::::: grid
-::: g-col-md-6
+::: g-col-md-4
 **キャンペーンで売上+15%。本当に？**
 
-それとも市場全体が上昇していただけ？厳密な手法なしには、最適化の方向がわかりません。ダッシュボードは数字を見せますが、原因は見せません。
-
-*アトリビューションの誤りは、何ヶ月もの予算を誤った方向に投じることを意味します。*
+それとも市場全体が上昇していただけ？ダッシュボードは数字を見せますが、原因は見せません。
 
 [マーケティングアナリティクス →](/services/index.ja.html#marketing-analytics)
 :::
 
-::: g-col-md-6
-**データに相関が見える。しかし、それは本当の原因か？**
+::: g-col-md-4
+**相関が見える。しかし、それは原因か？**
 
-誤ったレバーに働きかけることは、リソースの無駄です。因果推論は、結果の真の原因と単なる相関を区別します。
-
-*見せかけの相関に基づく意思決定は、何ヶ月もの無駄な最適化につながる可能性があります。*
+誤ったレバーに働きかけることは、リソースの無駄です。因果推論は、真の原因と単なる相関を区別します。
 
 [デシジョンサイエンス →](/services/index.ja.html#decision-science)
 :::
@@ -79,15 +71,15 @@ body-classes: home
 
 ::: {.column-page}
 :::::: grid
-::: g-col-md-6
-### 技術インテリジェンス（JapanTechRadar）
+::: {.g-col-md-6 .product-card}
+### 日本技術動向分析（JapanTechRadar）
 
 特許データから抽出し、定量化した業界の技術動向。競合他社のポジション、技術トレンド、注目すべき変化を日本語または英語でレポートします。
 
 [JapanTechRadarを見る →](/services/japan-tech-radar.ja.html)
 :::
 
-::: g-col-md-6
+::: {.g-col-md-6 .product-card}
 ### 価格診断（PricingDiag）
 
 価格がどこで損をしているか、どれだけか、どう対処するか。既存の販売データをもとに2週間で診断。優先度付きの推奨事項とシミュレーションファイル付き。
@@ -97,20 +89,12 @@ body-classes: home
 ::::::
 
 :::::: grid
-::: g-col-md-6
-### マーケティングアナリティクス
+::: g-col-12
+### 因果分析・アトリビューション
 
-どのチャネルが本当にコンバージョンを生んでいるか。各キャンペーンの真のROIは何か。データに基づいた定量的な回答を提供します。
+どのチャネルが本当にコンバージョンを生んでいるのか。相関の先にある、結果の真の原因は何か。アトリビューション、因果的インパクトの測定、不確実性の定量化：上記2つのサービスを支える厳密な分析手法です。
 
 [サービスを見る →](/services/index.ja.html#marketing-analytics)
-:::
-
-::: g-col-md-6
-### 因果推論・デシジョンサイエンス
-
-結果の真の原因を特定する（単なる相関ではなく）。不確実性の定量化とともに、正しいレバーに投資するための分析。
-
-[サービスを見る →](/services/index.ja.html#decision-science)
 :::
 ::::::
 :::
@@ -197,11 +181,15 @@ ggplot(data, aes(x = umbrellas, y = coffees)) +
 
 ------------------------------------------------------------------------
 
+<!-- TODO: ブログ初回記事の公開時に「最新記事」セクションを再有効化する
+
 ## 最新記事
 
 [記事一覧を見る →](/blog/index.ja.html)
 
 ------------------------------------------------------------------------
+
+-->
 
 ::: contact-section
 ## あなたの状況についてお話しましょう
@@ -210,5 +198,5 @@ ggplot(data, aes(x = umbrellas, y = coffees)) +
 
 売り込みなし。コミットメントなし。ただの会話。
 
-[相談を予約する](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg} [メールで連絡する](mailto:contact-quarto-site.le77r@simplelogin.com){.btn .btn-outline-secondary .btn-lg}
+[相談を予約する](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg} [メールで連絡する](mailto:contact@arnaudraulet.com){.btn .btn-outline-secondary .btn-lg}
 :::

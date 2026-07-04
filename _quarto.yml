@@ -6,15 +6,19 @@ project:
     - "!test.qmd"
     - "!test.en.qmd"
     - "!test.ja.qmd"
+  post-render:
+    - python3 netlify/post_render_seo.py
   resources:
     - "assets/**"
+    - robots.txt
 
 execute:
   freeze: auto
 
 website:
-  title: "Arnaud RAULET | Intelligence Stratégique Japon"
-  description: "Intelligence stratégique Japon — pour les décisions qui comptent"
+  title: "Arnaud Raulet | Intelligence Stratégique Japon"
+  site-url: https://arnaudraulet.com
+  description: "Intelligence stratégique Japon : analyses quantitatives (brevets japonais, pricing, marketing) pour les décisions qui comptent."
   navbar:
     background: primary
     search: true
@@ -57,7 +61,6 @@ format:
     html-math-method: katex
     include-in-header:
       - file: _includes/umami.html
-      - file: _includes/plotly.html
       - file: _includes/nav-i18n.html
     include-after-body:
       - file: _includes/tracking-loader.html
@@ -75,10 +78,10 @@ babelquarto:
   languagelinks: navbar
   language-path: "prefix"
 
-title-en: "Arnaud RAULET | Japan Strategic Intelligence"
-title-ja: "ローレ・アルノ | 日本戦略インテリジェンス"
-description-en: "Japan strategic intelligence — for decisions that matter"
-description-ja: "日本の戦略的インテリジェンス — 重要な意思決定のために"
+title-en: "Arnaud Raulet | Japan Strategic Intelligence"
+title-ja: "ローレ・アルノ | データサイエンス×日本戦略"
+description-en: "Japan strategic intelligence: quantitative analysis (Japanese patents, pricing, marketing) for decisions that matter."
+description-ja: "データサイエンス×日本戦略：特許・価格・マーケティングの定量分析で、重要な意思決定を支えます。"
 author-en: "Arnaud RAULET"
 author-ja: "ローレ・アルノ"
 

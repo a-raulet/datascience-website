@@ -1,0 +1,21 @@
+---
+title: "JapanTechRadarレポート抜粋"
+description: "JapanTechRadarレポートの匿名化された抜粋をご請求いただけます：分析手法、成果物の形式、詳細度をご確認ください。"
+lang: ja
+format:
+  html:
+    toc: false
+---
+
+JapanTechRadarレポートの匿名化された抜粋です：分析手法、成果物の形式、詳細度をご確認いただけます。
+
+ダウンロード機能は準備中です。抜粋をご希望の方はメールでご請求ください：[contact@arnaudraulet.com](mailto:contact@arnaudraulet.com){.btn .btn-primary}
+
+<!-- TODO: メール登録フォーム（プレースホルダー。プロバイダー決定後に接続：Netlify Forms、Buttondownなど）
+<form name="extrait-jtr" method="POST">
+  <label>ビジネスメールアドレス
+    <input type="email" name="email" required>
+  </label>
+  <button type="submit" class="btn btn-primary">抜粋を受け取る</button>
+</form>
+-->

@@ -1,5 +1,6 @@
 ---
 title: "プロフィール"
+description: "東京在住約10年のデータサイエンティスト、元特許翻訳者。定量分析の厳密さと日本での現場経験を併せ持つハイブリッドなプロフィール。"
 lang: ja
 format:
   html:
@@ -68,5 +69,5 @@ format:
 
 東京を拠点に、フランス・日本・国際的なクライアントと協業しています。
 
-[相談を予約する](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg} [メールで連絡する](mailto:contact-quarto-site.le77r@simplelogin.com){.btn .btn-outline-secondary .btn-lg}
+[相談を予約する](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg} [メールで連絡する](mailto:contact@arnaudraulet.com){.btn .btn-outline-secondary .btn-lg}
 :::

@@ -36,6 +36,7 @@ Deux niveaux empilés :
 | `cta_booking_click` | Clic sur lien `calendar.proton.me/bookings*` | `page`, `position`, `lang` | Mesure la conversion réelle (la prise de RDV). C'est le seul vrai signal d'intent fort sur ce site. Le découpage par `position` (`hero` / `footer` / `service-page` / `inline`) permet d'identifier *où* dans la page la conversion se déclenche. |
 | `cta_email_click` | Clic sur `mailto:` | `page`, `position`, `lang` | Signal d'intent secondaire (l'email demande plus d'effort que le calendar mais reste qualifié). Permet de comparer email vs booking par langue. |
 | `service_cta_click` | Clic sur lien interne `/services/japan-tech-radar` ou `/services/pricing-diag` | `service` (`jtr`\|`pricing`), `source_page`, `lang` | Mesure l'intérêt pour les offres : *combien d'accueil → JTR ?*, *quelle est la page qui qualifie le mieux pour PricingDiag ?* |
+| `cta_jtr_extract_click` | Clic sur le CTA « Télécharger un extrait de rapport JTR » (hero de la home, lien vers `/ressources/extrait-jtr`) | `position`, `lang` (l'URL de la page est capturée automatiquement par Umami) | Mesure l'intent lead magnet JTR, en amont de la prise de RDV. **Implémentation différente des autres events** : attributs `data-umami-event` / `data-umami-event-*` inline sur le lien (gérés par le script Umami directement, pas par `tracking.js`), car le lien est interne et statique. Les gardes DNT et `data-domains` s'appliquent côté Umami. |
 
 ### B. Engagement de contenu (priorité 2 — qualité du contenu)
 
