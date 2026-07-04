@@ -1,0 +1,14 @@
+::: {.newsletter-section #signaux-japon}
+### Signaux Japon（月刊ニュースレター）
+
+月1回配信：日本の公開データ（特許、公開情報、提携）から読み取った3つのシグナルとグラフ1点、そしてその示唆。売り込みはありません。フランス語・英語で配信します。
+
+```{=html}
+<!-- TODO: Buttondownアカウント作成後、フォームactionのVOTRE-USERNAMEを置き換え、ボタンのdisabled属性を削除する -->
+<form action="https://buttondown.com/api/emails/embed-subscribe/VOTRE-USERNAME" method="post" target="_blank" class="newsletter-form">
+  <input type="email" name="email" placeholder="you@company.co.jp" required aria-label="メールアドレス">
+  <button type="submit" class="btn btn-primary" data-umami-event="newsletter_signup" data-umami-event-lang="ja" disabled>購読する</button>
+</form>
+<p class="newsletter-note">近日開始。月1通のみ、ワンクリックで解除できます。</p>
+```
+:::

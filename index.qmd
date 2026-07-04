@@ -9,19 +9,25 @@ format:
 body-classes: home
 ---
 
-:::: column-screen
-::: hero-banner
+:::::: column-screen
+::::: hero-banner
+:::: hero-inner
+::: hero-kicker
+Intelligence stratégique Japon
+:::
+
 ::: hero-title
-Intelligence Stratégique Japon
+Vos concurrents japonais publient leurs intentions. En japonais.
 :::
 
 ::: hero-subtitle
 Les données que personne d'autre n'analyse, pour les décisions qui comptent.
 :::
 
-[Télécharger un extrait de rapport JTR](/ressources/extrait-jtr/){.btn .btn-primary .btn-lg data-umami-event="cta_jtr_extract_click" data-umami-event-position="hero" data-umami-event-lang="fr"} [Réserver un appel](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-outline-secondary .btn-lg}
-:::
+[Réserver un appel](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg} [Recevoir Signaux Japon](/ressources/signaux-japon/){.btn .btn-outline-secondary .btn-lg}
 ::::
+:::::
+::::::
 
 ## Le problème
 
@@ -67,7 +73,7 @@ Se tromper de levier, c'est investir au mauvais endroit. L'inférence causale di
 
 ------------------------------------------------------------------------
 
-## Ce que j'apporte
+## Deux offres
 
 ::: {.column-page}
 :::::: grid
@@ -103,12 +109,9 @@ Quel canal génère vraiment vos conversions ? Qu'est-ce qui cause réellement u
 
 ## Pour qui ?
 
-Je travaille avec :
+D'abord pour les **directions stratégie, innovation et R&D d'entreprises industrielles européennes** qui doivent surveiller les acteurs japonais de leur secteur : automobile, aérospatial et défense, énergie, matériaux avancés.
 
-- **Des dirigeants de PME et ETI** qui veulent des réponses chiffrées, pas des rapports de plus
-- **Des directeurs marketing** qui veulent mesurer ce qui fonctionne vraiment dans leur mix
-- **Des directeurs commerciaux** qui soupçonnent que leur politique de prix n'est pas optimale
-- **Des entreprises européennes** qui ont besoin de comprendre ce que font les acteurs japonais de leur secteur
+J'accompagne aussi des dirigeants de PME et ETI sur leurs données internes : pricing, performance marketing, mesure d'impact.
 
 ------------------------------------------------------------------------
 
@@ -192,16 +195,17 @@ ggplot(data, aes(x = parapluies, y = cafes)) +
 
 ------------------------------------------------------------------------
 
-<!-- TODO: réactiver la section « Derniers articles » au premier article de blog publié
+<!-- TODO: réactiver la section « Dernières analyses » au premier Radar publié
 
-## Derniers articles
+## Dernières analyses
 
-[Voir tous les articles →](/blog/)
+[Voir toutes les analyses →](/blog/)
 
 ------------------------------------------------------------------------
 
 -->
 
+{{< include _includes/newsletter-fr.qmd >}}
 
 ::: contact-section
 ## Parlons de votre situation

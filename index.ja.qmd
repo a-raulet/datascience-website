@@ -9,19 +9,25 @@ format:
 body-classes: home
 ---
 
-:::: column-screen
-::: hero-banner
-::: hero-title
+:::::: column-screen
+::::: hero-banner
+:::: hero-inner
+::: hero-kicker
 データサイエンス×日本戦略
+:::
+
+::: hero-title
+競合の意図は、特許データに公開されています。
 :::
 
 ::: hero-subtitle
 誰も解析していないデータで、確かな意思決定を。
 :::
 
-[レポート抜粋をダウンロード](/ressources/extrait-jtr.ja.html){.btn .btn-primary .btn-lg data-umami-event="cta_jtr_extract_click" data-umami-event-position="hero" data-umami-event-lang="ja"} [相談を予約する](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-outline-secondary .btn-lg}
-:::
+[相談を予約する](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg} [ニュースレターを購読する](/ressources/signaux-japon.ja.html){.btn .btn-outline-secondary .btn-lg}
 ::::
+:::::
+::::::
 
 ## 課題
 
@@ -67,7 +73,7 @@ body-classes: home
 
 ------------------------------------------------------------------------
 
-## 提供するもの
+## 2つのサービス
 
 ::: {.column-page}
 :::::: grid
@@ -103,10 +109,9 @@ body-classes: home
 
 ## 対象クライアント
 
-- **中小・中堅企業の経営者** ：レポートではなく、定量的な答えが必要な方
-- **マーケティング責任者** ：何が本当に効いているかを数値で把握したい方
-- **営業・事業責任者** ：価格設定の最適化に取り組みたい方
-- **日本市場に関わる欧州企業** ：日本の競合他社の動向をデータで理解したい方
+まず、業界の技術競争を定量的に把握する必要のある**企業の経営企画・イノベーション・研究開発部門**の方々：自動車、航空宇宙・防衛、エネルギー、先端材料。日本企業・欧州企業を問いません。
+
+また、自社データの分析（価格設定、マーケティング効果、インパクト測定）に取り組む中小・中堅企業の経営者もサポートしています。
 
 ------------------------------------------------------------------------
 
@@ -181,15 +186,17 @@ ggplot(data, aes(x = umbrellas, y = coffees)) +
 
 ------------------------------------------------------------------------
 
-<!-- TODO: ブログ初回記事の公開時に「最新記事」セクションを再有効化する
+<!-- TODO: 初回Radar分析の公開時に「最新分析」セクションを再有効化する
 
-## 最新記事
+## 最新分析
 
-[記事一覧を見る →](/blog/index.ja.html)
+[分析一覧を見る →](/blog/index.ja.html)
 
 ------------------------------------------------------------------------
 
 -->
+
+{{< include _includes/newsletter-ja.qmd >}}
 
 ::: contact-section
 ## あなたの状況についてお話しましょう

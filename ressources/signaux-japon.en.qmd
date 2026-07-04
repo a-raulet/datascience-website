@@ -1,0 +1,16 @@
+---
+title: "Signaux Japon"
+description: "A monthly letter: three signals drawn from Japanese public data (patents, publications, alliances), one chart, and what they imply."
+lang: en
+format:
+  html:
+    toc: false
+---
+
+Every month, I comb through Japanese public data: patent filings, publications, alliance signals. Most of this information never leaves the Japanese language.
+
+**Signaux Japon** distils it: three signals, one chart, and what they imply for your sector. A five-minute read, no pitch.
+
+{{< include ../_includes/newsletter-en.qmd >}}
+
+Have a specific question instead? [Book a call](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=) or write to me: [contact@arnaudraulet.com](mailto:contact@arnaudraulet.com)

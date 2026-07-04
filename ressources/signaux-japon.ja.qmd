@@ -1,0 +1,16 @@
+---
+title: "Signaux Japon（月刊ニュースレター）"
+description: "月刊ニュースレター：日本の公開データ（特許、公開情報、提携）から読み取った3つのシグナル、グラフ1点、その示唆。"
+lang: ja
+format:
+  html:
+    toc: false
+---
+
+毎月、日本の公開データ（特許出願、公開情報、提携シグナル）を精査しています。こうした情報の多くは、日本語の外に出ることがありません。
+
+**Signaux Japon**はそのエッセンスをまとめたものです：3つのシグナル、グラフ1点、そして業界への示唆。5分で読める内容で、売り込みはありません。フランス語・英語で配信します。
+
+{{< include ../_includes/newsletter-ja.qmd >}}
+
+具体的なご質問がある場合は、[相談を予約する](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=)か、メールでご連絡ください：[contact@arnaudraulet.com](mailto:contact@arnaudraulet.com)

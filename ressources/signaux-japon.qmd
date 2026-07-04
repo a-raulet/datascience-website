@@ -1,0 +1,16 @@
+---
+title: "Signaux Japon"
+description: "Une lettre mensuelle : trois signaux tirés des données publiques japonaises (brevets, publications, alliances), un graphique, et ce qu'ils impliquent."
+lang: fr
+format:
+  html:
+    toc: false
+---
+
+Chaque mois, je passe au crible les données publiques japonaises : dépôts de brevets, publications, signaux d'alliance. La plupart de ces informations ne quittent jamais le japonais.
+
+**Signaux Japon** en tire l'essentiel : trois signaux, un graphique, et ce qu'ils impliquent pour votre secteur. Lisible en cinq minutes, sans pitch.
+
+{{< include ../_includes/newsletter-fr.qmd >}}
+
+Une question précise plutôt qu'une lettre ? [Réservez un appel](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=) ou écrivez-moi : [contact@arnaudraulet.com](mailto:contact@arnaudraulet.com)

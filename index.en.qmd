@@ -9,19 +9,25 @@ format:
 body-classes: home
 ---
 
-:::: column-screen
-::: hero-banner
-::: hero-title
+:::::: column-screen
+::::: hero-banner
+:::: hero-inner
+::: hero-kicker
 Japan Strategic Intelligence
+:::
+
+::: hero-title
+Your Japanese competitors publish their intentions. In Japanese.
 :::
 
 ::: hero-subtitle
 The data nobody else analyses, for the decisions that matter.
 :::
 
-[Download a JTR report extract](/ressources/extrait-jtr.en.html){.btn .btn-primary .btn-lg data-umami-event="cta_jtr_extract_click" data-umami-event-position="hero" data-umami-event-lang="en"} [Book a call](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-outline-secondary .btn-lg}
-:::
+[Book a call](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg} [Get Signaux Japon](/ressources/signaux-japon.en.html){.btn .btn-outline-secondary .btn-lg}
 ::::
+:::::
+::::::
 
 ## The problem
 
@@ -67,7 +73,7 @@ Acting on the wrong lever means investing in the wrong place. Causal inference s
 
 ------------------------------------------------------------------------
 
-## What I bring
+## Two offers
 
 ::: {.column-page}
 :::::: grid
@@ -103,12 +109,9 @@ Which channel really drives your conversions? What actually causes a result, bey
 
 ## Who is this for?
 
-I work with:
+First, for **strategy, innovation and R&D directors of European industrial companies** who need to monitor the Japanese players in their sector: automotive, aerospace and defence, energy, advanced materials.
 
-- **Leaders of SMEs and mid-size companies** who want quantified answers, not more reports
-- **Marketing directors** who want to measure what actually works in their mix
-- **Commercial directors** who suspect their pricing policy is not optimal
-- **European companies** who need to understand what Japanese players in their sector are doing
+I also work with SME and mid-size company leaders on their internal data: pricing, marketing performance, impact measurement.
 
 ------------------------------------------------------------------------
 
@@ -183,15 +186,17 @@ ggplot(data, aes(x = umbrellas, y = coffees)) +
 
 ------------------------------------------------------------------------
 
-<!-- TODO: re-enable the "Latest articles" section once the first blog post is published
+<!-- TODO: re-enable the "Latest analyses" section once the first Radar is published
 
-## Latest articles
+## Latest analyses
 
-[See all articles →](/blog/index.en.html)
+[See all analyses →](/blog/index.en.html)
 
 ------------------------------------------------------------------------
 
 -->
+
+{{< include _includes/newsletter-en.qmd >}}
 
 ::: contact-section
 ## Let's talk about your situation
