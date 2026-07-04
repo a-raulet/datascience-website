@@ -48,7 +48,9 @@ J'ai appliqué la même logique aux données marketing et business. Les entrepri
 
 ## Par ailleurs
 
-Je tiens également [japanorama.fr](https://japanorama.fr), un site sur la culture japonaise. L'immersion ne s'arrête pas au travail.
+Mes démonstrations techniques (inférence causale, marketing mix modeling, pricing dynamique) restent consultables dans le [portfolio](/portfolio/).
+
+Je tiens également [japanorama.fr](https://japanorama.fr), une revue indépendante consacrée à l'histoire de l'art japonais, à la photographie et à la traduction. L'immersion ne s'arrête pas au travail.
 
 ------------------------------------------------------------------------
 

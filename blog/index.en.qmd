@@ -1,6 +1,6 @@
 ---
-title: "Blog"
-description: "Arnaud Raulet's blog: data science applied to business decisions, Japanese patents, pricing, causal inference."
+title: "Analyses"
+description: "Arnaud Raulet's analyses: signals drawn from Japanese public data, data science applied to business decisions."
 author: "Arnaud RAULET"
 author-title: "Author"
 lang: en

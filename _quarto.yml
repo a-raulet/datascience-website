@@ -34,9 +34,7 @@ website:
             file: services/japan-tech-radar.qmd
           - text: "PricingDiag"
             file: services/pricing-diag.qmd
-      - text: "Portfolio"
-        file: portfolio/index.qmd
-      - text: "Blog"
+      - text: "Analyses"
         file: blog/index.qmd
       - text: "À propos"
         file: about.qmd

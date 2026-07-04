@@ -60,7 +60,9 @@ My work is concentrated in technology-intensive sectors where understanding Japa
 
 ## Beyond work
 
-I also run [japanorama.fr](https://japanorama.fr), a site on contemporary Japanese culture. A sign that the immersion doesn't stop at work.
+My technical demonstrations (causal inference, marketing mix modeling, dynamic pricing) remain available in the [portfolio](/portfolio/index.en.html).
+
+I also run [japanorama.fr](https://japanorama.fr), an independent revue devoted to Japanese art history, photography and translation. A sign that the immersion doesn't stop at work.
 
 ------------------------------------------------------------------------
 
