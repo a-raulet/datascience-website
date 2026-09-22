@@ -141,5 +141,5 @@ ggplot(data, aes(x = umbrellas, y = coffees)) +
 
 30分ほどお話しすれば、お力になれるかどうか、どのような形で貢献できるかが見えてきます。
 
-[相談を予約する](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg} [メールで連絡する](mailto:contact@arnaudraulet.com){.btn .btn-outline-secondary .btn-lg}
+[相談を予約する](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg} [メールで連絡する](mailto:arnaud@consulting.arnaudraulet.com){.btn .btn-outline-secondary .btn-lg}
 :::

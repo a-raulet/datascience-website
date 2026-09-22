@@ -13,4 +13,4 @@ Chaque mois, je passe au crible les données publiques japonaises : dépôts de 
 
 {{< include ../_includes/newsletter-fr.qmd >}}
 
-Une question précise plutôt qu'une lettre ? [Réservez un appel](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=) ou écrivez-moi : [contact@arnaudraulet.com](mailto:contact@arnaudraulet.com)
+Une question précise plutôt qu'une lettre ? [Réservez un appel](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=) ou écrivez-moi : [arnaud@consulting.arnaudraulet.com](mailto:arnaud@consulting.arnaudraulet.com)

@@ -13,4 +13,4 @@ Every month, I comb through Japanese public data: patent filings, publications, 
 
 {{< include ../_includes/newsletter-en.qmd >}}
 
-Have a specific question instead? [Book a call](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=) or write to me: [contact@arnaudraulet.com](mailto:contact@arnaudraulet.com)
+Have a specific question instead? [Book a call](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=) or write to me: [arnaud@consulting.arnaudraulet.com](mailto:arnaud@consulting.arnaudraulet.com)

@@ -153,5 +153,5 @@ Modélisation de la demande et optimisation tarifaire dynamique appliquées au c
 
 Je serais ravi de discuter de vos besoins et de voir comment ces approches peuvent s'appliquer à votre contexte.
 
-[Me contacter](mailto:contact@arnaudraulet.com){.btn .btn-primary} [LinkedIn](https://linkedin.com/in/arnaud-raulet-13308310/){.btn .btn-outline-secondary}
+[Me contacter](mailto:arnaud@consulting.arnaudraulet.com){.btn .btn-primary} [LinkedIn](https://linkedin.com/in/arnaud-raulet-13308310/){.btn .btn-outline-secondary}
 :::

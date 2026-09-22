@@ -185,5 +185,5 @@ Reading a Japanese patent in its own language, and building the pipeline that an
 
 Thirty minutes on the phone is enough to know whether I can help, and how.
 
-[Book a discovery call](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg} [Email me](mailto:contact@arnaudraulet.com){.btn .btn-outline-secondary .btn-lg}
+[Book a discovery call](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg} [Email me](mailto:arnaud@consulting.arnaudraulet.com){.btn .btn-outline-secondary .btn-lg}
 :::
