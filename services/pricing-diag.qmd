@@ -40,10 +40,6 @@ Le problème n'est pas un manque d'intuition. C'est un manque de méthode et de 
 
 **PricingDiag est un diagnostic pricing opérationnel, appliqué au marché japonais.** En deux semaines, à partir de vos données de vente et des prix constatés sur place, j'identifie où vos prix japonais sous-performent et je vous donne des recommandations concrètes et chiffrées.
 
-Ce n'est pas du consulting généraliste. Ce n'est pas un dashboard à maintenir. C'est un diagnostic avec un périmètre clair, un prix fixe, et un livrable que vous pouvez utiliser le lendemain.
-
-Le diagnostic reste applicable à d'autres marchés, mais c'est sur le Japon qu'il apporte le plus : c'est là que l'écart entre le prix que vous croyez pratiquer et le prix réellement payé est le plus difficile à voir depuis un siège européen.
-
 ---
 
 ## Comment ça marche
@@ -59,8 +55,6 @@ J'analyse la structure complète de vos prix : distribution par segment et par c
 **3. Reconstitution de la chaîne de valeur japonaise**
 
 Je reconstruis le trajet du prix, de votre prix de cession au prix payé par le client final, étage de distribution par étage de distribution, et je le confronte aux prix de référence observables sur le marché japonais.
-
-[À COMPLÉTER : sources de prix de référence japonais effectivement mobilisées, tarifs publics constatés, catalogues distributeurs, données fournies par le client. Ne pas nommer de base de données tant que le sourcing n'est pas arrêté.]{.todo}
 
 **4. Interprétation et recommandations**
 

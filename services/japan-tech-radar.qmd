@@ -52,7 +52,7 @@ Un rapport JapanTechRadar type contient :
 4. **Signaux faibles** : liste d'acteurs à surveiller, détection de collaborations inter-entreprises via les co-dépôts
 5. **Implications stratégiques** : interprétation contextuelle par secteur, recommandations actionnables
 
-Format : PDF 10-20 pages + fichier de données source sur demande.
+Format : PDF 10-20 pages.
 
 ---
 
@@ -61,7 +61,6 @@ Format : PDF 10-20 pages + fichier de données source sur demande.
 Chaque rapport combine :
 
 - Extraction et analyse quantitative des brevets japonais publiés
-- Comptage corrigé (*R-corrected patent counts*) pour une comparaison équitable entre acteurs de tailles différentes
 - Interprétation contextuelle par un analyste trilingue basé au Japon depuis près de 10 ans
 
 ---
