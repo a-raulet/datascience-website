@@ -1,6 +1,6 @@
 ---
 pagetitle: "Portfolio"
-description: "Data Science & Marketing Analytics projects"
+description: "Data science projects: causal inference, marketing analytics, dynamic pricing. Code, methods and interactive apps."
 title-block-style: none
 lang: en
 format:
@@ -19,6 +19,8 @@ Data Science & Marketing Analytics projects: code, methods, and interactive appl
 :::
 :::
 :::
+
+<!-- Case study awaiting material: see portfolio/_etude-de-cas.en.qmd -->
 
 ## Categories
 ::: column-page

@@ -1,6 +1,6 @@
 ---
 title: "Services"
-description: "I work where data analysis changes the decision: Japan technology intelligence, pricing, marketing analytics, causal inference."
+description: "Two productised offers for your decisions about Japan: technology intelligence (JapanTechRadar) and pricing strategy for the Japanese market (PricingDiag)."
 lang: en
 format:
   html:
@@ -10,60 +10,61 @@ format:
 
 ::: hero-banner
 ::: hero-title
-I work where data analysis changes the decision.
+Two decisions about Japan, two deliverables.
 :::
 ::: hero-subtitle
-Each service starts from a concrete business problem and delivers quantified, actionable recommendations.
+Japanese technology intelligence (JapanTechRadar) and pricing strategy for the Japanese market (PricingDiag). Defined scope, fixed price, quantified recommendations.
 :::
+[Book a call](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg}
 :::
 
-## JapanTechRadar: Japan Technology Intelligence {#japantechradar}
+Japanese sources read at the source, quantified, delivered in English.
 
-**Problem: what are your Japanese competitors preparing? The data is public, but in Japanese.**
+---
 
-Japanese companies file tens of thousands of patents every year. This data is free, available on J-PlatPat, and completely opaque to European companies that don't read technical Japanese.
+## Japan technology intelligence: JapanTechRadar
 
-This is not just a translation issue. It is an interpretation issue: understanding why an actor is accelerating on a technology, what it means in the Japanese sector context, and what it implies for you.
+Following the technology dynamics of a sector in Japan takes two things: reading technical Japanese, and knowing the sector. Patents, publications, alliance announcements: I read them at the source and turn them into strategic insight, in English.
 
-**What it produces:** a report mapping the actors, technology trends and weak signals in your sector in Japan, based on quantitative patent analysis. Delivered in English, structured for use by a director.
+**The problem.** The Japanese companies in your sector file patents, sign alliances, invest in R&D. In Japanese. You find out when it is already on the market.
+
+**What I deliver.** The map of the players, the technology trends and the weak signals, quantified, in English.
+
+**The outcome.** You see the sector's moves coming early enough to decide, not to react.
+
+For the strategy, innovation and R&D teams of European industrial companies, and for consultancies that need an occasional Japan relay.
+
+**Entry point:** the pilot report, reduced scope at discovery pricing, delivered in 2 weeks.
 
 [Discover JapanTechRadar →](/services/japan-tech-radar.en.html){.btn .btn-primary}
 
 ---
 
-## PricingDiag: Pricing Diagnostic {#pricingdiag}
+## Pricing strategy for Japan: PricingDiag
 
-**Problem: is your pricing optimal? Most companies don't know, and it costs them.**
+**The problem.** Your Japanese price was inherited, not built: a global list applied on entry, blind to the real cost of the distribution tiers. Correcting it means knowing how a price increase is won in Japan, after thirty years of deflation.
 
-Most pricing policies are built historically, adjusted at the margins, never properly reviewed with structured data. Underpriced products can subsidise customers' margins for years without triggering a clear alarm.
+**What I deliver.** Where your Japanese prices are costing you, by how much, and what to do about it, from your own sales data. The price cascade is rebuilt tier by tier, from your transfer price to the price the end customer pays. Two weeks.
 
-**What it produces:** a two-week diagnostic identifying where your prices underperform, by how much, and what to do. Using your existing sales data. Prioritised recommendations, simulation file included, debrief session.
+**The outcome.** Quantified pricing decisions, grounded in the Japanese market rather than an imported list.
+
+For European industrial companies and mid-caps already selling in Japan, or about to set a first price there.
 
 [Discover PricingDiag →](/services/pricing-diag.en.html){.btn .btn-primary}
 
 ---
 
-## Marketing Analytics {#marketing-analytics}
+## The methods behind the deliverables
 
-**Problem: which channel is really driving your conversions? Is your marketing budget well allocated?**
+[]{#marketing-analytics}[]{#decision-science}
 
-Without rigorous method, marketing attribution is an approximation. Standard analytics tools count clicks and sessions; they don't measure the causal impact of each channel on your actual sales.
+Behind these two offers are questions every decision-maker faces at some point:
 
-**What it produces:** a reliable measure of the impact of each marketing channel (Marketing Mix Modeling), actionable segmentation, attribution grounded in data rather than heuristics. Quantified answers, not more dashboards.
+- "Your campaign generated +15% in sales. Really, or was the market already rising?"
+- "You see a correlation in your data. But is it the cause of the problem, or a mere reflection?"
+- "Which channel actually drives your conversions, and with what certainty?"
 
-See the technical demonstration in the portfolio: [Marketing Mix Modeling (Robyn) →](/portfolio/analysis/mmm-robyn.en.html)
-
----
-
-## Causal Inference & Decision Science {#decision-science}
-
-**Problem: you see a problem in your data. But is that the cause, or just a symptom?**
-
-Acting on the wrong lever means wasting time and money. Most business analyses answer "what happened?" — rarely "why?" and "what should we do?"
-
-**What it produces:** the identification of the real levers in your data, with an explicit quantification of uncertainty. You will know what you can assert, with what confidence, and what remains to be verified. I use causal inference methods and Bayesian modelling for small samples.
-
-See the technical demonstration in the portfolio: [Causal Inference Platform →](/portfolio/ml/causal-inference.en.html)
+These questions are settled with rigorous methods: attribution, causal impact measurement, quantification of uncertainty. I don't sell them as standalone services; I put them to work for the two deliverables above, so that your decisions rest on evidence rather than impressions.
 
 ---
 
@@ -71,27 +72,21 @@ See the technical demonstration in the portfolio: [Causal Inference Platform →
 
 :::::: grid
 ::: g-col-md-4
-### Single project
+### One-off engagement
 
-Defined scope, concrete deliverable, fixed price. One diagnostic, one analysis, one report.
-
-*Examples: JapanTechRadar sector report, PricingDiag, marketing attribution analysis*
+Defined scope, actionable deliverable. A diagnostic, an analysis, a report.
 :::
 
 ::: g-col-md-4
-### Project
+### Subscription and ongoing monitoring
 
-Broader engagement with multiple deliverables. An attribution model, a pricing system, an analytics infrastructure.
-
-*For problems that require more than a week and one or two deliverables.*
+Recurring monitoring, typically built on JapanTechRadar.
 :::
 
 ::: g-col-md-4
-### Retainer
+### Advisory retainer
 
-Ongoing access to expertise. A data sparring partner for your recurring decisions.
-
-*Monthly KPI review, ad hoc support, quarterly Japan sector watch.*
+Ongoing access to expertise for your ad hoc decisions.
 :::
 ::::::
 
@@ -100,9 +95,7 @@ Ongoing access to expertise. A data sparring partner for your recurring decision
 ::: contact-section
 ### Let's talk about your situation
 
-A 30-minute call to understand your context and see whether I can help.
+Thirty minutes to frame your need and see whether I can help.
 
-No pitch. No commitment. Just a conversation.
-
-[Book a discovery call](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg}
+[Book a call](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg}
 :::

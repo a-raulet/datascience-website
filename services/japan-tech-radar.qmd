@@ -1,6 +1,6 @@
 ---
 title: "JapanTechRadar : Intelligence Technologique Japon"
-description: "Analyse quantitative des brevets japonais pour cartographier les acteurs, les tendances et les signaux faibles de votre secteur."
+description: "Analyse quantitative des brevets japonais publiés pour cartographier les acteurs, les tendances et les signaux faibles de votre secteur."
 lang: fr
 format:
   html:
@@ -10,27 +10,27 @@ format:
 
 ::: hero-banner
 ::: hero-title
-Ce que font vos concurrents japonais : extrait des données brevets, quantifié, livré en français.
+Qui dépose, sur quoi, avec qui. Les brevets japonais de votre secteur, quantifiés et livrés en français.
 :::
 ::: hero-subtitle
-Les données sont publiques. Elles sont en japonais. JapanTechRadar les rend lisibles et actionnables.
+L'information est publiée, en japonais. JapanTechRadar la rend lisible.
 :::
 [Réserver un appel](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg}
 :::
 
 ## Le problème
 
-Les entreprises japonaises déposent chaque année des dizaines de milliers de brevets. Ces dépôts sont publics et gratuits sur J-PlatPat, et totalement opaques pour les entreprises européennes qui ne lisent pas le japonais technique.
+Les entreprises japonaises déposent chaque année des dizaines de milliers de brevets. Ces dépôts sont publiés, et totalement opaques pour les entreprises européennes qui ne lisent pas le japonais technique.
 
-Ce n'est pas seulement une question de traduction. Un brevet ne se lit pas comme un article : il faut comprendre les classifications CPC, les relations entre déposants, la dynamique des co-dépôts, et les signaux que la terminologie japonaise encode différemment de l'anglais.
+Un brevet ne se lit pas comme un article. Il faut en connaître les classifications, suivre les relations entre déposants, et repérer ce que la terminologie japonaise encode autrement que l'anglais.
 
-Résultat : vous prenez des décisions stratégiques avec une carte incomplète de votre secteur.
+Vous décidez donc avec une carte incomplète de votre secteur.
 
 ---
 
 ## La solution : JapanTechRadar
 
-En 3 à 4 semaines, j'analyse les dépôts de brevets des acteurs japonais de votre secteur. Vous recevez un rapport en français, structuré pour être utilisable par un directeur, pas par un analyste.
+En 3 à 4 semaines, j'analyse les dépôts de brevets des acteurs japonais de votre secteur. Vous recevez un rapport en français, écrit pour être lu par un directeur.
 
 **Ce que vous obtenez :**
 
@@ -52,7 +52,7 @@ Un rapport JapanTechRadar type contient :
 4. **Signaux faibles** : liste d'acteurs à surveiller, détection de collaborations inter-entreprises via les co-dépôts
 5. **Implications stratégiques** : interprétation contextuelle par secteur, recommandations actionnables
 
-Format : PDF 10-20 pages + fichier de données source sur demande.
+Format : PDF 10-20 pages.
 
 ---
 
@@ -60,8 +60,8 @@ Format : PDF 10-20 pages + fichier de données source sur demande.
 
 Chaque rapport combine :
 
-- Extraction et analyse quantitative des bases brevets japonaises (J-PlatPat, Espacenet)
-- Comptage corrigé (*R-corrected patent counts*) pour une comparaison équitable entre acteurs de tailles différentes
+- Extraction et analyse quantitative des brevets japonais publiés
+- Des volumes ramenés à la taille de chaque acteur, pour qu'une PME très active ne disparaisse pas derrière un groupe de cinquante mille personnes
 - Interprétation contextuelle par un analyste trilingue basé au Japon depuis près de 10 ans
 
 ---
@@ -74,10 +74,12 @@ Automobile et mobilité · Aérospatial et défense · Énergie · Matériaux av
 
 ## Tarifs et délais
 
+Pour commencer : le **rapport pilote**, à périmètre réduit et tarif découverte, pour juger la méthode sur pièces avant d'engager une analyse complète.
+
 | Format | Périmètre | Délai |
 |---|---|---|
-| Rapport sectoriel | Analyse complète, 20-50 acteurs | 3-4 semaines |
 | Rapport pilote | Premier rapport à tarif découverte | 2 semaines |
+| Rapport sectoriel | Analyse complète, 20-50 acteurs | 3-4 semaines |
 | Abonnement trimestriel | Rapport mis à jour + alertes sectorielles | sur demande |
 
 Un devis précis est établi après l'appel découverte, sans engagement.
@@ -87,7 +89,7 @@ Un devis précis est établi après l'appel découverte, sans engagement.
 ::: contact-section
 ### Qui innove dans votre secteur au Japon ?
 
-Un appel de 30 minutes pour définir le périmètre de votre analyse et voir ce que JapanTechRadar peut vous apporter.
+Trente minutes pour définir le périmètre de votre analyse.
 
 [Réserver un appel](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg}
 :::

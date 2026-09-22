@@ -1,6 +1,6 @@
 ---
-title: "PricingDiag: Pricing Diagnostic in 2 Weeks"
-description: "An operational pricing diagnostic with actionable recommendations. Clear scope, fixed price, concrete deliverable."
+title: "PricingDiag: your price for the Japanese market, in 2 weeks"
+description: "A diagnostic of your pricing in Japan: entry price, distributor margin structure, local reference prices, price increases. Quantified recommendations in 2 weeks."
 lang: en
 format:
   html:
@@ -10,36 +10,35 @@ format:
 
 ::: hero-banner
 ::: hero-title
-Is your pricing leaving money on the table?
+What price should you sell at in Japan, and how do you get it accepted?
 :::
 ::: hero-subtitle
-An operational pricing diagnostic in 2 weeks. Recommendations you can act on the following week.
+An operational diagnostic in 2 weeks. Recommendations you can act on the following week.
 :::
 [Book a discovery call](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg}
 :::
 
 ## The problem
 
-Most business leaders know their pricing isn't optimal. But there's a wide gap between "I think product X is underpriced" and "here's exactly by how much, and here's what to do about it."
+The Japanese price of a European product is rarely built. More often it is inherited: a global list applied as is, adjusted at the edges, then frozen.
 
-That gap is the distance between intuition and decision.
+Three mechanisms follow, and they are expensive.
 
-The consequences are real:
+**Caution on entry.** Approaching a market you do not know well pushes you to secure volume rather than margin. The entry price is set low, it becomes the reference, and it never rises again.
 
-- Underpriced products subsidising your customers' margins instead of your own
-- Overpriced products quietly dragging down volume without a clear signal
-- Promotions whose net value you've never actually measured
-- A pricing policy built on history and habit, never properly reviewed
+**The distribution tiers.** The Japanese chain often runs through several intermediaries between you and the end user. Each takes its margin. If your transfer price was calculated on a single-tier structure, the price the end customer pays bears little relation to the positioning you intended, and you cannot see it from Europe.
 
-The problem isn't a lack of intuition. It's a lack of method and structured data.
+**Local reference prices.** Japanese customers compare against what exists in their market, not yours. A premium position in Europe can land mid-table in Japan, or the reverse.
+
+And when the decision to raise prices finally comes, it meets another reality: after thirty years of deflation, getting an increase accepted in Japan follows rules of its own, in notice, justification and sequencing.
+
+Intuition is not what is missing. What is missing is method, and structured data on a market you cannot read.
 
 ---
 
 ## The solution: PricingDiag
 
-**PricingDiag is an operational pricing diagnostic.** In two weeks, using your existing sales data, I identify where your pricing underperforms and deliver concrete, quantified recommendations.
-
-This is not generalist consulting. This is not a dashboard to maintain. It's a diagnostic with a defined scope, a fixed price, and a deliverable you can use the next day.
+**PricingDiag is an operational pricing diagnostic, applied to the Japanese market.** In two weeks, from your own sales data, I identify where your Japanese prices are costing you and give you quantified recommendations.
 
 ---
 
@@ -47,19 +46,23 @@ This is not generalist consulting. This is not a dashboard to maintain. It's a d
 
 **1. Briefing and data ingestion**
 
-A one-hour call to understand your context: markets, channels, seasonality, specific challenges. You send your sales data in CSV or Excel format. No technical infrastructure required on your end.
+A one-hour call to understand your context: Japanese channels, distribution contracts, seasonality, the history of your pricing negotiations. You send your sales data in CSV or Excel format. No technical infrastructure required on your end.
 
 **2. Diagnostic**
 
-I analyse the full structure of your pricing: distribution by segment, estimated price elasticity, detection of under- and over-priced products, seasonality effects, impact of past promotions.
+I analyse the full structure of your pricing: distribution by segment and by channel, estimated price elasticity, detection of under- and over-priced references, seasonality effects, impact of past discounts and promotions.
 
-**3. Interpretation and recommendations**
+**3. Rebuilding the price cascade**
 
-I translate the findings into actionable, prioritised recommendations contextualised to your specific situation. Each recommendation includes an estimated impact range.
+I reconstruct the journey of the price, from your transfer price to the price the end customer pays, distribution tier by distribution tier. Market reference prices enter the analysis where the sector makes them observable; scope is agreed at the discovery call.
 
-**4. Delivery and debrief**
+**4. Interpretation and recommendations**
 
-You receive the final report and we hold a 45-minute session to walk through the findings and answer your questions.
+I translate the findings into actionable, prioritised recommendations contextualised to your situation, including the sequence for implementing an increase where one is justified. Each recommendation comes with an estimated impact range and alternative scenarios.
+
+**5. Delivery**
+
+You receive the final report and we hold a 45-minute session to answer your questions.
 
 ---
 
@@ -68,28 +71,36 @@ You receive the final report and we hold a 45-minute session to walk through the
 A typical PricingDiag report contains:
 
 1. **Executive summary** (1 page): the 3 priority actions, ranked by estimated impact
-2. **Pricing structure diagnostic:** price distribution by segment, under/over-pricing zones, competitive positioning
-3. **Elasticity analysis:** price sensitivity estimates by product category, with confidence intervals
-4. **Promotional impact analysis:** decomposition of true promotional effect vs. underlying trend
-5. **Prioritised recommendations:** specific actions by reference or category, quantified impact ranges, identified risks
-6. **Simulation file:** Excel tool to test the margin impact of a price change before deciding
+2. **Pricing structure diagnostic:** price distribution by segment and by Japanese channel, under- and over-pricing zones
+3. **Price cascade:** the final Japanese price broken down tier by tier, from transfer price to customer price, and the margin captured at each level
+4. **Positioning against local reference prices**, where sector data allows: where your prices sit in the Japanese range for your category
+5. **Elasticity analysis:** price sensitivity estimates by product category, with confidence intervals
+6. **Impact of past discounts and promotions:** the real effect of discounts separated from the underlying trend
+7. **Prioritised recommendations:** specific actions by reference or category, quantified impact ranges, identified risks, and for a price increase, the sequence and the argument
+8. **Simulation file:** Excel tool to test the margin impact of a price change before deciding
 
 Format: 8-12 page PDF report + Excel file + 45-min debrief session.
-
-*Also available with Japanese market positioning analysis for companies operating in Japan.*
 
 ---
 
 ## Who it's for
 
-PricingDiag is designed for **CEOs, COOs and sales directors at SMEs and scale-ups** who:
+PricingDiag is designed for **European industrial companies and mid-caps selling in Japan**, or about to enter, and for the commercial and executive teams that own the pricing decision.
 
-- Have between €500k and €20M in annual revenue
-- Sell multiple products or offers with different margins
-- Have at least 12 months of historical sales data
-- Know their pricing needs a review, but lack the time or method to do it internally
+The typical situation:
 
-It is **not** a fit if you have less than 6 months of sales history, or if you operate in a market with a single non-negotiable price point.
+- You sell in Japan through one or more distributors and you do not control the final price
+- Your Japanese price list was built on market entry and has never been reviewed
+- You are considering a price increase and you know neither by how much, nor how to get it accepted
+- You are preparing to enter Japan and must set a first price, the one that will follow you for years
+
+You need at least 12 months of sales history for the quantitative work. It is **not** a fit if you have less than 6 months of history, or if you operate in a market with a single non-negotiable price point.
+
+---
+
+## What this offer is not
+
+To be clear on scope: I deliver a quantitative pricing analysis and its conclusions. I do not take part in negotiations with your Japanese distributors, I do not represent you on the ground, and I do not build your market entry strategy.
 
 ---
 
@@ -97,7 +108,7 @@ It is **not** a fit if you have less than 6 months of sales history, or if you o
 
 | Format | Scope | Timeline |
 |---|---|---|
-| Standard | Up to 3 channels, homogeneous catalogue | 2 weeks |
+| Standard | Up to 3 Japanese channels, homogeneous catalogue | 2 weeks |
 | Complex | Multi-channel, strong seasonality, extended catalogue | 3 weeks |
 
 A precise quote is provided after the discovery call, with no commitment required.
@@ -105,9 +116,9 @@ A precise quote is provided after the discovery call, with no commitment require
 ---
 
 ::: contact-section
-### Think your pricing could be doing more?
+### Were your Japanese prices built, or inherited?
 
-A 30-minute call is enough to find out whether PricingDiag is right for your situation.
+Thirty minutes is enough to know whether PricingDiag fits your situation.
 
 [Book a discovery call](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg}
 :::

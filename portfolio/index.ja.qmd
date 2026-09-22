@@ -20,6 +20,8 @@ body-classes: home
 :::
 :::
 
+<!-- ケーススタディは内容待ち：portfolio/_etude-de-cas.ja.qmd を参照 -->
+
 ## カテゴリー
 ::: column-page
 :::::: grid

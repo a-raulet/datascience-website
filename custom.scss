@@ -1,0 +1,477 @@
+/*
+ * Identité visuelle arnaudraulet.com : « éditorial de veille ».
+ * Papier + encre + un seul accent vermillon. Display serif Fraunces
+ * (auto-hébergée, RGPD : jamais de CDN Google Fonts).
+ * Signature : anneaux radar en pur CSS dans le hero (JapanTechRadar).
+ */
+
+/*-- scss:defaults --*/
+
+// Tokens
+$paper: #FBF9F5;
+$ink: #151C24;
+$ink-2: #223041;
+$vermillon: #C1440E;
+$vermillon-deep: #98330A;
+$vermillon-bright: #E2683A; // accent lisible sur fond encre
+$warm-white: #F4EFE6;
+$text-main: #26303A;
+$muted: #5D6773;
+$line: #E6E0D4;
+$card-bg: #FFFDF9;
+
+// Bootstrap / Quarto
+$body-bg: $paper;
+$body-color: $text-main;
+$primary: $vermillon;
+$secondary: $ink-2;
+$link-color: $vermillon;
+$link-hover-color: $vermillon-deep;
+$border-radius: 4px;
+$btn-border-radius: 4px;
+
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, "Helvetica Neue", Arial, "Hiragino Sans", "Noto Sans JP", sans-serif;
+$headings-font-family: Fraunces, Georgia, "Times New Roman", serif;
+$headings-font-weight: 600;
+
+$navbar-bg: $ink;
+$navbar-fg: $warm-white;
+
+/*-- scss:rules --*/
+
+// ---------------------------------------------------------------------------
+// Fontes (woff2 dans assets/fonts, copiées via project.resources)
+// ---------------------------------------------------------------------------
+@font-face {
+  font-family: "Fraunces";
+  src: url("/assets/fonts/fraunces-v38-latin-600.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Fraunces";
+  src: url("/assets/fonts/fraunces-v38-latin-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Fraunces n'a pas de kana : les pages japonaises gardent la pile sans JP
+html[lang="ja"] h1,
+html[lang="ja"] h2,
+html[lang="ja"] h3,
+html[lang="ja"] .hero-title {
+  font-family: "Hiragino Sans", "Noto Sans JP", "Yu Gothic", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+// ---------------------------------------------------------------------------
+// Titres de section : vernaculaire « dossier » (tiret vermillon sous le h2)
+// ---------------------------------------------------------------------------
+main h2 {
+  margin-top: 2.75rem;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+main h2::after {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 3px;
+  background: $vermillon;
+  margin-top: 0.55rem;
+}
+.contact-section h2::after,
+.newsletter-section h2::after {
+  background: $vermillon-bright;
+}
+
+// Tableaux (tarifs, livrables) : chiffres alignés
+main table {
+  font-variant-numeric: tabular-nums;
+}
+
+// ---------------------------------------------------------------------------
+// Hero : bloc encre, aligné à gauche, signature radar
+// ---------------------------------------------------------------------------
+.hero-banner {
+  position: relative;
+  overflow: hidden;
+  background: $ink;
+  color: $warm-white;
+  padding: 4.5rem 2rem;
+  margin: 0 0 3rem 0;
+  text-align: left;
+}
+
+// Anneaux radar : hairlines concentriques, un secteur de balayage vermillon,
+// trois échos. Pur CSS, masqué en fondu vers la gauche, disparaît sur mobile.
+.hero-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  left: auto;
+  width: min(46rem, 62%);
+  background:
+    radial-gradient(circle at 72% 50%, rgba(226, 104, 58, 0.85) 0 4px, transparent 5px),
+    radial-gradient(circle at 60% 26%, rgba(244, 239, 230, 0.55) 0 3px, transparent 4px),
+    radial-gradient(circle at 88% 66%, rgba(244, 239, 230, 0.35) 0 3px, transparent 4px),
+    repeating-radial-gradient(circle at 72% 50%,
+      transparent 0 54px,
+      rgba(244, 239, 230, 0.09) 54px 55px),
+    conic-gradient(from 318deg at 72% 50%,
+      rgba(226, 104, 58, 0.13) 0 26deg,
+      transparent 26deg);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 40%);
+  mask-image: linear-gradient(90deg, transparent, #000 40%);
+  pointer-events: none;
+}
+
+// Trame technique : hairlines verticales tres faibles, lecture « instrument ».
+.hero-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(90deg,
+    rgba(244, 239, 230, 0.045) 0 1px,
+    transparent 1px 88px);
+  -webkit-mask-image: linear-gradient(180deg, #000, transparent 72%);
+  mask-image: linear-gradient(180deg, #000, transparent 72%);
+  pointer-events: none;
+}
+
+// Filet vermillon en pied de hero : signature, pas decoration
+.hero-banner {
+  border-bottom: 3px solid $vermillon;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1140px;
+  margin-inline: auto;
+}
+
+.hero-kicker {
+  font-family: $font-family-sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: $vermillon-bright;
+  margin-bottom: 1.1rem;
+}
+
+.hero-title {
+  font-family: $headings-font-family;
+  font-size: clamp(2.2rem, 4.6vw, 3.6rem);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.12;
+  max-width: 17em;
+  margin-bottom: 1.25rem;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: rgba(244, 239, 230, 0.82);
+  max-width: 38em;
+  margin-bottom: 2rem;
+  line-height: 1.55;
+}
+
+// ---------------------------------------------------------------------------
+// Boutons : nets, sans lévitation
+// ---------------------------------------------------------------------------
+.btn {
+  padding: 0.7rem 1.4rem;
+  font-weight: 600;
+  margin: 0 8px 8px 0;
+}
+.btn-primary:hover {
+  background-color: $vermillon-deep;
+  border-color: $vermillon-deep;
+}
+// Bouton secondaire sur fond encre (hero, contact)
+.hero-banner .btn-outline-secondary,
+.contact-section .btn-outline-secondary {
+  color: $warm-white;
+  border-color: rgba(244, 239, 230, 0.45);
+  background: transparent;
+}
+.hero-banner .btn-outline-secondary:hover,
+.contact-section .btn-outline-secondary:hover {
+  background: rgba(244, 239, 230, 0.08);
+  border-color: $warm-white;
+  color: $warm-white;
+}
+
+// ---------------------------------------------------------------------------
+// Cartes
+// ---------------------------------------------------------------------------
+.product-card {
+  background: $card-bg;
+  border: 1px solid $line;
+  border-top: 3px solid $vermillon;
+  border-radius: $border-radius;
+  padding: 1.75rem;
+}
+
+.product-card p:last-of-type {
+  margin-bottom: 0;
+}
+
+// Blocs « Le problème » : fiches de dossier numerotees
+.problem-grid {
+  margin-top: 1.75rem;
+}
+.problem-card {
+  position: relative;
+  background: $card-bg;
+  border: 1px solid $line;
+  border-radius: $border-radius;
+  padding: 2rem 1.9rem 1.75rem;
+  color: $muted;
+}
+// Filet vermillon en tete de fiche, comme un onglet de classeur
+.problem-card::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 1.9rem;
+  width: 2.5rem;
+  height: 3px;
+  background: $vermillon;
+}
+.problem-index p {
+  margin: 0;
+}
+.problem-index {
+  font-family: $headings-font-family;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: $vermillon;
+  font-variant-numeric: tabular-nums;
+  margin-bottom: 0.9rem;
+}
+.problem-card strong {
+  display: block;
+  font-family: $headings-font-family;
+  font-weight: 600;
+  font-size: 1.22rem;
+  line-height: 1.32;
+  color: $ink;
+  margin-bottom: 0.9rem;
+}
+.problem-card em {
+  display: block;
+  color: $ink-2;
+  border-left: 2px solid $line;
+  padding-left: 0.9rem;
+  margin: 0;
+}
+.problem-card > p:last-child {
+  margin-bottom: 0;
+}
+.problem-card a {
+  font-weight: 600;
+  text-decoration: none;
+}
+.problem-card a:hover {
+  text-decoration: underline;
+}
+
+// Anciennes classes de la home (encore utilisees par les versions EN / JA)
+.problem-main {
+  margin-bottom: 2rem;
+}
+.problem-secondary {
+  font-size: 0.95rem;
+  color: $muted;
+}
+.problem-secondary strong {
+  color: $text-main;
+}
+
+// Grilles 3 colonnes (formats d'intervention, problèmes secondaires)
+.g-col-md-4 {
+  background: $card-bg;
+  border: 1px solid $line;
+  border-radius: $border-radius;
+  padding: 1.75rem;
+}
+.g-col-md-4 h3 {
+  font-size: 1.1rem;
+  margin-top: 0;
+}
+
+// ---------------------------------------------------------------------------
+// Etudes de cas : fiche longue, filet vermillon lateral
+// ---------------------------------------------------------------------------
+.case-study {
+  background: $card-bg;
+  border: 1px solid $line;
+  border-left: 3px solid $vermillon;
+  border-radius: $border-radius;
+  padding: 2rem 2.1rem;
+  margin-top: 1.75rem;
+}
+.case-study-meta {
+  font-family: $font-family-sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: $vermillon;
+  margin-bottom: 0.75rem;
+}
+.case-study-meta p {
+  margin: 0;
+}
+.case-study h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+// Intitules en amorce de paragraphe (Contexte. Methode. Livrable.)
+.case-study p > strong:first-child {
+  color: $ink;
+  letter-spacing: 0.01em;
+}
+.case-study > p:last-of-type {
+  margin-bottom: 0;
+}
+.case-study-note {
+  font-size: 0.9rem;
+  color: $muted;
+  border-left: 2px solid $line;
+  padding-left: 1rem;
+  margin-top: 1.5rem;
+}
+
+// ---------------------------------------------------------------------------
+// Marqueurs de redaction : doivent sauter aux yeux en relecture
+// ---------------------------------------------------------------------------
+.todo {
+  display: inline-block;
+  font-family: $font-family-sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: $vermillon-deep;
+  background: rgba(193, 68, 14, 0.06);
+  border: 1px dashed $vermillon;
+  border-radius: $border-radius;
+  padding: 0.4rem 0.7rem;
+}
+.todo::before { content: "["; }
+.todo::after  { content: "]"; }
+
+// ---------------------------------------------------------------------------
+// Sections encre : contact, newsletter
+// ---------------------------------------------------------------------------
+.contact-section {
+  background: $ink;
+  color: $warm-white;
+  padding: 3rem 2rem;
+  text-align: center;
+  border-radius: $border-radius;
+  margin: 3rem -2rem -2rem -2rem;
+}
+.contact-section h2,
+.contact-section h3 {
+  color: $warm-white;
+}
+.contact-section h2::after {
+  margin-inline: auto;
+}
+
+.newsletter-section {
+  background: $card-bg;
+  border: 1px solid $line;
+  border-left: 3px solid $vermillon;
+  border-radius: $border-radius;
+  padding: 2rem;
+  margin: 2.5rem 0;
+}
+.newsletter-section h2::after,
+.newsletter-section h3::after {
+  background: $vermillon;
+}
+.newsletter-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  max-width: 32rem;
+  margin-top: 1rem;
+}
+.newsletter-form input[type="email"] {
+  flex: 1 1 14rem;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid $line;
+  border-radius: $border-radius;
+  background: #fff;
+  color: $text-main;
+}
+.newsletter-form input[type="email"]:focus {
+  outline: 2px solid $vermillon;
+  outline-offset: 1px;
+  border-color: $vermillon;
+}
+.newsletter-form .btn[disabled] {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+.newsletter-note {
+  font-size: 0.85rem;
+  color: $muted;
+  margin: 0.75rem 0 0;
+}
+
+// ---------------------------------------------------------------------------
+// Separateurs de section : hairline pleine largeur, pas la regle Bootstrap
+// ---------------------------------------------------------------------------
+main hr {
+  border: 0;
+  border-top: 1px solid $line;
+  opacity: 1;
+  margin: 3.25rem 0 0;
+}
+
+// ---------------------------------------------------------------------------
+// Navbar : liens chauds, accent vermillon clair
+// ---------------------------------------------------------------------------
+.navbar .nav-link:hover {
+  color: $vermillon-bright !important;
+}
+
+// ---------------------------------------------------------------------------
+// Responsive et accessibilité
+// ---------------------------------------------------------------------------
+@media (max-width: 768px) {
+  .hero-banner {
+    padding: 2.5rem 1.25rem;
+  }
+  .hero-banner::before {
+    display: none;
+  }
+  .btn {
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+  }
+  .contact-section {
+    margin: 2rem -1rem -1rem -1rem;
+    padding: 2rem 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

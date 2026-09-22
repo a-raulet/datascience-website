@@ -1,0 +1,14 @@
+::: {.newsletter-section #signaux-japon}
+### Signaux Japon
+
+Une lettre mensuelle : trois signaux tirés des données publiques japonaises (brevets, publications, alliances), un graphique, et ce qu'ils impliquent pour votre secteur. Pas de pitch.
+
+```{=html}
+<!-- TODO: créer le compte Buttondown, remplacer VOTRE-USERNAME dans l'action du formulaire, puis retirer l'attribut disabled du bouton -->
+<form action="https://buttondown.com/api/emails/embed-subscribe/VOTRE-USERNAME" method="post" target="_blank" class="newsletter-form">
+  <input type="email" name="email" placeholder="votre@email.pro" required aria-label="Adresse email">
+  <button type="submit" class="btn btn-primary" data-umami-event="newsletter_signup" data-umami-event-lang="fr" disabled>S'inscrire</button>
+</form>
+<p class="newsletter-note">Lancement prochain. Un email par mois, désinscription en un clic.</p>
+```
+:::

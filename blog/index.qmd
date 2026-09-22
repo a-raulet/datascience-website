@@ -1,9 +1,9 @@
 ---
-title: "Blog"
+title: "Analyses"
+description: "Les analyses d'Arnaud Raulet : signaux tirés des données publiques japonaises, data science appliquée aux décisions business."
 author: "Arnaud RAULET"
 author-title: "Auteur"
+lang: fr
 ---
-
-# Blog
 
 Contenu à venir...

@@ -24,7 +24,10 @@
     body = body.replace(/\.(en|ja)$/, '');
     /* Ajoute le suffixe de langue cible */
     if (lang !== 'fr') body += '.' + lang;
-    if (hasHtml) body += '.html';
+    /* Hors du domaine de prod (quarto preview local), seules les URLs .html
+       existent : quarto-nav.js réécrit /index.html en /, ce qui rendait les
+       liens d'index extensionless et donc 404 en local */
+    if (hasHtml || window.location.hostname !== 'arnaudraulet.com') body += '.html';
     return body + tail;
   }
   function isFlagEmoji(txt) {
@@ -66,12 +69,12 @@
     en: {
       'Accueil': 'Home', 'Services': 'Services',
       'Vue d’ensemble': 'Overview',
-      'Portfolio': 'Portfolio', 'Blog': 'Blog', 'À propos': 'About'
+      'Analyses': 'Analyses', 'À propos': 'About'
     },
     ja: {
       'Accueil': 'ホーム', 'Services': 'サービス',
       'Vue d’ensemble': '概要',
-      'Portfolio': 'ポートフォリオ', 'Blog': 'ブログ', 'À propos': 'プロフィール'
+      'Analyses': '分析', 'À propos': 'プロフィール'
     }
   };
   document.addEventListener('DOMContentLoaded', function () {

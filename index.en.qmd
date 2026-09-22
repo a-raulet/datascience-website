@@ -1,6 +1,6 @@
 ---
-pagetitle: "Arnaud Raulet | Data Scientist · France-Japan"
-description: "Data scientist based in Tokyo, I analyse the data hidden behind language barriers or methodological gaps, and turn them into quantified recommendations."
+pagetitle: "Arnaud Raulet | Japan Strategic Intelligence"
+description: "Data scientist in Tokyo and former patent translator, I help European companies decide about Japan: which players matter in their sector, what price to sell at."
 lang: en
 format:
   html:
@@ -9,108 +9,80 @@ format:
 body-classes: home
 ---
 
-:::: column-screen
-::: hero-banner
+:::::: column-screen
+::::: hero-banner
+:::: hero-inner
+::: hero-kicker
+Decision-making on Japan
+:::
+
 ::: hero-title
-The data nobody else analyses, for the decisions that matter.
+The Japanese data nobody reads for you.
 :::
 
 ::: hero-subtitle
-Data scientist based in Tokyo, I analyse the data hidden behind language barriers or methodological gaps — Japanese patents, pricing signals, marketing performance — and turn them into quantified recommendations.
+Data scientist in Tokyo, fifteen years a Japanese patent translator. I read the sources a European company cannot, and turn them into quantified recommendations: which players matter in your sector, what price to sell at.
 :::
 
 [Book a call](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg} [See my services](/services/index.en.html){.btn .btn-outline-secondary .btn-lg}
-:::
 ::::
+:::::
+::::::
 
 ## The problem
 
-You have data. But do you have answers?
+Two decisions about Japan get made blind, because the data that would settle them cannot be read.
 
 ::: {.column-page}
-:::::: grid
-::: g-col-md-6
-**Your Japanese competitors are filing patents, signing alliances, investing in R&D. And you don't see it.**
+:::::: {.grid .problem-grid}
+:::: {.g-col-md-6 .problem-card}
+::: problem-index
+01
+:::
+**The Japanese companies in your sector are filing patents, signing alliances, investing in R&D. And you don't see it.**
 
-The data is public, freely available on J-PlatPat. But it's in Japanese, and interpreting it requires a rare combination of technical and linguistic expertise.
+It is all published, in technical Japanese. Reading it takes two skills at once: the language and the field.
 
-*How many strategic decisions are you making without seeing what your Japanese competitors are actually doing?*
+*How many decisions do you make without seeing what is taking shape in your sector in Japan?*
 
 [JapanTechRadar →](/services/japan-tech-radar.en.html)
+::::
+
+:::: {.g-col-md-6 .problem-card}
+::: problem-index
+02
 :::
+**You enter Japan with a global price list. It says nothing about the market you are entering.**
 
-::: g-col-md-6
-**Is your pricing really optimal?**
+Set low out of caution, the entry price becomes the reference and never rises again. Each distribution tier then takes its margin, and the end customer pays a price you did not choose. Correcting it means knowing how a price increase is won in Japan, after thirty years of deflation.
 
-Most pricing policies are built on intuition and history, never properly reviewed with structured data. Underpriced products can subsidise your customers' margins for years without any clear alarm signal.
-
-*Knowing exactly where your prices underperform, by how much, and what to do about it changes the decision.*
+*Were your Japanese prices built, or inherited from elsewhere?*
 
 [PricingDiag →](/services/pricing-diag.en.html)
-:::
-::::::
-
-:::::: grid
-::: g-col-md-6
-**Your campaign generated +15% in sales. Did it, really?**
-
-Or was the market already rising? Without rigorous method, you're optimising in the dark. Dashboards show numbers — they don't show causes.
-
-*Misattributed performance: you've been allocating budget to the wrong channels for months.*
-
-[Marketing Analytics →](/services/index.en.html#marketing-analytics)
-:::
-
-::: g-col-md-6
-**You see a correlation in your data. But is that the actual cause?**
-
-Acting on the wrong lever means investing in the wrong place. Causal inference separates what truly causes a result from what is merely correlated with it.
-
-*A decision built on a spurious correlation can cost months of wasted optimisation.*
-
-[Decision Science →](/services/index.en.html#decision-science)
-:::
+::::
 ::::::
 :::
 
 ------------------------------------------------------------------------
 
-## What I bring
+## Two offers
 
 ::: {.column-page}
 :::::: grid
-::: g-col-md-6
+::: {.g-col-md-6 .product-card}
 ### Japan Technology Intelligence
 
-What your Japanese competitors are doing: extracted from patent data, quantified, delivered in English. Actor mapping, technology trends, weak signals.
+Who files, on what, with whom. The Japanese patents in your sector, quantified and delivered in English: actor mapping, technology trends, weak signals.
 
 [Discover JapanTechRadar →](/services/japan-tech-radar.en.html)
 :::
 
-::: g-col-md-6
-### Pricing Diagnostic
+::: {.g-col-md-6 .product-card}
+### Pricing strategy for Japan
 
-Where your prices underperform, by how much, and what to do about it. In 2 weeks, using your existing sales data. Prioritised recommendations, simulation file included.
+Where your Japanese prices are costing you, by how much, and what to do about it. Two weeks, from your own sales data. Quantified recommendations and a simulation file.
 
 [Discover PricingDiag →](/services/pricing-diag.en.html)
-:::
-::::::
-
-:::::: grid
-::: g-col-md-6
-### Marketing Analytics
-
-Which channel is really driving your conversions? What is the true ROI of each campaign? Quantified answers grounded in your data, not approximations.
-
-[See services →](/services/index.en.html#marketing-analytics)
-:::
-
-::: g-col-md-6
-### Causal Inference & Decision Science
-
-Identifying what truly causes a result, not just what correlates with it. So you invest in the right lever, with an explicit quantification of uncertainty.
-
-[See services →](/services/index.en.html#decision-science)
 :::
 ::::::
 :::
@@ -119,22 +91,17 @@ Identifying what truly causes a result, not just what correlates with it. So you
 
 ## Who is this for?
 
-I work with:
+**European industrial companies and mid-caps that have to decide about Japan** without being able to read the data behind the decision. Strategy, innovation and R&D teams: automotive, aerospace and defence, energy, advanced materials.
 
-- **Leaders of SMEs and mid-size companies** who want quantified answers, not more reports
-- **Marketing directors** who want to measure what actually works in their mix
-- **Commercial directors** who suspect their pricing policy is not optimal
-- **European companies** who need to understand what Japanese players in their sector are doing
+The trigger is almost always the same. A Japanese player moves, a market opens, and nothing available in English settles the question.
 
 ------------------------------------------------------------------------
 
 ## My approach
 
-**Primary data. Rigorous methods. Actionable recommendations.**
+I go back to the data itself: patents, transactions, sales. I extract it, structure it, and interpret it in its sector context.
 
-I work on primary data, not second-hand reports. Each analysis combines structured data extraction (patents, transactions, marketing data), rigorous quantitative methods, and contextual interpretation.
-
-The result: quantified recommendations with an explicit measure of uncertainty. You will know what you can assert, and what remains to be verified.
+What remains is knowing what it proves. Causal inference and Bayesian modelling separate what causes a result from what merely accompanies it, and put a number on the uncertainty that is left. You will know what you can assert, and what still needs checking.
 
 ```{r}
 #| echo: false
@@ -177,21 +144,23 @@ ggplot(data, aes(x = umbrellas, y = coffees)) +
 
 ## Background
 
+Reading a Japanese patent in its own language, and building the pipeline that analyses ten thousand of them.
+
 ::::: grid
 ::: g-col-md-6
-**Nearly 10 years** in Japan, across demanding sectors: defence, aerospace, automotive, industry
+**Former patent translator** from Japanese into French for fifteen years, in the automotive industry
 
-**Trilingual** French, Japanese, English: technical patent reading, nuanced understanding of Japanese business
+**Nearly 10 years in Japan**: defence, aerospace, automotive, industry
 
-**Former patent translator** JP to FR for the automotive industry
+**Trilingual** French, Japanese, English. JLPT N1
 :::
 
 ::: g-col-md-6
-**Certified** UC Berkeley (Marketing Analytics), Harvard (Data Science)
-
-**Based in Tokyo**, working with clients in France, Japan and internationally
-
 **Data Scientist** specialised in causal inference and Bayesian modelling
+
+**Based in Tokyo**, clients in France, Japan and internationally
+
+**Certified** UC Berkeley (Marketing Analytics), Harvard (Data Science)
 :::
 :::::
 
@@ -199,18 +168,22 @@ ggplot(data, aes(x = umbrellas, y = coffees)) +
 
 ------------------------------------------------------------------------
 
-## Latest articles
+<!-- TODO: re-enable the "Latest analyses" section once the first Radar is published
 
-[See all articles →](/blog/index.en.html)
+## Latest analyses
+
+[See all analyses →](/blog/index.en.html)
 
 ------------------------------------------------------------------------
+
+-->
+
+{{< include _includes/newsletter-en.qmd >}}
 
 ::: contact-section
 ## Let's talk about your situation
 
-Book a 30-minute discovery call. We identify together whether I can help you, and how.
+Thirty minutes on the phone is enough to know whether I can help, and how.
 
-No pitch. No commitment. Just a conversation.
-
-[Book a discovery call](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg} [Email me](mailto:contact-quarto-site.le77r@simplelogin.com){.btn .btn-outline-secondary .btn-lg}
+[Book a discovery call](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg} [Email me](mailto:arnaud@consulting.arnaudraulet.com){.btn .btn-outline-secondary .btn-lg}
 :::

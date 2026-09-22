@@ -1,6 +1,6 @@
 ---
 title: "JapanTechRadar: Japan Technology Intelligence"
-description: "What your Japanese competitors are doing: extracted from patent data, quantified, delivered in English."
+description: "Quantitative analysis of published Japanese patents, mapping the players, the trends and the weak signals in your sector."
 lang: en
 format:
   html:
@@ -10,27 +10,27 @@ format:
 
 ::: hero-banner
 ::: hero-title
-What your Japanese competitors are doing: extracted from patent data, quantified, delivered in English.
+Who files, on what, with whom. The Japanese patents in your sector, quantified and delivered in English.
 :::
 ::: hero-subtitle
-The data is public. It's in Japanese. JapanTechRadar makes it readable and actionable.
+The information is published, in Japanese. JapanTechRadar makes it readable.
 :::
 [Book a discovery call](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg}
 :::
 
 ## The problem
 
-Japanese companies file tens of thousands of patents every year. These filings are public and free on J-PlatPat, and completely opaque to European companies that don't read technical Japanese.
+Japanese companies file tens of thousands of patents every year. These filings are published, and completely opaque to European companies that don't read technical Japanese.
 
-This is not just a translation problem. A patent is not read like an article: you need to understand CPC classifications, relationships between applicants, co-filing dynamics, and the signals that Japanese terminology encodes differently from English.
+A patent is not read like an article. You need to know its classifications, follow the relationships between applicants, and spot what Japanese terminology encodes differently from English.
 
-The result: you make strategic decisions with an incomplete map of your sector.
+You therefore decide with an incomplete map of your sector.
 
 ---
 
 ## The solution: JapanTechRadar
 
-In 3 to 4 weeks, I analyse the patent filings of Japanese actors in your sector. You receive a report in English, structured for use by a director, not an analyst.
+In 3 to 4 weeks, I analyse the patent filings of Japanese actors in your sector. You receive a report in English, written to be read by a director.
 
 **What you receive:**
 
@@ -52,7 +52,7 @@ A typical JapanTechRadar report contains:
 4. **Weak signals:** watchlist of actors to monitor, detection of inter-company collaborations via co-filings
 5. **Strategic implications:** contextual interpretation by sector, actionable recommendations
 
-Format: 10-20 page PDF + source data file on request.
+Format: 10-20 page PDF.
 
 ---
 
@@ -60,8 +60,8 @@ Format: 10-20 page PDF + source data file on request.
 
 Each report combines:
 
-- Quantitative extraction and analysis of Japanese patent databases (J-PlatPat, Espacenet)
-- *R-corrected patent counts* for a fair comparison between actors of different sizes
+- Quantitative extraction and analysis of published Japanese patents
+- Filing volumes scaled to each company's size, so an active mid-sized firm doesn't disappear behind a fifty-thousand-person group
 - Contextual interpretation by a trilingual analyst based in Japan for nearly 10 years
 
 ---
@@ -74,10 +74,12 @@ Automotive and mobility · Aerospace and defence · Energy · Advanced materials
 
 ## Pricing and timeline
 
+Start with the **pilot report**: reduced scope at discovery pricing, so you can judge the method on evidence before committing to a full analysis.
+
 | Format | Scope | Timeline |
 |---|---|---|
-| Sector report | Full analysis, 20-50 actors | 3-4 weeks |
 | Pilot report | First report at discovery pricing | 2 weeks |
+| Sector report | Full analysis, 20-50 actors | 3-4 weeks |
 | Quarterly subscription | Updated report + sector alerts | on request |
 
 A precise quote is provided after the discovery call, with no commitment required.
@@ -87,7 +89,7 @@ A precise quote is provided after the discovery call, with no commitment require
 ::: contact-section
 ### Who is innovating in your sector in Japan?
 
-A 30-minute call to define the scope of your analysis and see what JapanTechRadar can bring you.
+Thirty minutes to define the scope of your analysis.
 
 [Book a discovery call](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg}
 :::
