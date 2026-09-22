@@ -20,6 +20,9 @@ Projets Data Science & Marketing Analytics : code, méthodes et applications int
 :::
 :::
 
+<!-- TODO : réactiver l'étude de cas quand la matière sera disponible.
+     Les 5 marqueurs [À COMPLÉTER] sont à remplir avant de décommenter.
+
 ## Étude de cas
 
 ::: column-page
@@ -53,6 +56,8 @@ Une autre étude de cas est en préparation : refonte d'un modèle tarifaire mul
 :::
 
 ------------------------------------------------------------------------
+
+-->
 
 ## Catégories
 ::: column-page

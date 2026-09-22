@@ -20,6 +20,9 @@ Data Science & Marketing Analytics projects: code, methods, and interactive appl
 :::
 :::
 
+<!-- TODO: re-enable the case study once the material is available.
+     The 5 [TO BE COMPLETED] markers must be filled before uncommenting.
+
 ## Case study
 
 ::: column-page
@@ -53,6 +56,8 @@ A second case study is in preparation: the rebuild of a multi-currency pricing m
 :::
 
 ------------------------------------------------------------------------
+
+-->
 
 ## Categories
 ::: column-page
