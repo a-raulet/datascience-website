@@ -60,7 +60,7 @@ J'analyse la structure complète de vos prix : distribution par segment et par c
 
 Je reconstruis le trajet du prix, de votre prix de cession au prix payé par le client final, étage de distribution par étage de distribution, et je le confronte aux prix de référence observables sur le marché japonais.
 
-[À COMPLÉTER : sources de prix de référence japonais effectivement mobilisées, tarifs publics constatés, catalogues distributeurs, données fournies par le client. Ne pas nommer de base de données tant que le sourcing n'est pas arrêté.]
+[À COMPLÉTER : sources de prix de référence japonais effectivement mobilisées, tarifs publics constatés, catalogues distributeurs, données fournies par le client. Ne pas nommer de base de données tant que le sourcing n'est pas arrêté.]{.todo}
 
 **4. Interprétation et recommandations**
 
