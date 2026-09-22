@@ -1,6 +1,6 @@
 ---
 title: "Services"
-description: "Two productised offers for high-stakes decisions: Japan technology intelligence (JapanTechRadar) and pricing diagnostic (PricingDiag)."
+description: "Two productised offers for your decisions about Japan: technology intelligence (JapanTechRadar) and pricing strategy for the Japanese market (PricingDiag)."
 lang: en
 format:
   html:
@@ -10,29 +10,29 @@ format:
 
 ::: hero-banner
 ::: hero-title
-Turning complex data into clear decisions.
+Two decisions about Japan, two deliverables.
 :::
 ::: hero-subtitle
-Two productised offers: Japanese technology intelligence (JapanTechRadar) and pricing diagnostic (PricingDiag).
+Japanese technology intelligence (JapanTechRadar) and pricing strategy for the Japanese market (PricingDiag). Defined scope, fixed price, quantified recommendations.
 :::
 [Book a call](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg}
 :::
 
-My edge comes down to one thing: primary Japanese intelligence, read at the source and delivered in English, combined with quantitative rigour in the service of your decisions. Two offers follow from it.
+Japanese sources read at the source, quantified, delivered in English.
 
 ---
 
 ## Japan technology intelligence: JapanTechRadar
 
-Capturing what your Japanese competitors are preparing requires reading technical Japanese and knowing the sectors. That is precisely what I do: primary data in Japanese (patents, publications, alliance signals) turned into strategic insight, delivered in English.
+Following the technology dynamics of a sector in Japan takes two things: reading technical Japanese, and knowing the sector. Patents, publications, alliance announcements: I read them at the source and turn them into strategic insight, in English.
 
-**The problem.** Your Japanese competitors file patents, sign alliances, invest in R&D. In Japanese. You find out when it is already on the market.
+**The problem.** The Japanese companies in your sector file patents, sign alliances, invest in R&D. In Japanese. You find out when it is already on the market.
 
-**What I deliver.** A map of the Japanese players in your sector, the technology trends and the weak signals, quantified and delivered in English.
+**What I deliver.** The map of the players, the technology trends and the weak signals, quantified, in English.
 
-**The outcome.** You see your Japanese competitors' moves coming early enough to decide, not to react.
+**The outcome.** You see the sector's moves coming early enough to decide, not to react.
 
-Designed for European companies and their strategy and innovation teams that need to monitor the Japanese players in their sector, as well as for consultancies needing an occasional Japan relay.
+For the strategy, innovation and R&D teams of European industrial companies, and for consultancies that need an occasional Japan relay.
 
 **Entry point:** the pilot report, reduced scope at discovery pricing, delivered in 2 weeks.
 
@@ -40,15 +40,15 @@ Designed for European companies and their strategy and innovation teams that nee
 
 ---
 
-## Pricing diagnostic: PricingDiag
+## Pricing strategy for Japan: PricingDiag
 
-**The problem.** You know your prices are leaving money on the table, but you don't know how much or where.
+**The problem.** Your Japanese price was inherited, not built: a global list applied on entry, blind to the real cost of the distribution tiers. Correcting it means knowing how a price increase is won in Japan, after thirty years of deflation.
 
-**What I deliver.** Where your prices underperform, by how much, and what to do about it, based on your own sales data, delivered in about two weeks.
+**What I deliver.** Where your Japanese prices are costing you, by how much, and what to do about it, from your own sales data. The price cascade is rebuilt tier by tier, from your transfer price to the price the end customer pays. Two weeks.
 
-**The outcome.** Quantified, actionable pricing decisions, grounded in your data rather than instinct.
+**The outcome.** Quantified pricing decisions, grounded in the Japanese market rather than an imported list.
 
-Designed for decision-makers in SMEs and mid-size companies who want to base their prices on solid data rather than intuition.
+For European industrial companies and mid-caps already selling in Japan, or about to set a first price there.
 
 [Discover PricingDiag →](/services/pricing-diag.en.html){.btn .btn-primary}
 
@@ -80,7 +80,7 @@ Defined scope, actionable deliverable. A diagnostic, an analysis, a report.
 ::: g-col-md-4
 ### Subscription and ongoing monitoring
 
-Recurring intelligence, typically built on JapanTechRadar.
+Recurring monitoring, typically built on JapanTechRadar.
 :::
 
 ::: g-col-md-4
@@ -95,7 +95,7 @@ Ongoing access to expertise for your ad hoc decisions.
 ::: contact-section
 ### Let's talk about your situation
 
-A 30-minute discovery call. No pitch, no commitment, just a conversation to see whether I can help.
+Thirty minutes to frame your need and see whether I can help.
 
 [Book a call](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg}
 :::

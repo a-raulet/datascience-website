@@ -20,6 +20,40 @@ Data Science & Marketing Analytics projects: code, methods, and interactive appl
 :::
 :::
 
+## Case study
+
+::: column-page
+:::: case-study
+::: case-study-meta
+Technology intelligence · Japanese patents · JapanTechRadar
+:::
+
+### Patent mapping of an automotive sector
+
+**Context.** A European automotive supplier needed to situate its technology position against the Japanese players in its field. Japanese patent filings are public, but unreadable from a European head office: language, applicant naming conventions, classifications.
+
+[TO BE COMPLETED: size and geographic scope of the client, at the level of detail you allow.]{.todo}
+
+**Decision at stake.** [TO BE COMPLETED: the decision actually in play. R&D portfolio arbitration, choice of a partner, filing priorities?]{.todo}
+
+**Method.** 36 companies analysed. Extraction of published Japanese patents, normalisation of applicant names, filing volumes scaled to each company's size, co-filing analysis to surface alliances announced nowhere.
+
+**Deliverable.** [TO BE COMPLETED: actual format and length of the deliverable handed to the client.]{.todo}
+
+**Outcome.** [TO BE COMPLETED: what the client decided or changed as a result of the report. No performance figure will be published without validation.]{.todo}
+
+**Sample mapping.** [TO BE COMPLETED: anonymised figure, actor-by-technology matrix or filing dynamics curves. To be produced from real or public data only, never illustrative data.]{.todo}
+
+[Discover JapanTechRadar →](/services/japan-tech-radar.en.html)
+::::
+
+::: case-study-note
+A second case study is in preparation: the rebuild of a multi-currency pricing model. It will be published once its content can be shown in anonymised form.
+:::
+:::
+
+------------------------------------------------------------------------
+
 ## Categories
 ::: column-page
 :::::: grid

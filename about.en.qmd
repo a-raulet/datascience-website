@@ -1,6 +1,6 @@
 ---
 title: "About"
-description: "Data scientist based in Tokyo for nearly 10 years, former Japanese patent translator. A hybrid profile: quantitative rigour and on-the-ground Japan expertise."
+description: "Data scientist based in Tokyo for nearly 10 years, fifteen years a Japanese patent translator. A hybrid profile: quantitative rigour and native reading of Japanese sources."
 lang: en
 format:
   html:
@@ -10,17 +10,17 @@ format:
 
 ## Arnaud Raulet, Data Scientist · Tokyo
 
-I am a data scientist based in Tokyo for nearly 10 years. I work within a France-Japan commercial representation firm and run a parallel independent practice in data analysis and consulting.
+I am a data scientist based in Tokyo for nearly 10 years. After working as a translator, then as an adviser and commercial representative between France and Japan, I built a practice in data analysis and consulting.
 
-My profile is hybrid: quantitative rigour on one side, hands-on Japan expertise on the other. Most data scientists don't read Japanese patents. Most Japan experts don't do quantitative analysis. I do both.
+My profile is hybrid: quantitative rigour on one side, native reading of Japanese sources on the other. Most data scientists don't read Japanese patents. Most Japan experts don't build the pipeline that analyses them. Doing both means going to the source and processing it at scale, with no intermediary at either step.
 
 ------------------------------------------------------------------------
 
 ## From translation to data science
 
-I started as a patent translator, Japanese to French, for the automotive and aerospace industries. That work taught me something most data scientists never learn: **raw data is worthless without context**.
+I spent fifteen years translating patents from Japanese into French, mainly for the automotive industry. Thousands of pages of technical Japanese, read line by line. That work taught me something most data scientists never learn: **raw data is worthless without context**.
 
-A Japanese patent is technical text. But knowing *why* IHI files 15 patents on space propulsion in a single year, what that means in the context of METI budgets and Japanese industrial alliances, and how it affects a European competitor: that is intelligence. This dual reading, technical and contextual, is at the core of my approach.
+A Japanese patent is technical text. But knowing *why* a Japanese engine maker suddenly multiplies filings on space propulsion in a single year, what that means against public R&D budgets and Japanese industrial alliances, and what it changes for a European manufacturer: that is strategic analysis. This dual reading, technical and contextual, is at the core of my approach.
 
 I applied the same logic to marketing and business data. Companies have data. Rarely answers. My work is to bridge the two.
 
@@ -28,13 +28,11 @@ I applied the same logic to marketing and business data. Companies have data. Ra
 
 ## What I bring
 
-**Trilingual, not translated.** I read Japanese patents in the original language, I understand the nuances of Japanese business culture, and I deliver in French or English. There is no intermediary distorting the signals.
+**Trilingual.** French, Japanese, English, JLPT N1. I read Japanese patents in the original language, I understand the nuances of Japanese business culture, and I deliver in French or English. There is no intermediary distorting the signals.
 
 **Analytical rigour.** I don't confuse correlation with causation. I use causal inference methods and Bayesian modelling to produce recommendations with an explicit quantification of uncertainty.
 
 **Field experience.** Nearly 10 years in demanding industrial sectors in Japan: automotive, aerospace, defence, energy. I understand business realities as well as statistical methods.
-
-**Independent.** I work as an independent consultant. My recommendations are not influenced by firm interests, upselling objectives, or local partnerships that would create conflicts of interest.
 
 ------------------------------------------------------------------------
 
@@ -54,7 +52,8 @@ My work is concentrated in technology-intensive sectors where understanding Japa
 - UC Berkeley: Marketing Analytics (certificate)
 - Harvard: Data Science (certificate)
 - Specialisations: Marketing Mix Modeling (Robyn), causal inference, Bayesian methods
-- Technical Japanese translation: automotive, mechanical, aerospace
+- JLPT N1
+- Technical Japanese translation: automotive, mechanical, aerospace (fifteen years)
 
 ------------------------------------------------------------------------
 
