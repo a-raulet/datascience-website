@@ -32,13 +32,13 @@ Trois mécanismes en découlent, et ils coûtent cher.
 
 Et quand la décision de remonter les prix finit par arriver, elle se heurte à une autre réalité : après trente ans de déflation, faire accepter une hausse au Japon obéit à des règles propres, de préavis, de justification et de séquencement.
 
-Le problème n'est pas un manque d'intuition. C'est un manque de méthode et de données structurées sur un marché que vous ne lisez pas.
+L'intuition ne manque pas. Ce qui manque, c'est la méthode et des données structurées sur un marché que vous ne lisez pas.
 
 ---
 
 ## La solution : PricingDiag
 
-**PricingDiag est un diagnostic pricing opérationnel, appliqué au marché japonais.** En deux semaines, à partir de vos données de vente et des prix constatés sur place, j'identifie où vos prix japonais sous-performent et je vous donne des recommandations concrètes et chiffrées.
+**PricingDiag est un diagnostic pricing opérationnel, appliqué au marché japonais.** En deux semaines, à partir de vos données de vente, j'identifie où vos prix japonais vous coûtent et je vous donne des recommandations chiffrées.
 
 ---
 
@@ -52,9 +52,9 @@ Un appel d'une heure pour comprendre votre contexte : canaux japonais, contrats 
 
 J'analyse la structure complète de vos prix : distribution par segment et par canal, élasticité-prix estimée, détection des références sous- et sur-tarifées, effets de saisonnalité, impact des remises et promotions passées.
 
-**3. Reconstitution de la chaîne de valeur japonaise**
+**3. Reconstitution de la cascade de prix**
 
-Je reconstruis le trajet du prix, de votre prix de cession au prix payé par le client final, étage de distribution par étage de distribution, et je le confronte aux prix de référence observables sur le marché japonais.
+Je reconstruis le trajet du prix, de votre prix de cession au prix payé par le client final, étage de distribution par étage. Les prix de référence du marché entrent dans l'analyse quand le secteur les rend observables ; le périmètre est arrêté à l'appel découverte.
 
 **4. Interprétation et recommandations**
 
@@ -73,7 +73,7 @@ Un rapport PricingDiag type contient :
 1. **Synthèse exécutive** (1 page) : les 3 actions prioritaires à mener, classées par impact estimé
 2. **Diagnostic de la structure tarifaire** : distribution des prix par segment et par canal japonais, visualisation des zones de sous- et sur-tarification
 3. **Cascade de prix** : décomposition du prix final japonais étage par étage, du prix de cession au prix client, et marge captée à chaque niveau
-4. **Positionnement face aux prix de référence locaux** : où se situent vos prix dans la grille japonaise de votre catégorie
+4. **Positionnement face aux prix de référence locaux**, quand les données du secteur le permettent : où se situent vos prix dans la grille japonaise de votre catégorie
 5. **Analyse de l'élasticité** : estimation de la sensibilité prix par catégorie de produits, avec intervalles de confiance
 6. **Impact des remises et promotions passées** : décomposition de l'effet réel des remises par rapport à la tendance de fond
 7. **Recommandations priorisées** : actions spécifiques par référence ou catégorie, fourchette d'impact chiffrée, risques identifiés, et pour une hausse de prix, séquence et argumentaire
@@ -118,7 +118,7 @@ Un devis précis est établi après l'appel découverte, sans engagement.
 ::: contact-section
 ### Vos prix japonais ont-ils été construits, ou hérités ?
 
-Un appel de 30 minutes suffit pour savoir si PricingDiag est pertinent pour votre situation. Pas de pitch. Pas d'engagement. Une conversation directe.
+Trente minutes suffisent pour savoir si PricingDiag est pertinent dans votre situation.
 
 [Réserver un appel](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg}
 :::

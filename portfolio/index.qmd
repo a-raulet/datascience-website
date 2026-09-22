@@ -36,11 +36,7 @@ Intelligence technologique · Brevets japonais · JapanTechRadar
 
 **Question de décision.** [À COMPLÉTER : la décision réellement en jeu. Arbitrage de portefeuille R&D, choix d'un partenaire, priorisation de dépôts ?]{.todo}
 
-**Méthode.** 36 entreprises analysées. Extraction des brevets japonais publiés, normalisation des noms de déposants, comptage corrigé pour comparer des acteurs de tailles très différentes, analyse des co-dépôts pour faire apparaître les alliances qui ne sont annoncées nulle part.
-
-*Comptage corrigé :* le volume brut de dépôts ne permet pas de comparer un groupe de 50 000 personnes et une PME technologique. La correction appliquée neutralise cet effet de taille pour que le classement reflète l'effort réel.
-
-[À COMPLÉTER : formulation publiable de la correction appliquée (R-corrected patent counts), à valider avant publication.]{.todo}
+**Méthode.** 36 entreprises analysées. Extraction des brevets japonais publiés, normalisation des noms de déposants, volumes ramenés à la taille de chaque acteur, analyse des co-dépôts pour faire apparaître les alliances qui ne sont annoncées nulle part.
 
 **Livrable.** [À COMPLÉTER : format et volume réels du livrable remis au client.]{.todo}
 

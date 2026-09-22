@@ -21,7 +21,7 @@ Les données japonaises que personne ne lit à votre place.
 :::
 
 ::: hero-subtitle
-Data scientist basé à Tokyo et ancien traducteur de brevets, j'aide les entreprises européennes à prendre leurs décisions sur le Japon : quels acteurs comptent dans leur secteur, à quel prix vendre. À partir de sources primaires japonaises, avec des recommandations chiffrées.
+Data scientist à Tokyo, quinze ans traducteur de brevets japonais. Je lis les sources qu'une entreprise européenne ne peut pas lire, et j'en tire des recommandations chiffrées : quels acteurs comptent dans votre secteur, à quel prix vendre.
 :::
 
 [Réserver un appel](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg} [Voir mes services](/services/){.btn .btn-outline-secondary .btn-lg}
@@ -31,7 +31,7 @@ Data scientist basé à Tokyo et ancien traducteur de brevets, j'aide les entrep
 
 ## Le problème
 
-Deux décisions sur le Japon se prennent aujourd'hui à l'aveugle, faute de pouvoir lire les données qui les éclaireraient.
+Deux décisions sur le Japon se prennent à l'aveugle, faute de pouvoir lire les données qui les éclairent.
 
 ::: {.column-page}
 :::::: {.grid .problem-grid}
@@ -41,9 +41,9 @@ Deux décisions sur le Japon se prennent aujourd'hui à l'aveugle, faute de pouv
 :::
 **Les entreprises japonaises de votre secteur déposent des brevets, signent des alliances, investissent en R&D. Et vous ne le voyez pas.**
 
-Ces informations sont publiées. Mais elles sont en japonais, et leur interprétation exige une double compétence rare : technique et linguistique.
+Tout est publié, en japonais technique. Le lire demande deux compétences à la fois : la langue et le domaine.
 
-*Combien de décisions stratégiques prenez-vous sans voir la dynamique technologique réelle de votre secteur au Japon ?*
+*Combien de décisions prenez-vous sans voir ce qui se prépare au Japon dans votre secteur ?*
 
 [JapanTechRadar →](/services/japan-tech-radar/)
 ::::
@@ -54,7 +54,7 @@ Ces informations sont publiées. Mais elles sont en japonais, et leur interprét
 :::
 **Vous entrez au Japon avec une grille tarifaire mondiale. Elle ne dit rien du marché que vous abordez.**
 
-Par prudence, les entreprises européennes sous-tarifent souvent à l'entrée : la grille appliquée ignore les prix de référence locaux et le coût réel des étages de distribution japonais. Et après trente ans de déflation, faire accepter une hausse obéit sur place à des règles propres.
+Fixé bas par prudence, le prix d'entrée devient la référence et ne remonte plus. Chaque étage de distribution prend ensuite sa marge, et le client final paie un prix que vous n'avez pas choisi. Le corriger suppose de savoir comment une hausse s'obtient au Japon, après trente ans de déflation.
 
 *Vos prix japonais ont-ils été construits, ou hérités d'ailleurs ?*
 
@@ -72,7 +72,7 @@ Par prudence, les entreprises européennes sous-tarifent souvent à l'entrée : 
 ::: {.g-col-md-6 .product-card}
 ### Intelligence Technologique Japon
 
-La dynamique technologique des entreprises japonaises de votre secteur, extraite des brevets publiés, quantifiée et livrée en français. Cartographie des acteurs, tendances technologiques, signaux faibles.
+Qui dépose, sur quoi, avec qui. Les brevets japonais de votre secteur, quantifiés et livrés en français : cartographie des acteurs, tendances technologiques, signaux faibles.
 
 [Découvrir JapanTechRadar →](/services/japan-tech-radar/)
 :::
@@ -80,7 +80,7 @@ La dynamique technologique des entreprises japonaises de votre secteur, extraite
 ::: {.g-col-md-6 .product-card}
 ### Stratégie de prix pour le Japon
 
-Où vos prix japonais sous-performent, de combien, et quoi faire. En 2 semaines, à partir de vos données de vente et des prix de référence du marché. Recommandations chiffrées, fichier de simulation inclus.
+Où vos prix japonais vous coûtent, de combien, et quoi faire. Deux semaines, à partir de vos données de vente. Recommandations chiffrées et fichier de simulation.
 
 [Découvrir PricingDiag →](/services/pricing-diag/)
 :::
@@ -91,19 +91,17 @@ Où vos prix japonais sous-performent, de combien, et quoi faire. En 2 semaines,
 
 ## Pour qui ?
 
-Pour les **entreprises industrielles et ETI européennes qui doivent prendre une décision sur le Japon** et ne peuvent pas lire les données qui la fondent : directions stratégie, innovation et R&D dans l'automobile, l'aérospatial et la défense, l'énergie et les matériaux avancés.
+**Industriels et ETI européens qui doivent décider sur le Japon** sans pouvoir lire les données qui fondent la décision. Directions stratégie, innovation et R&D : automobile, aérospatial et défense, énergie, matériaux avancés.
 
-La question déclenchante est presque toujours la même. Un acteur japonais bouge, ou un marché japonais s'ouvre, et rien dans les rapports disponibles en anglais ne permet de trancher.
+Le déclencheur est presque toujours le même. Un acteur japonais bouge, un marché s'ouvre, et rien de ce qui existe en anglais ne permet de trancher.
 
 ------------------------------------------------------------------------
 
 ## Mon approche
 
-**Données primaires. Méthodes rigoureuses. Recommandations actionnables.**
+Je remonte aux données elles-mêmes : brevets, transactions, ventes. Je les extrais, je les structure, je les interprète dans leur contexte sectoriel.
 
-Je travaille sur des données primaires. Chaque analyse combine extraction de données structurées (brevets, transactions, données de vente), méthodes quantitatives rigoureuses, et interprétation contextuelle.
-
-La fiabilité des recommandations repose sur un point précis : l'inférence causale et la modélisation bayésienne permettent de distinguer ce qui cause un résultat de ce qui l'accompagne, et d'assortir chaque conclusion d'une quantification explicite de l'incertitude. Vous saurez ce que vous pouvez affirmer, et ce qui reste à vérifier.
+Reste à savoir ce qu'elles prouvent. L'inférence causale et la modélisation bayésienne séparent ce qui cause un résultat de ce qui l'accompagne, et chiffrent l'incertitude qui demeure. Vous saurez ce que vous pouvez affirmer, et ce qui reste à vérifier.
 
 ```{r}
 #| echo: false
@@ -155,21 +153,21 @@ ggplot(data, aes(x = parapluies, y = cafes)) +
 
 ## Parcours
 
-Lire un brevet japonais dans sa langue d'origine, et construire soi-même le pipeline de données qui en analyse dix mille : c'est la combinaison qui fonde ce travail.
+Lire un brevet japonais dans sa langue, et construire le pipeline qui en analyse dix mille.
 
 ::::: grid
 ::: g-col-md-6
-**Ancien traducteur de brevets** japonais vers français pendant 15 ans, pour l'industrie automobile. Je lis la source, sans intermédiaire.
+**Ancien traducteur de brevets** japonais vers français pendant 15 ans, pour l'industrie automobile
 
-**Près de 10 ans au Japon**, dans des secteurs exigeants : défense, aérospatial, automobile, industrie
+**Près de 10 ans au Japon** : défense, aérospatial, automobile, industrie
 
-**Trilingue** français, japonais, anglais, JLPT N1 : les nuances techniques comme celles du monde des affaires japonais
+**Trilingue** français, japonais, anglais. JLPT N1
 :::
 
 ::: g-col-md-6
 **Data Scientist** spécialisé en inférence causale et modélisation bayésienne
 
-**Basé à Tokyo**, je travaille avec des clients en France, au Japon et à l'international
+**Basé à Tokyo**, clients en France, au Japon et à l'international
 
 **Certifié** UC Berkeley (Marketing Analytics), Harvard (Data Science)
 :::
@@ -194,7 +192,7 @@ Lire un brevet japonais dans sa langue d'origine, et construire soi-même le pip
 ::: contact-section
 ## Parlons de votre situation
 
-Je reste à votre disposition pour un appel et identifier ensemble si je peux vous aider, et comment.
+Trente minutes au téléphone suffisent pour savoir si je peux vous aider, et comment.
 
 [Réserver un appel découverte](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg} [Me contacter par email](mailto:contact@arnaudraulet.com){.btn .btn-outline-secondary .btn-lg}
 :::

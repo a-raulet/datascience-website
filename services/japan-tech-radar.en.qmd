@@ -61,7 +61,7 @@ Format: 10-20 page PDF + source data file on request.
 Each report combines:
 
 - Quantitative extraction and analysis of published Japanese patents
-- *R-corrected patent counts* for a fair comparison between actors of different sizes
+- Filing volumes scaled to each company's size, so an active mid-sized firm doesn't disappear behind a fifty-thousand-person group
 - Contextual interpretation by a trilingual analyst based in Japan for nearly 10 years
 
 ---

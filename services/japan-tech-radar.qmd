@@ -10,10 +10,10 @@ format:
 
 ::: hero-banner
 ::: hero-title
-La dynamique technologique des entreprises japonaises de votre secteur, extraite des brevets publiés et quantifiée.
+Qui dépose, sur quoi, avec qui. Les brevets japonais de votre secteur, quantifiés et livrés en français.
 :::
 ::: hero-subtitle
-L'information est publiée. Elle est en japonais. JapanTechRadar la rend lisible et actionnable.
+L'information est publiée, en japonais. JapanTechRadar la rend lisible.
 :::
 [Réserver un appel](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg}
 :::
@@ -22,15 +22,15 @@ L'information est publiée. Elle est en japonais. JapanTechRadar la rend lisible
 
 Les entreprises japonaises déposent chaque année des dizaines de milliers de brevets. Ces dépôts sont publiés, et totalement opaques pour les entreprises européennes qui ne lisent pas le japonais technique.
 
-Ce n'est pas seulement une question de traduction. Un brevet ne se lit pas comme un article : il faut comprendre les classifications CPC, les relations entre déposants, la dynamique des co-dépôts, et les signaux que la terminologie japonaise encode différemment de l'anglais.
+Un brevet ne se lit pas comme un article. Il faut en connaître les classifications, suivre les relations entre déposants, et repérer ce que la terminologie japonaise encode autrement que l'anglais.
 
-Résultat : vous prenez des décisions stratégiques avec une carte incomplète de votre secteur.
+Vous décidez donc avec une carte incomplète de votre secteur.
 
 ---
 
 ## La solution : JapanTechRadar
 
-En 3 à 4 semaines, j'analyse les dépôts de brevets des acteurs japonais de votre secteur. Vous recevez un rapport en français, structuré pour être utilisable par un directeur, pas par un analyste.
+En 3 à 4 semaines, j'analyse les dépôts de brevets des acteurs japonais de votre secteur. Vous recevez un rapport en français, écrit pour être lu par un directeur.
 
 **Ce que vous obtenez :**
 
@@ -61,6 +61,7 @@ Format : PDF 10-20 pages.
 Chaque rapport combine :
 
 - Extraction et analyse quantitative des brevets japonais publiés
+- Des volumes ramenés à la taille de chaque acteur, pour qu'une PME très active ne disparaisse pas derrière un groupe de cinquante mille personnes
 - Interprétation contextuelle par un analyste trilingue basé au Japon depuis près de 10 ans
 
 ---
@@ -88,7 +89,7 @@ Un devis précis est établi après l'appel découverte, sans engagement.
 ::: contact-section
 ### Qui innove dans votre secteur au Japon ?
 
-Un appel de 30 minutes pour définir le périmètre de votre analyse et voir ce que JapanTechRadar peut vous apporter.
+Trente minutes pour définir le périmètre de votre analyse.
 
 [Réserver un appel](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg}
 :::
