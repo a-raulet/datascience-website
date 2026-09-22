@@ -125,6 +125,14 @@ def fix_lang_titles():
 
 
 def rewrite_sitemap():
+    """URLs extensionless + deduplication des <url>.
+
+    Quarto emet une entree par cible de rendu ; les pages aussi referencees
+    depuis la navbar (/, /about, /blog/, /services/, /index.ja) se retrouvent
+    en double. Apres reecriture en extensionless, ces doublons deviennent des
+    <loc> strictement identiques, que Search Console signale. On ne garde que
+    la premiere occurrence de chaque URL.
+    """
     sitemap = output_dir / "sitemap.xml"
     if not sitemap.is_file():
         print("[post-render-seo] pas de sitemap.xml (site-url manquant ?)")
@@ -139,8 +147,28 @@ def rewrite_sitemap():
 
     xml = sitemap.read_text(encoding="utf-8")
     xml = re.sub(r"<loc>([^<]+)</loc>", repl, xml)
+
+    seen = set()
+    dropped = 0
+
+    def dedupe(m):
+        nonlocal dropped
+        block = m.group(0)
+        loc = re.search(r"<loc>([^<]+)</loc>", block)
+        if not loc:
+            return block
+        if loc.group(1) in seen:
+            dropped += 1
+            return ""
+        seen.add(loc.group(1))
+        return block
+
+    xml = re.sub(r"[ \t]*<url>.*?</url>\n?", dedupe, xml, flags=re.DOTALL)
     sitemap.write_text(xml, encoding="utf-8")
-    print("[post-render-seo] sitemap.xml reecrit en URLs extensionless")
+    print(
+        f"[post-render-seo] sitemap.xml : {len(seen)} URLs extensionless, "
+        f"{dropped} doublons retires"
+    )
 
 
 if __name__ == "__main__":
