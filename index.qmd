@@ -1,6 +1,6 @@
 ---
 pagetitle: "Arnaud Raulet | Intelligence Stratégique Japon"
-description: "Data scientist basé à Tokyo, j'analyse les données que la barrière linguistique ou le manque de méthode vous cachent, et je les traduis en recommandations chiffrées."
+description: "Data scientist basé à Tokyo et ancien traducteur de brevets, j'aide les entreprises européennes à décider sur le Japon : qui sont leurs concurrents, à quel prix vendre."
 lang: fr
 format:
   html:
@@ -13,28 +13,32 @@ body-classes: home
 ::::: hero-banner
 :::: hero-inner
 ::: hero-kicker
-Intelligence stratégique Japon
+L'aide à la décision au Japon
 :::
 
 ::: hero-title
-Vos concurrents japonais publient leurs intentions. En japonais.
+Les données japonaises que vos concurrents ne lisent pas.
 :::
 
 ::: hero-subtitle
-Les données que personne d'autre n'analyse, pour les décisions qui comptent.
+Data scientist basé à Tokyo et ancien traducteur de brevets, j'aide les entreprises européennes à prendre leurs décisions sur le Japon : qui sont leurs concurrents, à quel prix vendre. À partir de sources primaires japonaises, avec des recommandations chiffrées.
 :::
 
-[Réserver un appel](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg} [Recevoir Signaux Japon](/ressources/signaux-japon/){.btn .btn-outline-secondary .btn-lg}
+[Réserver un appel](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg} [Voir mes services](/services/){.btn .btn-outline-secondary .btn-lg}
 ::::
 :::::
 ::::::
 
 ## Le problème
 
-Vous avez des données. Mais avez-vous des réponses ?
+Deux décisions sur le Japon se prennent aujourd'hui à l'aveugle, faute de pouvoir lire les données qui les éclaireraient.
 
 ::: {.column-page}
-::: problem-main
+:::::: {.grid .problem-grid}
+:::: {.g-col-md-6 .problem-card}
+::: problem-index
+01
+:::
 **Vos concurrents japonais déposent des brevets, signent des alliances, investissent en R&D. Et vous ne le voyez pas.**
 
 Les données sont publiques, accessibles sur J-PlatPat. Mais elles sont en japonais, et leur interprétation exige une double compétence rare : technique et linguistique.
@@ -42,32 +46,20 @@ Les données sont publiques, accessibles sur J-PlatPat. Mais elles sont en japon
 *Combien de décisions stratégiques prenez-vous sans voir ce que vos concurrents japonais font réellement ?*
 
 [JapanTechRadar →](/services/japan-tech-radar/)
+::::
+
+:::: {.g-col-md-6 .problem-card}
+::: problem-index
+02
 :::
+**Vous entrez au Japon avec une grille tarifaire mondiale. Elle ne dit rien du marché que vous abordez.**
 
-:::::: {.grid .problem-secondary}
-::: g-col-md-4
-**Vos prix sont-ils réellement optimaux ?**
+Par prudence, les entreprises européennes sous-tarifent souvent à l'entrée : la grille appliquée ignore les prix de référence locaux et le coût réel des étages de distribution japonais. Et après trente ans de déflation, faire accepter une hausse obéit sur place à des règles propres.
 
-Des produits sous-tarifés peuvent financer les marges de vos clients pendant des années sans que l'alarme se déclenche.
+*Vos prix japonais ont-ils été construits, ou hérités d'ailleurs ?*
 
 [PricingDiag →](/services/pricing-diag/)
-:::
-
-::: g-col-md-4
-**Votre campagne a généré +15 % de ventes. Vraiment ?**
-
-Ou le marché montait déjà ? Les tableaux de bord montrent des chiffres ; ils ne montrent pas les causes.
-
-[Marketing Analytics →](/services/#marketing-analytics)
-:::
-
-::: g-col-md-4
-**Vous voyez une corrélation. Mais est-ce la cause ?**
-
-Se tromper de levier, c'est investir au mauvais endroit. L'inférence causale distingue la cause réelle de la simple corrélation.
-
-[Decision Science →](/services/#decision-science)
-:::
+::::
 ::::::
 :::
 
@@ -86,21 +78,11 @@ Ce que font vos concurrents japonais : extrait des données brevets, quantifié,
 :::
 
 ::: {.g-col-md-6 .product-card}
-### Diagnostic Pricing
+### Stratégie de prix pour le Japon
 
-Où vos prix sous-performent, de combien, et quoi faire. En 2 semaines, à partir de vos données de vente existantes. Recommandations chiffrées, fichier de simulation inclus.
+Où vos prix japonais sous-performent, de combien, et quoi faire. En 2 semaines, à partir de vos données de vente et des prix de référence du marché. Recommandations chiffrées, fichier de simulation inclus.
 
 [Découvrir PricingDiag →](/services/pricing-diag/)
-:::
-::::::
-
-:::::: grid
-::: g-col-12
-### Études causales & attribution
-
-Quel canal génère vraiment vos conversions ? Qu'est-ce qui cause réellement un résultat, au-delà des corrélations ? Attribution, mesure d'impact causal, quantification de l'incertitude : des méthodes rigoureuses, mobilisées au service des deux offres ci-dessus.
-
-[Voir les services →](/services/#marketing-analytics)
 :::
 ::::::
 :::
@@ -109,9 +91,9 @@ Quel canal génère vraiment vos conversions ? Qu'est-ce qui cause réellement u
 
 ## Pour qui ?
 
-D'abord pour les **directions stratégie, innovation et R&D d'entreprises industrielles européennes** qui doivent surveiller les acteurs japonais de leur secteur : automobile, aérospatial et défense, énergie, matériaux avancés.
+Pour les **entreprises industrielles et ETI européennes qui doivent prendre une décision sur le Japon** et ne peuvent pas lire les données qui la fondent : directions stratégie, innovation et R&D dans l'automobile, l'aérospatial et la défense, l'énergie et les matériaux avancés.
 
-J'accompagne aussi des dirigeants de PME et ETI sur leurs données internes : pricing, performance marketing, mesure d'impact.
+La question déclenchante est presque toujours la même. Un concurrent japonais bouge, ou un marché japonais s'ouvre, et rien dans les rapports disponibles en anglais ne permet de trancher.
 
 ------------------------------------------------------------------------
 
@@ -119,9 +101,9 @@ J'accompagne aussi des dirigeants de PME et ETI sur leurs données internes : pr
 
 **Données primaires. Méthodes rigoureuses. Recommandations actionnables.**
 
-Je travaille sur des données primaires, pas des rapports de seconde main. Chaque analyse combine extraction de données structurées (brevets, transactions, données marketing), méthodes quantitatives rigoureuses, et interprétation contextuelle.
+Je travaille sur des données primaires, pas des rapports de seconde main. Chaque analyse combine extraction de données structurées (brevets, transactions, données de vente), méthodes quantitatives rigoureuses, et interprétation contextuelle.
 
-Le résultat : des recommandations chiffrées avec une quantification explicite de l'incertitude. Vous saurez ce que vous pouvez affirmer, et ce qui reste à vérifier.
+La fiabilité des recommandations repose sur un point précis : l'inférence causale et la modélisation bayésienne permettent de distinguer ce qui cause un résultat de ce qui l'accompagne, et d'assortir chaque conclusion d'une quantification explicite de l'incertitude. Vous saurez ce que vous pouvez affirmer, et ce qui reste à vérifier.
 
 ```{r}
 #| echo: false
@@ -173,21 +155,23 @@ ggplot(data, aes(x = parapluies, y = cafes)) +
 
 ## Parcours
 
+Lire un brevet japonais dans sa langue d'origine, et construire soi-même le pipeline de données qui en analyse dix mille : c'est la combinaison qui fonde ce travail. Elle est rare parce qu'elle demande deux métiers.
+
 ::::: grid
 ::: g-col-md-6
-**Près de 10 ans** au Japon, dans des secteurs exigeants : défense, aérospatial, automobile, industrie
+**Ancien traducteur de brevets** japonais vers français pendant six ans, pour l'industrie automobile. Je lis la source, sans intermédiaire.
 
-**Trilingue** français, japonais, anglais : lecture de brevets techniques, compréhension des nuances du monde des affaires japonais
+**Près de 10 ans au Japon**, dans des secteurs exigeants : défense, aérospatial, automobile, industrie
 
-**Ancien traducteur de brevets** JP vers FR pour l'industrie automobile
+**Trilingue** français, japonais, anglais, JLPT N1 : les nuances techniques comme celles du monde des affaires japonais
 :::
 
 ::: g-col-md-6
-**Certifié** UC Berkeley (Marketing Analytics), Harvard (Data Science)
+**Data Scientist** spécialisé en inférence causale et modélisation bayésienne
 
 **Basé à Tokyo**, je travaille avec des clients en France, au Japon et à l'international
 
-**Data Scientist** spécialisé en inférence causale et modélisation bayésienne
+**Certifié** UC Berkeley (Marketing Analytics), Harvard (Data Science)
 :::
 :::::
 

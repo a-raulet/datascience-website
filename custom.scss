@@ -203,6 +203,72 @@ main table {
   padding: 1.75rem;
 }
 
+.product-card p:last-of-type {
+  margin-bottom: 0;
+}
+
+// Blocs « Le problème » : fiches de dossier numerotees
+.problem-grid {
+  margin-top: 1.75rem;
+}
+.problem-card {
+  position: relative;
+  background: $card-bg;
+  border: 1px solid $line;
+  border-radius: $border-radius;
+  padding: 2rem 1.9rem 1.75rem;
+  color: $muted;
+}
+// Filet vermillon en tete de fiche, comme un onglet de classeur
+.problem-card::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 1.9rem;
+  width: 2.5rem;
+  height: 3px;
+  background: $vermillon;
+}
+.problem-index p {
+  margin: 0;
+}
+.problem-index {
+  font-family: $headings-font-family;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: $vermillon;
+  font-variant-numeric: tabular-nums;
+  margin-bottom: 0.9rem;
+}
+.problem-card strong {
+  display: block;
+  font-family: $headings-font-family;
+  font-weight: 600;
+  font-size: 1.22rem;
+  line-height: 1.32;
+  color: $ink;
+  margin-bottom: 0.9rem;
+}
+.problem-card em {
+  display: block;
+  color: $ink-2;
+  border-left: 2px solid $line;
+  padding-left: 0.9rem;
+  margin: 0;
+}
+.problem-card > p:last-child {
+  margin-bottom: 0;
+}
+.problem-card a {
+  font-weight: 600;
+  text-decoration: none;
+}
+.problem-card a:hover {
+  text-decoration: underline;
+}
+
+// Anciennes classes de la home (encore utilisees par les versions EN / JA)
 .problem-main {
   margin-bottom: 2rem;
 }
@@ -285,6 +351,16 @@ main table {
   font-size: 0.85rem;
   color: $muted;
   margin: 0.75rem 0 0;
+}
+
+// ---------------------------------------------------------------------------
+// Separateurs de section : hairline pleine largeur, pas la regle Bootstrap
+// ---------------------------------------------------------------------------
+main hr {
+  border: 0;
+  border-top: 1px solid $line;
+  opacity: 1;
+  margin: 3.25rem 0 0;
 }
 
 // ---------------------------------------------------------------------------
