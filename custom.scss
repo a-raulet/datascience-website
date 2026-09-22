@@ -130,6 +130,24 @@ main table {
   pointer-events: none;
 }
 
+// Trame technique : hairlines verticales tres faibles, lecture « instrument ».
+.hero-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(90deg,
+    rgba(244, 239, 230, 0.045) 0 1px,
+    transparent 1px 88px);
+  -webkit-mask-image: linear-gradient(180deg, #000, transparent 72%);
+  mask-image: linear-gradient(180deg, #000, transparent 72%);
+  pointer-events: none;
+}
+
+// Filet vermillon en pied de hero : signature, pas decoration
+.hero-banner {
+  border-bottom: 3px solid $vermillon;
+}
+
 .hero-inner {
   position: relative;
   z-index: 1;
@@ -291,6 +309,66 @@ main table {
   font-size: 1.1rem;
   margin-top: 0;
 }
+
+// ---------------------------------------------------------------------------
+// Etudes de cas : fiche longue, filet vermillon lateral
+// ---------------------------------------------------------------------------
+.case-study {
+  background: $card-bg;
+  border: 1px solid $line;
+  border-left: 3px solid $vermillon;
+  border-radius: $border-radius;
+  padding: 2rem 2.1rem;
+  margin-top: 1.75rem;
+}
+.case-study-meta {
+  font-family: $font-family-sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: $vermillon;
+  margin-bottom: 0.75rem;
+}
+.case-study-meta p {
+  margin: 0;
+}
+.case-study h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+// Intitules en amorce de paragraphe (Contexte. Methode. Livrable.)
+.case-study p > strong:first-child {
+  color: $ink;
+  letter-spacing: 0.01em;
+}
+.case-study > p:last-of-type {
+  margin-bottom: 0;
+}
+.case-study-note {
+  font-size: 0.9rem;
+  color: $muted;
+  border-left: 2px solid $line;
+  padding-left: 1rem;
+  margin-top: 1.5rem;
+}
+
+// ---------------------------------------------------------------------------
+// Marqueurs de redaction : doivent sauter aux yeux en relecture
+// ---------------------------------------------------------------------------
+.todo {
+  display: inline-block;
+  font-family: $font-family-sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: $vermillon-deep;
+  background: rgba(193, 68, 14, 0.06);
+  border: 1px dashed $vermillon;
+  border-radius: $border-radius;
+  padding: 0.4rem 0.7rem;
+}
+.todo::before { content: "["; }
+.todo::after  { content: "]"; }
 
 // ---------------------------------------------------------------------------
 // Sections encre : contact, newsletter

@@ -1,6 +1,6 @@
 ---
 title: "À propos"
-description: "Data scientist basé à Tokyo depuis près de 10 ans, ancien traducteur de brevets japonais. Profil hybride : rigueur quantitative et expertise terrain Japon."
+description: "Data scientist basé à Tokyo depuis près de 10 ans, six ans traducteur de brevets japonais. Profil hybride : rigueur quantitative et lecture native des sources japonaises."
 lang: fr
 format:
   html:
@@ -12,13 +12,13 @@ format:
 
 Je suis data scientist, basé à Tokyo depuis près de 10 ans. Après avoir travaillé comme traducteur puis conseiller et représentant commercial France-Japon, j'ai développé une activité d'analyse et de conseil en données.
 
-Mon profil est hybride : rigueur quantitative d'un côté, expertise terrain Japon de l'autre. La plupart des data scientists ne lisent pas les brevets japonais. La plupart des experts Japon ne font pas d'analyse quantitative. Je fais les deux.
+Mon profil est hybride : rigueur quantitative d'un côté, lecture native des sources japonaises de l'autre. La plupart des data scientists ne lisent pas les brevets japonais. La plupart des experts Japon ne construisent pas le pipeline de données qui les analyse. Faire les deux, c'est pouvoir aller chercher l'information à la source et la traiter à l'échelle, sans intermédiaire à aucune des deux étapes.
 
 ------------------------------------------------------------------------
 
 ## De la traduction à la data science
 
-J'ai commencé comme traducteur de brevets, japonais vers français, principalement pour l'industrie automobile. Ce travail m'a appris quelque chose que la plupart des data scientists n'apprennent jamais : **la donnée brute ne vaut rien sans contexte**.
+J'ai passé six ans à traduire des brevets du japonais vers le français, principalement pour l'industrie automobile. Des milliers de pages de japonais technique, lues ligne à ligne. Ce travail m'a appris quelque chose que la plupart des data scientists n'apprennent jamais : **la donnée brute ne vaut rien sans contexte**.
 
 Un brevet japonais, c'est du texte technique. Mais savoir *pourquoi* IHI dépose 15 brevets sur la propulsion spatiale en un an, ce que ça signifie dans le contexte des budgets METI et des alliances industrielles japonaises, et comment ça affecte un concurrent européen, c'est de l'intelligence. Cette double lecture, technique et contextuelle, est au cœur de mon approche.
 
@@ -28,7 +28,7 @@ J'ai appliqué la même logique aux données marketing et business. Les entrepri
 
 ## Ce que j'apporte
 
-**Trilingue.** Je lis les brevets japonais dans la langue originale, je comprends les nuances du monde des affaires japonais, et je livre en français ou en anglais. Il n'y a pas d'intermédiaire qui déforme les signaux.
+**Trilingue.** Français, japonais, anglais, JLPT N1. Je lis les brevets japonais dans la langue originale, je comprends les nuances du monde des affaires japonais, et je livre en français ou en anglais. Il n'y a pas d'intermédiaire qui déforme les signaux.
 
 **Rigueur analytique.** Je ne confonds pas corrélation et causalité. J'utilise les méthodes de l'inférence causale et de la modélisation bayésienne pour produire des recommandations accompagnées d'une quantification explicite de l'incertitude.
 
@@ -42,7 +42,8 @@ J'ai appliqué la même logique aux données marketing et business. Les entrepri
 -   Harvard : Data Science (certification)
 -   Stanford : Machine Learning & Deep Learning (certification)
 -   Spécialisations : Marketing Mix Modeling (Robyn), inférence causale, méthodes bayésiennes
--   Traduction spécialisée japonais technique : automobile, mécanique, aérospatial
+-   JLPT N1
+-   Traduction spécialisée japonais technique : automobile, mécanique, aérospatial (six ans)
 
 ------------------------------------------------------------------------
 
