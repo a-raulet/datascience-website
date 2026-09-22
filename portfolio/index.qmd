@@ -20,44 +20,7 @@ Projets Data Science & Marketing Analytics : code, méthodes et applications int
 :::
 :::
 
-<!-- TODO : réactiver l'étude de cas quand la matière sera disponible.
-     Les 5 marqueurs [À COMPLÉTER] sont à remplir avant de décommenter.
-
-## Étude de cas
-
-::: column-page
-:::: case-study
-::: case-study-meta
-Intelligence technologique · Brevets japonais · JapanTechRadar
-:::
-
-### Cartographie brevets d'un secteur automobile
-
-**Contexte.** Un équipementier automobile européen devait situer sa position technologique face aux acteurs japonais de son domaine. Les dépôts de brevets japonais sont publics, mais illisibles depuis un siège européen : langue, conventions de nommage des déposants, classifications.
-
-[À COMPLÉTER : taille et périmètre géographique du client, au niveau de détail que tu autorises.]{.todo}
-
-**Question de décision.** [À COMPLÉTER : la décision réellement en jeu. Arbitrage de portefeuille R&D, choix d'un partenaire, priorisation de dépôts ?]{.todo}
-
-**Méthode.** 36 entreprises analysées. Extraction des brevets japonais publiés, normalisation des noms de déposants, volumes ramenés à la taille de chaque acteur, analyse des co-dépôts pour faire apparaître les alliances qui ne sont annoncées nulle part.
-
-**Livrable.** [À COMPLÉTER : format et volume réels du livrable remis au client.]{.todo}
-
-**Résultat.** [À COMPLÉTER : ce que le client a décidé ou modifié à la suite du rapport. Aucun chiffre de performance ne sera publié sans validation.]{.todo}
-
-**Exemple de cartographie.** [À COMPLÉTER : figure anonymisée, matrice acteurs × technologies ou courbes de dynamique de dépôt. À produire à partir de données réelles ou publiques uniquement, jamais de données d'illustration.]{.todo}
-
-[Découvrir JapanTechRadar →](/services/japan-tech-radar/)
-::::
-
-::: case-study-note
-Une autre étude de cas est en préparation : refonte d'un modèle tarifaire multi-devises. Elle sera publiée quand son contenu pourra l'être sous une forme anonymisée.
-:::
-:::
-
-------------------------------------------------------------------------
-
--->
+<!-- Étude de cas en attente de matière : voir portfolio/_etude-de-cas.qmd -->
 
 ## Catégories
 ::: column-page
