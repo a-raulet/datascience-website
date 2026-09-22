@@ -1,6 +1,6 @@
 ---
 title: "JapanTechRadar : Intelligence Technologique Japon"
-description: "Analyse quantitative des brevets japonais pour cartographier les acteurs, les tendances et les signaux faibles de votre secteur."
+description: "Analyse quantitative des brevets japonais publiés pour cartographier les acteurs, les tendances et les signaux faibles de votre secteur."
 lang: fr
 format:
   html:
@@ -10,17 +10,17 @@ format:
 
 ::: hero-banner
 ::: hero-title
-Ce que font vos concurrents japonais : extrait des données brevets, quantifié, livré en français.
+La dynamique technologique des entreprises japonaises de votre secteur, extraite des brevets publiés et quantifiée.
 :::
 ::: hero-subtitle
-Les données sont publiques. Elles sont en japonais. JapanTechRadar les rend lisibles et actionnables.
+L'information est publiée. Elle est en japonais. JapanTechRadar la rend lisible et actionnable.
 :::
 [Réserver un appel](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg}
 :::
 
 ## Le problème
 
-Les entreprises japonaises déposent chaque année des dizaines de milliers de brevets. Ces dépôts sont publics et gratuits sur J-PlatPat, et totalement opaques pour les entreprises européennes qui ne lisent pas le japonais technique.
+Les entreprises japonaises déposent chaque année des dizaines de milliers de brevets. Ces dépôts sont publiés, et totalement opaques pour les entreprises européennes qui ne lisent pas le japonais technique.
 
 Ce n'est pas seulement une question de traduction. Un brevet ne se lit pas comme un article : il faut comprendre les classifications CPC, les relations entre déposants, la dynamique des co-dépôts, et les signaux que la terminologie japonaise encode différemment de l'anglais.
 
@@ -60,7 +60,7 @@ Format : PDF 10-20 pages + fichier de données source sur demande.
 
 Chaque rapport combine :
 
-- Extraction et analyse quantitative des bases brevets japonaises (J-PlatPat, Espacenet)
+- Extraction et analyse quantitative des brevets japonais publiés
 - Comptage corrigé (*R-corrected patent counts*) pour une comparaison équitable entre acteurs de tailles différentes
 - Interprétation contextuelle par un analyste trilingue basé au Japon depuis près de 10 ans
 

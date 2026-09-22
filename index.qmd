@@ -1,6 +1,6 @@
 ---
 pagetitle: "Arnaud Raulet | Intelligence Stratégique Japon"
-description: "Data scientist basé à Tokyo et ancien traducteur de brevets, j'aide les entreprises européennes à décider sur le Japon : qui sont leurs concurrents, à quel prix vendre."
+description: "Data scientist basé à Tokyo et ancien traducteur de brevets, j'aide les entreprises européennes à décider sur le Japon : quels acteurs comptent dans leur secteur, à quel prix vendre."
 lang: fr
 format:
   html:
@@ -17,11 +17,11 @@ L'aide à la décision au Japon
 :::
 
 ::: hero-title
-Les données japonaises que vos concurrents ne lisent pas.
+Les données japonaises que personne ne lit à votre place.
 :::
 
 ::: hero-subtitle
-Data scientist basé à Tokyo et ancien traducteur de brevets, j'aide les entreprises européennes à prendre leurs décisions sur le Japon : qui sont leurs concurrents, à quel prix vendre. À partir de sources primaires japonaises, avec des recommandations chiffrées.
+Data scientist basé à Tokyo et ancien traducteur de brevets, j'aide les entreprises européennes à prendre leurs décisions sur le Japon : quels acteurs comptent dans leur secteur, à quel prix vendre. À partir de sources primaires japonaises, avec des recommandations chiffrées.
 :::
 
 [Réserver un appel](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg} [Voir mes services](/services/){.btn .btn-outline-secondary .btn-lg}
@@ -39,11 +39,11 @@ Deux décisions sur le Japon se prennent aujourd'hui à l'aveugle, faute de pouv
 ::: problem-index
 01
 :::
-**Vos concurrents japonais déposent des brevets, signent des alliances, investissent en R&D. Et vous ne le voyez pas.**
+**Les entreprises japonaises de votre secteur déposent des brevets, signent des alliances, investissent en R&D. Et vous ne le voyez pas.**
 
-Les données sont publiques, accessibles sur J-PlatPat. Mais elles sont en japonais, et leur interprétation exige une double compétence rare : technique et linguistique.
+Ces informations sont publiées. Mais elles sont en japonais, et leur interprétation exige une double compétence rare : technique et linguistique.
 
-*Combien de décisions stratégiques prenez-vous sans voir ce que vos concurrents japonais font réellement ?*
+*Combien de décisions stratégiques prenez-vous sans voir la dynamique technologique réelle de votre secteur au Japon ?*
 
 [JapanTechRadar →](/services/japan-tech-radar/)
 ::::
@@ -72,7 +72,7 @@ Par prudence, les entreprises européennes sous-tarifent souvent à l'entrée : 
 ::: {.g-col-md-6 .product-card}
 ### Intelligence Technologique Japon
 
-Ce que font vos concurrents japonais : extrait des données brevets, quantifié, livré en français. Cartographie des acteurs, tendances technologiques, signaux faibles.
+La dynamique technologique des entreprises japonaises de votre secteur, extraite des brevets publiés, quantifiée et livrée en français. Cartographie des acteurs, tendances technologiques, signaux faibles.
 
 [Découvrir JapanTechRadar →](/services/japan-tech-radar/)
 :::
@@ -93,7 +93,7 @@ Où vos prix japonais sous-performent, de combien, et quoi faire. En 2 semaines,
 
 Pour les **entreprises industrielles et ETI européennes qui doivent prendre une décision sur le Japon** et ne peuvent pas lire les données qui la fondent : directions stratégie, innovation et R&D dans l'automobile, l'aérospatial et la défense, l'énergie et les matériaux avancés.
 
-La question déclenchante est presque toujours la même. Un concurrent japonais bouge, ou un marché japonais s'ouvre, et rien dans les rapports disponibles en anglais ne permet de trancher.
+La question déclenchante est presque toujours la même. Un acteur japonais bouge, ou un marché japonais s'ouvre, et rien dans les rapports disponibles en anglais ne permet de trancher.
 
 ------------------------------------------------------------------------
 
@@ -159,7 +159,7 @@ Lire un brevet japonais dans sa langue d'origine, et construire soi-même le pip
 
 ::::: grid
 ::: g-col-md-6
-**Ancien traducteur de brevets** japonais vers français pendant six ans, pour l'industrie automobile. Je lis la source, sans intermédiaire.
+**Ancien traducteur de brevets** japonais vers français pendant 15 ans, pour l'industrie automobile. Je lis la source, sans intermédiaire.
 
 **Près de 10 ans au Japon**, dans des secteurs exigeants : défense, aérospatial, automobile, industrie
 
@@ -194,9 +194,7 @@ Lire un brevet japonais dans sa langue d'origine, et construire soi-même le pip
 ::: contact-section
 ## Parlons de votre situation
 
-Réservez un appel découverte de 30 minutes. On identifie ensemble si je peux vous aider, et comment.
-
-Pas de pitch. Pas d'engagement. Juste une conversation.
+Je reste à votre disposition pour un appel et identifier ensemble si je peux vous aider, et comment.
 
 [Réserver un appel découverte](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg} [Me contacter par email](mailto:contact@arnaudraulet.com){.btn .btn-outline-secondary .btn-lg}
 :::

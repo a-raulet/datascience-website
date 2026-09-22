@@ -1,6 +1,6 @@
 ---
 title: "À propos"
-description: "Data scientist basé à Tokyo depuis près de 10 ans, six ans traducteur de brevets japonais. Profil hybride : rigueur quantitative et lecture native des sources japonaises."
+description: "Data scientist basé à Tokyo depuis près de 10 ans, 15 ans traducteur de brevets japonais. Profil hybride : rigueur quantitative et lecture native des sources japonaises."
 lang: fr
 format:
   html:
@@ -18,9 +18,9 @@ Mon profil est hybride : rigueur quantitative d'un côté, lecture native des so
 
 ## De la traduction à la data science
 
-J'ai passé six ans à traduire des brevets du japonais vers le français, principalement pour l'industrie automobile. Des milliers de pages de japonais technique, lues ligne à ligne. Ce travail m'a appris quelque chose que la plupart des data scientists n'apprennent jamais : **la donnée brute ne vaut rien sans contexte**.
+J'ai passé 15 ans à traduire des brevets du japonais vers le français, principalement pour l'industrie automobile. Des milliers de pages de japonais technique, lues ligne à ligne. Ce travail m'a appris quelque chose que la plupart des data scientists n'apprennent jamais : **la donnée brute ne vaut rien sans contexte**.
 
-Un brevet japonais, c'est du texte technique. Mais savoir *pourquoi* IHI dépose 15 brevets sur la propulsion spatiale en un an, ce que ça signifie dans le contexte des budgets METI et des alliances industrielles japonaises, et comment ça affecte un concurrent européen, c'est de l'intelligence. Cette double lecture, technique et contextuelle, est au cœur de mon approche.
+Un brevet japonais, c'est du texte technique. Mais savoir *pourquoi* un motoriste japonais multiplie les dépôts sur la propulsion spatiale en un an, ce que ça signifie dans le contexte des budgets publics de R&D et des alliances industrielles japonaises, et ce que ça change pour un industriel européen, c'est de l'analyse stratégique. Cette double lecture, technique et contextuelle, est au cœur de mon approche.
 
 J'ai appliqué la même logique aux données marketing et business. Les entreprises ont des données. Rarement des réponses. Mon travail est de faire le pont.
 
@@ -43,7 +43,7 @@ J'ai appliqué la même logique aux données marketing et business. Les entrepri
 -   Stanford : Machine Learning & Deep Learning (certification)
 -   Spécialisations : Marketing Mix Modeling (Robyn), inférence causale, méthodes bayésiennes
 -   JLPT N1
--   Traduction spécialisée japonais technique : automobile, mécanique, aérospatial (six ans)
+-   Traduction spécialisée japonais technique : automobile, mécanique, aérospatial (15 ans)
 
 ------------------------------------------------------------------------
 

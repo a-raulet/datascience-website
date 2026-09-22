@@ -20,7 +20,7 @@ The data is public. It's in Japanese. JapanTechRadar makes it readable and actio
 
 ## The problem
 
-Japanese companies file tens of thousands of patents every year. These filings are public and free on J-PlatPat, and completely opaque to European companies that don't read technical Japanese.
+Japanese companies file tens of thousands of patents every year. These filings are published, and completely opaque to European companies that don't read technical Japanese.
 
 This is not just a translation problem. A patent is not read like an article: you need to understand CPC classifications, relationships between applicants, co-filing dynamics, and the signals that Japanese terminology encodes differently from English.
 
@@ -60,7 +60,7 @@ Format: 10-20 page PDF + source data file on request.
 
 Each report combines:
 
-- Quantitative extraction and analysis of Japanese patent databases (J-PlatPat, Espacenet)
+- Quantitative extraction and analysis of published Japanese patents
 - *R-corrected patent counts* for a fair comparison between actors of different sizes
 - Contextual interpretation by a trilingual analyst based in Japan for nearly 10 years
 

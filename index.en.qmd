@@ -37,7 +37,7 @@ You have data. But do you have answers?
 ::: problem-main
 **Your Japanese competitors are filing patents, signing alliances, investing in R&D. And you don't see it.**
 
-The data is public, freely available on J-PlatPat. But it's in Japanese, and interpreting it requires a rare combination of technical and linguistic expertise.
+This information is published. But it's in Japanese, and interpreting it requires a rare combination of technical and linguistic expertise.
 
 *How many strategic decisions are you making without seeing what your Japanese competitors are actually doing?*
 
