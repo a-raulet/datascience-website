@@ -1,6 +1,6 @@
 ---
-title: "PricingDiag : Diagnostic Pricing en 2 semaines"
-description: "Un diagnostic opérationnel de vos prix, avec des recommandations actionnables. Périmètre clair, prix fixe, livrable concret."
+title: "PricingDiag : votre prix pour le marché japonais, en 2 semaines"
+description: "Diagnostic de vos prix sur le marché japonais : prix d'entrée, structure de marge distributeur, prix de référence locaux, hausse de prix. Recommandations chiffrées en 2 semaines."
 lang: fr
 format:
   html:
@@ -10,7 +10,7 @@ format:
 
 ::: hero-banner
 ::: hero-title
-Vos prix laissent-ils de l'argent sur la table ?
+À quel prix vendre au Japon, et comment le faire accepter ?
 :::
 ::: hero-subtitle
 Un diagnostic opérationnel en 2 semaines. Des recommandations que vous pouvez appliquer dès la semaine suivante.
@@ -20,26 +20,29 @@ Un diagnostic opérationnel en 2 semaines. Des recommandations que vous pouvez a
 
 ## Le problème
 
-La plupart des dirigeants savent que leurs prix ne sont pas optimaux. Mais entre "je pense que le produit X est trop bon marché" et "voici exactement de combien, et voici quoi faire", il y a un gouffre.
+Le prix japonais d'un produit européen est rarement construit. Il est le plus souvent hérité : une grille mondiale appliquée telle quelle, ajustée à la marge, puis figée.
 
-Ce gouffre, c'est celui entre l'intuition et la décision.
+Trois mécanismes en découlent, et ils coûtent cher.
 
-Les conséquences sont réelles :
+**La prudence de l'entrée.** Aborder un marché mal connu pousse à sécuriser le volume plutôt que la marge. Le prix d'entrée est fixé bas, il devient la référence, et il ne remonte plus.
 
-- Des produits sous-tarifés qui financent les marges de vos clients, pas les vôtres
-- Des produits sur-tarifés qui freinent le volume sans que vous le voyiez clairement
-- Des promotions dont vous ne savez pas vraiment si elles créent de la valeur ou la détruisent
-- Une politique de prix construite historiquement, jamais remise à plat
+**Les étages de distribution.** La chaîne japonaise compte souvent plusieurs intermédiaires entre vous et l'utilisateur final. Chacun prend sa marge. Si votre prix de cession a été calculé sur une structure à un seul étage, le prix payé par le client final n'a plus grand-chose à voir avec votre positionnement voulu, et vous ne le voyez pas depuis l'Europe.
 
-Le problème n'est pas un manque d'intuition. C'est un manque de méthode et de données structurées.
+**Les prix de référence locaux.** Le client japonais compare à ce qui existe sur son marché, pas au vôtre. Un positionnement premium en Europe peut se retrouver au milieu de la grille japonaise, ou l'inverse.
+
+Et quand la décision de remonter les prix finit par arriver, elle se heurte à une autre réalité : après trente ans de déflation, faire accepter une hausse au Japon obéit à des règles propres, de préavis, de justification et de séquencement.
+
+Le problème n'est pas un manque d'intuition. C'est un manque de méthode et de données structurées sur un marché que vous ne lisez pas.
 
 ---
 
 ## La solution : PricingDiag
 
-**PricingDiag est un diagnostic pricing opérationnel.** En deux semaines, à partir de vos données de vente existantes, j'identifie où vos prix sous-performent et je vous donne des recommandations concrètes et chiffrées.
+**PricingDiag est un diagnostic pricing opérationnel, appliqué au marché japonais.** En deux semaines, à partir de vos données de vente et des prix constatés sur place, j'identifie où vos prix japonais sous-performent et je vous donne des recommandations concrètes et chiffrées.
 
 Ce n'est pas du consulting généraliste. Ce n'est pas un dashboard à maintenir. C'est un diagnostic avec un périmètre clair, un prix fixe, et un livrable que vous pouvez utiliser le lendemain.
+
+Le diagnostic reste applicable à d'autres marchés, mais c'est sur le Japon qu'il apporte le plus : c'est là que l'écart entre le prix que vous croyez pratiquer et le prix réellement payé est le plus difficile à voir depuis un siège européen.
 
 ---
 
@@ -47,17 +50,23 @@ Ce n'est pas du consulting généraliste. Ce n'est pas un dashboard à maintenir
 
 **1. Briefing et ingestion des données**
 
-Un appel d'une heure pour comprendre votre contexte : marchés, canaux, saisonnalité, enjeux spécifiques. Vous m'envoyez vos données de vente au format CSV ou Excel. Aucune infrastructure technique requise de votre côté.
+Un appel d'une heure pour comprendre votre contexte : canaux japonais, contrats de distribution, saisonnalité, historique des négociations tarifaires. Vous m'envoyez vos données de vente au format CSV ou Excel. Aucune infrastructure technique requise de votre côté.
 
 **2. Diagnostic automatisé**
 
-J'analyse la structure complète de vos prix : distribution par segment, élasticité-prix estimée, détection des produits sous- et sur-tarifés, effets de saisonnalité, impact des promotions passées.
+J'analyse la structure complète de vos prix : distribution par segment et par canal, élasticité-prix estimée, détection des références sous- et sur-tarifées, effets de saisonnalité, impact des remises et promotions passées.
 
-**3. Interprétation et recommandations**
+**3. Reconstitution de la chaîne de valeur japonaise**
 
-Je traduis les résultats en recommandations actionnables, priorisées, et contextualisées à votre situation. Chaque recommandation est accompagnée d'une fourchette d'impact estimé et de scénarios alternatifs.
+Je reconstruis le trajet du prix, de votre prix de cession au prix payé par le client final, étage de distribution par étage de distribution, et je le confronte aux prix de référence observables sur le marché japonais.
 
-**4. Livraison**
+[À COMPLÉTER : sources de prix de référence japonais effectivement mobilisées, tarifs publics constatés, catalogues distributeurs, données fournies par le client. Ne pas nommer de base de données tant que le sourcing n'est pas arrêté.]
+
+**4. Interprétation et recommandations**
+
+Je traduis les résultats en recommandations actionnables, priorisées, et contextualisées à votre situation, y compris la séquence de mise en œuvre d'une hausse quand elle est justifiée. Chaque recommandation est accompagnée d'une fourchette d'impact estimé et de scénarios alternatifs.
+
+**5. Livraison**
 
 Vous recevez le rapport final et nous faisons une session de restitution de 45 minutes pour répondre à vos questions.
 
@@ -68,28 +77,36 @@ Vous recevez le rapport final et nous faisons une session de restitution de 45 m
 Un rapport PricingDiag type contient :
 
 1. **Synthèse exécutive** (1 page) : les 3 actions prioritaires à mener, classées par impact estimé
-2. **Diagnostic de la structure tarifaire** : distribution des prix par segment, visualisation des zones sous- et sur-tarification, comparaison avec le positionnement concurrentiel
-3. **Analyse de l'élasticité** : estimation de la sensibilité prix par catégorie de produits, avec intervalles de confiance
-4. **Impact des promotions passées** : décomposition de l'effet réel des promotions vs. tendance de fond
-5. **Recommandations priorisées** : actions spécifiques par référence ou catégorie, fourchette d'impact chiffrée, risques identifiés
-6. **Fichier de simulation** : outil Excel pour tester l'impact d'un changement de prix sur la marge avant de décider
+2. **Diagnostic de la structure tarifaire** : distribution des prix par segment et par canal japonais, visualisation des zones de sous- et sur-tarification
+3. **Cascade de prix** : décomposition du prix final japonais étage par étage, du prix de cession au prix client, et marge captée à chaque niveau
+4. **Positionnement face aux prix de référence locaux** : où se situent vos prix dans la grille japonaise de votre catégorie
+5. **Analyse de l'élasticité** : estimation de la sensibilité prix par catégorie de produits, avec intervalles de confiance
+6. **Impact des remises et promotions passées** : décomposition de l'effet réel des remises par rapport à la tendance de fond
+7. **Recommandations priorisées** : actions spécifiques par référence ou catégorie, fourchette d'impact chiffrée, risques identifiés, et pour une hausse de prix, séquence et argumentaire
+8. **Fichier de simulation** : outil Excel pour tester l'impact d'un changement de prix sur la marge avant de décider
 
 Format : rapport PDF 8-12 pages + fichier Excel + session de restitution 45 min.
-
-*Variante disponible avec analyse du positionnement sur le marché japonais pour les entreprises qui y opèrent.*
 
 ---
 
 ## Pour qui
 
-PricingDiag est conçu pour les **CEO, COO et directeurs commerciaux de PME et ETI** qui :
+PricingDiag est conçu pour les **entreprises industrielles et ETI européennes qui vendent au Japon**, ou qui s'apprêtent à y entrer, et pour les directions commerciales et générales qui portent la décision de prix.
 
-- Ont entre 500 k€ et 20 M€ de chiffre d'affaires
-- Vendent plusieurs produits ou offres avec des marges différentes
-- Ont des données de vente historiques (au moins 12 mois)
-- Savent que leur politique de prix mérite d'être revue, mais n'ont pas le temps ou la méthode pour le faire en interne
+La situation typique :
 
-Ce n'est **pas** adapté si vous avez moins de 6 mois d'historique de ventes, ou si vous opérez sur un marché à prix unique non négociable.
+- Vous vendez au Japon via un ou plusieurs distributeurs et vous ne maîtrisez pas le prix final
+- Votre grille japonaise a été construite à l'entrée sur le marché et n'a jamais été remise à plat
+- Vous envisagez une hausse de prix et vous ne savez ni de combien, ni comment la faire accepter
+- Vous préparez une entrée au Japon et vous devez fixer un premier prix, celui qui vous suivra des années
+
+Il vous faut au moins 12 mois d'historique de ventes pour le volet quantitatif. Ce n'est **pas** adapté si vous avez moins de 6 mois d'historique, ou si vous opérez sur un marché à prix unique non négociable.
+
+---
+
+## Ce que cette offre n'est pas
+
+Pour être clair sur le périmètre : je livre une analyse quantitative de prix et ses conclusions. Je n'interviens pas dans la négociation avec vos distributeurs japonais, je ne vous représente pas sur place, et je ne construis pas votre stratégie d'entrée sur le marché.
 
 ---
 
@@ -97,7 +114,7 @@ Ce n'est **pas** adapté si vous avez moins de 6 mois d'historique de ventes, ou
 
 | Format | Périmètre | Délai |
 |---|---|---|
-| Standard | Jusqu'à 3 canaux, catalogue homogène | 2 semaines |
+| Standard | Jusqu'à 3 canaux japonais, catalogue homogène | 2 semaines |
 | Complexe | Multi-canaux, saisonnalité forte, catalogue étendu | 3 semaines |
 
 Un devis précis est établi après l'appel découverte, sans engagement.
@@ -105,7 +122,7 @@ Un devis précis est établi après l'appel découverte, sans engagement.
 ---
 
 ::: contact-section
-### Vous pensez que vos prix pourraient être meilleurs ?
+### Vos prix japonais ont-ils été construits, ou hérités ?
 
 Un appel de 30 minutes suffit pour savoir si PricingDiag est pertinent pour votre situation. Pas de pitch. Pas d'engagement. Une conversation directe.
 

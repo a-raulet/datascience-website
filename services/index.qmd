@@ -1,6 +1,6 @@
 ---
 title: "Services"
-description: "Deux offres productisées pour des décisions à fort enjeu : intelligence technologique Japon (JapanTechRadar) et diagnostic pricing (PricingDiag)."
+description: "Deux offres productisées pour vos décisions sur le Japon : intelligence technologique (JapanTechRadar) et stratégie de prix pour le marché japonais (PricingDiag)."
 lang: fr
 format:
   html:
@@ -10,15 +10,15 @@ format:
 
 ::: hero-banner
 ::: hero-title
-Transformer des données complexes en décisions claires.
+Deux décisions sur le Japon, deux livrables.
 :::
 ::: hero-subtitle
-Deux offres productisées : l'intelligence technologique japonaise (JapanTechRadar) et le diagnostic pricing (PricingDiag).
+L'intelligence technologique japonaise (JapanTechRadar) et la stratégie de prix pour le marché japonais (PricingDiag). Périmètre clair, prix fixe, recommandations chiffrées.
 :::
 [Réserver un appel](https://calendar.proton.me/bookings#gPWWfQkkEM7z906Dtp4ZC4sKqhWjD5xr9wspfwrxwK0=){.btn .btn-primary .btn-lg}
 :::
 
-Mon avantage tient en une chose : une intelligence japonaise primaire, lue à la source et livrée en français, doublée d'une rigueur quantitative au service de vos décisions. Deux offres en découlent.
+Mon avantage tient en une chose : des sources primaires japonaises, lues à la source et livrées en français, doublées d'une rigueur quantitative au service de vos décisions. Deux décisions sur le Japon en découlent, et deux offres pour les éclairer.
 
 ---
 
@@ -32,7 +32,7 @@ Capter ce que préparent vos concurrents japonais suppose de lire le japonais te
 
 **Le résultat.** Vous voyez venir les mouvements de vos concurrents japonais assez tôt pour décider, pas pour subir.
 
-Pensé pour les entreprises européennes et leurs directions stratégie et innovation qui doivent surveiller les acteurs japonais de leur secteur, ainsi que pour les cabinets ayant besoin d'un relais Japon ponctuel.
+Pensé pour les directions stratégie, innovation et R&D d'entreprises industrielles européennes qui doivent surveiller les acteurs japonais de leur secteur, ainsi que pour les cabinets ayant besoin d'un relais Japon ponctuel.
 
 **Point d'entrée :** le rapport pilote, à périmètre réduit et tarif découverte, livré en 2 semaines.
 
@@ -40,15 +40,15 @@ Pensé pour les entreprises européennes et leurs directions stratégie et innov
 
 ---
 
-## Diagnostic pricing : PricingDiag
+## Stratégie de prix pour le Japon : PricingDiag
 
-**Le problème.** Vous savez que vos prix laissent de l'argent sur la table, mais vous ne savez ni combien ni où.
+**Le problème.** Votre prix japonais n'a pas été construit, il a été hérité : une grille mondiale appliquée à l'entrée, qui ignore les prix de référence locaux et le coût réel des étages de distribution. Et après trente ans de déflation, faire accepter une hausse au Japon obéit à des règles propres.
 
-**Ce que je livre.** Où vos prix sous-performent, de combien, et quoi faire, à partir de vos propres données de vente, livré en deux semaines environ.
+**Ce que je livre.** Où vos prix japonais sous-performent, de combien, et quoi faire, à partir de vos données de vente et des prix constatés sur le marché, livré en deux semaines environ. La cascade de prix est reconstituée étage par étage, de votre prix de cession au prix payé par le client final.
 
-**Le résultat.** Des décisions de prix chiffrées et actionnables, fondées sur vos données plutôt que sur l'instinct.
+**Le résultat.** Des décisions de prix chiffrées et actionnables, fondées sur le marché japonais réel plutôt que sur une grille importée.
 
-Pensé pour les décideurs de PME et d'ETI qui veulent fonder leurs prix sur des données solides plutôt que sur l'intuition.
+Pensé pour les entreprises industrielles et ETI européennes qui vendent déjà au Japon, ou qui s'apprêtent à fixer le premier prix qui les suivra des années.
 
 [Découvrir PricingDiag →](pricing-diag.qmd){.btn .btn-primary}
 
@@ -80,7 +80,7 @@ Périmètre défini, livrable actionnable. Un diagnostic, une analyse, un rappor
 ::: g-col-md-4
 ### Abonnement et veille continue
 
-Intelligence récurrente, typiquement adossée à JapanTechRadar.
+Veille récurrente, typiquement adossée à JapanTechRadar.
 :::
 
 ::: g-col-md-4
